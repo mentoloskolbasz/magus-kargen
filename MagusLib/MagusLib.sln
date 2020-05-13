@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagusLib", "MagusLib\MagusLib.csproj", "{4A5868C3-7EF7-473B-A6E9-298E8F3DE286}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagusLib", "MagusLib\MagusLib.csproj", "{4A5868C3-7EF7-473B-A6E9-298E8F3DE286}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagusLibTest", "MagusLibTest\MagusLibTest.csproj", "{2CAF8B76-8EE0-4684-95DD-13F7DB007BE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagusLibTest", "MagusLibTest\MagusLibTest.csproj", "{2CAF8B76-8EE0-4684-95DD-13F7DB007BE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Szerver", "Szerver\Szerver.csproj", "{537890F4-A835-46FE-8D2B-13351F60F7EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2CAF8B76-8EE0-4684-95DD-13F7DB007BE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CAF8B76-8EE0-4684-95DD-13F7DB007BE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CAF8B76-8EE0-4684-95DD-13F7DB007BE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{537890F4-A835-46FE-8D2B-13351F60F7EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{537890F4-A835-46FE-8D2B-13351F60F7EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{537890F4-A835-46FE-8D2B-13351F60F7EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{537890F4-A835-46FE-8D2B-13351F60F7EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

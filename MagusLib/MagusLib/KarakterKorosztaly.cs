@@ -12,7 +12,5 @@ namespace MagusLib
         Meglett = 400,
         Idős = 500,
         Aggastyán = 600
-
-
     }
 }
