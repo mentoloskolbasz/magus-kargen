@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using MagusLib;
+using Szerver;
 
 namespace MagusLibTest
 {

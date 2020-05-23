@@ -66,6 +66,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Data\KasztAlkaszt.cs" />
+    <Compile Include="App_Data\KezdemenyezoSzamolo.cs" />
+    <Compile Include="App_Data\ISzamolo.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
