@@ -31,6 +31,12 @@ namespace MagusLib
 
         #region Harcértékek
         public uint Kezdemenyezo { get; set; }
+
+        public uint Tamado { get; set; }
+
+        public uint Vedo { get; set; }
+
+        public uint Celzo { get; set; }
         #endregion
     }
 }
