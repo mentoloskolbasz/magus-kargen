@@ -18,12 +18,13 @@ namespace MagusTest
                 Alkaszt = KarakterAlkaszt.Harcos,
                 Ugyesseg = 17,
                 Gyorsasag = 16,
+
             };
             ISzamolo szamolo = new KezdemenyezoSzamolo();
 
             Assert.AreEqual(22, szamolo.Szamol(karakter).Kezdemenyezo);
+
         }
-
-
+       
     }
 }

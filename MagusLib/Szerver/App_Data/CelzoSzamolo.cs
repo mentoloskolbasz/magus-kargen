@@ -8,7 +8,7 @@ namespace Szerver
 {
     public class CelzoSzamolo : ISzamolo
     {
-        private static readonly Dictionary<KarakterAlkaszt, uint> KE_ALAP = new Dictionary<KarakterAlkaszt, uint>()
+        private static readonly Dictionary<KarakterAlkaszt, uint> CE_ALAP = new Dictionary<KarakterAlkaszt, uint>()
         {
             { KarakterAlkaszt.Harcos, 0 },
             { KarakterAlkaszt.Tolvaj, 10 },
@@ -25,7 +25,7 @@ namespace Szerver
             { KarakterAlkaszt.Tűzvarázsló, 0 },
             { KarakterAlkaszt.Varázsló, 0 },
         };
-        private static readonly Dictionary<JatszhatoFaj, uint> KE_UGYESSEG = new Dictionary<JatszhatoFaj, uint>()
+        private static readonly Dictionary<JatszhatoFaj, uint> CE_UGYESSEG = new Dictionary<JatszhatoFaj, uint>()
         {
             { JatszhatoFaj.Ember, 10 },
             { JatszhatoFaj.Félelf, 10 },
@@ -40,12 +40,11 @@ namespace Szerver
             { JatszhatoFaj.Gnóm, 11 },
             { JatszhatoFaj.Goblin, 10 }
         };
-
         public IKarakter Szamol(IKarakter karakter)
         {
             uint celzoErtek = 0;
-            celzoErtek += KE_ALAP[karakter.Alkaszt];
-            celzoErtek += Math.Min(Math.Max((karakter.Ugyesseg - 10), 0), KE_UGYESSEG[karakter.Faj]);
+            celzoErtek += CE_ALAP[karakter.Alkaszt];
+            celzoErtek += Math.Min(Math.Max((karakter.Ugyesseg - 10), 0), CE_UGYESSEG[karakter.Faj]);
             karakter.Celzo = celzoErtek;
             return karakter;
         }
