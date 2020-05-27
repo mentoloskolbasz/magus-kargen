@@ -65,19 +65,22 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Data\KasztAlkaszt.cs" />
-    <Compile Include="App_Data\KezdemenyezoSzamolo.cs" />
-    <Compile Include="App_Data\ISzamolo.cs" />
-    <Compile Include="App_Data\CelzoSzamolo.cs" />
+    <Compile Include="SrC\Allandok.cs" />
+    <Compile Include="SrC\KasztAlkasztValaszto.cs" />
+    <Compile Include="SrC\KezdemenyezoSzamolo.cs" />
+    <Compile Include="SrC\ISzamolo.cs" />
+    <Compile Include="SrC\CelzoSzamolo.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
     <Compile Include="IService1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="App_Data\TamadoertekSzamolo.cs" />
-    <Compile Include="App_Data\VedoSzamolo.cs" />
+    <Compile Include="SrC\TamadoertekSzamolo.cs" />
+    <Compile Include="SrC\VedoSzamolo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
