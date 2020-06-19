@@ -2,6 +2,7 @@
 
 namespace MagusLib
 {
+    
     public interface IKarakter
     {
         #region Alap Adatok

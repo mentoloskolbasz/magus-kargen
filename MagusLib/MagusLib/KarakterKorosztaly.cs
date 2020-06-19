@@ -4,6 +4,10 @@ using System.Text;
 
 namespace MagusLib
 {
+
+    /// <summary>
+    /// Korosztályok felsorolása.
+    /// </summary>
     public enum KarakterKorosztaly
     {
         Serdülő = 100,

@@ -8,7 +8,11 @@ namespace Szerver.SrC
 {
     public class CelzoSzamolo : ISzamolo
     {
-        
+        /// <summary>
+        /// Karakter célzó érték kiszámítása.
+        /// </summary>
+        /// <param name="karakter">Karakterben tárolva.</param>
+        /// <returns>Célzó értéket adja vissza, ami a karakter ügyességének 10 feletti részéből és a Kasztból jövő alapértékből adódik össze.</returns>
         public IKarakter Szamol(IKarakter karakter)
         {
             uint celzoErtek = 0;

@@ -4,6 +4,9 @@ using System.Text;
 
 namespace MagusLib
 {
+    /// <summary>
+    /// Fegyver típusok pl Szúró/vágó, zúzó...stb felsorolása.
+    /// </summary>
     public enum Fegyvernem
     {
         SzúróVágó = 100,

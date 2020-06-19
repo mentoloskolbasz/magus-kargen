@@ -8,6 +8,9 @@ namespace Szerver.SrC
 
     public class KasztAlkasztValaszto
     {
+        /// <summary>
+        /// A lehetséges Kaszt - Alkaszt párosítások felsorolása.
+        /// </summary>
         private static readonly Dictionary<KarakterKaszt, KarakterAlkaszt[]> LISTA = new Dictionary<KarakterKaszt, KarakterAlkaszt[]>()
         {
             { KarakterKaszt.Harcos, new KarakterAlkaszt[] { 
@@ -21,6 +24,8 @@ namespace Szerver.SrC
                 KarakterAlkaszt.Harcművész,
                 KarakterAlkaszt.Kardművész,
             } },
+
+
         };
 
         public KarakterAlkaszt[] this[KarakterKaszt kaszt]

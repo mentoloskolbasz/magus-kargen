@@ -4,6 +4,7 @@ using System.Text;
 
 namespace MagusLib
 {
+
     interface IHarciEszkoz
     {
         Fegyvernem Fegyverneme { get; }

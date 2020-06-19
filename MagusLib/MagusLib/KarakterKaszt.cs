@@ -4,6 +4,9 @@ using System.Text;
 
 namespace MagusLib
 {
+    /// <summary>
+    /// Választható Kasztok.
+    /// </summary>
     public enum KarakterKaszt
     {
         Harcos = 100,

@@ -4,21 +4,29 @@ using System.Text;
 
 namespace MagusLib
 {
+    /// <summary>
+    /// Választható alkasztok.
+    /// </summary>
     public enum KarakterAlkaszt
     {
         Harcos = 100,
-        Tolvaj = 200,
-        Pap = 300,
-        Harcművész = 400,
-        Boszorkány = 500,
-        Gladiátor = 600,
-        Fejvadász = 700,
-        Lovag = 800,
+        Gladiátor = 200,
+        Fejvadász = 300,
+        Lovag = 400,
+        Amazon = 500,
+        Barbár = 600,
+        Bajvívó= 700,
+        Tolvaj = 800,
         Bárd = 900,
-        Paplovag = 1000,
-        Kardművész = 1100,
-        Boszorkánymester = 1200,
-        Tűzvarázsló = 1300,
-        Varázsló = 1400
+        Pap = 1000,
+        Paplovag = 1100,
+        Szerzetes = 1200,
+        Sámán = 1300,
+        Harcművész = 1400,
+        Kardművész = 1500,
+        Boszorkány = 1600,             
+        Boszorkánymester = 1700,
+        Tűzvarázsló = 1800,
+        Varázsló = 1900
     }
 }

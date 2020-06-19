@@ -5,6 +5,7 @@ using System.Text;
 
 namespace MagusLib.HarciEszkozok
 {
+
     abstract class HarciEszkoz : IHarciEszkoz
     {
         public abstract Fegyvernem Fegyverneme { get; }
@@ -16,6 +17,7 @@ namespace MagusLib.HarciEszkozok
                 return sulyModositok.Aggregate(sulyAlap, (double eredmeny, IModosito<double> modosito) => modosito.Szamol(eredmeny));
             }
         }
+
         public virtual int Kezdemenyezo 
         {
             get

@@ -6,8 +6,14 @@ using MagusLib;
 
 namespace Szerver.SrC
 {
+    /// <summary>
+    /// Játszható fajok felsorolása és alapértékeik meghatározása.
+    /// </summary>
     public static class Allandok
     {
+        /// <summary>
+        /// Karakter kezdeményező értékének alkasztból származó alapértéke.
+        /// </summary>
         public static readonly Dictionary<KarakterAlkaszt, uint> KE_ALAP = new Dictionary<KarakterAlkaszt, uint>()
         {
             { KarakterAlkaszt.Harcos, 9 },
@@ -26,6 +32,9 @@ namespace Szerver.SrC
             { KarakterAlkaszt.Varázsló, 2 },
         };
 
+        /// <summary>
+        /// Karakter támadó értékének alkasztból származó alapértéke.
+        /// </summary>
         public static readonly Dictionary<KarakterAlkaszt, uint> TE_ALAP = new Dictionary<KarakterAlkaszt, uint>()
         {
             { KarakterAlkaszt.Harcos, 20 },
@@ -43,7 +52,9 @@ namespace Szerver.SrC
             { KarakterAlkaszt.Tűzvarázsló, 17 },
             { KarakterAlkaszt.Varázsló, 15 },
         };
-
+        /// <summary>
+        /// Karakter védő értékének alkasztból származó alapértéke.
+        /// </summary>
         public static readonly Dictionary<KarakterAlkaszt, uint> VE_ALAP = new Dictionary<KarakterAlkaszt, uint>()
         {
             { KarakterAlkaszt.Harcos, 75 },
@@ -61,7 +72,9 @@ namespace Szerver.SrC
             { KarakterAlkaszt.Tűzvarázsló, 72 },
             { KarakterAlkaszt.Varázsló, 70 },
         };
-
+        /// <summary>
+        /// Karakter célzó értékének alkasztból származó alapértéke.
+        /// </summary>
         public static readonly Dictionary<KarakterAlkaszt, uint> CE_ALAP = new Dictionary<KarakterAlkaszt, uint>()
         {
             { KarakterAlkaszt.Harcos, 0 },
@@ -79,6 +92,9 @@ namespace Szerver.SrC
             { KarakterAlkaszt.Tűzvarázsló, 0 },
             { KarakterAlkaszt.Varázsló, 0 },
         };
+        /// <summary>
+        /// Karakter fajából adódó ügyesség módosító. (Ügyesség fajából adódó maximum értékét adja meg.)
+        /// </summary>
         public static readonly Dictionary<JatszhatoFaj, uint> UGYESSEG = new Dictionary<JatszhatoFaj, uint>()
         {
             { JatszhatoFaj.Ember, 10 },
@@ -94,6 +110,9 @@ namespace Szerver.SrC
             { JatszhatoFaj.Gnóm, 11 },
             { JatszhatoFaj.Goblin, 10 }
         };
+        /// <summary>
+        /// Karakter fajából adódó gyorsaság módosító. (Gyorsaság fajából adódó maximum értékét adja meg.)
+        /// </summary>
         public static readonly Dictionary<JatszhatoFaj, uint> GYORSASAG = new Dictionary<JatszhatoFaj, uint>()
         {
             { JatszhatoFaj.Ember, 10 },
@@ -109,6 +128,9 @@ namespace Szerver.SrC
             { JatszhatoFaj.Gnóm, 10 },
             { JatszhatoFaj.Goblin, 10 }
         };
+        /// <summary>
+        /// Karakter fajából adódó erő módosító. (Erő fajából adódó maximum értékét adja meg.
+        /// </summary>
         public static readonly Dictionary<JatszhatoFaj, uint> ERO = new Dictionary<JatszhatoFaj, uint>()
         {
             { JatszhatoFaj.Ember, 10 },

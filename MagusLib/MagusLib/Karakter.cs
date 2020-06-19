@@ -5,8 +5,11 @@ using System.Xml.Linq;
 
 namespace MagusLib
 {
+    // Karakterbe menteni mindent! Rúna definíciókat is...
+    
     public class Karakter : IKarakter
     {
+
         #region Alap adatok
         public string Nev { get; set; }
         public JatszhatoFaj Faj { get; set; }

@@ -8,6 +8,11 @@ namespace Szerver.SrC
 {
     public class VedoSzamolo : ISzamolo
     {
+        /// <summary>
+        /// Karakter Védő érték kiszámítása.
+        /// </summary>
+        /// <param name="karakter">Karakterben tárolva.</param>
+        /// <returns>Védő értéket adja vissza, ami a karakter ügyességének és gyorsaságának 10 feletti részéből és a Kasztból jövő alapértékből adódik össze.</returns>
         public IKarakter Szamol(IKarakter karakter)
         {
             uint vedoErtek = 0;

@@ -4,6 +4,9 @@ using System.Text;
 
 namespace MagusLib
 {
+    /// <summary>
+    /// Játszható fajok felsorolása.
+    /// </summary>
     public enum JatszhatoFaj
     {
         Ember = 100,
