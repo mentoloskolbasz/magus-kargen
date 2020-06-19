@@ -9,6 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagusTest", "MagusLibTest\M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Szerver", "Szerver\Szerver.csproj", "{537890F4-A835-46FE-8D2B-13351F60F7EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagusKliens", "MagusKliens\MagusKliens.csproj", "{CED2CAC0-A40E-41E1-AFA6-1DAB1034CC6E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{537890F4-A835-46FE-8D2B-13351F60F7EA} = {537890F4-A835-46FE-8D2B-13351F60F7EA}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +32,10 @@ Global
 		{537890F4-A835-46FE-8D2B-13351F60F7EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{537890F4-A835-46FE-8D2B-13351F60F7EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{537890F4-A835-46FE-8D2B-13351F60F7EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CED2CAC0-A40E-41E1-AFA6-1DAB1034CC6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED2CAC0-A40E-41E1-AFA6-1DAB1034CC6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CED2CAC0-A40E-41E1-AFA6-1DAB1034CC6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CED2CAC0-A40E-41E1-AFA6-1DAB1034CC6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

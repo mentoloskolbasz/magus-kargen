@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="46c20c01-f1b9-4b3b-9d41-006fd78df63c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51224/MagusSzerver.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MagusSzerver.xsd" MetadataType="Schema" ID="a740fbf2-b5b6-488a-a0c9-63c64a8a8e04" SourceId="1" SourceUrl="http://localhost:51224/MagusSzerver.svc?xsd=xsd1" />
+    <MetadataFile FileName="MagusSzerver.disco" MetadataType="Disco" ID="f52a1dce-943e-4953-a43a-819d101791ba" SourceId="1" SourceUrl="http://localhost:51224/MagusSzerver.svc?disco" />
+    <MetadataFile FileName="MagusSzerver1.xsd" MetadataType="Schema" ID="1d50eac3-e5de-4afe-9c25-b95cb90684b7" SourceId="1" SourceUrl="http://localhost:51224/MagusSzerver.svc?xsd=xsd2" />
+    <MetadataFile FileName="MagusSzerver2.xsd" MetadataType="Schema" ID="2aa4f583-82b3-4a44-9bb7-5b84a3b28d7c" SourceId="1" SourceUrl="http://localhost:51224/MagusSzerver.svc?xsd=xsd0" />
+    <MetadataFile FileName="MagusSzerver.wsdl" MetadataType="Wsdl" ID="5abbfbc6-8208-4e8f-b7fe-dc9ad14878e1" SourceId="1" SourceUrl="http://localhost:51224/MagusSzerver.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
