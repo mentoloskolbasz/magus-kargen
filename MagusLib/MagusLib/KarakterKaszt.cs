@@ -11,7 +11,7 @@ namespace MagusLib
     {
         Harcos = 100,
         Szerencsevadász = 200,
-        Pap = 300,
+        Pap = 300,        
         Harcművész = 400,
         Varázshasználó = 500
     }

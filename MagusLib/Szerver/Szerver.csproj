@@ -69,6 +69,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="SrC\Allandok.cs" />
+    <Compile Include="SrC\PaplovagKasztAlkasztValaszto.cs" />
+    <Compile Include="SrC\PapKasztAlkasztValaszto.cs" />
     <Compile Include="SrC\KasztAlkasztValaszto.cs" />
     <Compile Include="SrC\KezdemenyezoSzamolo.cs" />
     <Compile Include="SrC\ISzamolo.cs" />
