@@ -15,7 +15,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MagusLib\MagusLib.csproj" />
-    <ProjectReference Include="..\Szerver\Szerver.csproj" />
   </ItemGroup>
 
 </Project>

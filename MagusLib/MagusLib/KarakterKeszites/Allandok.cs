@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using MagusLib;
 
-namespace Szerver.SrC
+namespace MagusLib.KarakterKeszites
 {
     /// <summary>
     /// Játszható fajok felsorolása és alapértékeik meghatározása.

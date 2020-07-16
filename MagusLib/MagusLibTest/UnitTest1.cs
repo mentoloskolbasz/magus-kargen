@@ -1,7 +1,6 @@
 using NUnit.Framework;
 using MagusLib;
-using Szerver;
-using Szerver.SrC;
+using MagusLib.KarakterKeszites;
 
 namespace MagusLibTest
 {

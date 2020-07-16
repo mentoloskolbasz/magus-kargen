@@ -3,7 +3,7 @@ using MagusLib;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Szerver.SrC
+namespace MagusLib.KarakterKeszites
 {
 
     public class PaplovagKasztAlkasztValaszto

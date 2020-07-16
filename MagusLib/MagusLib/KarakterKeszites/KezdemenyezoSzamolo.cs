@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 
 
-namespace Szerver.SrC
+namespace MagusLib.KarakterKeszites
 {
     public class KezdemenyezoSzamolo : ISzamolo
     {

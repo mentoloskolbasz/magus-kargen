@@ -3,8 +3,7 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Szerver;
-using Szerver.SrC;
+using MagusLib.KarakterKeszites;
 
 namespace MagusTest
 {
