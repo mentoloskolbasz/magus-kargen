@@ -14,19 +14,21 @@ namespace MagusKliens
     public partial class KarGen : Form
     {
 
-        protected IKarakter karakter = new Karakter();
+        protected IKarakter karakter = new KarakterFigyelo();
         public KarGen()
         {
             karakter.Ero = 7;
+            karakter.Nev = "Kocsog";
             InitializeComponent();
-            this.textBox1.DataBindings.Add("Text", this.karakter, "Ero");
+            this.textBox3.DataBindings.Add(new Binding("Text", this.karakter, "Nev", false, DataSourceUpdateMode.OnPropertyChanged));
         }
 
         private void textBox1_MouseMove(object sender, MouseEventArgs e)
         {
-            karakter.Ero = (uint)(new Random()).Next(5, 16);
-            this.textBox1.Update();
-            this.textBox2.Text = karakter.Ero.ToString();
+            // karakter.Ero = (uint)(new Random()).Next(5, 16);
+            karakter.Nev = "Valami más";
         }
+
+        
     }
 }

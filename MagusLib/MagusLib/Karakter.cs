@@ -1,45 +1,46 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 using System.Xml.Linq;
 
 namespace MagusLib
 {
     // Karakterbe menteni mindent! Rúna definíciókat is...
-    
+
     public class Karakter : IKarakter
     {
 
         #region Alap adatok
-        public string Nev { get; set; }
-        public JatszhatoFaj Faj { get; set; }
-        public KarakterNeme Nem { get; set; }
-        public KarakterKorosztaly Kor { get; set; }
-        public KarakterAlkaszt Alkaszt { get; set; }
-        public KarakterKaszt Kaszt { get; set; }
+        public virtual string Nev { get; set; }
+        public virtual JatszhatoFaj Faj { get; set; }
+        public virtual KarakterNeme Nem { get; set; }
+        public virtual KarakterKorosztaly Kor { get; set; }
+        public virtual KarakterAlkaszt Alkaszt { get; set; }
+        public virtual KarakterKaszt Kaszt { get; set; }
         #endregion
 
         #region Képességek
-        public uint Ero { get; set; }
-        public uint Ugyesseg { get; set; }
-        public uint Gyorsasag { get; set; }
-        public uint Alokepesseg { get; set; }
-        public uint Egeszseg { get; set; }
-        public uint Szepseg { get; set; }
-        public uint Intelligencia { get; set; }
-        public uint Akaratero { get; set; }
-        public uint Asztral { get; set; }
-        public uint Eszleles { get; set; }
+        public virtual uint Ero { get; set; }
+        public virtual uint Ugyesseg { get; set; }
+        public virtual uint Gyorsasag { get; set; }
+        public virtual uint Alokepesseg { get; set; }
+        public virtual uint Egeszseg { get; set; }
+        public virtual uint Szepseg { get; set; }
+        public virtual uint Intelligencia { get; set; }
+        public virtual uint Akaratero { get; set; }
+        public virtual uint Asztral { get; set; }
+        public virtual uint Eszleles { get; set; }
         #endregion
 
         #region Harcértékek
-        public uint Kezdemenyezo { get; set; }
+        public virtual uint Kezdemenyezo { get; set; }
 
-        public uint Tamado { get; set; }
+        public virtual uint Tamado { get; set; }
 
-        public uint Vedo { get; set; }
+        public virtual uint Vedo { get; set; }
 
-        public uint Celzo { get; set; }
+        public virtual uint Celzo { get; set; }
         #endregion
     }
 }
