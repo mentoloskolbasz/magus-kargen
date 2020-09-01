@@ -2,7 +2,7 @@
 
 namespace MagusLib
 {
-    
+
     public interface IKarakter
     {
         #region Alap Adatok
@@ -34,6 +34,17 @@ namespace MagusLib
         uint Vedo { get; set; }
 
         uint Celzo { get; set; }
+
+        uint HMSzint { get; set; }
+        uint TamPerKor { get; set; }
+
+        #endregion
+
+        #region EleteroEsMagia
+        uint Ep { get; set; }
+        uint Fp { get; set; }
+        uint Pszi { get; set; }
+        uint Mana { get; set; }
         #endregion
     }
 }

@@ -16,8 +16,9 @@ namespace MagusLib
         public virtual JatszhatoFaj Faj { get; set; }
         public virtual KarakterNeme Nem { get; set; }
         public virtual KarakterKorosztaly Kor { get; set; }
-        public virtual KarakterAlkaszt Alkaszt { get; set; }
         public virtual KarakterKaszt Kaszt { get; set; }
+        public virtual KarakterAlkaszt Alkaszt { get; set; }
+       
         #endregion
 
         #region Képességek
@@ -41,6 +42,15 @@ namespace MagusLib
         public virtual uint Vedo { get; set; }
 
         public virtual uint Celzo { get; set; }
+        public virtual uint HMSzint { get; set; }
+        public virtual uint TamPerKor { get; set; }
+        #endregion
+
+        #region EleteroEsMagia        
+        public virtual uint Ep { get; set; }
+        public virtual uint Fp { get; set; }
+        public virtual uint Pszi { get; set; }
+        public virtual uint Mana { get; set; }
         #endregion
     }
 }

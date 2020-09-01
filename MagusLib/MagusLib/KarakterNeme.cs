@@ -12,4 +12,5 @@ namespace MagusLib
         Férfi = 100,
         Nő = 200
     }
+    
 }
