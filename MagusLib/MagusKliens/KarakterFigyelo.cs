@@ -18,7 +18,7 @@ namespace MagusKliens
             // tipus = this.GetType().BaseType;
         }
 
-
+        #region Alap Adatok
         public override string Nev 
         {
             get => base.Nev; 
@@ -73,9 +73,9 @@ namespace MagusKliens
                 this.setProperty("Alkaszt");
             }
         }
+        #endregion
 
-
-        
+        #region Képességek
         public override uint Ero
         {
             get => base.Ero;
@@ -157,9 +157,9 @@ namespace MagusKliens
                 this.setProperty("Eszleles");
             }
         }
+        #endregion
 
-
-
+        #region Harcértékek
         public override uint Kezdemenyezo
         {
             get => base.Kezdemenyezo;
@@ -214,8 +214,9 @@ namespace MagusKliens
                 this.setProperty("TamPerKor");
             }
         }
+        #endregion
 
-
+        #region Életerő és Mágia
         public override uint Ep
         {
             get => base.Ep;
@@ -260,5 +261,6 @@ namespace MagusKliens
                 PropertyChanged(this, new PropertyChangedEventArgs(name));
             }
         }
+        #endregion
     }
 }
