@@ -253,6 +253,7 @@ namespace MagusKliens
                 this.setProperty("Mana");
             }
         }
+        #endregion
         private void setProperty(string name)
         {
             // tipus.GetProperty(name).SetValue((Karakter)this, val);
@@ -261,6 +262,6 @@ namespace MagusKliens
                 PropertyChanged(this, new PropertyChangedEventArgs(name));
             }
         }
-        #endregion
+       
     }
 }
