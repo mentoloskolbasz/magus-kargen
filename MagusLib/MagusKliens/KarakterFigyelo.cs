@@ -103,6 +103,15 @@ namespace MagusKliens
                 this.setProperty("Gyorsasag");
             }
         }
+        public override uint Allokepesseg
+        {
+            get => base.Allokepesseg;
+            set
+            {
+                base.Allokepesseg = value;
+                this.setProperty("Allokepesseg");
+            }
+        }
         public override uint Egeszseg
         {
             get => base.Egeszseg;
@@ -254,6 +263,7 @@ namespace MagusKliens
             }
         }
         #endregion
+        
         private void setProperty(string name)
         {
             // tipus.GetProperty(name).SetValue((Karakter)this, val);

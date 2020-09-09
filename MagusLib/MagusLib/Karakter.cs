@@ -22,10 +22,11 @@ namespace MagusLib
         #endregion
 
         #region Képességek
-        public virtual uint Ero { get; set; }
+        public virtual uint Ero { get; 
+            set; }
         public virtual uint Ugyesseg { get; set; }
         public virtual uint Gyorsasag { get; set; }
-        public virtual uint Alokepesseg { get; set; }
+        public virtual uint Allokepesseg { get; set; }
         public virtual uint Egeszseg { get; set; }
         public virtual uint Szepseg { get; set; }
         public virtual uint Intelligencia { get; set; }

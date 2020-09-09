@@ -18,7 +18,7 @@ namespace MagusLib
         uint Ero { get; set; }
         uint Ugyesseg { get; set; }
         uint Gyorsasag { get; set; }
-        uint Alokepesseg { get; set; }
+        uint Allokepesseg { get; set; }
         uint Egeszseg { get; set; }
         uint Szepseg { get; set; }
         uint Intelligencia { get; set; }

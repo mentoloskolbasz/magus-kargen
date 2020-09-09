@@ -15,20 +15,17 @@ namespace MagusKliens
     {
 
         protected IKarakter karakter = new KarakterFigyelo();
-        public KarGen()
+        public KarGen() 
         {
-            karakter.Ero = 7;
-            karakter.Nev = "Kocsog";
+                       
             InitializeComponent();
-            this.textBox3.DataBindings.Add(new Binding("Text", this.karakter, "Nev", false, DataSourceUpdateMode.OnPropertyChanged));
+            // this.textBox3.DataBindings.Add(new Binding("Text", this.karakter, "Nev", false, DataSourceUpdateMode.OnPropertyChanged));
+            this.fieldEro.DataBindings.Add(new Binding("Value", this.karakter, "Ero", false, DataSourceUpdateMode.OnPropertyChanged));
+            
+
         }
 
-        private void textBox1_MouseMove(object sender, MouseEventArgs e)
-        {
-            // karakter.Ero = (uint)(new Random()).Next(5, 16);
-            karakter.Nev = "Valami más";
-        }
 
-        
+      
     }
 }
