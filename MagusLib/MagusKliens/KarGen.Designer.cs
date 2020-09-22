@@ -50,6 +50,7 @@
             this.labelAsztral = new System.Windows.Forms.Label();
             this.labelEszlel = new System.Windows.Forms.Label();
             this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.GeneraloBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fieldEro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldGyors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldUgyes)).BeginInit();
@@ -227,11 +228,22 @@
             // 
             this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
             // 
+            // GeneraloBtn
+            // 
+            this.GeneraloBtn.Location = new System.Drawing.Point(30, 273);
+            this.GeneraloBtn.Name = "GeneraloBtn";
+            this.GeneraloBtn.Size = new System.Drawing.Size(75, 23);
+            this.GeneraloBtn.TabIndex = 23;
+            this.GeneraloBtn.Text = "Generál";
+            this.GeneraloBtn.UseVisualStyleBackColor = true;
+            this.GeneraloBtn.Click += new System.EventHandler(this.GeneraloBtn_Click);
+            // 
             // KarGen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.GeneraloBtn);
             this.Controls.Add(this.labelEszlel);
             this.Controls.Add(this.labelAsztral);
             this.Controls.Add(this.labelAkarat);
@@ -292,6 +304,7 @@
         private System.Windows.Forms.Label labelAkarat;
         private System.Windows.Forms.Label labelAsztral;
         private System.Windows.Forms.Label labelEszlel;
+        private System.Windows.Forms.Button GeneraloBtn;
     }
 }
 
