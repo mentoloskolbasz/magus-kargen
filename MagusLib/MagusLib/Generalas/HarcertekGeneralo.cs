@@ -10,10 +10,13 @@ namespace MagusLib
         {
             ertekadok = karakter =>
             {
-                // TODO: Vizsgálni a trygetvalue sikerét 
-
+                
+                
                 uint eroFaj;
-                KarakterKeszites.Allandok.ERO.TryGetValue(karakter.Faj, out eroFaj);
+                if (!KarakterKeszites.Allandok.ERO.TryGetValue(karakter.Faj, out eroFaj))
+                {
+                    throw new NemDefinialtErtekKivetel();
+                } 
                 uint eroAlap = (uint)r.Next(3, 11);
                 karakter.Ero = eroAlap + (uint)r.Next(0, (int)eroFaj + 1);
             };

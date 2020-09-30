@@ -49,8 +49,9 @@
             this.labelAkarat = new System.Windows.Forms.Label();
             this.labelAsztral = new System.Windows.Forms.Label();
             this.labelEszlel = new System.Windows.Forms.Label();
-            this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.GeneraloBtn = new System.Windows.Forms.Button();
+            this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fajValasztoBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.fieldEro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldGyors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldUgyes)).BeginInit();
@@ -224,10 +225,6 @@
             this.labelEszlel.TabIndex = 22;
             this.labelEszlel.Text = "Észlelés:";
             // 
-            // iKarakterBindingSource
-            // 
-            this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
-            // 
             // GeneraloBtn
             // 
             this.GeneraloBtn.Location = new System.Drawing.Point(30, 273);
@@ -238,11 +235,25 @@
             this.GeneraloBtn.UseVisualStyleBackColor = true;
             this.GeneraloBtn.Click += new System.EventHandler(this.GeneraloBtn_Click);
             // 
+            // iKarakterBindingSource
+            // 
+            this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
+            // 
+            // fajValasztoBox
+            // 
+            this.fajValasztoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.fajValasztoBox.FormattingEnabled = true;
+            this.fajValasztoBox.Location = new System.Drawing.Point(229, 111);
+            this.fajValasztoBox.Name = "fajValasztoBox";
+            this.fajValasztoBox.Size = new System.Drawing.Size(121, 21);
+            this.fajValasztoBox.TabIndex = 24;
+            // 
             // KarGen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.fajValasztoBox);
             this.Controls.Add(this.GeneraloBtn);
             this.Controls.Add(this.labelEszlel);
             this.Controls.Add(this.labelAsztral);
@@ -305,6 +316,7 @@
         private System.Windows.Forms.Label labelAsztral;
         private System.Windows.Forms.Label labelEszlel;
         private System.Windows.Forms.Button GeneraloBtn;
+        private System.Windows.Forms.ComboBox fajValasztoBox;
     }
 }
 

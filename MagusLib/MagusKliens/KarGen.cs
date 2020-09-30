@@ -1,4 +1,5 @@
-﻿using MagusLib;
+﻿using MagusKliens.Eszkozok;
+using MagusLib;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,10 +20,17 @@ namespace MagusKliens
         {
                        
             InitializeComponent();
-            // TODO: Kitirölni és átírni kontrollra. ez egy teszt
+            
             karakter.Faj = JatszhatoFaj.Ember;
 
+
+
             // this.textBox3.DataBindings.Add(new Binding("Text", this.karakter, "Nev", false, DataSourceUpdateMode.OnPropertyChanged));
+
+            EnumDataSource.SetDataSource<JatszhatoFaj>(this.fajValasztoBox);
+            
+            this.fajValasztoBox.DataBindings.Add(new Binding("SelectedItem", this.karakter, "Faj", false, DataSourceUpdateMode.OnPropertyChanged));
+
             this.fieldEro.DataBindings.Add(new Binding("Value", this.karakter, "Ero", false, DataSourceUpdateMode.OnPropertyChanged));
 
             this.fieldGyors.DataBindings.Add(new Binding("Value", this.karakter, "Gyorsasag", false, DataSourceUpdateMode.OnPropertyChanged));
