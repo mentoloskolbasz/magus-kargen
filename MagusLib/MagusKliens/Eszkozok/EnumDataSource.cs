@@ -11,6 +11,8 @@ namespace MagusKliens.Eszkozok
     {
         public static void SetDataSource<TEnum>(ComboBox box) //where TEnum : Type
         {
+
+            /*
             Dictionary<string, int> dictionary = new Dictionary<string, int>();
             foreach (int item in Enum.GetValues(typeof(TEnum)))
             {
@@ -20,7 +22,8 @@ namespace MagusKliens.Eszkozok
             box.DisplayMember = "Key";
             box.ValueMember = "Value";
             box.DataSource = new BindingSource(dictionary, null);
-
+            */
+            box.DataSource = Enum.GetValues(typeof(TEnum));
         }
     }
 }

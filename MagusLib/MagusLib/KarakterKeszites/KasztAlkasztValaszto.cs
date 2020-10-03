@@ -3,7 +3,7 @@ using MagusLib;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MagusLib.KarakterKeszites
+namespace MagusLib
 {
 
     public class KasztAlkasztValaszto
@@ -50,7 +50,14 @@ namespace MagusLib.KarakterKeszites
 
         public KarakterAlkaszt[] this[KarakterKaszt kaszt]
         {
-            get => KasztAlkasztValaszto.LISTA[kaszt];
+            get
+            {
+                if (KasztAlkasztValaszto.LISTA.ContainsKey(kaszt))
+                {
+                    return KasztAlkasztValaszto.LISTA[kaszt];
+                }
+                return null;
+            }
         }
     }
 

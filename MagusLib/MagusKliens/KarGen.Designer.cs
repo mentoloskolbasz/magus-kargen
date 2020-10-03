@@ -50,8 +50,15 @@
             this.labelAsztral = new System.Windows.Forms.Label();
             this.labelEszlel = new System.Windows.Forms.Label();
             this.GeneraloBtn = new System.Windows.Forms.Button();
-            this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fajValasztoBox = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.kasztValasztoBox = new System.Windows.Forms.ComboBox();
+            this.alkasztValasztoBox = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.vallasValasztoBox = new System.Windows.Forms.ComboBox();
+            this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.fieldEro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldGyors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldUgyes)).BeginInit();
@@ -235,10 +242,6 @@
             this.GeneraloBtn.UseVisualStyleBackColor = true;
             this.GeneraloBtn.Click += new System.EventHandler(this.GeneraloBtn_Click);
             // 
-            // iKarakterBindingSource
-            // 
-            this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
-            // 
             // fajValasztoBox
             // 
             this.fajValasztoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -248,11 +251,88 @@
             this.fajValasztoBox.Size = new System.Drawing.Size(121, 21);
             this.fajValasztoBox.TabIndex = 24;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(172, 114);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(24, 13);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Faj:";
+            // 
+            // kasztValasztoBox
+            // 
+            this.kasztValasztoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.kasztValasztoBox.FormattingEnabled = true;
+            this.kasztValasztoBox.Location = new System.Drawing.Point(228, 143);
+            this.kasztValasztoBox.Name = "kasztValasztoBox";
+            this.kasztValasztoBox.Size = new System.Drawing.Size(121, 21);
+            this.kasztValasztoBox.TabIndex = 26;
+            this.kasztValasztoBox.SelectedValueChanged += new System.EventHandler(this.kasztValasztoBox_SelectedValueChanged);
+            // 
+            // alkasztValasztoBox
+            // 
+            this.alkasztValasztoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.alkasztValasztoBox.Enabled = false;
+            this.alkasztValasztoBox.FormattingEnabled = true;
+            this.alkasztValasztoBox.Location = new System.Drawing.Point(228, 182);
+            this.alkasztValasztoBox.Name = "alkasztValasztoBox";
+            this.alkasztValasztoBox.Size = new System.Drawing.Size(121, 21);
+            this.alkasztValasztoBox.TabIndex = 27;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(172, 146);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 13);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "Kaszt:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(172, 185);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "Alkaszt:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(172, 221);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "Vallás:";
+            // 
+            // vallasValasztoBox
+            // 
+            this.vallasValasztoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.vallasValasztoBox.FormattingEnabled = true;
+            this.vallasValasztoBox.Location = new System.Drawing.Point(229, 218);
+            this.vallasValasztoBox.Name = "vallasValasztoBox";
+            this.vallasValasztoBox.Size = new System.Drawing.Size(121, 21);
+            this.vallasValasztoBox.TabIndex = 31;
+            // 
+            // iKarakterBindingSource
+            // 
+            this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
+            // 
             // KarGen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.vallasValasztoBox);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.alkasztValasztoBox);
+            this.Controls.Add(this.kasztValasztoBox);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.fajValasztoBox);
             this.Controls.Add(this.GeneraloBtn);
             this.Controls.Add(this.labelEszlel);
@@ -317,6 +397,13 @@
         private System.Windows.Forms.Label labelEszlel;
         private System.Windows.Forms.Button GeneraloBtn;
         private System.Windows.Forms.ComboBox fajValasztoBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox kasztValasztoBox;
+        private System.Windows.Forms.ComboBox alkasztValasztoBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox vallasValasztoBox;
     }
 }
 

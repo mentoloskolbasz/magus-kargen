@@ -75,7 +75,7 @@ namespace MagusLib.KarakterKeszites
         /// <summary>
         /// Karakter célzó értékének alkasztból származó alapértéke.
         /// </summary>
-        public static readonly Dictionary<KarakterAlkaszt, uint> CE_ALAP = new Dictionary<KarakterAlkaszt, uint>()
+        public static readonly Dictionary<KarakterAlkaszt, int> CE_ALAP = new Dictionary<KarakterAlkaszt, int>()
         {
             { KarakterAlkaszt.Harcos, 0 },
             { KarakterAlkaszt.Tolvaj, 10 },
@@ -95,56 +95,81 @@ namespace MagusLib.KarakterKeszites
         /// <summary>
         /// Karakter fajából adódó ügyesség módosító. (Ügyesség fajából adódó maximum értékét adja meg.)
         /// </summary>
-        public static readonly Dictionary<JatszhatoFaj, uint> UGYESSEG = new Dictionary<JatszhatoFaj, uint>()
+       public static readonly Dictionary<JatszhatoFaj, int> UGYESSEG_FAJ = new Dictionary<JatszhatoFaj, int>()
         {
-            { JatszhatoFaj.Ember, 10 },
-            { JatszhatoFaj.Félelf, 10 },
-            { JatszhatoFaj.Elf, 11 },
-            { JatszhatoFaj.Törpe, 10 },
-            { JatszhatoFaj.Ork, 10 },
-            { JatszhatoFaj.Dzsenn, 10 },
-            { JatszhatoFaj.Dzsad, 10 },
-            { JatszhatoFaj.Wier, 10 },
-            { JatszhatoFaj.Khal, 11 },
-            { JatszhatoFaj.Amund, 10 },
-            { JatszhatoFaj.Gnóm, 11 },
-            { JatszhatoFaj.Goblin, 10 }
+            { JatszhatoFaj.Ember, 0 },
+            { JatszhatoFaj.Félelf, 0 },
+            { JatszhatoFaj.Elf, 1 },
+            { JatszhatoFaj.Törpe, 0 },
+            { JatszhatoFaj.Ork, 0 },
+            { JatszhatoFaj.Dzsenn, 0 },
+            { JatszhatoFaj.Dzsad, 0 },
+            { JatszhatoFaj.Wier, 0 },
+            { JatszhatoFaj.Khal, 1 },
+            { JatszhatoFaj.Amund, 0 },
+            { JatszhatoFaj.Gnóm, 1 },
+            { JatszhatoFaj.Goblin, 0 }
         };
         /// <summary>
         /// Karakter fajából adódó gyorsaság módosító. (Gyorsaság fajából adódó maximum értékét adja meg.)
         /// </summary>
-        public static readonly Dictionary<JatszhatoFaj, uint> GYORSASAG = new Dictionary<JatszhatoFaj, uint>()
+        public static readonly Dictionary<JatszhatoFaj, int> GYORSASAG_FAJ = new Dictionary<JatszhatoFaj, int>()
         {
-            { JatszhatoFaj.Ember, 10 },
-            { JatszhatoFaj.Félelf, 11 },
-            { JatszhatoFaj.Elf, 11 },
-            { JatszhatoFaj.Törpe, 10 },
-            { JatszhatoFaj.Ork, 10 },
-            { JatszhatoFaj.Dzsenn, 10 },
-            { JatszhatoFaj.Dzsad, 10 },
-            { JatszhatoFaj.Wier, 10 },
-            { JatszhatoFaj.Khal, 12 },
-            { JatszhatoFaj.Amund, 10 },
-            { JatszhatoFaj.Gnóm, 10 },
-            { JatszhatoFaj.Goblin, 10 }
+            { JatszhatoFaj.Ember, 0 },
+            { JatszhatoFaj.Félelf, 1 },
+            { JatszhatoFaj.Elf, 1 },
+            { JatszhatoFaj.Törpe, 0 },
+            { JatszhatoFaj.Ork, 0 },
+            { JatszhatoFaj.Dzsenn, 0 },
+            { JatszhatoFaj.Dzsad, 0 },
+            { JatszhatoFaj.Wier, 0 },
+            { JatszhatoFaj.Khal, 2 },
+            { JatszhatoFaj.Amund, 0 },
+            { JatszhatoFaj.Gnóm, 0 },
+            { JatszhatoFaj.Goblin, 0 }
         };
         /// <summary>
         /// Karakter fajából adódó erő módosító. (Erő fajából adódó maximum értékét adja meg.
         /// </summary>
-        public static readonly Dictionary<JatszhatoFaj, uint> ERO = new Dictionary<JatszhatoFaj, uint>()
+        public static readonly Dictionary<JatszhatoFaj, int> ERO_FAJ = new Dictionary<JatszhatoFaj, int>()
         {
-            { JatszhatoFaj.Ember, 10 },
-            { JatszhatoFaj.Félelf, 9 },
-            { JatszhatoFaj.Elf, 8 },
-            { JatszhatoFaj.Törpe, 11 },
-            { JatszhatoFaj.Ork, 12 },
-            { JatszhatoFaj.Dzsenn, 10 },
-            { JatszhatoFaj.Dzsad, 10 },
-            { JatszhatoFaj.Wier, 10 },
-            { JatszhatoFaj.Khal, 13 },
-            { JatszhatoFaj.Amund, 11 },
-            { JatszhatoFaj.Gnóm, 9 },
-            { JatszhatoFaj.Goblin, 8 }
+            { JatszhatoFaj.Ember, 0 },
+            { JatszhatoFaj.Félelf, -1 },
+            { JatszhatoFaj.Elf, -2 },
+            { JatszhatoFaj.Törpe, 1 },
+            { JatszhatoFaj.Ork, 2 },
+            { JatszhatoFaj.Dzsenn, 0 },
+            { JatszhatoFaj.Dzsad, 0 },
+            { JatszhatoFaj.Wier, 0 },
+            { JatszhatoFaj.Khal, 3 },
+            { JatszhatoFaj.Amund, 1 },
+            { JatszhatoFaj.Gnóm, -1 },
+            { JatszhatoFaj.Goblin, -2 }
         };
+
+        public static readonly Dictionary<KarakterAlkaszt, Func<int>> ERO = new Dictionary<KarakterAlkaszt, Func<int>>()
+        {
+            { KarakterAlkaszt.Harcos, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Amazon, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Bajvívó, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Barbár, ()=>(new K6()).Dobas()+14 },
+            { KarakterAlkaszt.Boszorkány, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Boszorkánymester, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Bárd, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Fejvadász, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Gladiátor, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Harcművész, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Kardművész, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Lovag, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Pap, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Paplovag, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Szerzetes, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Sámán, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Tolvaj, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Tűzvarázsló, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Varázsló, ()=>(new K6x3()).Dobas() },
+                        
+        };
+
     }
 }

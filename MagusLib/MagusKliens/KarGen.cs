@@ -15,21 +15,19 @@ namespace MagusKliens
     public partial class KarGen : Form
     {
 
-        protected IKarakter karakter = new KarakterFigyelo();
-        public KarGen() 
+        protected KarakterFigyelo karakter = new KarakterFigyelo();
+        public KarGen()
         {
-                       
+
             InitializeComponent();
-            
-            karakter.Faj = JatszhatoFaj.Ember;
 
+            this.fajValasztoBox.DataSource = Enum.GetValues(typeof(JatszhatoFaj));
 
+            this.kasztValasztoBox.DataSource = Enum.GetValues(typeof(KarakterKaszt));
 
-            // this.textBox3.DataBindings.Add(new Binding("Text", this.karakter, "Nev", false, DataSourceUpdateMode.OnPropertyChanged));
+            this.fajValasztoBox.DataBindings.Add(new Binding("SelectedItem", this.karakter, "Faj", false, DataSourceUpdateMode.OnPropertyChanged)); 
 
-            EnumDataSource.SetDataSource<JatszhatoFaj>(this.fajValasztoBox);
-            
-            this.fajValasztoBox.DataBindings.Add(new Binding("SelectedItem", this.karakter, "Faj", false, DataSourceUpdateMode.OnPropertyChanged));
+            this.kasztValasztoBox.DataBindings.Add(new Binding("SelectedItem", this.karakter, "Kaszt", false, DataSourceUpdateMode.OnPropertyChanged));
 
             this.fieldEro.DataBindings.Add(new Binding("Value", this.karakter, "Ero", false, DataSourceUpdateMode.OnPropertyChanged));
 
@@ -50,12 +48,36 @@ namespace MagusKliens
             this.fieldAsztral.DataBindings.Add(new Binding("Value", this.karakter, "Asztral", false, DataSourceUpdateMode.OnPropertyChanged));
 
             this.fieldEszlel.DataBindings.Add(new Binding("Value", this.karakter, "Eszleles", false, DataSourceUpdateMode.OnPropertyChanged));
+
+
+            karakter.PropertyChanged += karakter_PropertyChanged;
+
+            karakter.Faj = JatszhatoFaj.Ember;
+            karakter.Kaszt = KarakterKaszt.Harcos;
+            karakter.Alkaszt = KarakterAlkaszt.Amazon;
+
+        }
+
+        private void karakter_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == "Kaszt")
+            {
+                alkasztValasztoBox.DataSource = null;
+                alkasztValasztoBox.DataSource = (new KasztAlkasztValaszto())[karakter.Kaszt];
+                karakter.Alkaszt = (new KasztAlkasztValaszto())[karakter.Kaszt][0];
+                alkasztValasztoBox.Enabled = true;
+            }
         }
 
         private void GeneraloBtn_Click(object sender, EventArgs e)
         {
-            IGeneralo generalo = new HarcertekGeneralo();
+            IGeneralo generalo = new AlapKepessegGeneralo();
             generalo.Generalas(karakter);
+        }
+
+        private void kasztValasztoBox_SelectedValueChanged(object sender, EventArgs e)
+        {
+            karakter.Kaszt = (KarakterKaszt)kasztValasztoBox.SelectedValue;
         }
     }
 }
