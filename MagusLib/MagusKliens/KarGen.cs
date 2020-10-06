@@ -1,5 +1,4 @@
-﻿using MagusKliens.Eszkozok;
-using MagusLib;
+﻿using MagusLib;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,11 +20,17 @@ namespace MagusKliens
 
             InitializeComponent();
 
+            this.karakter.Nem = KarakterNeme.Férfi;
+
             this.fajValasztoBox.DataSource = Enum.GetValues(typeof(JatszhatoFaj));
 
             this.kasztValasztoBox.DataSource = Enum.GetValues(typeof(KarakterKaszt));
 
-            this.fajValasztoBox.DataBindings.Add(new Binding("SelectedItem", this.karakter, "Faj", false, DataSourceUpdateMode.OnPropertyChanged)); 
+            this.nemValasztoBox.DataSource = Enum.GetValues(typeof(KarakterNeme));
+
+            this.fajValasztoBox.DataBindings.Add(new Binding("SelectedItem", this.karakter, "Faj", false, DataSourceUpdateMode.OnPropertyChanged));
+
+            this.nemValasztoBox.DataBindings.Add(new Binding("SelectedItem", this.karakter, "Nem", false, DataSourceUpdateMode.OnPropertyChanged));
 
             this.kasztValasztoBox.DataBindings.Add(new Binding("SelectedItem", this.karakter, "Kaszt", false, DataSourceUpdateMode.OnPropertyChanged));
 
@@ -60,11 +65,12 @@ namespace MagusKliens
 
         private void karakter_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            if (e.PropertyName == "Kaszt")
+            if (e.PropertyName == "Faj" || e.PropertyName == "Nem")
             {
                 alkasztValasztoBox.DataSource = null;
-                alkasztValasztoBox.DataSource = (new KasztAlkasztValaszto())[karakter.Kaszt];
-                karakter.Alkaszt = (new KasztAlkasztValaszto())[karakter.Kaszt][0];
+                var ds = new AlkasztValaszto();
+                alkasztValasztoBox.DataSource = ds.Felsorolas(karakter);
+                karakter.Alkaszt = ds.Valaszt(karakter);
                 alkasztValasztoBox.Enabled = true;
             }
         }
@@ -78,6 +84,11 @@ namespace MagusKliens
         private void kasztValasztoBox_SelectedValueChanged(object sender, EventArgs e)
         {
             karakter.Kaszt = (KarakterKaszt)kasztValasztoBox.SelectedValue;
+        }
+
+        private void nemValasztoBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            karakter.Nem = (KarakterNeme)nemValasztoBox.SelectedValue;
         }
     }
 }

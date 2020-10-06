@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Eszkozok\EnumDataSource.cs" />
     <Compile Include="KarakterFigyelo.cs" />
     <Compile Include="KarGen.cs">
       <SubType>Form</SubType>
@@ -90,6 +89,9 @@
       <Project>{4a5868c3-7ef7-473b-a6e9-298e8f3de286}</Project>
       <Name>MagusLib</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Eszkozok\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

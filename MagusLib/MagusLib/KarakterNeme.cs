@@ -9,8 +9,8 @@ namespace MagusLib
     /// </summary>
     public enum KarakterNeme
     {
-        Férfi = 100,
-        Nő = 200
+        Férfi,
+        Nő
     }
     
 }

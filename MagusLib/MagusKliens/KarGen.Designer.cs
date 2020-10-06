@@ -59,6 +59,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.vallasValasztoBox = new System.Windows.Forms.ComboBox();
             this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label5 = new System.Windows.Forms.Label();
+            this.nemValasztoBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.fieldEro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldGyors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldUgyes)).BeginInit();
@@ -246,7 +248,7 @@
             // 
             this.fajValasztoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.fajValasztoBox.FormattingEnabled = true;
-            this.fajValasztoBox.Location = new System.Drawing.Point(229, 111);
+            this.fajValasztoBox.Location = new System.Drawing.Point(229, 80);
             this.fajValasztoBox.Name = "fajValasztoBox";
             this.fajValasztoBox.Size = new System.Drawing.Size(121, 21);
             this.fajValasztoBox.TabIndex = 24;
@@ -254,7 +256,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(172, 114);
+            this.label1.Location = new System.Drawing.Point(172, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(24, 13);
             this.label1.TabIndex = 25;
@@ -320,12 +322,33 @@
             // 
             this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(172, 115);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 13);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "Nem:";
+            // 
+            // nemValasztoBox
+            // 
+            this.nemValasztoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.nemValasztoBox.FormattingEnabled = true;
+            this.nemValasztoBox.Location = new System.Drawing.Point(229, 112);
+            this.nemValasztoBox.Name = "nemValasztoBox";
+            this.nemValasztoBox.Size = new System.Drawing.Size(121, 21);
+            this.nemValasztoBox.TabIndex = 32;
+            this.nemValasztoBox.SelectedIndexChanged += new System.EventHandler(this.nemValasztoBox_SelectedIndexChanged);
+            // 
             // KarGen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.nemValasztoBox);
             this.Controls.Add(this.vallasValasztoBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -404,6 +427,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox vallasValasztoBox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox nemValasztoBox;
     }
 }
 

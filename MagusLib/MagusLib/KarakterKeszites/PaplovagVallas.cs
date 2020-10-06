@@ -6,10 +6,10 @@ using System.Text;
 namespace MagusLib.KarakterKeszites
 {
 
-    public class PaplovagKasztAlkasztValaszto
+    public class PaplovagVallas
     {
        
-        private static readonly Dictionary<KarakterAlkaszt, PaplovagKasztAlkasztja[]> LISTA = new Dictionary<KarakterAlkaszt, PaplovagKasztAlkasztja[]>()
+        /*private static readonly  LISTA = new Dictionary<KarakterAlkaszt, PaplovagKasztAlkasztja[]>()
         {
             { KarakterAlkaszt.Paplovag, new PaplovagKasztAlkasztja[] {
                PaplovagKasztAlkasztja.Darton,
@@ -26,8 +26,8 @@ namespace MagusLib.KarakterKeszites
 
         public PaplovagKasztAlkasztja[] this[KarakterAlkaszt kaszt]
         {
-            get => PaplovagKasztAlkasztValaszto.LISTA[kaszt];
-        }
+            get => PaplovagVallas.LISTA[kaszt];
+        }*/
     }
 
 
