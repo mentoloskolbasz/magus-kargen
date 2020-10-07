@@ -11,58 +11,12 @@ namespace MagusLib
     public class AlkasztValaszto : AbsztraktValaszto<KarakterAlkaszt>
     {
 
-        /*private static readonly Dictionary<KarakterKaszt, KarakterAlkaszt[]> LISTA = new Dictionary<KarakterKaszt, KarakterAlkaszt[]>()
-        {
-            { KarakterKaszt.Harcos, new KarakterAlkaszt[] {
-                KarakterAlkaszt.Harcos,
-                KarakterAlkaszt.Gladiátor,
-                KarakterAlkaszt.Fejvadász,
-                KarakterAlkaszt.Lovag,
-                KarakterAlkaszt.Amazon,
-                KarakterAlkaszt.Barbár,
-                KarakterAlkaszt.Bajvívó
-            } },
-
-            {KarakterKaszt.Szerencsevadász, new KarakterAlkaszt[]{
-                KarakterAlkaszt.Tolvaj,
-                KarakterAlkaszt.Bárd
-            }},
-
-            {KarakterKaszt.Pap, new KarakterAlkaszt[]{
-                KarakterAlkaszt.Pap,
-                KarakterAlkaszt.Paplovag,
-                KarakterAlkaszt.Sámán,
-                KarakterAlkaszt.Szerzetes
-            }},            
-
-            { KarakterKaszt.Harcművész, new KarakterAlkaszt[]  { 
-                KarakterAlkaszt.Harcművész,
-                KarakterAlkaszt.Kardművész
-            } },
-
-            { KarakterKaszt.Varázshasználó, new KarakterAlkaszt[]  {
-                KarakterAlkaszt.Boszorkány,
-                KarakterAlkaszt.Boszorkánymester,
-                KarakterAlkaszt.Tűzvarázsló,
-                KarakterAlkaszt.Varázsló
-            } },
-        };
-
-        public KarakterAlkaszt[] this[KarakterKaszt kaszt]
-        {
-            get
-            {
-                if (KasztAlkasztValaszto.LISTA.ContainsKey(kaszt))
-                {
-                    return KasztAlkasztValaszto.LISTA[kaszt];
-                }
-                return null;
-            }
-        }*/
-
+       
         private static readonly Dictionary<JatszhatoFaj, HashSet<KarakterAlkaszt>> FAJLISTA = new Dictionary<JatszhatoFaj, HashSet<KarakterAlkaszt>>()
         {
             { JatszhatoFaj.Ember, new HashSet<KarakterAlkaszt>((KarakterAlkaszt[])Enum.GetValues(typeof(KarakterAlkaszt)))
+            },
+            { JatszhatoFaj.Dzsad, new HashSet<KarakterAlkaszt>((KarakterAlkaszt[])Enum.GetValues(typeof(KarakterAlkaszt)))
             },
             { JatszhatoFaj.Amund, new HashSet<KarakterAlkaszt> {
                 KarakterAlkaszt.Harcos,

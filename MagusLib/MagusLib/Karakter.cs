@@ -17,8 +17,7 @@ namespace MagusLib
         public virtual KarakterNeme Nem { get; set; }
         public virtual KarakterKorosztaly Kor { get; set; }
         public virtual KarakterKaszt Kaszt { get; set; }
-        public virtual KarakterAlkaszt Alkaszt { get; 
-            set; }
+        public virtual KarakterAlkaszt Alkaszt { get; set; }
        
         #endregion
 

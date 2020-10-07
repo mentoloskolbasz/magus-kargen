@@ -1,4 +1,5 @@
 ﻿using MagusLib;
+using MagusLib.KarakterKeszites;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,19 +21,12 @@ namespace MagusKliens
 
             InitializeComponent();
 
-            this.karakter.Nem = KarakterNeme.Férfi;
-
+            
             this.fajValasztoBox.DataSource = Enum.GetValues(typeof(JatszhatoFaj));
-
-            this.kasztValasztoBox.DataSource = Enum.GetValues(typeof(KarakterKaszt));
 
             this.nemValasztoBox.DataSource = Enum.GetValues(typeof(KarakterNeme));
 
-            this.fajValasztoBox.DataBindings.Add(new Binding("SelectedItem", this.karakter, "Faj", false, DataSourceUpdateMode.OnPropertyChanged));
-
-            this.nemValasztoBox.DataBindings.Add(new Binding("SelectedItem", this.karakter, "Nem", false, DataSourceUpdateMode.OnPropertyChanged));
-
-            this.kasztValasztoBox.DataBindings.Add(new Binding("SelectedItem", this.karakter, "Kaszt", false, DataSourceUpdateMode.OnPropertyChanged));
+           
 
             this.fieldEro.DataBindings.Add(new Binding("Value", this.karakter, "Ero", false, DataSourceUpdateMode.OnPropertyChanged));
 
@@ -58,37 +52,70 @@ namespace MagusKliens
             karakter.PropertyChanged += karakter_PropertyChanged;
 
             karakter.Faj = JatszhatoFaj.Ember;
-            karakter.Kaszt = KarakterKaszt.Harcos;
-            karakter.Alkaszt = KarakterAlkaszt.Amazon;
+            karakter.Nem = KarakterNeme.Férfi;        
 
         }
 
         private void karakter_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            if (e.PropertyName == "Faj" || e.PropertyName == "Nem")
+            switch (e.PropertyName)
             {
-                alkasztValasztoBox.DataSource = null;
-                var ds = new AlkasztValaszto();
-                alkasztValasztoBox.DataSource = ds.Felsorolas(karakter);
-                karakter.Alkaszt = ds.Valaszt(karakter);
-                alkasztValasztoBox.Enabled = true;
-            }
+                case "Faj":
+                case "Nem":
+                    alkasztValasztoBox.DataSource = null;
+                    var alkasztValaszto = new AlkasztValaszto();
+                    alkasztValasztoBox.DataSource = alkasztValaszto.Felsorolas(karakter);
+                    karakter.Alkaszt = alkasztValaszto.Valaszt(karakter);
+
+                    fajValasztoBox.SelectedItem = karakter.Faj;
+                    nemValasztoBox.SelectedItem = karakter.Nem;
+                    break;
+                case "Alkaszt":
+                    fieldKaszt.Text = "";
+                    var kasztValaszto = new KasztValaszto();
+                    karakter.Kaszt = kasztValaszto.Valaszt(karakter);
+
+                    alkasztValasztoBox.SelectedItem = karakter.Alkaszt;
+                    break;
+                case "Kaszt":
+                    fieldKaszt.Text = karakter.Kaszt.ToString();
+                    break;
+                default:
+                    break;
+            }            
         }
 
         private void GeneraloBtn_Click(object sender, EventArgs e)
         {
             IGeneralo generalo = new AlapKepessegGeneralo();
             generalo.Generalas(karakter);
-        }
+        }        
 
-        private void kasztValasztoBox_SelectedValueChanged(object sender, EventArgs e)
+        private void nemValasztoBox_SelectedValueChanged(object sender, EventArgs e)
         {
-            karakter.Kaszt = (KarakterKaszt)kasztValasztoBox.SelectedValue;
-        }
-
-        private void nemValasztoBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            if (nemValasztoBox.SelectedValue == null)
+            {
+                return;
+            }
             karakter.Nem = (KarakterNeme)nemValasztoBox.SelectedValue;
+        }
+
+        private void fajValasztoBox_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (fajValasztoBox.SelectedValue == null)
+            {
+                return;
+            }
+            karakter.Faj = (JatszhatoFaj)fajValasztoBox.SelectedValue;
+        }
+        
+        private void alkasztValasztoBox_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (alkasztValasztoBox.SelectedValue == null)
+            {
+                return;
+            }
+            karakter.Alkaszt = (KarakterAlkaszt)alkasztValasztoBox.SelectedValue;
         }
     }
 }

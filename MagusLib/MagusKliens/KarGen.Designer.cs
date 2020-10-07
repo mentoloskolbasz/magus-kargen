@@ -52,15 +52,15 @@
             this.GeneraloBtn = new System.Windows.Forms.Button();
             this.fajValasztoBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.kasztValasztoBox = new System.Windows.Forms.ComboBox();
             this.alkasztValasztoBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.vallasValasztoBox = new System.Windows.Forms.ComboBox();
-            this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.nemValasztoBox = new System.Windows.Forms.ComboBox();
+            this.fieldKaszt = new System.Windows.Forms.TextBox();
+            this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.fieldEro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldGyors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldUgyes)).BeginInit();
@@ -252,6 +252,7 @@
             this.fajValasztoBox.Name = "fajValasztoBox";
             this.fajValasztoBox.Size = new System.Drawing.Size(121, 21);
             this.fajValasztoBox.TabIndex = 24;
+            this.fajValasztoBox.SelectedValueChanged += new System.EventHandler(this.fajValasztoBox_SelectedValueChanged);
             // 
             // label1
             // 
@@ -262,25 +263,15 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "Faj:";
             // 
-            // kasztValasztoBox
-            // 
-            this.kasztValasztoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.kasztValasztoBox.FormattingEnabled = true;
-            this.kasztValasztoBox.Location = new System.Drawing.Point(228, 143);
-            this.kasztValasztoBox.Name = "kasztValasztoBox";
-            this.kasztValasztoBox.Size = new System.Drawing.Size(121, 21);
-            this.kasztValasztoBox.TabIndex = 26;
-            this.kasztValasztoBox.SelectedValueChanged += new System.EventHandler(this.kasztValasztoBox_SelectedValueChanged);
-            // 
             // alkasztValasztoBox
             // 
             this.alkasztValasztoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.alkasztValasztoBox.Enabled = false;
             this.alkasztValasztoBox.FormattingEnabled = true;
             this.alkasztValasztoBox.Location = new System.Drawing.Point(228, 182);
             this.alkasztValasztoBox.Name = "alkasztValasztoBox";
             this.alkasztValasztoBox.Size = new System.Drawing.Size(121, 21);
             this.alkasztValasztoBox.TabIndex = 27;
+            this.alkasztValasztoBox.SelectedValueChanged += new System.EventHandler(this.alkasztValasztoBox_SelectedValueChanged);
             // 
             // label2
             // 
@@ -318,10 +309,6 @@
             this.vallasValasztoBox.Size = new System.Drawing.Size(121, 21);
             this.vallasValasztoBox.TabIndex = 31;
             // 
-            // iKarakterBindingSource
-            // 
-            this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -339,7 +326,19 @@
             this.nemValasztoBox.Name = "nemValasztoBox";
             this.nemValasztoBox.Size = new System.Drawing.Size(121, 21);
             this.nemValasztoBox.TabIndex = 32;
-            this.nemValasztoBox.SelectedIndexChanged += new System.EventHandler(this.nemValasztoBox_SelectedIndexChanged);
+            this.nemValasztoBox.SelectedValueChanged += new System.EventHandler(this.nemValasztoBox_SelectedValueChanged);
+            // 
+            // fieldKaszt
+            // 
+            this.fieldKaszt.Enabled = false;
+            this.fieldKaszt.Location = new System.Drawing.Point(229, 142);
+            this.fieldKaszt.Name = "fieldKaszt";
+            this.fieldKaszt.Size = new System.Drawing.Size(120, 20);
+            this.fieldKaszt.TabIndex = 34;
+            // 
+            // iKarakterBindingSource
+            // 
+            this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
             // 
             // KarGen
             // 
@@ -347,6 +346,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.fieldKaszt);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.nemValasztoBox);
             this.Controls.Add(this.vallasValasztoBox);
@@ -354,7 +354,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.alkasztValasztoBox);
-            this.Controls.Add(this.kasztValasztoBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.fajValasztoBox);
             this.Controls.Add(this.GeneraloBtn);
@@ -421,7 +420,6 @@
         private System.Windows.Forms.Button GeneraloBtn;
         private System.Windows.Forms.ComboBox fajValasztoBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox kasztValasztoBox;
         private System.Windows.Forms.ComboBox alkasztValasztoBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -429,6 +427,7 @@
         private System.Windows.Forms.ComboBox vallasValasztoBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox nemValasztoBox;
+        private System.Windows.Forms.TextBox fieldKaszt;
     }
 }
 
