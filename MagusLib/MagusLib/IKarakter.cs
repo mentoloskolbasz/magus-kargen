@@ -10,6 +10,7 @@ namespace MagusLib
         JatszhatoFaj Faj { get; set; }
         KarakterNeme Nem { get; set; }
         KarakterKorosztaly Kor { get; set; }
+        Vallas Vallas { get; set; }
         KarakterAlkaszt Alkaszt { get; set; }
         KarakterKaszt Kaszt { get; set; }
         #endregion

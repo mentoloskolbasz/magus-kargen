@@ -8,6 +8,16 @@ namespace MagusLib.KarakterKeszites
 
     public class PaplovagVallas
     {
+        public static Vallas[] ISTEN =
+        {
+            Vallas.Darton,
+            Vallas.Domvik,
+            Vallas.Dreina,
+            Vallas.Főnixek,
+            Vallas.Krad,
+            Vallas.Ranagol,
+            Vallas.Uwel
+        };
        
         /*private static readonly  LISTA = new Dictionary<KarakterAlkaszt, PaplovagKasztAlkasztja[]>()
         {

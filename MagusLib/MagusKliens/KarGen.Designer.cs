@@ -308,6 +308,7 @@
             this.vallasValasztoBox.Name = "vallasValasztoBox";
             this.vallasValasztoBox.Size = new System.Drawing.Size(121, 21);
             this.vallasValasztoBox.TabIndex = 31;
+            this.vallasValasztoBox.SelectedValueChanged += new System.EventHandler(this.vallasValasztoBox_SelectedValueChanged);
             // 
             // label5
             // 

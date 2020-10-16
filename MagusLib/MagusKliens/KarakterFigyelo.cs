@@ -19,9 +19,9 @@ namespace MagusKliens
         }
 
         #region Alap Adatok
-        public override string Nev 
+        public override string Nev
         {
-            get => base.Nev; 
+            get => base.Nev;
             set
             {
                 base.Nev = value;
@@ -39,7 +39,7 @@ namespace MagusKliens
         }
         public override KarakterNeme Nem
         {
-            get => base.Nem; 
+            get => base.Nem;
             set
             {
                 base.Nem = value;
@@ -53,6 +53,15 @@ namespace MagusKliens
             {
                 base.Kor = value;
                 this.setProperty("Kor");
+            }
+        }
+        public override Vallas Vallas
+        {
+            get => base.Vallas;
+            set
+            {
+                base.Vallas = value;
+                this.setProperty("Vallas");
             }
         }
         public override KarakterKaszt Kaszt
@@ -263,7 +272,7 @@ namespace MagusKliens
             }
         }
         #endregion
-        
+
         private void setProperty(string name)
         {
             // tipus.GetProperty(name).SetValue((Karakter)this, val);
@@ -272,6 +281,6 @@ namespace MagusKliens
                 PropertyChanged(this, new PropertyChangedEventArgs(name));
             }
         }
-       
+
     }
 }

@@ -74,12 +74,21 @@ namespace MagusKliens
                     fieldKaszt.Text = "";
                     var kasztValaszto = new KasztValaszto();
                     karakter.Kaszt = kasztValaszto.Valaszt(karakter);
+                                        
+                    vallasValasztoBox.DataSource = null;
+                    var vallasValaszto = new VallasValaszto();
+                    vallasValasztoBox.DataSource = vallasValaszto.Felsorolas(karakter);
+                    karakter.Vallas = vallasValaszto.Valaszt(karakter);
 
                     alkasztValasztoBox.SelectedItem = karakter.Alkaszt;
                     break;
                 case "Kaszt":
                     fieldKaszt.Text = karakter.Kaszt.ToString();
                     break;
+                case "Vallas":
+                    vallasValasztoBox.SelectedItem = karakter.Vallas;
+                    break;
+
                 default:
                     break;
             }            
@@ -116,6 +125,15 @@ namespace MagusKliens
                 return;
             }
             karakter.Alkaszt = (KarakterAlkaszt)alkasztValasztoBox.SelectedValue;
+        }
+
+        private void vallasValasztoBox_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (vallasValasztoBox.SelectedValue == null)
+            {
+                return;
+            }
+            karakter.Vallas = (Vallas)vallasValasztoBox.SelectedValue;
         }
     }
 }

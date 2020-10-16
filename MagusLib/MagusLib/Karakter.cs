@@ -16,6 +16,7 @@ namespace MagusLib
         public virtual JatszhatoFaj Faj { get; set; }
         public virtual KarakterNeme Nem { get; set; }
         public virtual KarakterKorosztaly Kor { get; set; }
+        public virtual Vallas Vallas { get; set; }
         public virtual KarakterKaszt Kaszt { get; set; }
         public virtual KarakterAlkaszt Alkaszt { get; set; }
        
