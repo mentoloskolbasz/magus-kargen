@@ -167,8 +167,30 @@ namespace MagusLib.KarakterKeszites
             { KarakterAlkaszt.Sámán, ()=>(new K6x3()).Dobas() },
             { KarakterAlkaszt.Tolvaj, ()=>(new K6x3()).Dobas() },
             { KarakterAlkaszt.Tűzvarázsló, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Varázsló, ()=>(new K6x3()).Dobas() },                        
+        };
+
+        public static readonly Dictionary<KarakterAlkaszt, Func<int>> GYORS = new Dictionary<KarakterAlkaszt, Func<int>>()
+        {
+            { KarakterAlkaszt.Harcos, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Amazon, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Bajvívó, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Barbár, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Boszorkány, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Boszorkánymester, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Bárd, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Fejvadász, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Gladiátor, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Harcművész, ()=>(new K6()).Dobas()+14 },
+            { KarakterAlkaszt.Kardművész, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Lovag, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Pap, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Paplovag, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Szerzetes, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Sámán, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Tolvaj, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Tűzvarázsló, ()=>(new K6x3()).Dobas() },
             { KarakterAlkaszt.Varázsló, ()=>(new K6x3()).Dobas() },
-                        
         };
 
     }
