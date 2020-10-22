@@ -8,10 +8,11 @@ namespace MagusLib
     {
         public AlapKepessegGeneralo()
         {
+            #region Erő
             ertekadok = karakter =>
             {
 
-                #region ERŐ
+                
                 Func<int> kaszt;
                 if (!KarakterKeszites.Allandok.ERO.TryGetValue(karakter.Alkaszt, out kaszt))
                 {
@@ -25,6 +26,7 @@ namespace MagusLib
                 karakter.Ero =  (uint)(kaszt() + faj);
             };
             #endregion
+
             #region Gyorsaság
             ertekadok += karakter =>
             {
@@ -41,6 +43,7 @@ namespace MagusLib
                 karakter.Gyorsasag = (uint)(kaszt() + faj);
             };
             #endregion
+
             #region Ügyesség
             ertekadok += karakter =>
             {
@@ -57,6 +60,7 @@ namespace MagusLib
                 karakter.Ugyesseg = (uint)(kaszt() + faj);
             };
             #endregion
+
             #region Állóképesség
             ertekadok += karakter =>
             {
@@ -73,6 +77,7 @@ namespace MagusLib
                 karakter.Allokepesseg = (uint)(kaszt() + faj);
             };
             #endregion
+
             #region Egészség
             ertekadok += karakter =>
             {
@@ -89,6 +94,7 @@ namespace MagusLib
                 karakter.Egeszseg = (uint)(kaszt() + faj);
             };
             #endregion
+
             #region Szépség
             ertekadok += karakter =>
             {
@@ -105,6 +111,7 @@ namespace MagusLib
                 karakter.Szepseg = (uint)(kaszt() + faj);
             };
             #endregion
+
             #region Intelligencia
             ertekadok += karakter =>
             {
@@ -121,6 +128,7 @@ namespace MagusLib
                 karakter.Intelligencia = (uint)(kaszt() + faj);
             };
             #endregion
+
             #region Akaraterő
             ertekadok += karakter =>
             {
@@ -137,6 +145,7 @@ namespace MagusLib
                 karakter.Akaratero = (uint)(kaszt() + faj);
             };
             #endregion
+
             #region Asztrál
             ertekadok += karakter =>
             {
@@ -153,6 +162,7 @@ namespace MagusLib
                 karakter.Asztral = (uint)(kaszt() + faj);
             };
             #endregion
+
             #region Észlelés
             ertekadok += karakter =>
             {

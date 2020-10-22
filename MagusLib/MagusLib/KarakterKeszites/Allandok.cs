@@ -11,6 +11,7 @@ namespace MagusLib.KarakterKeszites
     /// </summary>
     public static class Allandok
     {
+        #region Harcértékek alapok
         /// <summary>
         /// Karakter kezdeményező értékének alkasztból származó alapértéke.
         /// </summary>
@@ -92,6 +93,9 @@ namespace MagusLib.KarakterKeszites
             { KarakterAlkaszt.Tűzvarázsló, 0 },
             { KarakterAlkaszt.Varázsló, 0 },
         };
+        #endregion
+
+        #region Képességek Faji Módosítói
         /// <summary>
         /// Karakter fajából adódó ügyesség módosító. (Ügyesség fajából adódó maximum értékét adja meg.)
         /// </summary>
@@ -252,7 +256,9 @@ namespace MagusLib.KarakterKeszites
             { JatszhatoFaj.Gnóm, 0 },
             { JatszhatoFaj.Goblin, 0 }
         };
+        #endregion
 
+        #region Képességek Kaszt Módosítói
         public static readonly Dictionary<KarakterAlkaszt, Func<int>> ERO = new Dictionary<KarakterAlkaszt, Func<int>>()
         {
             { KarakterAlkaszt.Harcos, ()=>(new K6()).Dobas()+12 },
@@ -482,5 +488,6 @@ namespace MagusLib.KarakterKeszites
             { KarakterAlkaszt.Tűzvarázsló, ()=>(new K6x2()).Dobas()+6 },
             { KarakterAlkaszt.Varázsló, ()=>(new K6x2()).Dobas()+6 },
         };
+        #endregion
     }
 }

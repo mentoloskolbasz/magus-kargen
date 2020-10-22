@@ -26,8 +26,8 @@ namespace MagusKliens
 
             this.nemValasztoBox.DataSource = Enum.GetValues(typeof(KarakterNeme));
 
-           
 
+            #region DataBinding-ok
             this.fieldEro.DataBindings.Add(new Binding("Value", this.karakter, "Ero", false, DataSourceUpdateMode.OnPropertyChanged));
 
             this.fieldGyors.DataBindings.Add(new Binding("Value", this.karakter, "Gyorsasag", false, DataSourceUpdateMode.OnPropertyChanged));
@@ -47,7 +47,7 @@ namespace MagusKliens
             this.fieldAsztral.DataBindings.Add(new Binding("Value", this.karakter, "Asztral", false, DataSourceUpdateMode.OnPropertyChanged));
 
             this.fieldEszlel.DataBindings.Add(new Binding("Value", this.karakter, "Eszleles", false, DataSourceUpdateMode.OnPropertyChanged));
-
+            #endregion
 
             karakter.PropertyChanged += karakter_PropertyChanged;
 
@@ -93,7 +93,7 @@ namespace MagusKliens
                     break;
             }            
         }
-
+        #region Bekötés FORMRA
         private void GeneraloBtn_Click(object sender, EventArgs e)
         {
             IGeneralo generalo = new AlapKepessegGeneralo();
@@ -135,5 +135,6 @@ namespace MagusKliens
             }
             karakter.Vallas = (Vallas)vallasValasztoBox.SelectedValue;
         }
+        #endregion
     }
 }
