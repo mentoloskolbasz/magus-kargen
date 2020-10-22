@@ -147,6 +147,112 @@ namespace MagusLib.KarakterKeszites
             { JatszhatoFaj.Goblin, -2 }
         };
 
+        public static readonly Dictionary<JatszhatoFaj, int> ALLOKEPESSEG_FAJ = new Dictionary<JatszhatoFaj, int>()
+        {
+            { JatszhatoFaj.Ember, 0 },
+            { JatszhatoFaj.Félelf, 0 },
+            { JatszhatoFaj.Elf, -1 },
+            { JatszhatoFaj.Törpe, 1 },
+            { JatszhatoFaj.Ork, 1 },
+            { JatszhatoFaj.Dzsenn, 0 },
+            { JatszhatoFaj.Dzsad, 0 },
+            { JatszhatoFaj.Wier, 0 },
+            { JatszhatoFaj.Khal, 2 },
+            { JatszhatoFaj.Amund, 1 },
+            { JatszhatoFaj.Gnóm, 0 },
+            { JatszhatoFaj.Goblin, 1 }
+        };
+        public static readonly Dictionary<JatszhatoFaj, int> EGESZSEG_FAJ = new Dictionary<JatszhatoFaj, int>()
+        {
+            { JatszhatoFaj.Ember, 0 },
+            { JatszhatoFaj.Félelf, 0 },
+            { JatszhatoFaj.Elf, 0 },
+            { JatszhatoFaj.Törpe, 1 },
+            { JatszhatoFaj.Ork, 2 },
+            { JatszhatoFaj.Dzsenn, 0 },
+            { JatszhatoFaj.Dzsad, 0 },
+            { JatszhatoFaj.Wier, 0 },
+            { JatszhatoFaj.Khal, 3 },
+            { JatszhatoFaj.Amund, 0 },
+            { JatszhatoFaj.Gnóm, 0 },
+            { JatszhatoFaj.Goblin, 1 }
+        };
+        public static readonly Dictionary<JatszhatoFaj, int> SZEPSEG_FAJ = new Dictionary<JatszhatoFaj, int>()
+        {
+            { JatszhatoFaj.Ember, 0 },
+            { JatszhatoFaj.Félelf, 0 },
+            { JatszhatoFaj.Elf, 1 },
+            { JatszhatoFaj.Törpe, -2 },
+            { JatszhatoFaj.Ork, -3 },
+            { JatszhatoFaj.Dzsenn, 0 },
+            { JatszhatoFaj.Dzsad, 0 },
+            { JatszhatoFaj.Wier, 1 },
+            { JatszhatoFaj.Khal, 0 },
+            { JatszhatoFaj.Amund, 2 },
+            { JatszhatoFaj.Gnóm, 0 },
+            { JatszhatoFaj.Goblin, -2 }
+        };
+        public static readonly Dictionary<JatszhatoFaj, int> INTELLIGENCIA_FAJ = new Dictionary<JatszhatoFaj, int>()
+        {
+            { JatszhatoFaj.Ember, 0 },
+            { JatszhatoFaj.Félelf, 0 },
+            { JatszhatoFaj.Elf, 0 },
+            { JatszhatoFaj.Törpe, -1 },
+            { JatszhatoFaj.Ork, -1 },
+            { JatszhatoFaj.Dzsenn, 2 },
+            { JatszhatoFaj.Dzsad, 0 },
+            { JatszhatoFaj.Wier, 1 },
+            { JatszhatoFaj.Khal, -1 },
+            { JatszhatoFaj.Amund, 0 },
+            { JatszhatoFaj.Gnóm, 1 },
+            { JatszhatoFaj.Goblin, -1 }
+        };
+        public static readonly Dictionary<JatszhatoFaj, int> AKARATERO_FAJ = new Dictionary<JatszhatoFaj, int>()
+        {
+           { JatszhatoFaj.Ember, 0 },
+            { JatszhatoFaj.Félelf, 0 },
+            { JatszhatoFaj.Elf, 0 },
+            { JatszhatoFaj.Törpe, 0 },
+            { JatszhatoFaj.Ork, 0 },
+            { JatszhatoFaj.Dzsenn, 0 },
+            { JatszhatoFaj.Dzsad, 0 },
+            { JatszhatoFaj.Wier, 0 },
+            { JatszhatoFaj.Khal, 0 },
+            { JatszhatoFaj.Amund, 0 },
+            { JatszhatoFaj.Gnóm, 0 },
+            { JatszhatoFaj.Goblin, 0 }
+        };
+        public static readonly Dictionary<JatszhatoFaj, int> ASZTRAL_FAJ = new Dictionary<JatszhatoFaj, int>()
+        {
+            { JatszhatoFaj.Ember, 0 },
+            { JatszhatoFaj.Félelf, 0 },
+            { JatszhatoFaj.Elf, 0 },
+            { JatszhatoFaj.Törpe, -1 },
+            { JatszhatoFaj.Ork, -3 },
+            { JatszhatoFaj.Dzsenn, 0 },
+            { JatszhatoFaj.Dzsad, 0 },
+            { JatszhatoFaj.Wier, 0 },
+            { JatszhatoFaj.Khal, -5 },
+            { JatszhatoFaj.Amund, -1 },
+            { JatszhatoFaj.Gnóm, 0 },
+            { JatszhatoFaj.Goblin, -2 }
+        };
+        public static readonly Dictionary<JatszhatoFaj, int> ESZLELES_FAJ = new Dictionary<JatszhatoFaj, int>()
+        {
+            { JatszhatoFaj.Ember, 0 },
+            { JatszhatoFaj.Félelf, 0 },
+            { JatszhatoFaj.Elf, 0 },
+            { JatszhatoFaj.Törpe, 0 },
+            { JatszhatoFaj.Ork, 0 },
+            { JatszhatoFaj.Dzsenn, 0 },
+            { JatszhatoFaj.Dzsad, 0 },
+            { JatszhatoFaj.Wier, 0 },
+            { JatszhatoFaj.Khal, 0 },
+            { JatszhatoFaj.Amund, 0 },
+            { JatszhatoFaj.Gnóm, 0 },
+            { JatszhatoFaj.Goblin, 0 }
+        };
+
         public static readonly Dictionary<KarakterAlkaszt, Func<int>> ERO = new Dictionary<KarakterAlkaszt, Func<int>>()
         {
             { KarakterAlkaszt.Harcos, ()=>(new K6()).Dobas()+12 },
@@ -170,7 +276,7 @@ namespace MagusLib.KarakterKeszites
             { KarakterAlkaszt.Varázsló, ()=>(new K6x3()).Dobas() },                        
         };
 
-        public static readonly Dictionary<KarakterAlkaszt, Func<int>> GYORS = new Dictionary<KarakterAlkaszt, Func<int>>()
+        public static readonly Dictionary<KarakterAlkaszt, Func<int>> GYORSASAG = new Dictionary<KarakterAlkaszt, Func<int>>()
         {
             { KarakterAlkaszt.Harcos, ()=>(new K6x2()).Dobas()+6 },
             { KarakterAlkaszt.Amazon, ()=>(new K10()).Dobas()+8 },
@@ -193,5 +299,188 @@ namespace MagusLib.KarakterKeszites
             { KarakterAlkaszt.Varázsló, ()=>(new K6x3()).Dobas() },
         };
 
+        public static readonly Dictionary<KarakterAlkaszt, Func<int>> UGYESSEG = new Dictionary<KarakterAlkaszt, Func<int>>()
+        {
+            { KarakterAlkaszt.Harcos, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Amazon, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Bajvívó, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Barbár, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Boszorkány, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Boszorkánymester, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Bárd, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Fejvadász, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Gladiátor, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Harcművész, ()=>(new K6()).Dobas()+14 },
+            { KarakterAlkaszt.Kardművész, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Lovag, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Pap, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Paplovag, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Szerzetes, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Sámán, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Tolvaj, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Tűzvarázsló, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Varázsló, ()=>(new K6x3()).Dobas() },
+        };
+
+        public static readonly Dictionary<KarakterAlkaszt, Func<int>> ALLOKEPESSEG = new Dictionary<KarakterAlkaszt, Func<int>>()
+        {
+            { KarakterAlkaszt.Harcos, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Amazon, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Bajvívó, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Barbár, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Boszorkány, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Boszorkánymester, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Bárd, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Fejvadász, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Gladiátor, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Harcművész, ()=>(new K6()).Dobas()+14 },
+            { KarakterAlkaszt.Kardművész, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Lovag, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Pap, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Paplovag, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Szerzetes, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Sámán, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Tolvaj, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Tűzvarázsló, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Varázsló, ()=>(new K6x3()).Dobas() },
+        };
+
+        public static readonly Dictionary<KarakterAlkaszt, Func<int>> EGESZSEG = new Dictionary<KarakterAlkaszt, Func<int>>()
+        {
+            { KarakterAlkaszt.Harcos, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Amazon, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Bajvívó, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Barbár, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Boszorkány, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Boszorkánymester, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Bárd, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Fejvadász, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Gladiátor, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Harcművész, ()=>(new K6()).Dobas()+14 },
+            { KarakterAlkaszt.Kardművész, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Lovag, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Pap, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Paplovag, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Szerzetes, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Sámán, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Tolvaj, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Tűzvarázsló, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Varázsló, ()=>(new K6x3()).Dobas() },
+        };
+
+        public static readonly Dictionary<KarakterAlkaszt, Func<int>> SZEPSEG = new Dictionary<KarakterAlkaszt, Func<int>>()
+        {
+            { KarakterAlkaszt.Harcos, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Amazon, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Bajvívó, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Barbár, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Boszorkány, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Boszorkánymester, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Bárd, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Fejvadász, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Gladiátor, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Harcművész, ()=>(new K6()).Dobas()+14 },
+            { KarakterAlkaszt.Kardművész, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Lovag, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Pap, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Paplovag, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Szerzetes, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Sámán, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Tolvaj, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Tűzvarázsló, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Varázsló, ()=>(new K6x3()).Dobas() },
+        };
+
+        public static readonly Dictionary<KarakterAlkaszt, Func<int>> INTELLIGENCIA = new Dictionary<KarakterAlkaszt, Func<int>>()
+        {
+            { KarakterAlkaszt.Harcos, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Amazon, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Bajvívó, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Barbár, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Boszorkány, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Boszorkánymester, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Bárd, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Fejvadász, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Gladiátor, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Harcművész, ()=>(new K6()).Dobas()+14 },
+            { KarakterAlkaszt.Kardművész, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Lovag, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Pap, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Paplovag, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Szerzetes, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Sámán, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Tolvaj, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Tűzvarázsló, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Varázsló, ()=>(new K6x3()).Dobas() },
+        };
+
+        public static readonly Dictionary<KarakterAlkaszt, Func<int>> AKARATERO = new Dictionary<KarakterAlkaszt, Func<int>>()
+        {
+            { KarakterAlkaszt.Harcos, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Amazon, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Bajvívó, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Barbár, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Boszorkány, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Boszorkánymester, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Bárd, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Fejvadász, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Gladiátor, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Harcművész, ()=>(new K6()).Dobas()+14 },
+            { KarakterAlkaszt.Kardművész, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Lovag, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Pap, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Paplovag, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Szerzetes, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Sámán, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Tolvaj, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Tűzvarázsló, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Varázsló, ()=>(new K6x3()).Dobas() },
+        };
+
+        public static readonly Dictionary<KarakterAlkaszt, Func<int>> ASZTRAL = new Dictionary<KarakterAlkaszt, Func<int>>()
+        {
+            { KarakterAlkaszt.Harcos, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Amazon, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Bajvívó, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Barbár, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Boszorkány, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Boszorkánymester, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Bárd, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Fejvadász, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Gladiátor, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Harcművész, ()=>(new K6()).Dobas()+14 },
+            { KarakterAlkaszt.Kardművész, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Lovag, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Pap, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Paplovag, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Szerzetes, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Sámán, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Tolvaj, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Tűzvarázsló, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Varázsló, ()=>(new K6x3()).Dobas() },
+        };
+
+        public static readonly Dictionary<KarakterAlkaszt, Func<int>> ESZLELES = new Dictionary<KarakterAlkaszt, Func<int>>()
+        {
+            { KarakterAlkaszt.Harcos, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Amazon, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Bajvívó, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Barbár, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Boszorkány, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Boszorkánymester, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Bárd, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Fejvadász, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Gladiátor, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Harcművész, ()=>(new K6()).Dobas()+14 },
+            { KarakterAlkaszt.Kardművész, ()=>(new K6()).Dobas()+12 },
+            { KarakterAlkaszt.Lovag, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Pap, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Paplovag, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Szerzetes, ()=>(new K6x2()).Dobas()+6 },
+            { KarakterAlkaszt.Sámán, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Tolvaj, ()=>(new K10()).Dobas()+8 },
+            { KarakterAlkaszt.Tűzvarázsló, ()=>(new K6x3()).Dobas() },
+            { KarakterAlkaszt.Varázsló, ()=>(new K6x3()).Dobas() },
+        };
     }
 }
