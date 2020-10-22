@@ -89,6 +89,22 @@ namespace MagusLib
                 karakter.Egeszseg = (uint)(kaszt() + faj);
             };
             #endregion
+            #region Szépség
+            ertekadok += karakter =>
+            {
+                Func<int> kaszt;
+                if (!KarakterKeszites.Allandok.SZEPSEG.TryGetValue(karakter.Alkaszt, out kaszt))
+                {
+                    throw new NemDefinialtErtekKivetel();
+                }
+                int faj;
+                if (!KarakterKeszites.Allandok.SZEPSEG_FAJ.TryGetValue(karakter.Faj, out faj))
+                {
+                    throw new NemDefinialtErtekKivetel();
+                }
+                karakter.Szepseg = (uint)(kaszt() + faj);
+            };
+            #endregion
             #region Intelligencia
             ertekadok += karakter =>
             {
