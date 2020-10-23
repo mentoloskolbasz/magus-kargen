@@ -22,6 +22,7 @@ namespace MagusKliens
 
             InitializeComponent();
 
+            fieldKor.Maximum = uint.MaxValue;
             
             this.fajValasztoBox.DataSource = Enum.GetValues(typeof(JatszhatoFaj));
 
@@ -95,7 +96,7 @@ namespace MagusKliens
                 case "Kor":
                     try
                     {
-                        fieldKorosztaly.BackColor = Color.White;
+                        fieldKorosztaly.BackColor = Color.FromKnownColor(KnownColor.Control);
                         fieldKorosztaly.ForeColor = Color.Black;
                         fieldKorosztaly.Text = (new KorHatarozo()).Hataroz(karakter).ToString();
                     }
@@ -158,5 +159,7 @@ namespace MagusKliens
             karakter.Vallas = (Vallas)vallasValasztoBox.SelectedValue;
         }
         #endregion
+
+        
     }
 }

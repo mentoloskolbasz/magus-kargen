@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KarGen));
             this.labelEro = new System.Windows.Forms.Label();
             this.labelGyors = new System.Windows.Forms.Label();
             this.labelUgyes = new System.Windows.Forms.Label();
@@ -353,9 +354,15 @@
             // fieldKor
             // 
             this.fieldKor.Location = new System.Drawing.Point(229, 143);
+            this.fieldKor.Maximum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.fieldKor.Name = "fieldKor";
             this.fieldKor.Size = new System.Drawing.Size(55, 20);
             this.fieldKor.TabIndex = 36;
+            this.fieldKor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // fieldKorosztaly
             // 
@@ -375,7 +382,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackgroundImage = global::MagusKliens.Properties.Resources.magus;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1008, 985);
             this.Controls.Add(this.fieldKorosztaly);
             this.Controls.Add(this.fieldKor);
             this.Controls.Add(this.label6);
@@ -410,6 +420,7 @@
             this.Controls.Add(this.labelUgyes);
             this.Controls.Add(this.labelGyors);
             this.Controls.Add(this.labelEro);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "KarGen";
             this.Text = "M.A.G.U.S Karakter Generáló";
             ((System.ComponentModel.ISupportInitialize)(this.fieldEro)).EndInit();
