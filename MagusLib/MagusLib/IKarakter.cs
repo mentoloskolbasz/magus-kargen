@@ -9,7 +9,7 @@ namespace MagusLib
         string Nev { get; set; }
         JatszhatoFaj Faj { get; set; }
         KarakterNeme Nem { get; set; }
-        KarakterKorosztaly Kor { get; set; }
+        uint Kor { get; set; }
         Vallas Vallas { get; set; }
         KarakterAlkaszt Alkaszt { get; set; }
         KarakterKaszt Kaszt { get; set; }

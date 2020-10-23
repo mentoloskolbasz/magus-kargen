@@ -1,4 +1,5 @@
 ﻿using MagusLib;
+using MagusLib.Ertek;
 using MagusLib.KarakterKeszites;
 using System;
 using System.Collections.Generic;
@@ -47,6 +48,9 @@ namespace MagusKliens
             this.fieldAsztral.DataBindings.Add(new Binding("Value", this.karakter, "Asztral", false, DataSourceUpdateMode.OnPropertyChanged));
 
             this.fieldEszlel.DataBindings.Add(new Binding("Value", this.karakter, "Eszleles", false, DataSourceUpdateMode.OnPropertyChanged));
+
+            this.fieldKor.DataBindings.Add(new Binding("Value", this.karakter, "Kor", false, DataSourceUpdateMode.OnPropertyChanged));
+
             #endregion
 
             karakter.PropertyChanged += karakter_PropertyChanged;
@@ -88,10 +92,28 @@ namespace MagusKliens
                 case "Vallas":
                     vallasValasztoBox.SelectedItem = karakter.Vallas;
                     break;
-
+                case "Kor":
+                    try
+                    {
+                        fieldKorosztaly.BackColor = Color.White;
+                        fieldKorosztaly.ForeColor = Color.Black;
+                        fieldKorosztaly.Text = (new KorHatarozo()).Hataroz(karakter).ToString();
+                    }
+                    catch (NemMegfeleloKorKivetel)
+                    {
+                        fieldKorosztaly.Text = "Rossz kor!";
+                        fieldKorosztaly.ForeColor = Color.Yellow;
+                        fieldKorosztaly.BackColor = Color.Black;
+                    }                    
+                    break;
                 default:
                     break;
-            }            
+            }
+            //Korosztály frissítés
+            if (e.PropertyName != "Kor")
+            {
+                karakter.Kor = karakter.Kor;
+            }
         }
         #region Bekötés FORMRA
         private void GeneraloBtn_Click(object sender, EventArgs e)

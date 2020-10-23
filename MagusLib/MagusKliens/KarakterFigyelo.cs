@@ -46,7 +46,7 @@ namespace MagusKliens
                 this.setProperty("Nem");
             }
         }
-        public override KarakterKorosztaly Kor
+        public override uint Kor
         {
             get => base.Kor;
             set

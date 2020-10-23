@@ -60,6 +60,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.nemValasztoBox = new System.Windows.Forms.ComboBox();
             this.fieldKaszt = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.fieldKor = new System.Windows.Forms.NumericUpDown();
+            this.fieldKorosztaly = new System.Windows.Forms.TextBox();
             this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.fieldEro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldGyors)).BeginInit();
@@ -71,6 +74,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.fieldAkarat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldAsztral)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldEszlel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fieldKor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iKarakterBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -250,7 +254,7 @@
             this.fajValasztoBox.FormattingEnabled = true;
             this.fajValasztoBox.Location = new System.Drawing.Point(229, 80);
             this.fajValasztoBox.Name = "fajValasztoBox";
-            this.fajValasztoBox.Size = new System.Drawing.Size(121, 21);
+            this.fajValasztoBox.Size = new System.Drawing.Size(162, 21);
             this.fajValasztoBox.TabIndex = 24;
             this.fajValasztoBox.SelectedValueChanged += new System.EventHandler(this.fajValasztoBox_SelectedValueChanged);
             // 
@@ -267,16 +271,16 @@
             // 
             this.alkasztValasztoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.alkasztValasztoBox.FormattingEnabled = true;
-            this.alkasztValasztoBox.Location = new System.Drawing.Point(228, 182);
+            this.alkasztValasztoBox.Location = new System.Drawing.Point(228, 208);
             this.alkasztValasztoBox.Name = "alkasztValasztoBox";
-            this.alkasztValasztoBox.Size = new System.Drawing.Size(121, 21);
+            this.alkasztValasztoBox.Size = new System.Drawing.Size(162, 21);
             this.alkasztValasztoBox.TabIndex = 27;
             this.alkasztValasztoBox.SelectedValueChanged += new System.EventHandler(this.alkasztValasztoBox_SelectedValueChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(172, 146);
+            this.label2.Location = new System.Drawing.Point(172, 175);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(36, 13);
             this.label2.TabIndex = 28;
@@ -285,7 +289,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(172, 185);
+            this.label3.Location = new System.Drawing.Point(172, 211);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 29;
@@ -294,7 +298,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(172, 221);
+            this.label4.Location = new System.Drawing.Point(172, 247);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 13);
             this.label4.TabIndex = 30;
@@ -304,9 +308,9 @@
             // 
             this.vallasValasztoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.vallasValasztoBox.FormattingEnabled = true;
-            this.vallasValasztoBox.Location = new System.Drawing.Point(229, 218);
+            this.vallasValasztoBox.Location = new System.Drawing.Point(229, 244);
             this.vallasValasztoBox.Name = "vallasValasztoBox";
-            this.vallasValasztoBox.Size = new System.Drawing.Size(121, 21);
+            this.vallasValasztoBox.Size = new System.Drawing.Size(162, 21);
             this.vallasValasztoBox.TabIndex = 31;
             this.vallasValasztoBox.SelectedValueChanged += new System.EventHandler(this.vallasValasztoBox_SelectedValueChanged);
             // 
@@ -325,17 +329,42 @@
             this.nemValasztoBox.FormattingEnabled = true;
             this.nemValasztoBox.Location = new System.Drawing.Point(229, 112);
             this.nemValasztoBox.Name = "nemValasztoBox";
-            this.nemValasztoBox.Size = new System.Drawing.Size(121, 21);
+            this.nemValasztoBox.Size = new System.Drawing.Size(162, 21);
             this.nemValasztoBox.TabIndex = 32;
             this.nemValasztoBox.SelectedValueChanged += new System.EventHandler(this.nemValasztoBox_SelectedValueChanged);
             // 
             // fieldKaszt
             // 
-            this.fieldKaszt.Enabled = false;
-            this.fieldKaszt.Location = new System.Drawing.Point(229, 142);
+            this.fieldKaszt.Location = new System.Drawing.Point(229, 172);
             this.fieldKaszt.Name = "fieldKaszt";
-            this.fieldKaszt.Size = new System.Drawing.Size(120, 20);
+            this.fieldKaszt.ReadOnly = true;
+            this.fieldKaszt.Size = new System.Drawing.Size(161, 20);
             this.fieldKaszt.TabIndex = 34;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(172, 145);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(26, 13);
+            this.label6.TabIndex = 35;
+            this.label6.Text = "Kor:";
+            // 
+            // fieldKor
+            // 
+            this.fieldKor.Location = new System.Drawing.Point(229, 143);
+            this.fieldKor.Name = "fieldKor";
+            this.fieldKor.Size = new System.Drawing.Size(55, 20);
+            this.fieldKor.TabIndex = 36;
+            // 
+            // fieldKorosztaly
+            // 
+            this.fieldKorosztaly.Location = new System.Drawing.Point(290, 142);
+            this.fieldKorosztaly.Name = "fieldKorosztaly";
+            this.fieldKorosztaly.ReadOnly = true;
+            this.fieldKorosztaly.Size = new System.Drawing.Size(101, 20);
+            this.fieldKorosztaly.TabIndex = 37;
+            this.fieldKorosztaly.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // iKarakterBindingSource
             // 
@@ -347,6 +376,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.fieldKorosztaly);
+            this.Controls.Add(this.fieldKor);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.fieldKaszt);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.nemValasztoBox);
@@ -390,6 +422,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.fieldAkarat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldAsztral)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldEszlel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fieldKor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iKarakterBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -429,6 +462,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox nemValasztoBox;
         private System.Windows.Forms.TextBox fieldKaszt;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.NumericUpDown fieldKor;
+        private System.Windows.Forms.TextBox fieldKorosztaly;
     }
 }
 
