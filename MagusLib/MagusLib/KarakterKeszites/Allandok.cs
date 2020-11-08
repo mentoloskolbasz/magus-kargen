@@ -489,5 +489,71 @@ namespace MagusLib.KarakterKeszites
             { KarakterAlkaszt.Varázsló, ()=>(new K6x2()).Dobas()+6 },
         };
         #endregion
+
+        # region Képességek Kor módosítói
+        public static readonly Dictionary<KarakterKorosztaly, Dictionary<Alapertekek, int>> KOR_ALAPERETEK_MODOSITO = new Dictionary<KarakterKorosztaly, Dictionary<Alapertekek, int>>()
+        {
+            { KarakterKorosztaly.Serdülő, new Dictionary<Alapertekek, int>{
+                {Alapertekek.Erő, -2},
+                {Alapertekek.Állóképesség, -1},
+                {Alapertekek.Gyorsaság, 0},
+                {Alapertekek.Ügyesség, 0},
+                {Alapertekek.Egészség, 0},
+                {Alapertekek.Szépség, 0},
+                }
+            },
+
+             { KarakterKorosztaly.Ifjú, new Dictionary<Alapertekek, int>{
+                {Alapertekek.Erő, 0},
+                {Alapertekek.Állóképesség, 0},
+                {Alapertekek.Gyorsaság, 0},
+                {Alapertekek.Ügyesség, 0},
+                {Alapertekek.Egészség, 0},
+                {Alapertekek.Szépség, 0},
+                }
+            },
+
+             { KarakterKorosztaly.Középkorú, new Dictionary<Alapertekek, int>{
+                {Alapertekek.Erő, 0},
+                {Alapertekek.Állóképesség, 0},
+                {Alapertekek.Gyorsaság, -1},
+                {Alapertekek.Ügyesség, -1},
+                {Alapertekek.Egészség, 0},
+                {Alapertekek.Szépség, -1},
+                }
+            },
+
+             { KarakterKorosztaly.Meglett, new Dictionary<Alapertekek, int>{
+                {Alapertekek.Erő, -1},
+                {Alapertekek.Állóképesség, -1},
+                {Alapertekek.Gyorsaság, -3},
+                {Alapertekek.Ügyesség, -2},
+                {Alapertekek.Egészség, -1},
+                {Alapertekek.Szépség, -3},
+                }
+            },
+
+             { KarakterKorosztaly.Idős, new Dictionary<Alapertekek, int>{
+                {Alapertekek.Erő, -3},
+                {Alapertekek.Állóképesség, -3},
+                {Alapertekek.Gyorsaság, -5},
+                {Alapertekek.Ügyesség, -4},
+                {Alapertekek.Egészség, -2},
+                {Alapertekek.Szépség, -3},
+                }
+            },
+
+             { KarakterKorosztaly.Aggastyán, new Dictionary<Alapertekek, int>{
+                {Alapertekek.Erő, -5},
+                {Alapertekek.Állóképesség, -5},
+                {Alapertekek.Gyorsaság, -7},
+                {Alapertekek.Ügyesség, -6},
+                {Alapertekek.Egészség, -4},
+                {Alapertekek.Szépség, -4},
+                }
+            },
+        };
+
+        #endregion
     }
 }

@@ -64,6 +64,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.fieldKor = new System.Windows.Forms.NumericUpDown();
             this.fieldKorosztaly = new System.Windows.Forms.TextBox();
+            this.fieldEroKorModosito = new System.Windows.Forms.TextBox();
+            this.fieldAllokepessegKorModosito = new System.Windows.Forms.TextBox();
+            this.fieldGyorsasagKorModosito = new System.Windows.Forms.TextBox();
+            this.fieldUgyessegKorModosito = new System.Windows.Forms.TextBox();
+            this.fieldEgeszsegKorModosito = new System.Windows.Forms.TextBox();
+            this.fieldSzepsegKorModosito = new System.Windows.Forms.TextBox();
             this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.fieldEro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldGyors)).BeginInit();
@@ -112,6 +118,7 @@
             this.fieldEro.Name = "fieldEro";
             this.fieldEro.Size = new System.Drawing.Size(48, 20);
             this.fieldEro.TabIndex = 6;
+            this.fieldEro.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // fieldGyors
             // 
@@ -119,6 +126,7 @@
             this.fieldGyors.Name = "fieldGyors";
             this.fieldGyors.Size = new System.Drawing.Size(48, 20);
             this.fieldGyors.TabIndex = 7;
+            this.fieldGyors.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // fieldUgyes
             // 
@@ -126,6 +134,7 @@
             this.fieldUgyes.Name = "fieldUgyes";
             this.fieldUgyes.Size = new System.Drawing.Size(48, 20);
             this.fieldUgyes.TabIndex = 8;
+            this.fieldUgyes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // fieldAllo
             // 
@@ -133,6 +142,7 @@
             this.fieldAllo.Name = "fieldAllo";
             this.fieldAllo.Size = new System.Drawing.Size(48, 20);
             this.fieldAllo.TabIndex = 9;
+            this.fieldAllo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // fieldEgesz
             // 
@@ -140,6 +150,7 @@
             this.fieldEgesz.Name = "fieldEgesz";
             this.fieldEgesz.Size = new System.Drawing.Size(48, 20);
             this.fieldEgesz.TabIndex = 10;
+            this.fieldEgesz.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // fieldSzep
             // 
@@ -147,6 +158,7 @@
             this.fieldSzep.Name = "fieldSzep";
             this.fieldSzep.Size = new System.Drawing.Size(48, 20);
             this.fieldSzep.TabIndex = 11;
+            this.fieldSzep.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // fieldInt
             // 
@@ -154,6 +166,7 @@
             this.fieldInt.Name = "fieldInt";
             this.fieldInt.Size = new System.Drawing.Size(48, 20);
             this.fieldInt.TabIndex = 12;
+            this.fieldInt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // fieldAkarat
             // 
@@ -161,6 +174,7 @@
             this.fieldAkarat.Name = "fieldAkarat";
             this.fieldAkarat.Size = new System.Drawing.Size(48, 20);
             this.fieldAkarat.TabIndex = 13;
+            this.fieldAkarat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // fieldAsztral
             // 
@@ -168,6 +182,7 @@
             this.fieldAsztral.Name = "fieldAsztral";
             this.fieldAsztral.Size = new System.Drawing.Size(48, 20);
             this.fieldAsztral.TabIndex = 14;
+            this.fieldAsztral.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // fieldEszlel
             // 
@@ -175,6 +190,7 @@
             this.fieldEszlel.Name = "fieldEszlel";
             this.fieldEszlel.Size = new System.Drawing.Size(48, 20);
             this.fieldEszlel.TabIndex = 15;
+            this.fieldEszlel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelAllo
             // 
@@ -241,7 +257,7 @@
             // 
             // GeneraloBtn
             // 
-            this.GeneraloBtn.Location = new System.Drawing.Point(30, 273);
+            this.GeneraloBtn.Location = new System.Drawing.Point(29, 301);
             this.GeneraloBtn.Name = "GeneraloBtn";
             this.GeneraloBtn.Size = new System.Drawing.Size(75, 23);
             this.GeneraloBtn.TabIndex = 23;
@@ -253,7 +269,7 @@
             // 
             this.fajValasztoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.fajValasztoBox.FormattingEnabled = true;
-            this.fajValasztoBox.Location = new System.Drawing.Point(229, 80);
+            this.fajValasztoBox.Location = new System.Drawing.Point(255, 90);
             this.fajValasztoBox.Name = "fajValasztoBox";
             this.fajValasztoBox.Size = new System.Drawing.Size(162, 21);
             this.fajValasztoBox.TabIndex = 24;
@@ -262,7 +278,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(172, 83);
+            this.label1.Location = new System.Drawing.Point(198, 93);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(24, 13);
             this.label1.TabIndex = 25;
@@ -272,7 +288,7 @@
             // 
             this.alkasztValasztoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.alkasztValasztoBox.FormattingEnabled = true;
-            this.alkasztValasztoBox.Location = new System.Drawing.Point(228, 208);
+            this.alkasztValasztoBox.Location = new System.Drawing.Point(254, 218);
             this.alkasztValasztoBox.Name = "alkasztValasztoBox";
             this.alkasztValasztoBox.Size = new System.Drawing.Size(162, 21);
             this.alkasztValasztoBox.TabIndex = 27;
@@ -281,7 +297,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(172, 175);
+            this.label2.Location = new System.Drawing.Point(198, 185);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(36, 13);
             this.label2.TabIndex = 28;
@@ -290,7 +306,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(172, 211);
+            this.label3.Location = new System.Drawing.Point(198, 221);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 29;
@@ -299,7 +315,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(172, 247);
+            this.label4.Location = new System.Drawing.Point(198, 257);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 13);
             this.label4.TabIndex = 30;
@@ -309,7 +325,7 @@
             // 
             this.vallasValasztoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.vallasValasztoBox.FormattingEnabled = true;
-            this.vallasValasztoBox.Location = new System.Drawing.Point(229, 244);
+            this.vallasValasztoBox.Location = new System.Drawing.Point(255, 254);
             this.vallasValasztoBox.Name = "vallasValasztoBox";
             this.vallasValasztoBox.Size = new System.Drawing.Size(162, 21);
             this.vallasValasztoBox.TabIndex = 31;
@@ -318,7 +334,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(172, 115);
+            this.label5.Location = new System.Drawing.Point(198, 125);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(32, 13);
             this.label5.TabIndex = 33;
@@ -328,7 +344,7 @@
             // 
             this.nemValasztoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.nemValasztoBox.FormattingEnabled = true;
-            this.nemValasztoBox.Location = new System.Drawing.Point(229, 112);
+            this.nemValasztoBox.Location = new System.Drawing.Point(255, 122);
             this.nemValasztoBox.Name = "nemValasztoBox";
             this.nemValasztoBox.Size = new System.Drawing.Size(162, 21);
             this.nemValasztoBox.TabIndex = 32;
@@ -336,7 +352,7 @@
             // 
             // fieldKaszt
             // 
-            this.fieldKaszt.Location = new System.Drawing.Point(229, 172);
+            this.fieldKaszt.Location = new System.Drawing.Point(255, 182);
             this.fieldKaszt.Name = "fieldKaszt";
             this.fieldKaszt.ReadOnly = true;
             this.fieldKaszt.Size = new System.Drawing.Size(161, 20);
@@ -345,7 +361,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(172, 145);
+            this.label6.Location = new System.Drawing.Point(198, 155);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(26, 13);
             this.label6.TabIndex = 35;
@@ -353,7 +369,7 @@
             // 
             // fieldKor
             // 
-            this.fieldKor.Location = new System.Drawing.Point(229, 143);
+            this.fieldKor.Location = new System.Drawing.Point(255, 153);
             this.fieldKor.Maximum = new decimal(new int[] {
             0,
             0,
@@ -366,12 +382,66 @@
             // 
             // fieldKorosztaly
             // 
-            this.fieldKorosztaly.Location = new System.Drawing.Point(290, 142);
+            this.fieldKorosztaly.Location = new System.Drawing.Point(316, 152);
             this.fieldKorosztaly.Name = "fieldKorosztaly";
             this.fieldKorosztaly.ReadOnly = true;
             this.fieldKorosztaly.Size = new System.Drawing.Size(101, 20);
             this.fieldKorosztaly.TabIndex = 37;
             this.fieldKorosztaly.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // fieldEroKorModosito
+            // 
+            this.fieldEroKorModosito.Location = new System.Drawing.Point(131, 12);
+            this.fieldEroKorModosito.Name = "fieldEroKorModosito";
+            this.fieldEroKorModosito.ReadOnly = true;
+            this.fieldEroKorModosito.Size = new System.Drawing.Size(41, 20);
+            this.fieldEroKorModosito.TabIndex = 38;
+            this.fieldEroKorModosito.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // fieldAllokepessegKorModosito
+            // 
+            this.fieldAllokepessegKorModosito.Location = new System.Drawing.Point(131, 90);
+            this.fieldAllokepessegKorModosito.Name = "fieldAllokepessegKorModosito";
+            this.fieldAllokepessegKorModosito.ReadOnly = true;
+            this.fieldAllokepessegKorModosito.Size = new System.Drawing.Size(41, 20);
+            this.fieldAllokepessegKorModosito.TabIndex = 39;
+            this.fieldAllokepessegKorModosito.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // fieldGyorsasagKorModosito
+            // 
+            this.fieldGyorsasagKorModosito.Location = new System.Drawing.Point(131, 38);
+            this.fieldGyorsasagKorModosito.Name = "fieldGyorsasagKorModosito";
+            this.fieldGyorsasagKorModosito.ReadOnly = true;
+            this.fieldGyorsasagKorModosito.Size = new System.Drawing.Size(41, 20);
+            this.fieldGyorsasagKorModosito.TabIndex = 40;
+            this.fieldGyorsasagKorModosito.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // fieldUgyessegKorModosito
+            // 
+            this.fieldUgyessegKorModosito.Location = new System.Drawing.Point(131, 64);
+            this.fieldUgyessegKorModosito.Name = "fieldUgyessegKorModosito";
+            this.fieldUgyessegKorModosito.ReadOnly = true;
+            this.fieldUgyessegKorModosito.Size = new System.Drawing.Size(41, 20);
+            this.fieldUgyessegKorModosito.TabIndex = 41;
+            this.fieldUgyessegKorModosito.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // fieldEgeszsegKorModosito
+            // 
+            this.fieldEgeszsegKorModosito.Location = new System.Drawing.Point(131, 116);
+            this.fieldEgeszsegKorModosito.Name = "fieldEgeszsegKorModosito";
+            this.fieldEgeszsegKorModosito.ReadOnly = true;
+            this.fieldEgeszsegKorModosito.Size = new System.Drawing.Size(41, 20);
+            this.fieldEgeszsegKorModosito.TabIndex = 42;
+            this.fieldEgeszsegKorModosito.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // fieldSzepsegKorModosito
+            // 
+            this.fieldSzepsegKorModosito.Location = new System.Drawing.Point(131, 142);
+            this.fieldSzepsegKorModosito.Name = "fieldSzepsegKorModosito";
+            this.fieldSzepsegKorModosito.ReadOnly = true;
+            this.fieldSzepsegKorModosito.Size = new System.Drawing.Size(41, 20);
+            this.fieldSzepsegKorModosito.TabIndex = 43;
+            this.fieldSzepsegKorModosito.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // iKarakterBindingSource
             // 
@@ -383,9 +453,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BackgroundImage = global::MagusKliens.Properties.Resources.magus;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 985);
+            this.Controls.Add(this.fieldSzepsegKorModosito);
+            this.Controls.Add(this.fieldEgeszsegKorModosito);
+            this.Controls.Add(this.fieldUgyessegKorModosito);
+            this.Controls.Add(this.fieldGyorsasagKorModosito);
+            this.Controls.Add(this.fieldAllokepessegKorModosito);
+            this.Controls.Add(this.fieldEroKorModosito);
             this.Controls.Add(this.fieldKorosztaly);
             this.Controls.Add(this.fieldKor);
             this.Controls.Add(this.label6);
@@ -476,6 +551,12 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown fieldKor;
         private System.Windows.Forms.TextBox fieldKorosztaly;
+        private System.Windows.Forms.TextBox fieldEroKorModosito;
+        private System.Windows.Forms.TextBox fieldAllokepessegKorModosito;
+        private System.Windows.Forms.TextBox fieldGyorsasagKorModosito;
+        private System.Windows.Forms.TextBox fieldUgyessegKorModosito;
+        private System.Windows.Forms.TextBox fieldEgeszsegKorModosito;
+        private System.Windows.Forms.TextBox fieldSzepsegKorModosito;
     }
 }
 

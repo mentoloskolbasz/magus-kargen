@@ -17,13 +17,50 @@ namespace MagusKliens
     {
 
         protected KarakterFigyelo karakter = new KarakterFigyelo();
+        protected KorAlapertekModosito korAlapertekModosito = new KorAlapertekModosito();
+        protected List<System.Windows.Forms.TextBox> mezok;
+        protected void modositokFrissitese()
+        {
+            
+            try
+            {
+               mezok.ForEach(mezo =>
+                {
+                    mezo.BackColor = Color.FromKnownColor(KnownColor.Control);
+                    mezo.ForeColor = Color.Black;
+                });
+
+                korAlapertekModosito.Karakter = karakter;
+                fieldEroKorModosito.Text = korAlapertekModosito.Ero.ToString();
+                fieldGyorsasagKorModosito.Text = korAlapertekModosito.Gyorsasag.ToString();
+                fieldUgyessegKorModosito.Text = korAlapertekModosito.Ugyesseg.ToString();
+                fieldAllokepessegKorModosito.Text = korAlapertekModosito.Allokepesseg.ToString();
+                fieldEgeszsegKorModosito.Text = korAlapertekModosito.Egeszseg.ToString();
+                fieldSzepsegKorModosito.Text = korAlapertekModosito.Szepseg.ToString();
+            }
+            catch (NemMegfeleloKorKivetel)
+            {
+                /*fieldEroKorModosito.Text = "KOR!";
+                fieldEroKorModosito.ForeColor = Color.Yellow;
+                fieldEroKorModosito.BackColor = Color.Black;*/
+
+                mezok.ForEach(mezo =>
+                {
+                    mezo.Text = "KOR!";
+                    mezo.BackColor = Color.Black;
+                    mezo.ForeColor = Color.Yellow;
+                });
+            }
+        }
         public KarGen()
         {
 
             InitializeComponent();
 
+            mezok = new List<TextBox> { fieldEroKorModosito, fieldGyorsasagKorModosito, fieldAllokepessegKorModosito, fieldUgyessegKorModosito, fieldEgeszsegKorModosito, fieldSzepsegKorModosito };
+
             fieldKor.Maximum = uint.MaxValue;
-            
+
             this.fajValasztoBox.DataSource = Enum.GetValues(typeof(JatszhatoFaj));
 
             this.nemValasztoBox.DataSource = Enum.GetValues(typeof(KarakterNeme));
@@ -57,7 +94,7 @@ namespace MagusKliens
             karakter.PropertyChanged += karakter_PropertyChanged;
 
             karakter.Faj = JatszhatoFaj.Ember;
-            karakter.Nem = KarakterNeme.Férfi;        
+            karakter.Nem = KarakterNeme.Férfi;
 
         }
 
@@ -79,7 +116,7 @@ namespace MagusKliens
                     fieldKaszt.Text = "";
                     var kasztValaszto = new KasztValaszto();
                     karakter.Kaszt = kasztValaszto.Valaszt(karakter);
-                                        
+
                     vallasValasztoBox.DataSource = null;
                     var vallasValaszto = new VallasValaszto();
                     vallasValasztoBox.DataSource = vallasValaszto.Felsorolas(karakter);
@@ -105,7 +142,7 @@ namespace MagusKliens
                         fieldKorosztaly.Text = "Rossz kor!";
                         fieldKorosztaly.ForeColor = Color.Yellow;
                         fieldKorosztaly.BackColor = Color.Black;
-                    }                    
+                    }
                     break;
                 default:
                     break;
@@ -115,13 +152,14 @@ namespace MagusKliens
             {
                 karakter.Kor = karakter.Kor;
             }
+            modositokFrissitese();
         }
         #region Bekötés FORMRA
         private void GeneraloBtn_Click(object sender, EventArgs e)
         {
             IGeneralo generalo = new AlapKepessegGeneralo();
             generalo.Generalas(karakter);
-        }        
+        }
 
         private void nemValasztoBox_SelectedValueChanged(object sender, EventArgs e)
         {
@@ -140,7 +178,7 @@ namespace MagusKliens
             }
             karakter.Faj = (JatszhatoFaj)fajValasztoBox.SelectedValue;
         }
-        
+
         private void alkasztValasztoBox_SelectedValueChanged(object sender, EventArgs e)
         {
             if (alkasztValasztoBox.SelectedValue == null)
@@ -160,6 +198,6 @@ namespace MagusKliens
         }
         #endregion
 
-        
+
     }
 }
