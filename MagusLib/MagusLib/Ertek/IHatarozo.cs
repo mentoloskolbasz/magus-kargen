@@ -8,4 +8,8 @@ namespace MagusLib.Ertek
     {
         T Hataroz(IKarakter karakter);
     }
+    /*public interface IHatarozo : IHatarozo<uint>
+    {
+
+    }*/
 }

@@ -19,6 +19,7 @@ namespace MagusKliens
         protected KarakterFigyelo karakter = new KarakterFigyelo();
         protected KorAlapertekModosito korAlapertekModosito = new KorAlapertekModosito();
         protected List<System.Windows.Forms.TextBox> mezok;
+        protected IHatarozo<uint> celzoHatarozo = new CelzoErtekHatarozo();
         protected void modositokFrissitese()
         {
             
@@ -95,6 +96,7 @@ namespace MagusKliens
 
             karakter.Faj = JatszhatoFaj.Ember;
             karakter.Nem = KarakterNeme.Férfi;
+            karakter.Kor = 30;
 
         }
 
@@ -153,7 +155,15 @@ namespace MagusKliens
                 karakter.Kor = karakter.Kor;
             }
             modositokFrissitese();
+            harcertekFrissitese();
         }
+
+        //Harcértékek frissítése
+        protected void harcertekFrissitese()
+        {
+            fieldCE.Text = celzoHatarozo.Hataroz(karakter).ToString();
+        }
+
         #region Bekötés FORMRA
         private void GeneraloBtn_Click(object sender, EventArgs e)
         {
@@ -196,8 +206,9 @@ namespace MagusKliens
             }
             karakter.Vallas = (Vallas)vallasValasztoBox.SelectedValue;
         }
+
         #endregion
 
-
+        
     }
 }

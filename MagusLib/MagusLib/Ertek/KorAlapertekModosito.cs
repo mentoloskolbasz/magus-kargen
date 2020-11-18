@@ -15,7 +15,9 @@ namespace MagusLib.Ertek
         public int Szepseg { get { return modositoKereso(Alapertekek.Szépség); } }
 
         private KorHatarozo korhatarozo = new KorHatarozo();
+
         private IKarakter karakter;
+
         public IKarakter Karakter { set { karakter = value; } }
 
         private int modositoKereso(Alapertekek tulajdonsag)

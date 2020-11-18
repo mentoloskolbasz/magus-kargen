@@ -18,7 +18,7 @@ namespace MagusLib.Ertek
         private static Dictionary<JatszhatoFaj, KorosztalyIntervallum[]> LISTA = new Dictionary<JatszhatoFaj, KorosztalyIntervallum[]>
         {
             {JatszhatoFaj.Ember,
-               new KorosztalyIntervallum[] 
+               new KorosztalyIntervallum[]
                {
                 new KorosztalyIntervallum {Tol=13, Ig= 16, Korosztaly = KarakterKorosztaly.Serdülő},
 
@@ -114,7 +114,7 @@ namespace MagusLib.Ertek
                 }
             },
 
-             
+
                {JatszhatoFaj.Amund,
                new KorosztalyIntervallum[]
                {
@@ -214,8 +214,8 @@ namespace MagusLib.Ertek
 
         };
 
-    public KarakterKorosztaly Hataroz(IKarakter karakter)
-    {
+        public KarakterKorosztaly Hataroz(IKarakter karakter)
+        {
             //throw new NotImplementedException();
             var intervallumLista = LISTA[karakter.Faj];
             var intervallum = Array.Find<KorosztalyIntervallum>(intervallumLista,
@@ -226,6 +226,6 @@ namespace MagusLib.Ertek
                 throw new NemMegfeleloKorKivetel();
             }
             return intervallum.Korosztaly;
+        }
     }
-}
 }

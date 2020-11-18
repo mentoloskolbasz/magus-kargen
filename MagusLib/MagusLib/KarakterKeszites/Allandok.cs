@@ -31,6 +31,11 @@ namespace MagusLib.KarakterKeszites
             { KarakterAlkaszt.Boszorkánymester, 7 },
             { KarakterAlkaszt.Tűzvarázsló, 6 },
             { KarakterAlkaszt.Varázsló, 2 },
+            { KarakterAlkaszt.Barbár, 10 },
+            { KarakterAlkaszt.Amazon, 8 },
+            { KarakterAlkaszt.Szerzetes, 5 },
+            { KarakterAlkaszt.Sámán, 4 },
+            { KarakterAlkaszt.Bajvívó, 9 },
         };
 
         /// <summary>
@@ -52,6 +57,11 @@ namespace MagusLib.KarakterKeszites
             { KarakterAlkaszt.Boszorkánymester, 17 },
             { KarakterAlkaszt.Tűzvarázsló, 17 },
             { KarakterAlkaszt.Varázsló, 15 },
+            { KarakterAlkaszt.Barbár, 26 },
+            { KarakterAlkaszt.Amazon, 22 },
+            { KarakterAlkaszt.Szerzetes, 15 },
+            { KarakterAlkaszt.Sámán, 15 },
+            { KarakterAlkaszt.Bajvívó, 20 },
         };
         /// <summary>
         /// Karakter védő értékének alkasztból származó alapértéke.
@@ -72,11 +82,16 @@ namespace MagusLib.KarakterKeszites
             { KarakterAlkaszt.Boszorkánymester, 72 },
             { KarakterAlkaszt.Tűzvarázsló, 72 },
             { KarakterAlkaszt.Varázsló, 70 },
+            { KarakterAlkaszt.Barbár, 70 },
+            { KarakterAlkaszt.Amazon, 73 },
+            { KarakterAlkaszt.Szerzetes, 75 },
+            { KarakterAlkaszt.Sámán, 70 },
+            { KarakterAlkaszt.Bajvívó, 75 },
         };
         /// <summary>
         /// Karakter célzó értékének alkasztból származó alapértéke.
         /// </summary>
-        public static readonly Dictionary<KarakterAlkaszt, int> CE_ALAP = new Dictionary<KarakterAlkaszt, int>()
+        public static readonly Dictionary<KarakterAlkaszt, uint> CE_ALAP = new Dictionary<KarakterAlkaszt, uint>()
         {
             { KarakterAlkaszt.Harcos, 0 },
             { KarakterAlkaszt.Tolvaj, 10 },
@@ -92,6 +107,16 @@ namespace MagusLib.KarakterKeszites
             { KarakterAlkaszt.Boszorkánymester, 5 },
             { KarakterAlkaszt.Tűzvarázsló, 0 },
             { KarakterAlkaszt.Varázsló, 0 },
+            { KarakterAlkaszt.Barbár, 0 },
+            { KarakterAlkaszt.Amazon, 10 },
+            { KarakterAlkaszt.Szerzetes, 0 },
+            { KarakterAlkaszt.Sámán, 0 },
+            { KarakterAlkaszt.Bajvívó, 0 },
+        };
+        public static readonly HashSet<KarakterAlkaszt> CE_TILTOTT = new HashSet<KarakterAlkaszt>
+        {
+            KarakterAlkaszt.Bajvívó,
+            KarakterAlkaszt.Lovag,
         };
         #endregion
 

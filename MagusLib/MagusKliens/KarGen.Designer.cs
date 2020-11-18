@@ -71,6 +71,46 @@
             this.fieldEgeszsegKorModosito = new System.Windows.Forms.TextBox();
             this.fieldSzepsegKorModosito = new System.Windows.Forms.TextBox();
             this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fieldNev = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelEP = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.labelFP = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.labelFPPerSzint = new System.Windows.Forms.Label();
+            this.fieldKE = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.fieldTE = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.fieldVE = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.fieldCE = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.fieldEro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldGyors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldUgyes)).BeginInit();
@@ -257,7 +297,7 @@
             // 
             // GeneraloBtn
             // 
-            this.GeneraloBtn.Location = new System.Drawing.Point(29, 301);
+            this.GeneraloBtn.Location = new System.Drawing.Point(301, 322);
             this.GeneraloBtn.Name = "GeneraloBtn";
             this.GeneraloBtn.Size = new System.Drawing.Size(75, 23);
             this.GeneraloBtn.TabIndex = 23;
@@ -269,7 +309,7 @@
             // 
             this.fajValasztoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.fajValasztoBox.FormattingEnabled = true;
-            this.fajValasztoBox.Location = new System.Drawing.Point(255, 90);
+            this.fajValasztoBox.Location = new System.Drawing.Point(255, 116);
             this.fajValasztoBox.Name = "fajValasztoBox";
             this.fajValasztoBox.Size = new System.Drawing.Size(162, 21);
             this.fajValasztoBox.TabIndex = 24;
@@ -278,7 +318,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(198, 93);
+            this.label1.Location = new System.Drawing.Point(198, 119);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(24, 13);
             this.label1.TabIndex = 25;
@@ -288,7 +328,7 @@
             // 
             this.alkasztValasztoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.alkasztValasztoBox.FormattingEnabled = true;
-            this.alkasztValasztoBox.Location = new System.Drawing.Point(254, 218);
+            this.alkasztValasztoBox.Location = new System.Drawing.Point(254, 244);
             this.alkasztValasztoBox.Name = "alkasztValasztoBox";
             this.alkasztValasztoBox.Size = new System.Drawing.Size(162, 21);
             this.alkasztValasztoBox.TabIndex = 27;
@@ -297,7 +337,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(198, 185);
+            this.label2.Location = new System.Drawing.Point(198, 211);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(36, 13);
             this.label2.TabIndex = 28;
@@ -306,7 +346,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(198, 221);
+            this.label3.Location = new System.Drawing.Point(198, 247);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 29;
@@ -315,7 +355,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(198, 257);
+            this.label4.Location = new System.Drawing.Point(198, 283);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 13);
             this.label4.TabIndex = 30;
@@ -325,7 +365,7 @@
             // 
             this.vallasValasztoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.vallasValasztoBox.FormattingEnabled = true;
-            this.vallasValasztoBox.Location = new System.Drawing.Point(255, 254);
+            this.vallasValasztoBox.Location = new System.Drawing.Point(255, 280);
             this.vallasValasztoBox.Name = "vallasValasztoBox";
             this.vallasValasztoBox.Size = new System.Drawing.Size(162, 21);
             this.vallasValasztoBox.TabIndex = 31;
@@ -334,7 +374,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(198, 125);
+            this.label5.Location = new System.Drawing.Point(198, 151);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(32, 13);
             this.label5.TabIndex = 33;
@@ -344,7 +384,7 @@
             // 
             this.nemValasztoBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.nemValasztoBox.FormattingEnabled = true;
-            this.nemValasztoBox.Location = new System.Drawing.Point(255, 122);
+            this.nemValasztoBox.Location = new System.Drawing.Point(255, 148);
             this.nemValasztoBox.Name = "nemValasztoBox";
             this.nemValasztoBox.Size = new System.Drawing.Size(162, 21);
             this.nemValasztoBox.TabIndex = 32;
@@ -352,7 +392,7 @@
             // 
             // fieldKaszt
             // 
-            this.fieldKaszt.Location = new System.Drawing.Point(255, 182);
+            this.fieldKaszt.Location = new System.Drawing.Point(255, 208);
             this.fieldKaszt.Name = "fieldKaszt";
             this.fieldKaszt.ReadOnly = true;
             this.fieldKaszt.Size = new System.Drawing.Size(161, 20);
@@ -361,7 +401,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(198, 155);
+            this.label6.Location = new System.Drawing.Point(198, 181);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(26, 13);
             this.label6.TabIndex = 35;
@@ -369,7 +409,7 @@
             // 
             // fieldKor
             // 
-            this.fieldKor.Location = new System.Drawing.Point(255, 153);
+            this.fieldKor.Location = new System.Drawing.Point(255, 179);
             this.fieldKor.Maximum = new decimal(new int[] {
             0,
             0,
@@ -382,7 +422,7 @@
             // 
             // fieldKorosztaly
             // 
-            this.fieldKorosztaly.Location = new System.Drawing.Point(316, 152);
+            this.fieldKorosztaly.Location = new System.Drawing.Point(316, 178);
             this.fieldKorosztaly.Name = "fieldKorosztaly";
             this.fieldKorosztaly.ReadOnly = true;
             this.fieldKorosztaly.Size = new System.Drawing.Size(101, 20);
@@ -447,6 +487,347 @@
             // 
             this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
             // 
+            // fieldNev
+            // 
+            this.fieldNev.Location = new System.Drawing.Point(254, 67);
+            this.fieldNev.Multiline = true;
+            this.fieldNev.Name = "fieldNev";
+            this.fieldNev.Size = new System.Drawing.Size(163, 43);
+            this.fieldNev.TabIndex = 45;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(198, 85);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(30, 13);
+            this.label7.TabIndex = 44;
+            this.label7.Text = "Név:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(254, 34);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(49, 20);
+            this.textBox1.TabIndex = 47;
+            // 
+            // labelEP
+            // 
+            this.labelEP.AutoSize = true;
+            this.labelEP.Location = new System.Drawing.Point(257, 15);
+            this.labelEP.Name = "labelEP";
+            this.labelEP.Size = new System.Drawing.Size(46, 13);
+            this.labelEP.TabIndex = 46;
+            this.labelEP.Text = "Max Ép:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(310, 34);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(49, 20);
+            this.textBox2.TabIndex = 49;
+            // 
+            // labelFP
+            // 
+            this.labelFP.AutoSize = true;
+            this.labelFP.Location = new System.Drawing.Point(312, 15);
+            this.labelFP.Name = "labelFP";
+            this.labelFP.Size = new System.Drawing.Size(45, 13);
+            this.labelFP.TabIndex = 48;
+            this.labelFP.Text = "Max Fp:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(366, 34);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(49, 20);
+            this.textBox3.TabIndex = 51;
+            // 
+            // labelFPPerSzint
+            // 
+            this.labelFPPerSzint.AutoSize = true;
+            this.labelFPPerSzint.Location = new System.Drawing.Point(364, 15);
+            this.labelFPPerSzint.Name = "labelFPPerSzint";
+            this.labelFPPerSzint.Size = new System.Drawing.Size(51, 13);
+            this.labelFPPerSzint.TabIndex = 50;
+            this.labelFPPerSzint.Text = "FP/Szint:";
+            // 
+            // fieldKE
+            // 
+            this.fieldKE.Location = new System.Drawing.Point(537, 12);
+            this.fieldKE.Name = "fieldKE";
+            this.fieldKE.ReadOnly = true;
+            this.fieldKE.Size = new System.Drawing.Size(49, 20);
+            this.fieldKE.TabIndex = 57;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(452, 15);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(82, 13);
+            this.label8.TabIndex = 56;
+            this.label8.Text = "Kezdeményező:";
+            // 
+            // fieldTE
+            // 
+            this.fieldTE.Location = new System.Drawing.Point(537, 67);
+            this.fieldTE.Name = "fieldTE";
+            this.fieldTE.ReadOnly = true;
+            this.fieldTE.Size = new System.Drawing.Size(49, 20);
+            this.fieldTE.TabIndex = 62;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(452, 70);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(49, 13);
+            this.label11.TabIndex = 61;
+            this.label11.Text = "Támadó:";
+            // 
+            // fieldVE
+            // 
+            this.fieldVE.Location = new System.Drawing.Point(537, 119);
+            this.fieldVE.Name = "fieldVE";
+            this.fieldVE.ReadOnly = true;
+            this.fieldVE.Size = new System.Drawing.Size(49, 20);
+            this.fieldVE.TabIndex = 67;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(452, 122);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(35, 13);
+            this.label13.TabIndex = 66;
+            this.label13.Text = "Védő:";
+            // 
+            // fieldCE
+            // 
+            this.fieldCE.Location = new System.Drawing.Point(537, 175);
+            this.fieldCE.Name = "fieldCE";
+            this.fieldCE.ReadOnly = true;
+            this.fieldCE.Size = new System.Drawing.Size(49, 20);
+            this.fieldCE.TabIndex = 72;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(452, 178);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(36, 13);
+            this.label15.TabIndex = 71;
+            this.label15.Text = "Célzó:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(63, 299);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(109, 20);
+            this.textBox4.TabIndex = 77;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(6, 302);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(38, 13);
+            this.label16.TabIndex = 76;
+            this.label16.Text = "Iskola:";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(63, 325);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(109, 20);
+            this.textBox5.TabIndex = 79;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(6, 328);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(34, 13);
+            this.label17.TabIndex = 78;
+            this.label17.Text = "Foka:";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(63, 351);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
+            this.textBox7.Size = new System.Drawing.Size(109, 20);
+            this.textBox7.TabIndex = 81;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(6, 354);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(41, 13);
+            this.label18.TabIndex = 80;
+            this.label18.Text = "Szintje:";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(14, 393);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
+            this.textBox10.Size = new System.Drawing.Size(43, 20);
+            this.textBox10.TabIndex = 83;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(19, 377);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(36, 13);
+            this.label19.TabIndex = 82;
+            this.label19.Text = "Kaszt:";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(82, 393);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.ReadOnly = true;
+            this.textBox13.Size = new System.Drawing.Size(43, 20);
+            this.textBox13.TabIndex = 85;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(84, 377);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(36, 13);
+            this.label20.TabIndex = 84;
+            this.label20.Text = "Kaszt:";
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(82, 467);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
+            this.textBox16.Size = new System.Drawing.Size(43, 20);
+            this.textBox16.TabIndex = 89;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(84, 451);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(36, 13);
+            this.label21.TabIndex = 88;
+            this.label21.Text = "Kaszt:";
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(14, 467);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.ReadOnly = true;
+            this.textBox18.Size = new System.Drawing.Size(43, 20);
+            this.textBox18.TabIndex = 87;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(19, 451);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(36, 13);
+            this.label22.TabIndex = 86;
+            this.label22.Text = "Kaszt:";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(48, 280);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(29, 13);
+            this.label23.TabIndex = 90;
+            this.label23.Text = "Pszi:";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(32, 430);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(74, 13);
+            this.label24.TabIndex = 91;
+            this.label24.Text = "Mana Pontok:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(592, 15);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(55, 13);
+            this.label9.TabIndex = 59;
+            this.label9.Text = "HM/Szint:";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(649, 12);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
+            this.textBox8.Size = new System.Drawing.Size(49, 20);
+            this.textBox8.TabIndex = 60;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(592, 70);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(55, 13);
+            this.label10.TabIndex = 64;
+            this.label10.Text = "HM/Szint:";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(649, 67);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
+            this.textBox9.Size = new System.Drawing.Size(49, 20);
+            this.textBox9.TabIndex = 65;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(592, 122);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(55, 13);
+            this.label12.TabIndex = 69;
+            this.label12.Text = "HM/Szint:";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(649, 119);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
+            this.textBox12.Size = new System.Drawing.Size(49, 20);
+            this.textBox12.TabIndex = 70;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(592, 178);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(55, 13);
+            this.label14.TabIndex = 74;
+            this.label14.Text = "HM/Szint:";
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(649, 175);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.ReadOnly = true;
+            this.textBox15.Size = new System.Drawing.Size(49, 20);
+            this.textBox15.TabIndex = 75;
+            // 
             // KarGen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -455,6 +836,46 @@
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 985);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.textBox18);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.fieldCE);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.fieldVE);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.fieldTE);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.fieldKE);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.labelFPPerSzint);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.labelFP);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.labelEP);
+            this.Controls.Add(this.fieldNev);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.fieldSzepsegKorModosito);
             this.Controls.Add(this.fieldEgeszsegKorModosito);
             this.Controls.Add(this.fieldUgyessegKorModosito);
@@ -557,6 +978,46 @@
         private System.Windows.Forms.TextBox fieldUgyessegKorModosito;
         private System.Windows.Forms.TextBox fieldEgeszsegKorModosito;
         private System.Windows.Forms.TextBox fieldSzepsegKorModosito;
+        private System.Windows.Forms.TextBox fieldNev;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label labelEP;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label labelFP;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label labelFPPerSzint;
+        private System.Windows.Forms.TextBox fieldKE;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox fieldTE;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox fieldVE;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox fieldCE;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox15;
     }
 }
 
