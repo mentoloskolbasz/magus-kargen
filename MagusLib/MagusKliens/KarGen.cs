@@ -20,6 +20,9 @@ namespace MagusKliens
         protected KorAlapertekModosito korAlapertekModosito = new KorAlapertekModosito();
         protected List<System.Windows.Forms.TextBox> mezok;
         protected IHatarozo<uint> celzoHatarozo = new CelzoErtekHatarozo();
+        protected IHatarozo<uint> kezdemenyezoHatarozo = new KezdemenyezoErtekHatarozo();
+        protected IHatarozo<uint> tamadoHatarozo = new TamadoErtekHatarozo();
+        protected IHatarozo<uint> vedoHatarozo = new VedoErtekHatarozo();
         protected void modositokFrissitese()
         {
             
@@ -162,6 +165,9 @@ namespace MagusKliens
         protected void harcertekFrissitese()
         {
             fieldCE.Text = celzoHatarozo.Hataroz(karakter).ToString();
+            fieldKE.Text = kezdemenyezoHatarozo.Hataroz(karakter).ToString();
+            fieldTE.Text = tamadoHatarozo.Hataroz(karakter).ToString();
+            fieldVE.Text = vedoHatarozo.Hataroz(karakter).ToString();
         }
 
         #region Bekötés FORMRA

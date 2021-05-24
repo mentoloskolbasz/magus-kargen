@@ -113,10 +113,17 @@ namespace MagusLib.KarakterKeszites
             { KarakterAlkaszt.Sámán, 0 },
             { KarakterAlkaszt.Bajvívó, 0 },
         };
+        public static readonly Dictionary<JatszhatoFaj, uint> CE_FAJ = new Dictionary<JatszhatoFaj, uint>()
+        {
+            {JatszhatoFaj.Elf, 20},
+            {JatszhatoFaj.Félelf, 10},
+
+        };
         public static readonly HashSet<KarakterAlkaszt> CE_TILTOTT = new HashSet<KarakterAlkaszt>
         {
             KarakterAlkaszt.Bajvívó,
             KarakterAlkaszt.Lovag,
+            KarakterAlkaszt.Paplovag,
         };
         #endregion
 

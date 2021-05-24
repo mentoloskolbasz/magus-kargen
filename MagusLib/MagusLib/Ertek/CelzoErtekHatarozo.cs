@@ -21,7 +21,14 @@ namespace MagusLib.Ertek
 
                 uint ertek = (uint)Math.Max((karakter.Ugyesseg + korAlapertekModosito.Ugyesseg - 10), 0);
 
-                ertek += Allandok.CE_ALAP[karakter.Alkaszt];
+                if (Allandok.CE_FAJ.ContainsKey(karakter.Faj))
+	            {
+                    ertek += Allandok.CE_FAJ[karakter.Faj];
+	            }
+                else
+	            {
+                     ertek += Allandok.CE_ALAP[karakter.Alkaszt];
+	            }            
 
                 return ertek;
             }
