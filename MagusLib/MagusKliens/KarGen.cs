@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace MagusKliens
 {
     public partial class KarGen : Form
@@ -213,8 +214,11 @@ namespace MagusKliens
             karakter.Vallas = (Vallas)vallasValasztoBox.SelectedValue;
         }
 
+
+
+
         #endregion
 
-        
+       
     }
 }
