@@ -125,6 +125,31 @@ namespace MagusLib.KarakterKeszites
             KarakterAlkaszt.Lovag,
             KarakterAlkaszt.Paplovag,
         };
+        /// <summary>
+        /// Szintenkénti harcérték módosító értéke
+        /// </summary>
+        public static readonly Dictionary<KarakterAlkaszt, uint> HM_PER_SZINT = new Dictionary<KarakterAlkaszt, uint>()
+        {
+            { KarakterAlkaszt.Harcos, 11 },
+            { KarakterAlkaszt.Tolvaj, 6 },
+            { KarakterAlkaszt.Pap, 8 },
+            { KarakterAlkaszt.Harcművész, 8 },
+            { KarakterAlkaszt.Boszorkány, 4 },
+            { KarakterAlkaszt.Gladiátor, 12 },
+            { KarakterAlkaszt.Fejvadász, 11 },
+            { KarakterAlkaszt.Lovag, 12 },
+            { KarakterAlkaszt.Bárd, 9 },
+            { KarakterAlkaszt.Paplovag, 9 },
+            { KarakterAlkaszt.Kardművész, 8 },
+            { KarakterAlkaszt.Boszorkánymester, 7 },
+            { KarakterAlkaszt.Tűzvarázsló, 8 },
+            { KarakterAlkaszt.Varázsló, 4 },
+            { KarakterAlkaszt.Barbár, 12 },
+            { KarakterAlkaszt.Amazon, 10 },
+            { KarakterAlkaszt.Szerzetes, 8 },
+            { KarakterAlkaszt.Sámán, 5 },
+            { KarakterAlkaszt.Bajvívó, 12 },
+        };
         #endregion
 
         #region Képességek Faji Módosítói
@@ -586,6 +611,77 @@ namespace MagusLib.KarakterKeszites
             },
         };
 
+        #endregion
+
+        #region Életerő és Fájdalomtűrés
+        public static readonly Dictionary<KarakterAlkaszt, uint> EP_ALAP = new Dictionary<KarakterAlkaszt, uint>()
+        {
+            { KarakterAlkaszt.Harcos, 7 },
+            { KarakterAlkaszt.Tolvaj, 4 },
+            { KarakterAlkaszt.Pap, 6 },
+            { KarakterAlkaszt.Harcművész, 4 },
+            { KarakterAlkaszt.Boszorkány, 3 },
+            { KarakterAlkaszt.Gladiátor, 8 },
+            { KarakterAlkaszt.Fejvadász, 6 },
+            { KarakterAlkaszt.Lovag, 7 },
+            { KarakterAlkaszt.Bárd, 5 },
+            { KarakterAlkaszt.Paplovag, 8 },
+            { KarakterAlkaszt.Kardművész, 4 },
+            { KarakterAlkaszt.Boszorkánymester, 3 },
+            { KarakterAlkaszt.Tűzvarázsló, 5 },
+            { KarakterAlkaszt.Varázsló, 3 },
+            { KarakterAlkaszt.Barbár, 8 },
+            { KarakterAlkaszt.Amazon, 7 },
+            { KarakterAlkaszt.Szerzetes, 4 },
+            { KarakterAlkaszt.Sámán, 4 },
+            { KarakterAlkaszt.Bajvívó, 5 },
+        };
+
+        public static readonly Dictionary<KarakterAlkaszt, uint> FP_ALAP = new Dictionary<KarakterAlkaszt, uint>()
+        {
+            { KarakterAlkaszt.Harcos, 6 },
+            { KarakterAlkaszt.Tolvaj, 5 },
+            { KarakterAlkaszt.Pap, 6 },
+            { KarakterAlkaszt.Harcművész, 8 },
+            { KarakterAlkaszt.Boszorkány, 1 },
+            { KarakterAlkaszt.Gladiátor, 7 },
+            { KarakterAlkaszt.Fejvadász, 7 },
+            { KarakterAlkaszt.Lovag, 6 },
+            { KarakterAlkaszt.Bárd, 6 },
+            { KarakterAlkaszt.Paplovag, 7 },
+            { KarakterAlkaszt.Kardművész, 8 },
+            { KarakterAlkaszt.Boszorkánymester, 4 },
+            { KarakterAlkaszt.Tűzvarázsló, 4 },
+            { KarakterAlkaszt.Varázsló, 2 },
+            { KarakterAlkaszt.Barbár, 7 },
+            { KarakterAlkaszt.Amazon, 7 },
+            { KarakterAlkaszt.Szerzetes, 8 },
+            { KarakterAlkaszt.Sámán, 6 },
+            { KarakterAlkaszt.Bajvívó, 5 },
+        };
+
+        public static readonly Dictionary<KarakterAlkaszt, Func<int>> FP_PER_SZINT = new Dictionary<KarakterAlkaszt, Func<int>>()
+        {
+            { KarakterAlkaszt.Harcos, ()=>(new K6()).Dobas() + 4 },
+            { KarakterAlkaszt.Tolvaj,  ()=>(new K6()).Dobas() + 3 },
+            { KarakterAlkaszt.Pap,  ()=>(new K6()).Dobas() + 2 },
+            { KarakterAlkaszt.Harcművész, ()=>(new K6()).Dobas() + 5 },
+            { KarakterAlkaszt.Boszorkány, ()=>(new K6()).Dobas() },
+            { KarakterAlkaszt.Gladiátor, ()=>(new K6()).Dobas() + 5 },
+            { KarakterAlkaszt.Fejvadász, ()=>(new K6()).Dobas() + 5  },
+            { KarakterAlkaszt.Lovag,  ()=>(new K6()).Dobas() + 5 },
+            { KarakterAlkaszt.Bárd,  ()=>(new K6()).Dobas() + 3 },
+            { KarakterAlkaszt.Paplovag,  ()=>(new K6()).Dobas() + 5 },
+            { KarakterAlkaszt.Kardművész, ()=>(new K6()).Dobas() + 5 },
+            { KarakterAlkaszt.Boszorkánymester, ()=>(new K6()).Dobas() + 1 },
+            { KarakterAlkaszt.Tűzvarázsló, ()=>(new K6()).Dobas() + 1 },
+            { KarakterAlkaszt.Varázsló, ()=>(new K6()).Dobas() },
+            { KarakterAlkaszt.Barbár,  ()=>(new K6()).Dobas() + 5 },
+            { KarakterAlkaszt.Amazon,  ()=>(new K6()).Dobas() + 4 },
+            { KarakterAlkaszt.Szerzetes, ()=>(new K6()).Dobas() + 5 },
+            { KarakterAlkaszt.Sámán,  ()=>(new K6()).Dobas() + 2 },
+            { KarakterAlkaszt.Bajvívó,  ()=>(new K6()).Dobas() + 3 },
+        };
         #endregion
     }
 }

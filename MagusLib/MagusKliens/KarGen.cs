@@ -24,6 +24,9 @@ namespace MagusKliens
         protected IHatarozo<uint> kezdemenyezoHatarozo = new KezdemenyezoErtekHatarozo();
         protected IHatarozo<uint> tamadoHatarozo = new TamadoErtekHatarozo();
         protected IHatarozo<uint> vedoHatarozo = new VedoErtekHatarozo();
+        protected IHatarozo<uint> epHatarozo = new EPHatarozo();
+        protected IHatarozo<uint> fpHatarozo = new FPHatarozo();
+
         protected void modositokFrissitese()
         {
             
@@ -100,6 +103,7 @@ namespace MagusKliens
 
             karakter.Faj = JatszhatoFaj.Ember;
             karakter.Nem = KarakterNeme.Férfi;
+            karakter.Alkaszt = KarakterAlkaszt.Harcos;
             karakter.Kor = 30;
 
         }
@@ -169,6 +173,8 @@ namespace MagusKliens
             fieldKE.Text = kezdemenyezoHatarozo.Hataroz(karakter).ToString();
             fieldTE.Text = tamadoHatarozo.Hataroz(karakter).ToString();
             fieldVE.Text = vedoHatarozo.Hataroz(karakter).ToString();
+            fieldMaxEP.Text = epHatarozo.Hataroz(karakter).ToString();
+            fieldMaxFP.Text = fpHatarozo.Hataroz(karakter).ToString();
         }
 
         #region Bekötés FORMRA
@@ -214,11 +220,8 @@ namespace MagusKliens
             karakter.Vallas = (Vallas)vallasValasztoBox.SelectedValue;
         }
 
-
-
-
         #endregion
 
-       
+        
     }
 }

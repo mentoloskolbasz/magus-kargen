@@ -36,14 +36,14 @@ namespace MagusLib
 
         uint Celzo { get; set; }
 
-        uint HMSzint { get; set; }
-        uint TamPerKor { get; set; }
+        uint HMSzint { get; set; }        
 
         #endregion
 
         #region EleteroEsMagia
         uint Ep { get; set; }
         uint Fp { get; set; }
+        uint FpPerSzint { get; set; }
         uint Pszi { get; set; }
         uint Mana { get; set; }
         #endregion

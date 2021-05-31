@@ -223,15 +223,7 @@ namespace MagusKliens
                 this.setProperty("HMSzint");
             }
         }
-        public override uint TamPerKor
-        {
-            get => base.TamPerKor;
-            set
-            {
-                base.TamPerKor = value;
-                this.setProperty("TamPerKor");
-            }
-        }
+        
         #endregion
 
         #region Életerő és Mágia
@@ -250,6 +242,15 @@ namespace MagusKliens
             set
             {
                 base.Fp = value;
+                this.setProperty("Fp");
+            }
+        }
+        public override uint FpPerSzint
+        {
+            get => base.FpPerSzint;
+            set
+            {
+                base.FpPerSzint = value;
                 this.setProperty("Fp");
             }
         }

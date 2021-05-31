@@ -162,7 +162,6 @@
             this.label48 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBoxFegyverekKezben = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label67 = new System.Windows.Forms.Label();
@@ -229,6 +228,71 @@
             this.label53 = new System.Windows.Forms.Label();
             this.groupBoxLogo = new System.Windows.Forms.GroupBox();
             this.groupBoxBirtokoltFegyverek = new System.Windows.Forms.GroupBox();
+            this.numericUpDown67 = new System.Windows.Forms.NumericUpDown();
+            this.textBox39 = new System.Windows.Forms.TextBox();
+            this.numericUpDown68 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown69 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown70 = new System.Windows.Forms.NumericUpDown();
+            this.textBox40 = new System.Windows.Forms.TextBox();
+            this.textBox41 = new System.Windows.Forms.TextBox();
+            this.numericUpDown63 = new System.Windows.Forms.NumericUpDown();
+            this.textBox36 = new System.Windows.Forms.TextBox();
+            this.numericUpDown64 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown65 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown66 = new System.Windows.Forms.NumericUpDown();
+            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.textBox38 = new System.Windows.Forms.TextBox();
+            this.numericUpDown59 = new System.Windows.Forms.NumericUpDown();
+            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.numericUpDown60 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown61 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown62 = new System.Windows.Forms.NumericUpDown();
+            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.numericUpDown55 = new System.Windows.Forms.NumericUpDown();
+            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.numericUpDown56 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown57 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown58 = new System.Windows.Forms.NumericUpDown();
+            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.numericUpDown51 = new System.Windows.Forms.NumericUpDown();
+            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.numericUpDown52 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown53 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown54 = new System.Windows.Forms.NumericUpDown();
+            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.numericUpDown47 = new System.Windows.Forms.NumericUpDown();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.numericUpDown48 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown49 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown50 = new System.Windows.Forms.NumericUpDown();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.checkBox14 = new System.Windows.Forms.CheckBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.numericUpDown46 = new System.Windows.Forms.NumericUpDown();
+            this.label74 = new System.Windows.Forms.Label();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.numericUpDown45 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown44 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown43 = new System.Windows.Forms.NumericUpDown();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.label73 = new System.Windows.Forms.Label();
@@ -237,93 +301,56 @@
             this.label70 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.fieldKE = new System.Windows.Forms.TextBox();
-            this.fieldVE = new System.Windows.Forms.TextBox();
-            this.fieldTE = new System.Windows.Forms.TextBox();
-            this.fieldCE = new System.Windows.Forms.TextBox();
-            this.fieldOszthatoHM = new System.Windows.Forms.TextBox();
-            this.label52 = new System.Windows.Forms.Label();
-            this.fieldKEFegyveres = new System.Windows.Forms.NumericUpDown();
-            this.label33 = new System.Windows.Forms.Label();
-            this.fieldTEFegyveres = new System.Windows.Forms.NumericUpDown();
+            this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label82 = new System.Windows.Forms.Label();
+            this.numericUpDown71 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown72 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown73 = new System.Windows.Forms.NumericUpDown();
+            this.label83 = new System.Windows.Forms.Label();
+            this.numericUpDown74 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown75 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown76 = new System.Windows.Forms.NumericUpDown();
+            this.label84 = new System.Windows.Forms.Label();
+            this.numericUpDown77 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown78 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown79 = new System.Windows.Forms.NumericUpDown();
+            this.label85 = new System.Windows.Forms.Label();
+            this.numericUpDown80 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown81 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown82 = new System.Windows.Forms.NumericUpDown();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.fieldVEFegyveres = new System.Windows.Forms.NumericUpDown();
             this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
             this.fieldCEFegyveres = new System.Windows.Forms.NumericUpDown();
+            this.fieldKEFegyveres = new System.Windows.Forms.NumericUpDown();
             this.label29 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
+            this.fieldOszthatoHM = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
+            this.fieldCE = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
+            this.fieldTE = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
+            this.fieldVE = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
+            this.fieldKE = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.numericUpDown43 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown44 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown45 = new System.Windows.Forms.NumericUpDown();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.label74 = new System.Windows.Forms.Label();
-            this.numericUpDown46 = new System.Windows.Forms.NumericUpDown();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.numericUpDown47 = new System.Windows.Forms.NumericUpDown();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.numericUpDown48 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown49 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown50 = new System.Windows.Forms.NumericUpDown();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.numericUpDown51 = new System.Windows.Forms.NumericUpDown();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.numericUpDown52 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown53 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown54 = new System.Windows.Forms.NumericUpDown();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.numericUpDown55 = new System.Windows.Forms.NumericUpDown();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.numericUpDown56 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown57 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown58 = new System.Windows.Forms.NumericUpDown();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.numericUpDown59 = new System.Windows.Forms.NumericUpDown();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.numericUpDown60 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown61 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown62 = new System.Windows.Forms.NumericUpDown();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.numericUpDown63 = new System.Windows.Forms.NumericUpDown();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.numericUpDown64 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown65 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown66 = new System.Windows.Forms.NumericUpDown();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.numericUpDown67 = new System.Windows.Forms.NumericUpDown();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.numericUpDown68 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown69 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown70 = new System.Windows.Forms.NumericUpDown();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.fieldTEFegyveres = new System.Windows.Forms.NumericUpDown();
+            this.label11 = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.textBox45 = new System.Windows.Forms.TextBox();
+            this.textBox44 = new System.Windows.Forms.TextBox();
+            this.label79 = new System.Windows.Forms.Label();
+            this.textBox43 = new System.Windows.Forms.TextBox();
+            this.textBox42 = new System.Windows.Forms.TextBox();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fieldEro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldGyors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldUgyes)).BeginInit();
@@ -364,7 +391,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iKarakterBindingSource)).BeginInit();
             this.groupBoxFegyverekKezben.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown34)).BeginInit();
@@ -410,40 +436,55 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
             this.groupBoxBirtokoltFegyverek.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldKEFegyveres)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldTEFegyveres)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldVEFegyveres)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldCEFegyveres)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown44)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown45)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown46)).BeginInit();
-            this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown47)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown48)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown49)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown50)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown51)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown52)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown53)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown54)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown55)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown56)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown57)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown58)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown59)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown60)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown61)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown62)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown63)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown64)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown65)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown66)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown67)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown68)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown69)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown70)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown63)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown64)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown65)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown66)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown59)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown60)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown61)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown62)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown55)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown56)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown57)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown58)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown51)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown52)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown53)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown54)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown47)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown48)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown49)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown50)).BeginInit();
+            this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown46)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown45)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iKarakterBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown71)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown72)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown73)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown74)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown75)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown76)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown77)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown78)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown79)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown80)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown81)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown82)).BeginInit();
+            this.tabControl2.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fieldVEFegyveres)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fieldCEFegyveres)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fieldKEFegyveres)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fieldTEFegyveres)).BeginInit();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelEro
@@ -619,9 +660,9 @@
             // GeneraloBtn
             // 
             this.GeneraloBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.GeneraloBtn.Location = new System.Drawing.Point(74, 83);
+            this.GeneraloBtn.Location = new System.Drawing.Point(18, 83);
             this.GeneraloBtn.Name = "GeneraloBtn";
-            this.GeneraloBtn.Size = new System.Drawing.Size(161, 30);
+            this.GeneraloBtn.Size = new System.Drawing.Size(242, 30);
             this.GeneraloBtn.TabIndex = 23;
             this.GeneraloBtn.Text = "Generálás";
             this.GeneraloBtn.UseVisualStyleBackColor = true;
@@ -1203,25 +1244,25 @@
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(80, 16);
+            this.label9.Location = new System.Drawing.Point(21, 16);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(155, 20);
+            this.label9.Size = new System.Drawing.Size(239, 20);
             this.label9.TabIndex = 105;
             this.label9.Text = "Tapasztalati szint:";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // fieldTSZ
             // 
             this.fieldTSZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.fieldTSZ.Location = new System.Drawing.Point(126, 39);
+            this.fieldTSZ.Location = new System.Drawing.Point(18, 39);
             this.fieldTSZ.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.fieldTSZ.Name = "fieldTSZ";
-            this.fieldTSZ.Size = new System.Drawing.Size(48, 38);
+            this.fieldTSZ.Size = new System.Drawing.Size(243, 38);
             this.fieldTSZ.TabIndex = 106;
             this.fieldTSZ.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.fieldTSZ.Value = new decimal(new int[] {
@@ -1368,7 +1409,7 @@
             this.groupBoxAlapAdatok.Controls.Add(this.fieldNev);
             this.groupBoxAlapAdatok.Controls.Add(this.fieldKor);
             this.groupBoxAlapAdatok.Controls.Add(this.fieldKorosztaly);
-            this.groupBoxAlapAdatok.Location = new System.Drawing.Point(270, 8);
+            this.groupBoxAlapAdatok.Location = new System.Drawing.Point(355, 12);
             this.groupBoxAlapAdatok.Name = "groupBoxAlapAdatok";
             this.groupBoxAlapAdatok.Size = new System.Drawing.Size(297, 345);
             this.groupBoxAlapAdatok.TabIndex = 94;
@@ -1522,7 +1563,7 @@
             this.groupBoxTSZ.Controls.Add(this.label9);
             this.groupBoxTSZ.Controls.Add(this.GeneraloBtn);
             this.groupBoxTSZ.Controls.Add(this.fieldTSZ);
-            this.groupBoxTSZ.Location = new System.Drawing.Point(271, 355);
+            this.groupBoxTSZ.Location = new System.Drawing.Point(355, 355);
             this.groupBoxTSZ.Name = "groupBoxTSZ";
             this.groupBoxTSZ.Size = new System.Drawing.Size(297, 119);
             this.groupBoxTSZ.TabIndex = 108;
@@ -1643,7 +1684,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Location = new System.Drawing.Point(573, 217);
+            this.tabControl1.Location = new System.Drawing.Point(741, 217);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(312, 377);
@@ -1767,7 +1808,7 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage4.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.tabPage4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage4.BackgroundImage")));
             this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
@@ -1777,15 +1818,11 @@
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Találati térkép";
             // 
-            // iKarakterBindingSource
-            // 
-            this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
-            // 
             // groupBoxFegyverekKezben
             // 
+            this.groupBoxFegyverekKezben.Controls.Add(this.groupBox3);
             this.groupBoxFegyverekKezben.Controls.Add(this.groupBox5);
             this.groupBoxFegyverekKezben.Controls.Add(this.groupBox4);
-            this.groupBoxFegyverekKezben.Controls.Add(this.groupBox3);
             this.groupBoxFegyverekKezben.Controls.Add(this.label60);
             this.groupBoxFegyverekKezben.Controls.Add(this.numericUpDown15);
             this.groupBoxFegyverekKezben.Controls.Add(this.textBox20);
@@ -1800,13 +1837,17 @@
             this.groupBoxFegyverekKezben.Controls.Add(this.label53);
             this.groupBoxFegyverekKezben.Location = new System.Drawing.Point(10, 828);
             this.groupBoxFegyverekKezben.Name = "groupBoxFegyverekKezben";
-            this.groupBoxFegyverekKezben.Size = new System.Drawing.Size(876, 145);
+            this.groupBoxFegyverekKezben.Size = new System.Drawing.Size(1043, 145);
             this.groupBoxFegyverekKezben.TabIndex = 111;
             this.groupBoxFegyverekKezben.TabStop = false;
             this.groupBoxFegyverekKezben.Text = "Fegyverek kézben";
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.label82);
+            this.groupBox5.Controls.Add(this.numericUpDown71);
+            this.groupBox5.Controls.Add(this.numericUpDown72);
+            this.groupBox5.Controls.Add(this.numericUpDown73);
             this.groupBox5.Controls.Add(this.label67);
             this.groupBox5.Controls.Add(this.label68);
             this.groupBox5.Controls.Add(this.label69);
@@ -1819,9 +1860,9 @@
             this.groupBox5.Controls.Add(this.numericUpDown40);
             this.groupBox5.Controls.Add(this.numericUpDown41);
             this.groupBox5.Controls.Add(this.numericUpDown42);
-            this.groupBox5.Location = new System.Drawing.Point(710, 16);
+            this.groupBox5.Location = new System.Drawing.Point(849, 16);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(141, 116);
+            this.groupBox5.Size = new System.Drawing.Size(187, 116);
             this.groupBox5.TabIndex = 21;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Sebzés";
@@ -1871,6 +1912,7 @@
             // 
             // numericUpDown36
             // 
+            this.numericUpDown36.Enabled = false;
             this.numericUpDown36.Location = new System.Drawing.Point(7, 87);
             this.numericUpDown36.Name = "numericUpDown36";
             this.numericUpDown36.Size = new System.Drawing.Size(37, 20);
@@ -1895,6 +1937,7 @@
             // 
             // numericUpDown39
             // 
+            this.numericUpDown39.Enabled = false;
             this.numericUpDown39.Location = new System.Drawing.Point(7, 61);
             this.numericUpDown39.Name = "numericUpDown39";
             this.numericUpDown39.Size = new System.Drawing.Size(37, 20);
@@ -1919,6 +1962,7 @@
             // 
             // numericUpDown42
             // 
+            this.numericUpDown42.Enabled = false;
             this.numericUpDown42.Location = new System.Drawing.Point(7, 35);
             this.numericUpDown42.Name = "numericUpDown42";
             this.numericUpDown42.Size = new System.Drawing.Size(37, 20);
@@ -1927,8 +1971,12 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.label83);
             this.groupBox4.Controls.Add(this.label64);
+            this.groupBox4.Controls.Add(this.numericUpDown74);
             this.groupBox4.Controls.Add(this.label65);
+            this.groupBox4.Controls.Add(this.numericUpDown75);
+            this.groupBox4.Controls.Add(this.numericUpDown76);
             this.groupBox4.Controls.Add(this.label66);
             this.groupBox4.Controls.Add(this.numericUpDown25);
             this.groupBox4.Controls.Add(this.numericUpDown26);
@@ -1939,9 +1987,9 @@
             this.groupBox4.Controls.Add(this.numericUpDown31);
             this.groupBox4.Controls.Add(this.numericUpDown32);
             this.groupBox4.Controls.Add(this.numericUpDown33);
-            this.groupBox4.Location = new System.Drawing.Point(563, 16);
+            this.groupBox4.Location = new System.Drawing.Point(656, 16);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(141, 116);
+            this.groupBox4.Size = new System.Drawing.Size(187, 116);
             this.groupBox4.TabIndex = 20;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Védő érték / Táv";
@@ -1991,6 +2039,7 @@
             // 
             // numericUpDown27
             // 
+            this.numericUpDown27.Enabled = false;
             this.numericUpDown27.Location = new System.Drawing.Point(7, 87);
             this.numericUpDown27.Name = "numericUpDown27";
             this.numericUpDown27.Size = new System.Drawing.Size(37, 20);
@@ -2015,6 +2064,7 @@
             // 
             // numericUpDown30
             // 
+            this.numericUpDown30.Enabled = false;
             this.numericUpDown30.Location = new System.Drawing.Point(7, 61);
             this.numericUpDown30.Name = "numericUpDown30";
             this.numericUpDown30.Size = new System.Drawing.Size(37, 20);
@@ -2039,6 +2089,7 @@
             // 
             // numericUpDown33
             // 
+            this.numericUpDown33.Enabled = false;
             this.numericUpDown33.Location = new System.Drawing.Point(7, 35);
             this.numericUpDown33.Name = "numericUpDown33";
             this.numericUpDown33.Size = new System.Drawing.Size(37, 20);
@@ -2047,8 +2098,12 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label84);
             this.groupBox3.Controls.Add(this.label61);
+            this.groupBox3.Controls.Add(this.numericUpDown77);
             this.groupBox3.Controls.Add(this.label62);
+            this.groupBox3.Controls.Add(this.numericUpDown78);
+            this.groupBox3.Controls.Add(this.numericUpDown79);
             this.groupBox3.Controls.Add(this.label63);
             this.groupBox3.Controls.Add(this.numericUpDown16);
             this.groupBox3.Controls.Add(this.numericUpDown17);
@@ -2059,9 +2114,9 @@
             this.groupBox3.Controls.Add(this.numericUpDown22);
             this.groupBox3.Controls.Add(this.numericUpDown23);
             this.groupBox3.Controls.Add(this.numericUpDown24);
-            this.groupBox3.Location = new System.Drawing.Point(416, 16);
+            this.groupBox3.Location = new System.Drawing.Point(463, 16);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(141, 116);
+            this.groupBox3.Size = new System.Drawing.Size(187, 116);
             this.groupBox3.TabIndex = 19;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Támadó / Célzó érték";
@@ -2111,6 +2166,7 @@
             // 
             // numericUpDown18
             // 
+            this.numericUpDown18.Enabled = false;
             this.numericUpDown18.Location = new System.Drawing.Point(7, 87);
             this.numericUpDown18.Name = "numericUpDown18";
             this.numericUpDown18.Size = new System.Drawing.Size(37, 20);
@@ -2135,6 +2191,7 @@
             // 
             // numericUpDown21
             // 
+            this.numericUpDown21.Enabled = false;
             this.numericUpDown21.Location = new System.Drawing.Point(7, 61);
             this.numericUpDown21.Name = "numericUpDown21";
             this.numericUpDown21.Size = new System.Drawing.Size(37, 20);
@@ -2159,6 +2216,7 @@
             // 
             // numericUpDown24
             // 
+            this.numericUpDown24.Enabled = false;
             this.numericUpDown24.Location = new System.Drawing.Point(7, 35);
             this.numericUpDown24.Name = "numericUpDown24";
             this.numericUpDown24.Size = new System.Drawing.Size(37, 20);
@@ -2206,8 +2264,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label85);
             this.groupBox1.Controls.Add(this.label59);
+            this.groupBox1.Controls.Add(this.numericUpDown80);
             this.groupBox1.Controls.Add(this.label58);
+            this.groupBox1.Controls.Add(this.numericUpDown81);
+            this.groupBox1.Controls.Add(this.numericUpDown82);
             this.groupBox1.Controls.Add(this.label57);
             this.groupBox1.Controls.Add(this.numericUpDown11);
             this.groupBox1.Controls.Add(this.numericUpDown12);
@@ -2220,7 +2282,7 @@
             this.groupBox1.Controls.Add(this.numericUpDown5);
             this.groupBox1.Location = new System.Drawing.Point(270, 16);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(141, 116);
+            this.groupBox1.Size = new System.Drawing.Size(187, 116);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kezdeményező érték";
@@ -2270,6 +2332,7 @@
             // 
             // numericUpDown13
             // 
+            this.numericUpDown13.Enabled = false;
             this.numericUpDown13.Location = new System.Drawing.Point(7, 87);
             this.numericUpDown13.Name = "numericUpDown13";
             this.numericUpDown13.Size = new System.Drawing.Size(37, 20);
@@ -2294,6 +2357,7 @@
             // 
             // numericUpDown10
             // 
+            this.numericUpDown10.Enabled = false;
             this.numericUpDown10.Location = new System.Drawing.Point(7, 61);
             this.numericUpDown10.Name = "numericUpDown10";
             this.numericUpDown10.Size = new System.Drawing.Size(37, 20);
@@ -2318,6 +2382,7 @@
             // 
             // numericUpDown5
             // 
+            this.numericUpDown5.Enabled = false;
             this.numericUpDown5.Location = new System.Drawing.Point(7, 35);
             this.numericUpDown5.Name = "numericUpDown5";
             this.numericUpDown5.Size = new System.Drawing.Size(37, 20);
@@ -2381,9 +2446,9 @@
             this.groupBoxLogo.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxLogo.BackgroundImage = global::MagusKliens.Properties.Resources.magus;
             this.groupBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBoxLogo.Location = new System.Drawing.Point(271, 469);
+            this.groupBoxLogo.Location = new System.Drawing.Point(355, 474);
             this.groupBoxLogo.Name = "groupBoxLogo";
-            this.groupBoxLogo.Size = new System.Drawing.Size(296, 125);
+            this.groupBoxLogo.Size = new System.Drawing.Size(297, 125);
             this.groupBoxLogo.TabIndex = 112;
             this.groupBoxLogo.TabStop = false;
             // 
@@ -2448,10 +2513,536 @@
             this.groupBoxBirtokoltFegyverek.Controls.Add(this.label13);
             this.groupBoxBirtokoltFegyverek.Location = new System.Drawing.Point(270, 600);
             this.groupBoxBirtokoltFegyverek.Name = "groupBoxBirtokoltFegyverek";
-            this.groupBoxBirtokoltFegyverek.Size = new System.Drawing.Size(616, 222);
+            this.groupBoxBirtokoltFegyverek.Size = new System.Drawing.Size(780, 222);
             this.groupBoxBirtokoltFegyverek.TabIndex = 113;
             this.groupBoxBirtokoltFegyverek.TabStop = false;
             this.groupBoxBirtokoltFegyverek.Text = "Birtokolt fegyverek";
+            // 
+            // numericUpDown67
+            // 
+            this.numericUpDown67.Location = new System.Drawing.Point(505, 194);
+            this.numericUpDown67.Name = "numericUpDown67";
+            this.numericUpDown67.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown67.TabIndex = 58;
+            // 
+            // textBox39
+            // 
+            this.textBox39.Location = new System.Drawing.Point(417, 194);
+            this.textBox39.Name = "textBox39";
+            this.textBox39.Size = new System.Drawing.Size(64, 20);
+            this.textBox39.TabIndex = 57;
+            this.textBox39.Text = "Alap/Mester";
+            // 
+            // numericUpDown68
+            // 
+            this.numericUpDown68.Location = new System.Drawing.Point(334, 195);
+            this.numericUpDown68.Name = "numericUpDown68";
+            this.numericUpDown68.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown68.TabIndex = 56;
+            // 
+            // numericUpDown69
+            // 
+            this.numericUpDown69.Location = new System.Drawing.Point(267, 195);
+            this.numericUpDown69.Name = "numericUpDown69";
+            this.numericUpDown69.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown69.TabIndex = 55;
+            // 
+            // numericUpDown70
+            // 
+            this.numericUpDown70.Location = new System.Drawing.Point(200, 195);
+            this.numericUpDown70.Name = "numericUpDown70";
+            this.numericUpDown70.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown70.TabIndex = 54;
+            // 
+            // textBox40
+            // 
+            this.textBox40.Location = new System.Drawing.Point(75, 194);
+            this.textBox40.Name = "textBox40";
+            this.textBox40.Size = new System.Drawing.Size(119, 20);
+            this.textBox40.TabIndex = 53;
+            this.textBox40.Text = "Fegyver/Pajzs neve";
+            // 
+            // textBox41
+            // 
+            this.textBox41.Location = new System.Drawing.Point(5, 194);
+            this.textBox41.Name = "textBox41";
+            this.textBox41.Size = new System.Drawing.Size(64, 20);
+            this.textBox41.TabIndex = 52;
+            this.textBox41.Text = "Alap/Mester";
+            // 
+            // numericUpDown63
+            // 
+            this.numericUpDown63.Location = new System.Drawing.Point(506, 168);
+            this.numericUpDown63.Name = "numericUpDown63";
+            this.numericUpDown63.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown63.TabIndex = 51;
+            // 
+            // textBox36
+            // 
+            this.textBox36.Location = new System.Drawing.Point(418, 168);
+            this.textBox36.Name = "textBox36";
+            this.textBox36.Size = new System.Drawing.Size(64, 20);
+            this.textBox36.TabIndex = 50;
+            this.textBox36.Text = "Alap/Mester";
+            // 
+            // numericUpDown64
+            // 
+            this.numericUpDown64.Location = new System.Drawing.Point(335, 169);
+            this.numericUpDown64.Name = "numericUpDown64";
+            this.numericUpDown64.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown64.TabIndex = 49;
+            // 
+            // numericUpDown65
+            // 
+            this.numericUpDown65.Location = new System.Drawing.Point(268, 169);
+            this.numericUpDown65.Name = "numericUpDown65";
+            this.numericUpDown65.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown65.TabIndex = 48;
+            // 
+            // numericUpDown66
+            // 
+            this.numericUpDown66.Location = new System.Drawing.Point(201, 169);
+            this.numericUpDown66.Name = "numericUpDown66";
+            this.numericUpDown66.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown66.TabIndex = 47;
+            // 
+            // textBox37
+            // 
+            this.textBox37.Location = new System.Drawing.Point(76, 168);
+            this.textBox37.Name = "textBox37";
+            this.textBox37.Size = new System.Drawing.Size(119, 20);
+            this.textBox37.TabIndex = 46;
+            this.textBox37.Text = "Fegyver/Pajzs neve";
+            // 
+            // textBox38
+            // 
+            this.textBox38.Location = new System.Drawing.Point(6, 168);
+            this.textBox38.Name = "textBox38";
+            this.textBox38.Size = new System.Drawing.Size(64, 20);
+            this.textBox38.TabIndex = 45;
+            this.textBox38.Text = "Alap/Mester";
+            // 
+            // numericUpDown59
+            // 
+            this.numericUpDown59.Location = new System.Drawing.Point(506, 142);
+            this.numericUpDown59.Name = "numericUpDown59";
+            this.numericUpDown59.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown59.TabIndex = 44;
+            // 
+            // textBox33
+            // 
+            this.textBox33.Location = new System.Drawing.Point(418, 142);
+            this.textBox33.Name = "textBox33";
+            this.textBox33.Size = new System.Drawing.Size(64, 20);
+            this.textBox33.TabIndex = 43;
+            this.textBox33.Text = "Alap/Mester";
+            // 
+            // numericUpDown60
+            // 
+            this.numericUpDown60.Location = new System.Drawing.Point(335, 143);
+            this.numericUpDown60.Name = "numericUpDown60";
+            this.numericUpDown60.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown60.TabIndex = 42;
+            // 
+            // numericUpDown61
+            // 
+            this.numericUpDown61.Location = new System.Drawing.Point(268, 143);
+            this.numericUpDown61.Name = "numericUpDown61";
+            this.numericUpDown61.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown61.TabIndex = 41;
+            // 
+            // numericUpDown62
+            // 
+            this.numericUpDown62.Location = new System.Drawing.Point(201, 143);
+            this.numericUpDown62.Name = "numericUpDown62";
+            this.numericUpDown62.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown62.TabIndex = 40;
+            // 
+            // textBox34
+            // 
+            this.textBox34.Location = new System.Drawing.Point(76, 142);
+            this.textBox34.Name = "textBox34";
+            this.textBox34.Size = new System.Drawing.Size(119, 20);
+            this.textBox34.TabIndex = 39;
+            this.textBox34.Text = "Fegyver/Pajzs neve";
+            // 
+            // textBox35
+            // 
+            this.textBox35.Location = new System.Drawing.Point(6, 142);
+            this.textBox35.Name = "textBox35";
+            this.textBox35.Size = new System.Drawing.Size(64, 20);
+            this.textBox35.TabIndex = 38;
+            this.textBox35.Text = "Alap/Mester";
+            // 
+            // numericUpDown55
+            // 
+            this.numericUpDown55.Location = new System.Drawing.Point(506, 116);
+            this.numericUpDown55.Name = "numericUpDown55";
+            this.numericUpDown55.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown55.TabIndex = 37;
+            // 
+            // textBox30
+            // 
+            this.textBox30.Location = new System.Drawing.Point(418, 116);
+            this.textBox30.Name = "textBox30";
+            this.textBox30.Size = new System.Drawing.Size(64, 20);
+            this.textBox30.TabIndex = 36;
+            this.textBox30.Text = "Alap/Mester";
+            // 
+            // numericUpDown56
+            // 
+            this.numericUpDown56.Location = new System.Drawing.Point(335, 117);
+            this.numericUpDown56.Name = "numericUpDown56";
+            this.numericUpDown56.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown56.TabIndex = 35;
+            // 
+            // numericUpDown57
+            // 
+            this.numericUpDown57.Location = new System.Drawing.Point(268, 117);
+            this.numericUpDown57.Name = "numericUpDown57";
+            this.numericUpDown57.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown57.TabIndex = 34;
+            // 
+            // numericUpDown58
+            // 
+            this.numericUpDown58.Location = new System.Drawing.Point(201, 117);
+            this.numericUpDown58.Name = "numericUpDown58";
+            this.numericUpDown58.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown58.TabIndex = 33;
+            // 
+            // textBox31
+            // 
+            this.textBox31.Location = new System.Drawing.Point(76, 116);
+            this.textBox31.Name = "textBox31";
+            this.textBox31.Size = new System.Drawing.Size(119, 20);
+            this.textBox31.TabIndex = 32;
+            this.textBox31.Text = "Fegyver/Pajzs neve";
+            // 
+            // textBox32
+            // 
+            this.textBox32.Location = new System.Drawing.Point(6, 116);
+            this.textBox32.Name = "textBox32";
+            this.textBox32.Size = new System.Drawing.Size(64, 20);
+            this.textBox32.TabIndex = 31;
+            this.textBox32.Text = "Alap/Mester";
+            // 
+            // numericUpDown51
+            // 
+            this.numericUpDown51.Location = new System.Drawing.Point(506, 90);
+            this.numericUpDown51.Name = "numericUpDown51";
+            this.numericUpDown51.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown51.TabIndex = 30;
+            // 
+            // textBox27
+            // 
+            this.textBox27.Location = new System.Drawing.Point(418, 90);
+            this.textBox27.Name = "textBox27";
+            this.textBox27.Size = new System.Drawing.Size(64, 20);
+            this.textBox27.TabIndex = 29;
+            this.textBox27.Text = "Alap/Mester";
+            // 
+            // numericUpDown52
+            // 
+            this.numericUpDown52.Location = new System.Drawing.Point(335, 91);
+            this.numericUpDown52.Name = "numericUpDown52";
+            this.numericUpDown52.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown52.TabIndex = 28;
+            // 
+            // numericUpDown53
+            // 
+            this.numericUpDown53.Location = new System.Drawing.Point(268, 91);
+            this.numericUpDown53.Name = "numericUpDown53";
+            this.numericUpDown53.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown53.TabIndex = 27;
+            // 
+            // numericUpDown54
+            // 
+            this.numericUpDown54.Location = new System.Drawing.Point(201, 91);
+            this.numericUpDown54.Name = "numericUpDown54";
+            this.numericUpDown54.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown54.TabIndex = 26;
+            // 
+            // textBox28
+            // 
+            this.textBox28.Location = new System.Drawing.Point(76, 90);
+            this.textBox28.Name = "textBox28";
+            this.textBox28.Size = new System.Drawing.Size(119, 20);
+            this.textBox28.TabIndex = 25;
+            this.textBox28.Text = "Fegyver/Pajzs neve";
+            // 
+            // textBox29
+            // 
+            this.textBox29.Location = new System.Drawing.Point(6, 90);
+            this.textBox29.Name = "textBox29";
+            this.textBox29.Size = new System.Drawing.Size(64, 20);
+            this.textBox29.TabIndex = 24;
+            this.textBox29.Text = "Alap/Mester";
+            // 
+            // numericUpDown47
+            // 
+            this.numericUpDown47.Location = new System.Drawing.Point(506, 64);
+            this.numericUpDown47.Name = "numericUpDown47";
+            this.numericUpDown47.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown47.TabIndex = 23;
+            // 
+            // textBox24
+            // 
+            this.textBox24.Location = new System.Drawing.Point(418, 64);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(64, 20);
+            this.textBox24.TabIndex = 22;
+            this.textBox24.Text = "Alap/Mester";
+            // 
+            // numericUpDown48
+            // 
+            this.numericUpDown48.Location = new System.Drawing.Point(335, 65);
+            this.numericUpDown48.Name = "numericUpDown48";
+            this.numericUpDown48.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown48.TabIndex = 21;
+            // 
+            // numericUpDown49
+            // 
+            this.numericUpDown49.Location = new System.Drawing.Point(268, 65);
+            this.numericUpDown49.Name = "numericUpDown49";
+            this.numericUpDown49.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown49.TabIndex = 20;
+            // 
+            // numericUpDown50
+            // 
+            this.numericUpDown50.Location = new System.Drawing.Point(201, 65);
+            this.numericUpDown50.Name = "numericUpDown50";
+            this.numericUpDown50.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown50.TabIndex = 19;
+            // 
+            // textBox25
+            // 
+            this.textBox25.Location = new System.Drawing.Point(76, 64);
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(119, 20);
+            this.textBox25.TabIndex = 18;
+            this.textBox25.Text = "Fegyver/Pajzs neve";
+            // 
+            // textBox26
+            // 
+            this.textBox26.Location = new System.Drawing.Point(6, 64);
+            this.textBox26.Name = "textBox26";
+            this.textBox26.Size = new System.Drawing.Size(64, 20);
+            this.textBox26.TabIndex = 17;
+            this.textBox26.Text = "Alap/Mester";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.checkBox13);
+            this.groupBox7.Controls.Add(this.checkBox14);
+            this.groupBox7.Controls.Add(this.checkBox11);
+            this.groupBox7.Controls.Add(this.checkBox12);
+            this.groupBox7.Controls.Add(this.checkBox9);
+            this.groupBox7.Controls.Add(this.checkBox10);
+            this.groupBox7.Controls.Add(this.checkBox7);
+            this.groupBox7.Controls.Add(this.checkBox8);
+            this.groupBox7.Controls.Add(this.checkBox5);
+            this.groupBox7.Controls.Add(this.checkBox6);
+            this.groupBox7.Controls.Add(this.checkBox3);
+            this.groupBox7.Controls.Add(this.checkBox4);
+            this.groupBox7.Controls.Add(this.label76);
+            this.groupBox7.Controls.Add(this.label75);
+            this.groupBox7.Controls.Add(this.checkBox2);
+            this.groupBox7.Controls.Add(this.checkBox1);
+            this.groupBox7.Location = new System.Drawing.Point(589, 19);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(149, 198);
+            this.groupBox7.TabIndex = 16;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Kézben";
+            // 
+            // checkBox13
+            // 
+            this.checkBox13.AutoSize = true;
+            this.checkBox13.Location = new System.Drawing.Point(128, 177);
+            this.checkBox13.Name = "checkBox13";
+            this.checkBox13.Size = new System.Drawing.Size(15, 14);
+            this.checkBox13.TabIndex = 31;
+            this.checkBox13.UseVisualStyleBackColor = true;
+            // 
+            // checkBox14
+            // 
+            this.checkBox14.AutoSize = true;
+            this.checkBox14.Location = new System.Drawing.Point(53, 176);
+            this.checkBox14.Name = "checkBox14";
+            this.checkBox14.Size = new System.Drawing.Size(15, 14);
+            this.checkBox14.TabIndex = 30;
+            this.checkBox14.UseVisualStyleBackColor = true;
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Location = new System.Drawing.Point(128, 152);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(15, 14);
+            this.checkBox11.TabIndex = 29;
+            this.checkBox11.UseVisualStyleBackColor = true;
+            // 
+            // checkBox12
+            // 
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.Location = new System.Drawing.Point(53, 151);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(15, 14);
+            this.checkBox12.TabIndex = 28;
+            this.checkBox12.UseVisualStyleBackColor = true;
+            // 
+            // checkBox9
+            // 
+            this.checkBox9.AutoSize = true;
+            this.checkBox9.Location = new System.Drawing.Point(128, 126);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(15, 14);
+            this.checkBox9.TabIndex = 27;
+            this.checkBox9.UseVisualStyleBackColor = true;
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.AutoSize = true;
+            this.checkBox10.Location = new System.Drawing.Point(53, 125);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(15, 14);
+            this.checkBox10.TabIndex = 26;
+            this.checkBox10.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(128, 99);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(15, 14);
+            this.checkBox7.TabIndex = 25;
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Location = new System.Drawing.Point(53, 98);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(15, 14);
+            this.checkBox8.TabIndex = 24;
+            this.checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(128, 74);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(15, 14);
+            this.checkBox5.TabIndex = 23;
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(53, 73);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(15, 14);
+            this.checkBox6.TabIndex = 22;
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(128, 48);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(15, 14);
+            this.checkBox3.TabIndex = 21;
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(53, 47);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(15, 14);
+            this.checkBox4.TabIndex = 20;
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Location = new System.Drawing.Point(117, 11);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(30, 13);
+            this.label76.TabIndex = 19;
+            this.label76.Text = "Jobb";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(50, 10);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(22, 13);
+            this.label75.TabIndex = 18;
+            this.label75.Text = "Bal";
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(128, 25);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(15, 14);
+            this.checkBox2.TabIndex = 17;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(53, 24);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 16;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDown46
+            // 
+            this.numericUpDown46.Location = new System.Drawing.Point(506, 38);
+            this.numericUpDown46.Name = "numericUpDown46";
+            this.numericUpDown46.Size = new System.Drawing.Size(48, 20);
+            this.numericUpDown46.TabIndex = 13;
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(509, 22);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(45, 13);
+            this.label74.TabIndex = 12;
+            this.label74.Text = "Birtokolt";
+            // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(418, 38);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(64, 20);
+            this.textBox23.TabIndex = 11;
+            this.textBox23.Text = "Alap/Mester";
+            // 
+            // numericUpDown45
+            // 
+            this.numericUpDown45.Location = new System.Drawing.Point(335, 39);
+            this.numericUpDown45.Name = "numericUpDown45";
+            this.numericUpDown45.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown45.TabIndex = 10;
+            // 
+            // numericUpDown44
+            // 
+            this.numericUpDown44.Location = new System.Drawing.Point(268, 39);
+            this.numericUpDown44.Name = "numericUpDown44";
+            this.numericUpDown44.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown44.TabIndex = 9;
+            // 
+            // numericUpDown43
+            // 
+            this.numericUpDown43.Location = new System.Drawing.Point(201, 39);
+            this.numericUpDown43.Name = "numericUpDown43";
+            this.numericUpDown43.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown43.TabIndex = 8;
             // 
             // textBox22
             // 
@@ -2472,7 +3063,7 @@
             // label73
             // 
             this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(410, 22);
+            this.label73.Location = new System.Drawing.Point(426, 22);
             this.label73.Name = "label73";
             this.label73.Size = new System.Drawing.Size(42, 13);
             this.label73.TabIndex = 5;
@@ -2523,137 +3114,198 @@
             this.label13.TabIndex = 0;
             this.label13.Text = "Fok";
             // 
-            // groupBox6
+            // iKarakterBindingSource
             // 
-            this.groupBox6.Controls.Add(this.label11);
-            this.groupBox6.Controls.Add(this.label8);
-            this.groupBox6.Controls.Add(this.fieldKE);
-            this.groupBox6.Controls.Add(this.fieldVE);
-            this.groupBox6.Controls.Add(this.fieldTE);
-            this.groupBox6.Controls.Add(this.fieldCE);
-            this.groupBox6.Controls.Add(this.fieldOszthatoHM);
-            this.groupBox6.Controls.Add(this.label52);
-            this.groupBox6.Controls.Add(this.fieldKEFegyveres);
-            this.groupBox6.Controls.Add(this.label33);
-            this.groupBox6.Controls.Add(this.fieldTEFegyveres);
-            this.groupBox6.Controls.Add(this.fieldVEFegyveres);
-            this.groupBox6.Controls.Add(this.textBox15);
-            this.groupBox6.Controls.Add(this.fieldCEFegyveres);
-            this.groupBox6.Controls.Add(this.label29);
-            this.groupBox6.Controls.Add(this.textBox12);
-            this.groupBox6.Controls.Add(this.label31);
-            this.groupBox6.Controls.Add(this.textBox9);
-            this.groupBox6.Controls.Add(this.label30);
-            this.groupBox6.Controls.Add(this.textBox8);
-            this.groupBox6.Controls.Add(this.label32);
-            this.groupBox6.Location = new System.Drawing.Point(573, 8);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(312, 203);
-            this.groupBox6.TabIndex = 114;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Harcértékek";
+            this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
             // 
-            // label11
+            // label82
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(175, 33);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 13);
-            this.label11.TabIndex = 139;
-            this.label11.Text = "Szintenkénti";
+            this.label82.AutoSize = true;
+            this.label82.Location = new System.Drawing.Point(129, 20);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(53, 13);
+            this.label82.TabIndex = 21;
+            this.label82.Text = "Összesen";
             // 
-            // label8
+            // numericUpDown71
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(130, 33);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(28, 13);
-            this.label8.TabIndex = 138;
-            this.label8.Text = "Alap";
+            this.numericUpDown71.Enabled = false;
+            this.numericUpDown71.Location = new System.Drawing.Point(136, 88);
+            this.numericUpDown71.Name = "numericUpDown71";
+            this.numericUpDown71.Size = new System.Drawing.Size(37, 20);
+            this.numericUpDown71.TabIndex = 20;
+            this.numericUpDown71.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // fieldKE
+            // numericUpDown72
             // 
-            this.fieldKE.Location = new System.Drawing.Point(123, 52);
-            this.fieldKE.Name = "fieldKE";
-            this.fieldKE.ReadOnly = true;
-            this.fieldKE.Size = new System.Drawing.Size(49, 20);
-            this.fieldKE.TabIndex = 134;
-            this.fieldKE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown72.Enabled = false;
+            this.numericUpDown72.Location = new System.Drawing.Point(136, 62);
+            this.numericUpDown72.Name = "numericUpDown72";
+            this.numericUpDown72.Size = new System.Drawing.Size(37, 20);
+            this.numericUpDown72.TabIndex = 19;
+            this.numericUpDown72.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // fieldVE
+            // numericUpDown73
             // 
-            this.fieldVE.Location = new System.Drawing.Point(123, 104);
-            this.fieldVE.Name = "fieldVE";
-            this.fieldVE.ReadOnly = true;
-            this.fieldVE.Size = new System.Drawing.Size(49, 20);
-            this.fieldVE.TabIndex = 136;
-            this.fieldVE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown73.Enabled = false;
+            this.numericUpDown73.Location = new System.Drawing.Point(136, 36);
+            this.numericUpDown73.Name = "numericUpDown73";
+            this.numericUpDown73.Size = new System.Drawing.Size(37, 20);
+            this.numericUpDown73.TabIndex = 18;
+            this.numericUpDown73.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // fieldTE
+            // label83
             // 
-            this.fieldTE.Location = new System.Drawing.Point(123, 78);
-            this.fieldTE.Name = "fieldTE";
-            this.fieldTE.ReadOnly = true;
-            this.fieldTE.Size = new System.Drawing.Size(49, 20);
-            this.fieldTE.TabIndex = 135;
-            this.fieldTE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label83.AutoSize = true;
+            this.label83.Location = new System.Drawing.Point(129, 21);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(53, 13);
+            this.label83.TabIndex = 25;
+            this.label83.Text = "Összesen";
             // 
-            // fieldCE
+            // numericUpDown74
             // 
-            this.fieldCE.Location = new System.Drawing.Point(123, 130);
-            this.fieldCE.Name = "fieldCE";
-            this.fieldCE.ReadOnly = true;
-            this.fieldCE.Size = new System.Drawing.Size(49, 20);
-            this.fieldCE.TabIndex = 137;
-            this.fieldCE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown74.Enabled = false;
+            this.numericUpDown74.Location = new System.Drawing.Point(136, 89);
+            this.numericUpDown74.Name = "numericUpDown74";
+            this.numericUpDown74.Size = new System.Drawing.Size(37, 20);
+            this.numericUpDown74.TabIndex = 24;
+            this.numericUpDown74.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // fieldOszthatoHM
+            // numericUpDown75
             // 
-            this.fieldOszthatoHM.Location = new System.Drawing.Point(123, 155);
-            this.fieldOszthatoHM.Name = "fieldOszthatoHM";
-            this.fieldOszthatoHM.ReadOnly = true;
-            this.fieldOszthatoHM.Size = new System.Drawing.Size(172, 20);
-            this.fieldOszthatoHM.TabIndex = 133;
-            this.fieldOszthatoHM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown75.Enabled = false;
+            this.numericUpDown75.Location = new System.Drawing.Point(136, 63);
+            this.numericUpDown75.Name = "numericUpDown75";
+            this.numericUpDown75.Size = new System.Drawing.Size(37, 20);
+            this.numericUpDown75.TabIndex = 23;
+            this.numericUpDown75.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label52
+            // numericUpDown76
             // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label52.Location = new System.Drawing.Point(26, 158);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(84, 13);
-            this.label52.TabIndex = 132;
-            this.label52.Text = "Osztható HM:";
+            this.numericUpDown76.Enabled = false;
+            this.numericUpDown76.Location = new System.Drawing.Point(136, 37);
+            this.numericUpDown76.Name = "numericUpDown76";
+            this.numericUpDown76.Size = new System.Drawing.Size(37, 20);
+            this.numericUpDown76.TabIndex = 22;
+            this.numericUpDown76.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // fieldKEFegyveres
+            // label84
             // 
-            this.fieldKEFegyveres.Location = new System.Drawing.Point(178, 53);
-            this.fieldKEFegyveres.Name = "fieldKEFegyveres";
-            this.fieldKEFegyveres.Size = new System.Drawing.Size(62, 20);
-            this.fieldKEFegyveres.TabIndex = 119;
-            this.fieldKEFegyveres.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label84.AutoSize = true;
+            this.label84.Location = new System.Drawing.Point(129, 21);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(53, 13);
+            this.label84.TabIndex = 29;
+            this.label84.Text = "Összesen";
             // 
-            // label33
+            // numericUpDown77
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(243, 33);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(55, 13);
-            this.label33.TabIndex = 131;
-            this.label33.Text = "HM/Szint:";
+            this.numericUpDown77.Enabled = false;
+            this.numericUpDown77.Location = new System.Drawing.Point(136, 89);
+            this.numericUpDown77.Name = "numericUpDown77";
+            this.numericUpDown77.Size = new System.Drawing.Size(37, 20);
+            this.numericUpDown77.TabIndex = 28;
+            this.numericUpDown77.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // fieldTEFegyveres
+            // numericUpDown78
             // 
-            this.fieldTEFegyveres.Location = new System.Drawing.Point(178, 79);
-            this.fieldTEFegyveres.Name = "fieldTEFegyveres";
-            this.fieldTEFegyveres.Size = new System.Drawing.Size(62, 20);
-            this.fieldTEFegyveres.TabIndex = 120;
-            this.fieldTEFegyveres.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown78.Enabled = false;
+            this.numericUpDown78.Location = new System.Drawing.Point(136, 63);
+            this.numericUpDown78.Name = "numericUpDown78";
+            this.numericUpDown78.Size = new System.Drawing.Size(37, 20);
+            this.numericUpDown78.TabIndex = 27;
+            this.numericUpDown78.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // numericUpDown79
+            // 
+            this.numericUpDown79.Enabled = false;
+            this.numericUpDown79.Location = new System.Drawing.Point(136, 37);
+            this.numericUpDown79.Name = "numericUpDown79";
+            this.numericUpDown79.Size = new System.Drawing.Size(37, 20);
+            this.numericUpDown79.TabIndex = 26;
+            this.numericUpDown79.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Location = new System.Drawing.Point(129, 21);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(53, 13);
+            this.label85.TabIndex = 33;
+            this.label85.Text = "Összesen";
+            // 
+            // numericUpDown80
+            // 
+            this.numericUpDown80.Enabled = false;
+            this.numericUpDown80.Location = new System.Drawing.Point(136, 89);
+            this.numericUpDown80.Name = "numericUpDown80";
+            this.numericUpDown80.Size = new System.Drawing.Size(37, 20);
+            this.numericUpDown80.TabIndex = 32;
+            this.numericUpDown80.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // numericUpDown81
+            // 
+            this.numericUpDown81.Enabled = false;
+            this.numericUpDown81.Location = new System.Drawing.Point(136, 63);
+            this.numericUpDown81.Name = "numericUpDown81";
+            this.numericUpDown81.Size = new System.Drawing.Size(37, 20);
+            this.numericUpDown81.TabIndex = 31;
+            this.numericUpDown81.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // numericUpDown82
+            // 
+            this.numericUpDown82.Enabled = false;
+            this.numericUpDown82.Location = new System.Drawing.Point(136, 37);
+            this.numericUpDown82.Name = "numericUpDown82";
+            this.numericUpDown82.Size = new System.Drawing.Size(37, 20);
+            this.numericUpDown82.TabIndex = 30;
+            this.numericUpDown82.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage5);
+            this.tabControl2.Controls.Add(this.tabPage6);
+            this.tabControl2.Location = new System.Drawing.Point(744, 12);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(309, 203);
+            this.tabControl2.TabIndex = 115;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tabPage6.Controls.Add(this.label11);
+            this.tabPage6.Controls.Add(this.fieldTEFegyveres);
+            this.tabPage6.Controls.Add(this.label8);
+            this.tabPage6.Controls.Add(this.label32);
+            this.tabPage6.Controls.Add(this.fieldKE);
+            this.tabPage6.Controls.Add(this.textBox8);
+            this.tabPage6.Controls.Add(this.fieldVE);
+            this.tabPage6.Controls.Add(this.label30);
+            this.tabPage6.Controls.Add(this.fieldTE);
+            this.tabPage6.Controls.Add(this.textBox9);
+            this.tabPage6.Controls.Add(this.fieldCE);
+            this.tabPage6.Controls.Add(this.label31);
+            this.tabPage6.Controls.Add(this.fieldOszthatoHM);
+            this.tabPage6.Controls.Add(this.textBox12);
+            this.tabPage6.Controls.Add(this.label52);
+            this.tabPage6.Controls.Add(this.label29);
+            this.tabPage6.Controls.Add(this.fieldKEFegyveres);
+            this.tabPage6.Controls.Add(this.fieldCEFegyveres);
+            this.tabPage6.Controls.Add(this.label33);
+            this.tabPage6.Controls.Add(this.textBox15);
+            this.tabPage6.Controls.Add(this.fieldVEFegyveres);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(300, 177);
+            this.tabPage6.TabIndex = 1;
+            this.tabPage6.Text = "Szintlépés";
             // 
             // fieldVEFegyveres
             // 
-            this.fieldVEFegyveres.Location = new System.Drawing.Point(178, 105);
+            this.fieldVEFegyveres.Location = new System.Drawing.Point(160, 77);
             this.fieldVEFegyveres.Name = "fieldVEFegyveres";
             this.fieldVEFegyveres.Size = new System.Drawing.Size(62, 20);
             this.fieldVEFegyveres.TabIndex = 121;
@@ -2661,609 +3313,281 @@
             // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(246, 130);
+            this.textBox15.Location = new System.Drawing.Point(228, 102);
             this.textBox15.Name = "textBox15";
             this.textBox15.ReadOnly = true;
             this.textBox15.Size = new System.Drawing.Size(49, 20);
             this.textBox15.TabIndex = 126;
             this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(225, 5);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(55, 13);
+            this.label33.TabIndex = 131;
+            this.label33.Text = "HM/Szint:";
+            // 
             // fieldCEFegyveres
             // 
-            this.fieldCEFegyveres.Location = new System.Drawing.Point(178, 129);
+            this.fieldCEFegyveres.Location = new System.Drawing.Point(160, 101);
             this.fieldCEFegyveres.Name = "fieldCEFegyveres";
             this.fieldCEFegyveres.Size = new System.Drawing.Size(62, 20);
             this.fieldCEFegyveres.TabIndex = 122;
             this.fieldCEFegyveres.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // fieldKEFegyveres
+            // 
+            this.fieldKEFegyveres.Location = new System.Drawing.Point(160, 25);
+            this.fieldKEFegyveres.Name = "fieldKEFegyveres";
+            this.fieldKEFegyveres.Size = new System.Drawing.Size(62, 20);
+            this.fieldKEFegyveres.TabIndex = 119;
+            this.fieldKEFegyveres.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(26, 57);
+            this.label29.Location = new System.Drawing.Point(8, 29);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(82, 13);
             this.label29.TabIndex = 127;
             this.label29.Text = "Kezdeményező:";
             // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label52.Location = new System.Drawing.Point(8, 130);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(84, 13);
+            this.label52.TabIndex = 132;
+            this.label52.Text = "Osztható HM:";
+            // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(246, 104);
+            this.textBox12.Location = new System.Drawing.Point(228, 76);
             this.textBox12.Name = "textBox12";
             this.textBox12.ReadOnly = true;
             this.textBox12.Size = new System.Drawing.Size(49, 20);
             this.textBox12.TabIndex = 125;
             this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // fieldOszthatoHM
+            // 
+            this.fieldOszthatoHM.Location = new System.Drawing.Point(105, 127);
+            this.fieldOszthatoHM.Name = "fieldOszthatoHM";
+            this.fieldOszthatoHM.ReadOnly = true;
+            this.fieldOszthatoHM.Size = new System.Drawing.Size(172, 20);
+            this.fieldOszthatoHM.TabIndex = 133;
+            this.fieldOszthatoHM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(26, 83);
+            this.label31.Location = new System.Drawing.Point(8, 55);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(49, 13);
             this.label31.TabIndex = 128;
             this.label31.Text = "Támadó:";
             // 
+            // fieldCE
+            // 
+            this.fieldCE.Location = new System.Drawing.Point(105, 102);
+            this.fieldCE.Name = "fieldCE";
+            this.fieldCE.ReadOnly = true;
+            this.fieldCE.Size = new System.Drawing.Size(49, 20);
+            this.fieldCE.TabIndex = 137;
+            this.fieldCE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(246, 78);
+            this.textBox9.Location = new System.Drawing.Point(228, 50);
             this.textBox9.Name = "textBox9";
             this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(49, 20);
             this.textBox9.TabIndex = 124;
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // fieldTE
+            // 
+            this.fieldTE.Location = new System.Drawing.Point(105, 50);
+            this.fieldTE.Name = "fieldTE";
+            this.fieldTE.ReadOnly = true;
+            this.fieldTE.Size = new System.Drawing.Size(49, 20);
+            this.fieldTE.TabIndex = 135;
+            this.fieldTE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(26, 133);
+            this.label30.Location = new System.Drawing.Point(8, 105);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(36, 13);
             this.label30.TabIndex = 130;
             this.label30.Text = "Célzó:";
             // 
+            // fieldVE
+            // 
+            this.fieldVE.Location = new System.Drawing.Point(105, 76);
+            this.fieldVE.Name = "fieldVE";
+            this.fieldVE.ReadOnly = true;
+            this.fieldVE.Size = new System.Drawing.Size(49, 20);
+            this.fieldVE.TabIndex = 136;
+            this.fieldVE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(246, 52);
+            this.textBox8.Location = new System.Drawing.Point(228, 24);
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(49, 20);
             this.textBox8.TabIndex = 123;
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // fieldKE
+            // 
+            this.fieldKE.Location = new System.Drawing.Point(105, 24);
+            this.fieldKE.Name = "fieldKE";
+            this.fieldKE.ReadOnly = true;
+            this.fieldKE.Size = new System.Drawing.Size(49, 20);
+            this.fieldKE.TabIndex = 134;
+            this.fieldKE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(27, 109);
+            this.label32.Location = new System.Drawing.Point(9, 81);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(35, 13);
             this.label32.TabIndex = 129;
             this.label32.Text = "Védő:";
             // 
-            // numericUpDown43
-            // 
-            this.numericUpDown43.Location = new System.Drawing.Point(201, 39);
-            this.numericUpDown43.Name = "numericUpDown43";
-            this.numericUpDown43.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown43.TabIndex = 8;
-            // 
-            // numericUpDown44
-            // 
-            this.numericUpDown44.Location = new System.Drawing.Point(268, 39);
-            this.numericUpDown44.Name = "numericUpDown44";
-            this.numericUpDown44.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown44.TabIndex = 9;
-            // 
-            // numericUpDown45
-            // 
-            this.numericUpDown45.Location = new System.Drawing.Point(335, 39);
-            this.numericUpDown45.Name = "numericUpDown45";
-            this.numericUpDown45.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown45.TabIndex = 10;
-            // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(402, 38);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(64, 20);
-            this.textBox23.TabIndex = 11;
-            this.textBox23.Text = "Alap/Mester";
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(478, 22);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(45, 13);
-            this.label74.TabIndex = 12;
-            this.label74.Text = "Birtokolt";
-            // 
-            // numericUpDown46
-            // 
-            this.numericUpDown46.Location = new System.Drawing.Point(475, 38);
-            this.numericUpDown46.Name = "numericUpDown46";
-            this.numericUpDown46.Size = new System.Drawing.Size(48, 20);
-            this.numericUpDown46.TabIndex = 13;
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.checkBox13);
-            this.groupBox7.Controls.Add(this.checkBox14);
-            this.groupBox7.Controls.Add(this.checkBox11);
-            this.groupBox7.Controls.Add(this.checkBox12);
-            this.groupBox7.Controls.Add(this.checkBox9);
-            this.groupBox7.Controls.Add(this.checkBox10);
-            this.groupBox7.Controls.Add(this.checkBox7);
-            this.groupBox7.Controls.Add(this.checkBox8);
-            this.groupBox7.Controls.Add(this.checkBox5);
-            this.groupBox7.Controls.Add(this.checkBox6);
-            this.groupBox7.Controls.Add(this.checkBox3);
-            this.groupBox7.Controls.Add(this.checkBox4);
-            this.groupBox7.Controls.Add(this.label76);
-            this.groupBox7.Controls.Add(this.label75);
-            this.groupBox7.Controls.Add(this.checkBox2);
-            this.groupBox7.Controls.Add(this.checkBox1);
-            this.groupBox7.Location = new System.Drawing.Point(529, 18);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(81, 198);
-            this.groupBox7.TabIndex = 16;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Kézben";
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(60, 26);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
-            this.checkBox2.TabIndex = 17;
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 26);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 16;
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // label75
-            // 
-            this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(3, 12);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(22, 13);
-            this.label75.TabIndex = 18;
-            this.label75.Text = "Bal";
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(49, 12);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(30, 13);
-            this.label76.TabIndex = 19;
-            this.label76.Text = "Jobb";
-            // 
-            // numericUpDown47
-            // 
-            this.numericUpDown47.Location = new System.Drawing.Point(475, 64);
-            this.numericUpDown47.Name = "numericUpDown47";
-            this.numericUpDown47.Size = new System.Drawing.Size(48, 20);
-            this.numericUpDown47.TabIndex = 23;
-            // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(402, 64);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(64, 20);
-            this.textBox24.TabIndex = 22;
-            this.textBox24.Text = "Alap/Mester";
-            // 
-            // numericUpDown48
-            // 
-            this.numericUpDown48.Location = new System.Drawing.Point(335, 65);
-            this.numericUpDown48.Name = "numericUpDown48";
-            this.numericUpDown48.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown48.TabIndex = 21;
-            // 
-            // numericUpDown49
-            // 
-            this.numericUpDown49.Location = new System.Drawing.Point(268, 65);
-            this.numericUpDown49.Name = "numericUpDown49";
-            this.numericUpDown49.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown49.TabIndex = 20;
-            // 
-            // numericUpDown50
-            // 
-            this.numericUpDown50.Location = new System.Drawing.Point(201, 65);
-            this.numericUpDown50.Name = "numericUpDown50";
-            this.numericUpDown50.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown50.TabIndex = 19;
-            // 
-            // textBox25
-            // 
-            this.textBox25.Location = new System.Drawing.Point(76, 64);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(119, 20);
-            this.textBox25.TabIndex = 18;
-            this.textBox25.Text = "Fegyver/Pajzs neve";
-            // 
-            // textBox26
-            // 
-            this.textBox26.Location = new System.Drawing.Point(6, 64);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(64, 20);
-            this.textBox26.TabIndex = 17;
-            this.textBox26.Text = "Alap/Mester";
-            // 
-            // numericUpDown51
-            // 
-            this.numericUpDown51.Location = new System.Drawing.Point(475, 90);
-            this.numericUpDown51.Name = "numericUpDown51";
-            this.numericUpDown51.Size = new System.Drawing.Size(48, 20);
-            this.numericUpDown51.TabIndex = 30;
-            // 
-            // textBox27
-            // 
-            this.textBox27.Location = new System.Drawing.Point(402, 90);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(64, 20);
-            this.textBox27.TabIndex = 29;
-            this.textBox27.Text = "Alap/Mester";
-            // 
-            // numericUpDown52
-            // 
-            this.numericUpDown52.Location = new System.Drawing.Point(335, 91);
-            this.numericUpDown52.Name = "numericUpDown52";
-            this.numericUpDown52.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown52.TabIndex = 28;
-            // 
-            // numericUpDown53
-            // 
-            this.numericUpDown53.Location = new System.Drawing.Point(268, 91);
-            this.numericUpDown53.Name = "numericUpDown53";
-            this.numericUpDown53.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown53.TabIndex = 27;
-            // 
-            // numericUpDown54
-            // 
-            this.numericUpDown54.Location = new System.Drawing.Point(201, 91);
-            this.numericUpDown54.Name = "numericUpDown54";
-            this.numericUpDown54.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown54.TabIndex = 26;
-            // 
-            // textBox28
-            // 
-            this.textBox28.Location = new System.Drawing.Point(76, 90);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(119, 20);
-            this.textBox28.TabIndex = 25;
-            this.textBox28.Text = "Fegyver/Pajzs neve";
-            // 
-            // textBox29
-            // 
-            this.textBox29.Location = new System.Drawing.Point(6, 90);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(64, 20);
-            this.textBox29.TabIndex = 24;
-            this.textBox29.Text = "Alap/Mester";
-            // 
-            // numericUpDown55
-            // 
-            this.numericUpDown55.Location = new System.Drawing.Point(475, 116);
-            this.numericUpDown55.Name = "numericUpDown55";
-            this.numericUpDown55.Size = new System.Drawing.Size(48, 20);
-            this.numericUpDown55.TabIndex = 37;
-            // 
-            // textBox30
-            // 
-            this.textBox30.Location = new System.Drawing.Point(402, 116);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(64, 20);
-            this.textBox30.TabIndex = 36;
-            this.textBox30.Text = "Alap/Mester";
-            // 
-            // numericUpDown56
-            // 
-            this.numericUpDown56.Location = new System.Drawing.Point(335, 117);
-            this.numericUpDown56.Name = "numericUpDown56";
-            this.numericUpDown56.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown56.TabIndex = 35;
-            // 
-            // numericUpDown57
-            // 
-            this.numericUpDown57.Location = new System.Drawing.Point(268, 117);
-            this.numericUpDown57.Name = "numericUpDown57";
-            this.numericUpDown57.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown57.TabIndex = 34;
-            // 
-            // numericUpDown58
-            // 
-            this.numericUpDown58.Location = new System.Drawing.Point(201, 117);
-            this.numericUpDown58.Name = "numericUpDown58";
-            this.numericUpDown58.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown58.TabIndex = 33;
-            // 
-            // textBox31
-            // 
-            this.textBox31.Location = new System.Drawing.Point(76, 116);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(119, 20);
-            this.textBox31.TabIndex = 32;
-            this.textBox31.Text = "Fegyver/Pajzs neve";
-            // 
-            // textBox32
-            // 
-            this.textBox32.Location = new System.Drawing.Point(6, 116);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(64, 20);
-            this.textBox32.TabIndex = 31;
-            this.textBox32.Text = "Alap/Mester";
-            // 
-            // numericUpDown59
-            // 
-            this.numericUpDown59.Location = new System.Drawing.Point(475, 142);
-            this.numericUpDown59.Name = "numericUpDown59";
-            this.numericUpDown59.Size = new System.Drawing.Size(48, 20);
-            this.numericUpDown59.TabIndex = 44;
-            // 
-            // textBox33
-            // 
-            this.textBox33.Location = new System.Drawing.Point(402, 142);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(64, 20);
-            this.textBox33.TabIndex = 43;
-            this.textBox33.Text = "Alap/Mester";
-            // 
-            // numericUpDown60
-            // 
-            this.numericUpDown60.Location = new System.Drawing.Point(335, 143);
-            this.numericUpDown60.Name = "numericUpDown60";
-            this.numericUpDown60.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown60.TabIndex = 42;
-            // 
-            // numericUpDown61
-            // 
-            this.numericUpDown61.Location = new System.Drawing.Point(268, 143);
-            this.numericUpDown61.Name = "numericUpDown61";
-            this.numericUpDown61.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown61.TabIndex = 41;
-            // 
-            // numericUpDown62
-            // 
-            this.numericUpDown62.Location = new System.Drawing.Point(201, 143);
-            this.numericUpDown62.Name = "numericUpDown62";
-            this.numericUpDown62.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown62.TabIndex = 40;
-            // 
-            // textBox34
-            // 
-            this.textBox34.Location = new System.Drawing.Point(76, 142);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(119, 20);
-            this.textBox34.TabIndex = 39;
-            this.textBox34.Text = "Fegyver/Pajzs neve";
-            // 
-            // textBox35
-            // 
-            this.textBox35.Location = new System.Drawing.Point(6, 142);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(64, 20);
-            this.textBox35.TabIndex = 38;
-            this.textBox35.Text = "Alap/Mester";
-            // 
-            // numericUpDown63
-            // 
-            this.numericUpDown63.Location = new System.Drawing.Point(475, 168);
-            this.numericUpDown63.Name = "numericUpDown63";
-            this.numericUpDown63.Size = new System.Drawing.Size(48, 20);
-            this.numericUpDown63.TabIndex = 51;
-            // 
-            // textBox36
-            // 
-            this.textBox36.Location = new System.Drawing.Point(402, 168);
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(64, 20);
-            this.textBox36.TabIndex = 50;
-            this.textBox36.Text = "Alap/Mester";
-            // 
-            // numericUpDown64
-            // 
-            this.numericUpDown64.Location = new System.Drawing.Point(335, 169);
-            this.numericUpDown64.Name = "numericUpDown64";
-            this.numericUpDown64.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown64.TabIndex = 49;
-            // 
-            // numericUpDown65
-            // 
-            this.numericUpDown65.Location = new System.Drawing.Point(268, 169);
-            this.numericUpDown65.Name = "numericUpDown65";
-            this.numericUpDown65.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown65.TabIndex = 48;
-            // 
-            // numericUpDown66
-            // 
-            this.numericUpDown66.Location = new System.Drawing.Point(201, 169);
-            this.numericUpDown66.Name = "numericUpDown66";
-            this.numericUpDown66.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown66.TabIndex = 47;
-            // 
-            // textBox37
-            // 
-            this.textBox37.Location = new System.Drawing.Point(76, 168);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(119, 20);
-            this.textBox37.TabIndex = 46;
-            this.textBox37.Text = "Fegyver/Pajzs neve";
-            // 
-            // textBox38
-            // 
-            this.textBox38.Location = new System.Drawing.Point(6, 168);
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(64, 20);
-            this.textBox38.TabIndex = 45;
-            this.textBox38.Text = "Alap/Mester";
-            // 
-            // numericUpDown67
-            // 
-            this.numericUpDown67.Location = new System.Drawing.Point(474, 194);
-            this.numericUpDown67.Name = "numericUpDown67";
-            this.numericUpDown67.Size = new System.Drawing.Size(48, 20);
-            this.numericUpDown67.TabIndex = 58;
-            // 
-            // textBox39
-            // 
-            this.textBox39.Location = new System.Drawing.Point(401, 194);
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(64, 20);
-            this.textBox39.TabIndex = 57;
-            this.textBox39.Text = "Alap/Mester";
-            // 
-            // numericUpDown68
-            // 
-            this.numericUpDown68.Location = new System.Drawing.Point(334, 195);
-            this.numericUpDown68.Name = "numericUpDown68";
-            this.numericUpDown68.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown68.TabIndex = 56;
-            // 
-            // numericUpDown69
-            // 
-            this.numericUpDown69.Location = new System.Drawing.Point(267, 195);
-            this.numericUpDown69.Name = "numericUpDown69";
-            this.numericUpDown69.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown69.TabIndex = 55;
-            // 
-            // numericUpDown70
-            // 
-            this.numericUpDown70.Location = new System.Drawing.Point(200, 195);
-            this.numericUpDown70.Name = "numericUpDown70";
-            this.numericUpDown70.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown70.TabIndex = 54;
-            // 
-            // textBox40
-            // 
-            this.textBox40.Location = new System.Drawing.Point(75, 194);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(119, 20);
-            this.textBox40.TabIndex = 53;
-            this.textBox40.Text = "Fegyver/Pajzs neve";
-            // 
-            // textBox41
-            // 
-            this.textBox41.Location = new System.Drawing.Point(5, 194);
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(64, 20);
-            this.textBox41.TabIndex = 52;
-            this.textBox41.Text = "Alap/Mester";
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(60, 49);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(15, 14);
-            this.checkBox3.TabIndex = 21;
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(6, 49);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(15, 14);
-            this.checkBox4.TabIndex = 20;
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(60, 75);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(15, 14);
-            this.checkBox5.TabIndex = 23;
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(6, 75);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(15, 14);
-            this.checkBox6.TabIndex = 22;
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(60, 100);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(15, 14);
-            this.checkBox7.TabIndex = 25;
-            this.checkBox7.UseVisualStyleBackColor = true;
-            // 
-            // checkBox8
-            // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(6, 100);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(15, 14);
-            this.checkBox8.TabIndex = 24;
-            this.checkBox8.UseVisualStyleBackColor = true;
-            // 
-            // checkBox9
-            // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(60, 127);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(15, 14);
-            this.checkBox9.TabIndex = 27;
-            this.checkBox9.UseVisualStyleBackColor = true;
-            // 
-            // checkBox10
-            // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(6, 127);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(15, 14);
-            this.checkBox10.TabIndex = 26;
-            this.checkBox10.UseVisualStyleBackColor = true;
-            // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(60, 153);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(15, 14);
-            this.checkBox11.TabIndex = 29;
-            this.checkBox11.UseVisualStyleBackColor = true;
-            // 
-            // checkBox12
-            // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(6, 153);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(15, 14);
-            this.checkBox12.TabIndex = 28;
-            this.checkBox12.UseVisualStyleBackColor = true;
-            // 
-            // checkBox13
-            // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(60, 178);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(15, 14);
-            this.checkBox13.TabIndex = 31;
-            this.checkBox13.UseVisualStyleBackColor = true;
-            // 
-            // checkBox14
-            // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(6, 178);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(15, 14);
-            this.checkBox14.TabIndex = 30;
-            this.checkBox14.UseVisualStyleBackColor = true;
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(112, 5);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(28, 13);
+            this.label8.TabIndex = 138;
+            this.label8.Text = "Alap";
+            // 
+            // fieldTEFegyveres
+            // 
+            this.fieldTEFegyveres.Location = new System.Drawing.Point(160, 51);
+            this.fieldTEFegyveres.Name = "fieldTEFegyveres";
+            this.fieldTEFegyveres.Size = new System.Drawing.Size(62, 20);
+            this.fieldTEFegyveres.TabIndex = 120;
+            this.fieldTEFegyveres.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(157, 5);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(65, 13);
+            this.label11.TabIndex = 139;
+            this.label11.Text = "Szintenkénti";
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tabPage5.Controls.Add(this.label77);
+            this.tabPage5.Controls.Add(this.label78);
+            this.tabPage5.Controls.Add(this.textBox42);
+            this.tabPage5.Controls.Add(this.textBox43);
+            this.tabPage5.Controls.Add(this.label79);
+            this.tabPage5.Controls.Add(this.textBox44);
+            this.tabPage5.Controls.Add(this.textBox45);
+            this.tabPage5.Controls.Add(this.label80);
+            this.tabPage5.Controls.Add(this.label81);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(301, 177);
+            this.tabPage5.TabIndex = 0;
+            this.tabPage5.Text = "Harcértékek";
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Location = new System.Drawing.Point(66, 47);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(82, 13);
+            this.label81.TabIndex = 139;
+            this.label81.Text = "Kezdeményező:";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Location = new System.Drawing.Point(66, 73);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(49, 13);
+            this.label80.TabIndex = 140;
+            this.label80.Text = "Támadó:";
+            // 
+            // textBox45
+            // 
+            this.textBox45.Location = new System.Drawing.Point(163, 120);
+            this.textBox45.Name = "textBox45";
+            this.textBox45.ReadOnly = true;
+            this.textBox45.Size = new System.Drawing.Size(49, 20);
+            this.textBox45.TabIndex = 146;
+            this.textBox45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox44
+            // 
+            this.textBox44.Location = new System.Drawing.Point(163, 68);
+            this.textBox44.Name = "textBox44";
+            this.textBox44.ReadOnly = true;
+            this.textBox44.Size = new System.Drawing.Size(49, 20);
+            this.textBox44.TabIndex = 144;
+            this.textBox44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(66, 123);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(36, 13);
+            this.label79.TabIndex = 142;
+            this.label79.Text = "Célzó:";
+            // 
+            // textBox43
+            // 
+            this.textBox43.Location = new System.Drawing.Point(163, 94);
+            this.textBox43.Name = "textBox43";
+            this.textBox43.ReadOnly = true;
+            this.textBox43.Size = new System.Drawing.Size(49, 20);
+            this.textBox43.TabIndex = 145;
+            this.textBox43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox42
+            // 
+            this.textBox42.Location = new System.Drawing.Point(163, 42);
+            this.textBox42.Name = "textBox42";
+            this.textBox42.ReadOnly = true;
+            this.textBox42.Size = new System.Drawing.Size(49, 20);
+            this.textBox42.TabIndex = 143;
+            this.textBox42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Location = new System.Drawing.Point(67, 99);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(35, 13);
+            this.label78.TabIndex = 141;
+            this.label78.Text = "Védő:";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Location = new System.Drawing.Point(154, 23);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(67, 13);
+            this.label77.TabIndex = 147;
+            this.label77.Text = "Pusztakezes";
             // 
             // KarGen
             // 
@@ -3272,17 +3596,18 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(960, 985);
-            this.Controls.Add(this.groupBox6);
+            this.ClientSize = new System.Drawing.Size(1062, 985);
+            this.Controls.Add(this.tabControl2);
             this.Controls.Add(this.groupBoxBirtokoltFegyverek);
             this.Controls.Add(this.groupBoxFegyverekKezben);
+            this.Controls.Add(this.groupBoxLogo);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.groupBoxMana);
             this.Controls.Add(this.groupBoxTSZ);
             this.Controls.Add(this.groupBoxAlapAdatok);
             this.Controls.Add(this.groupBoxKepessegek);
             this.Controls.Add(this.tabPszi);
-            this.Controls.Add(this.groupBoxLogo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.Name = "KarGen";
@@ -3326,7 +3651,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBoxTSZ.ResumeLayout(false);
-            this.groupBoxTSZ.PerformLayout();
             this.groupBoxMana.ResumeLayout(false);
             this.groupBoxMana.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -3335,7 +3659,6 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iKarakterBindingSource)).EndInit();
             this.groupBoxFegyverekKezben.ResumeLayout(false);
             this.groupBoxFegyverekKezben.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -3387,42 +3710,58 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
             this.groupBoxBirtokoltFegyverek.ResumeLayout(false);
             this.groupBoxBirtokoltFegyverek.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldKEFegyveres)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldTEFegyveres)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldVEFegyveres)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldCEFegyveres)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown44)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown45)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown46)).EndInit();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown47)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown48)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown49)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown50)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown51)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown52)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown53)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown54)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown55)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown56)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown57)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown58)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown59)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown60)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown61)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown62)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown63)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown64)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown65)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown66)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown67)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown68)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown69)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown70)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown63)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown64)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown65)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown66)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown59)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown60)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown61)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown62)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown55)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown56)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown57)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown58)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown51)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown52)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown53)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown54)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown47)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown48)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown49)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown50)).EndInit();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown46)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown45)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iKarakterBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown71)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown72)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown73)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown74)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown75)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown76)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown77)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown78)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown79)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown80)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown81)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown82)).EndInit();
+            this.tabControl2.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fieldVEFegyveres)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fieldCEFegyveres)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fieldKEFegyveres)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fieldTEFegyveres)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3628,28 +3967,6 @@
         private System.Windows.Forms.NumericUpDown numericUpDown7;
         private System.Windows.Forms.NumericUpDown numericUpDown6;
         private System.Windows.Forms.NumericUpDown numericUpDown5;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox fieldKE;
-        private System.Windows.Forms.TextBox fieldVE;
-        private System.Windows.Forms.TextBox fieldTE;
-        private System.Windows.Forms.TextBox fieldCE;
-        private System.Windows.Forms.TextBox fieldOszthatoHM;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.NumericUpDown fieldKEFegyveres;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.NumericUpDown fieldTEFegyveres;
-        private System.Windows.Forms.NumericUpDown fieldVEFegyveres;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.NumericUpDown fieldCEFegyveres;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.Label label73;
@@ -3723,6 +4040,55 @@
         private System.Windows.Forms.NumericUpDown numericUpDown45;
         private System.Windows.Forms.NumericUpDown numericUpDown44;
         private System.Windows.Forms.NumericUpDown numericUpDown43;
+        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.NumericUpDown numericUpDown77;
+        private System.Windows.Forms.NumericUpDown numericUpDown78;
+        private System.Windows.Forms.NumericUpDown numericUpDown79;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.NumericUpDown numericUpDown71;
+        private System.Windows.Forms.NumericUpDown numericUpDown72;
+        private System.Windows.Forms.NumericUpDown numericUpDown73;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.NumericUpDown numericUpDown74;
+        private System.Windows.Forms.NumericUpDown numericUpDown75;
+        private System.Windows.Forms.NumericUpDown numericUpDown76;
+        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.NumericUpDown numericUpDown80;
+        private System.Windows.Forms.NumericUpDown numericUpDown81;
+        private System.Windows.Forms.NumericUpDown numericUpDown82;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.TextBox textBox42;
+        private System.Windows.Forms.TextBox textBox43;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.TextBox textBox44;
+        private System.Windows.Forms.TextBox textBox45;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.NumericUpDown fieldTEFegyveres;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox fieldKE;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox fieldVE;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TextBox fieldTE;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox fieldCE;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox fieldOszthatoHM;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.NumericUpDown fieldKEFegyveres;
+        private System.Windows.Forms.NumericUpDown fieldCEFegyveres;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.NumericUpDown fieldVEFegyveres;
     }
 }
 

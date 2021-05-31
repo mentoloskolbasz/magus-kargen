@@ -23,8 +23,7 @@ namespace MagusLib
         #endregion
 
         #region Képességek
-        public virtual uint Ero { get; 
-            set; }
+        public virtual uint Ero { get; set; }
         public virtual uint Ugyesseg { get; set; }
         public virtual uint Gyorsasag { get; set; }
         public virtual uint Allokepesseg { get; set; }
@@ -44,13 +43,13 @@ namespace MagusLib
         public virtual uint Vedo { get; set; }
 
         public virtual uint Celzo { get; set; }
-        public virtual uint HMSzint { get; set; }
-        public virtual uint TamPerKor { get; set; }
+        public virtual uint HMSzint { get; set; }        
         #endregion
 
         #region EleteroEsMagia        
         public virtual uint Ep { get; set; }
         public virtual uint Fp { get; set; }
+        public virtual uint FpPerSzint { get; set; }
         public virtual uint Pszi { get; set; }
         public virtual uint Mana { get; set; }
         #endregion
