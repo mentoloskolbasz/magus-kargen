@@ -26,17 +26,19 @@ namespace MagusKliens
         protected IHatarozo<uint> vedoHatarozo = new VedoErtekHatarozo();
         protected IHatarozo<uint> epHatarozo = new EPHatarozo();
         protected IHatarozo<uint> fpHatarozo = new FPHatarozo();
+        protected ToolTip toolTip = new ToolTip();
+        protected List<KeyValuePair<string, NumericUpDown>> kepessegPontok;
 
         protected void modositokFrissitese()
         {
-            
+
             try
             {
-               mezok.ForEach(mezo =>
-                {
-                    mezo.BackColor = Color.FromKnownColor(KnownColor.Control);
-                    mezo.ForeColor = Color.Black;
-                });
+                mezok.ForEach(mezo =>
+                 {
+                     mezo.BackColor = Color.FromKnownColor(KnownColor.Control);
+                     mezo.ForeColor = Color.Black;
+                 });
 
                 korAlapertekModosito.Karakter = karakter;
                 fieldEroKorModosito.Text = korAlapertekModosito.Ero.ToString();
@@ -75,7 +77,23 @@ namespace MagusKliens
 
 
             #region DataBinding-ok
-            this.fieldEro.DataBindings.Add(new Binding("Value", this.karakter, "Ero", false, DataSourceUpdateMode.OnPropertyChanged));
+
+            kepessegPontok = new List<KeyValuePair<string, NumericUpDown>>()
+            {
+                new KeyValuePair<string, NumericUpDown>("Ero", fieldEro),
+                new KeyValuePair<string, NumericUpDown>("Gyorsasag", fieldGyors),
+                new KeyValuePair<string, NumericUpDown>("Ugyesseg", fieldUgyes),
+                new KeyValuePair<string, NumericUpDown>("Allokepesseg", fieldAllo),
+                new KeyValuePair<string, NumericUpDown>("Egeszseg", fieldEgesz),
+                new KeyValuePair<string, NumericUpDown>("Szepseg", fieldSzep),
+                new KeyValuePair<string, NumericUpDown>("Intelligencia", fieldInt),
+                new KeyValuePair<string, NumericUpDown>("Akaratero", fieldAkarat),
+                new KeyValuePair<string, NumericUpDown>("Asztral", fieldAsztral),
+                new KeyValuePair<string, NumericUpDown>("Eszleles", fieldEszlel),
+            };
+            kepessegPontok.ForEach((kepesseg) => kepesseg.Value.DataBindings.Add(new Binding("Value", this.karakter, kepesseg.Key, false, DataSourceUpdateMode.OnPropertyChanged)));
+
+            /*this.fieldEro.DataBindings.Add(new Binding("Value", this.karakter, "Ero", false, DataSourceUpdateMode.OnPropertyChanged));
 
             this.fieldGyors.DataBindings.Add(new Binding("Value", this.karakter, "Gyorsasag", false, DataSourceUpdateMode.OnPropertyChanged));
 
@@ -93,7 +111,7 @@ namespace MagusKliens
 
             this.fieldAsztral.DataBindings.Add(new Binding("Value", this.karakter, "Asztral", false, DataSourceUpdateMode.OnPropertyChanged));
 
-            this.fieldEszlel.DataBindings.Add(new Binding("Value", this.karakter, "Eszleles", false, DataSourceUpdateMode.OnPropertyChanged));
+            this.fieldEszlel.DataBindings.Add(new Binding("Value", this.karakter, "Eszleles", false, DataSourceUpdateMode.OnPropertyChanged));*/
 
             this.fieldKor.DataBindings.Add(new Binding("Value", this.karakter, "Kor", false, DataSourceUpdateMode.OnPropertyChanged));
 
@@ -106,6 +124,13 @@ namespace MagusKliens
             karakter.Alkaszt = KarakterAlkaszt.Harcos;
             karakter.Kor = 30;
 
+            //toolTip.SetToolTip(GeneraloBtn, "Mi a Fasz Van \n Gecc!");
+            //Találati térképhez láthatatlan boxok feliratok! -->
+
+
+            /*toolTip.AutoPopDelay = 1000000;
+            toolTip.IsBalloon = true;
+            toolTip.SetToolTip(groupBoxFej, "Mi a Fasz Van \n Mi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van");*/
         }
 
         private void karakter_PropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -164,6 +189,7 @@ namespace MagusKliens
             }
             modositokFrissitese();
             harcertekFrissitese();
+            osszKepessegpontFrissites();
         }
 
         //Harcértékek frissítése
@@ -175,6 +201,11 @@ namespace MagusKliens
             fieldVE.Text = vedoHatarozo.Hataroz(karakter).ToString();
             fieldMaxEP.Text = epHatarozo.Hataroz(karakter).ToString();
             fieldMaxFP.Text = fpHatarozo.Hataroz(karakter).ToString();
+        }
+
+        protected void osszKepessegpontFrissites()
+        {
+            fieldOsszPontok.Text = kepessegPontok.Aggregate<KeyValuePair<string, NumericUpDown>, uint>(0, (result, current) => result + karakter.GetKepessegPont(current.Key)).ToString();            
         }
 
         #region Bekötés FORMRA
@@ -219,6 +250,7 @@ namespace MagusKliens
             }
             karakter.Vallas = (Vallas)vallasValasztoBox.SelectedValue;
         }
+
 
         #endregion
 

@@ -282,6 +282,9 @@ namespace MagusKliens
                 PropertyChanged(this, new PropertyChangedEventArgs(name));
             }
         }
-
+        public uint GetKepessegPont(string name)
+        {
+            return (uint)this.GetType().GetProperty(name).GetValue(this, null);            
+        }
     }
 }
