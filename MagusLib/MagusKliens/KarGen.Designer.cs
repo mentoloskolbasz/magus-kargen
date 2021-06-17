@@ -318,7 +318,6 @@
             this.label70 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label77 = new System.Windows.Forms.Label();
@@ -352,6 +351,7 @@
             this.label33 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.fieldVEFegyveres = new System.Windows.Forms.NumericUpDown();
+            this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.fieldEro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldGyors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldUgyes)).BeginInit();
@@ -479,7 +479,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iKarakterBindingSource)).BeginInit();
             this.tabControl2.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -487,6 +486,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.fieldKEFegyveres)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldCEFegyveres)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldVEFegyveres)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iKarakterBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // labelEro
@@ -1256,6 +1256,7 @@
             // 
             // fieldTSZ
             // 
+            this.fieldTSZ.Enabled = false;
             this.fieldTSZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.fieldTSZ.Location = new System.Drawing.Point(18, 39);
             this.fieldTSZ.Minimum = new decimal(new int[] {
@@ -2609,8 +2610,10 @@
             this.groupBoxLogo.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxLogo.BackgroundImage = global::MagusKliens.Properties.Resources.magus;
             this.groupBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBoxLogo.Location = new System.Drawing.Point(355, 474);
+            this.groupBoxLogo.Location = new System.Drawing.Point(355, 476);
+            this.groupBoxLogo.Margin = new System.Windows.Forms.Padding(0);
             this.groupBoxLogo.Name = "groupBoxLogo";
+            this.groupBoxLogo.Padding = new System.Windows.Forms.Padding(0);
             this.groupBoxLogo.Size = new System.Drawing.Size(297, 125);
             this.groupBoxLogo.TabIndex = 112;
             this.groupBoxLogo.TabStop = false;
@@ -3277,10 +3280,6 @@
             this.label13.TabIndex = 0;
             this.label13.Text = "Fok";
             // 
-            // iKarakterBindingSource
-            // 
-            this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
-            // 
             // tabControl2
             // 
             this.tabControl2.Controls.Add(this.tabPage5);
@@ -3612,6 +3611,10 @@
             this.fieldVEFegyveres.TabIndex = 121;
             this.fieldVEFegyveres.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // iKarakterBindingSource
+            // 
+            this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
+            // 
             // KarGen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3778,7 +3781,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown45)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iKarakterBindingSource)).EndInit();
             this.tabControl2.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
@@ -3788,6 +3790,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.fieldKEFegyveres)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldCEFegyveres)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldVEFegyveres)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iKarakterBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
