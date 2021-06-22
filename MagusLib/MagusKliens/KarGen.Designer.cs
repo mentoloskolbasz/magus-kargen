@@ -111,7 +111,6 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.fieldTSZ = new System.Windows.Forms.NumericUpDown();
             this.groupBoxKepessegek = new System.Windows.Forms.GroupBox();
             this.fieldOsszPontok = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
@@ -132,12 +131,12 @@
             this.label39 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.labelEP = new System.Windows.Forms.Label();
-            this.fieldFPPerSzint = new System.Windows.Forms.TextBox();
-            this.labelFPPerSzint = new System.Windows.Forms.Label();
             this.fieldMaxFP = new System.Windows.Forms.TextBox();
             this.labelFP = new System.Windows.Forms.Label();
             this.fieldMaxEP = new System.Windows.Forms.TextBox();
             this.groupBoxTSZ = new System.Windows.Forms.GroupBox();
+            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBoxMana = new System.Windows.Forms.GroupBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
@@ -243,7 +242,6 @@
             this.label55 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
-            this.groupBoxLogo = new System.Windows.Forms.GroupBox();
             this.groupBoxBirtokoltFegyverek = new System.Windows.Forms.GroupBox();
             this.numericUpDown67 = new System.Windows.Forms.NumericUpDown();
             this.textBox39 = new System.Windows.Forms.TextBox();
@@ -318,40 +316,19 @@
             this.label70 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.label77 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
-            this.label79 = new System.Windows.Forms.Label();
-            this.textBox44 = new System.Windows.Forms.TextBox();
-            this.textBox45 = new System.Windows.Forms.TextBox();
-            this.label80 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.label11 = new System.Windows.Forms.Label();
-            this.fieldTEFegyveres = new System.Windows.Forms.NumericUpDown();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.fieldKE = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.fieldVE = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.fieldTE = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.fieldCE = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.fieldOszthatoHM = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.fieldKEFegyveres = new System.Windows.Forms.NumericUpDown();
-            this.fieldCEFegyveres = new System.Windows.Forms.NumericUpDown();
-            this.label33 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.fieldVEFegyveres = new System.Windows.Forms.NumericUpDown();
+            this.groupBoxLogo = new System.Windows.Forms.GroupBox();
             this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.label8 = new System.Windows.Forms.Label();
+            this.fieldKE = new System.Windows.Forms.TextBox();
+            this.fieldVE = new System.Windows.Forms.TextBox();
+            this.fieldTE = new System.Windows.Forms.TextBox();
+            this.fieldCE = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.fieldEro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldGyors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldUgyes)).BeginInit();
@@ -381,7 +358,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.fieldAsztralDinamikus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldMentalStatikus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldAsztralStatikus)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldTSZ)).BeginInit();
             this.groupBoxKepessegek.SuspendLayout();
             this.groupBoxAlapAdatok.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -479,14 +455,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).BeginInit();
-            this.tabControl2.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldTEFegyveres)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldKEFegyveres)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldCEFegyveres)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldVEFegyveres)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iKarakterBindingSource)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            this.tabControl2.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelEro
@@ -1254,26 +1225,6 @@
             this.label9.Text = "Tapasztalati szint:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // fieldTSZ
-            // 
-            this.fieldTSZ.Enabled = false;
-            this.fieldTSZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.fieldTSZ.Location = new System.Drawing.Point(18, 39);
-            this.fieldTSZ.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.fieldTSZ.Name = "fieldTSZ";
-            this.fieldTSZ.Size = new System.Drawing.Size(243, 38);
-            this.fieldTSZ.TabIndex = 106;
-            this.fieldTSZ.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.fieldTSZ.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // groupBoxKepessegek
             // 
             this.groupBoxKepessegek.Controls.Add(this.fieldOsszPontok);
@@ -1431,8 +1382,6 @@
             this.groupBox2.Controls.Add(this.label39);
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.labelEP);
-            this.groupBox2.Controls.Add(this.fieldFPPerSzint);
-            this.groupBox2.Controls.Add(this.labelFPPerSzint);
             this.groupBox2.Controls.Add(this.fieldMaxFP);
             this.groupBox2.Controls.Add(this.labelFP);
             this.groupBox2.Controls.Add(this.fieldMaxEP);
@@ -1522,24 +1471,6 @@
             this.labelEP.TabIndex = 61;
             this.labelEP.Text = "Max Ép:";
             // 
-            // fieldFPPerSzint
-            // 
-            this.fieldFPPerSzint.Enabled = false;
-            this.fieldFPPerSzint.Location = new System.Drawing.Point(151, 73);
-            this.fieldFPPerSzint.Name = "fieldFPPerSzint";
-            this.fieldFPPerSzint.ReadOnly = true;
-            this.fieldFPPerSzint.Size = new System.Drawing.Size(49, 20);
-            this.fieldFPPerSzint.TabIndex = 66;
-            // 
-            // labelFPPerSzint
-            // 
-            this.labelFPPerSzint.AutoSize = true;
-            this.labelFPPerSzint.Location = new System.Drawing.Point(152, 57);
-            this.labelFPPerSzint.Name = "labelFPPerSzint";
-            this.labelFPPerSzint.Size = new System.Drawing.Size(51, 13);
-            this.labelFPPerSzint.TabIndex = 65;
-            this.labelFPPerSzint.Text = "FP/Szint:";
-            // 
             // fieldMaxFP
             // 
             this.fieldMaxFP.Enabled = false;
@@ -1569,14 +1500,36 @@
             // 
             // groupBoxTSZ
             // 
+            this.groupBoxTSZ.Controls.Add(this.textBox46);
+            this.groupBoxTSZ.Controls.Add(this.button1);
             this.groupBoxTSZ.Controls.Add(this.label9);
             this.groupBoxTSZ.Controls.Add(this.GeneraloBtn);
-            this.groupBoxTSZ.Controls.Add(this.fieldTSZ);
             this.groupBoxTSZ.Location = new System.Drawing.Point(355, 355);
             this.groupBoxTSZ.Name = "groupBoxTSZ";
             this.groupBoxTSZ.Size = new System.Drawing.Size(297, 119);
             this.groupBoxTSZ.TabIndex = 108;
             this.groupBoxTSZ.TabStop = false;
+            // 
+            // textBox46
+            // 
+            this.textBox46.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox46.Location = new System.Drawing.Point(22, 51);
+            this.textBox46.Name = "textBox46";
+            this.textBox46.Size = new System.Drawing.Size(129, 26);
+            this.textBox46.TabIndex = 108;
+            this.textBox46.Text = "1";
+            this.textBox46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Location = new System.Drawing.Point(157, 51);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 26);
+            this.button1.TabIndex = 107;
+            this.button1.Text = "Szintlépés";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBoxMana
             // 
@@ -2604,20 +2557,6 @@
             this.label53.TabIndex = 0;
             this.label53.Text = "Jobb kéz:";
             // 
-            // groupBoxLogo
-            // 
-            this.groupBoxLogo.AutoSize = true;
-            this.groupBoxLogo.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxLogo.BackgroundImage = global::MagusKliens.Properties.Resources.magus;
-            this.groupBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBoxLogo.Location = new System.Drawing.Point(355, 476);
-            this.groupBoxLogo.Margin = new System.Windows.Forms.Padding(0);
-            this.groupBoxLogo.Name = "groupBoxLogo";
-            this.groupBoxLogo.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBoxLogo.Size = new System.Drawing.Size(297, 125);
-            this.groupBoxLogo.TabIndex = 112;
-            this.groupBoxLogo.TabStop = false;
-            // 
             // groupBoxBirtokoltFegyverek
             // 
             this.groupBoxBirtokoltFegyverek.Controls.Add(this.numericUpDown67);
@@ -3280,26 +3219,34 @@
             this.label13.TabIndex = 0;
             this.label13.Text = "Fok";
             // 
-            // tabControl2
+            // groupBoxLogo
             // 
-            this.tabControl2.Controls.Add(this.tabPage5);
-            this.tabControl2.Controls.Add(this.tabPage6);
-            this.tabControl2.Location = new System.Drawing.Point(744, 12);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(309, 203);
-            this.tabControl2.TabIndex = 115;
+            this.groupBoxLogo.AutoSize = true;
+            this.groupBoxLogo.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxLogo.BackgroundImage = global::MagusKliens.Properties.Resources.magus;
+            this.groupBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.groupBoxLogo.Location = new System.Drawing.Point(355, 476);
+            this.groupBoxLogo.Margin = new System.Windows.Forms.Padding(0);
+            this.groupBoxLogo.Name = "groupBoxLogo";
+            this.groupBoxLogo.Padding = new System.Windows.Forms.Padding(0);
+            this.groupBoxLogo.Size = new System.Drawing.Size(297, 125);
+            this.groupBoxLogo.TabIndex = 112;
+            this.groupBoxLogo.TabStop = false;
+            // 
+            // iKarakterBindingSource
+            // 
+            this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
             // 
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.tabPage5.Controls.Add(this.label77);
+            this.tabPage5.Controls.Add(this.label8);
+            this.tabPage5.Controls.Add(this.fieldKE);
+            this.tabPage5.Controls.Add(this.fieldVE);
+            this.tabPage5.Controls.Add(this.fieldTE);
+            this.tabPage5.Controls.Add(this.fieldCE);
             this.tabPage5.Controls.Add(this.label78);
-            this.tabPage5.Controls.Add(this.textBox42);
-            this.tabPage5.Controls.Add(this.textBox43);
             this.tabPage5.Controls.Add(this.label79);
-            this.tabPage5.Controls.Add(this.textBox44);
-            this.tabPage5.Controls.Add(this.textBox45);
             this.tabPage5.Controls.Add(this.label80);
             this.tabPage5.Controls.Add(this.label81);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
@@ -3308,82 +3255,6 @@
             this.tabPage5.Size = new System.Drawing.Size(301, 177);
             this.tabPage5.TabIndex = 0;
             this.tabPage5.Text = "Harcértékek";
-            // 
-            // label77
-            // 
-            this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(154, 23);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(67, 13);
-            this.label77.TabIndex = 147;
-            this.label77.Text = "Pusztakezes";
-            // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Location = new System.Drawing.Point(67, 99);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(35, 13);
-            this.label78.TabIndex = 141;
-            this.label78.Text = "Védő:";
-            // 
-            // textBox42
-            // 
-            this.textBox42.Enabled = false;
-            this.textBox42.Location = new System.Drawing.Point(163, 42);
-            this.textBox42.Name = "textBox42";
-            this.textBox42.ReadOnly = true;
-            this.textBox42.Size = new System.Drawing.Size(49, 20);
-            this.textBox42.TabIndex = 143;
-            this.textBox42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox43
-            // 
-            this.textBox43.Enabled = false;
-            this.textBox43.Location = new System.Drawing.Point(163, 94);
-            this.textBox43.Name = "textBox43";
-            this.textBox43.ReadOnly = true;
-            this.textBox43.Size = new System.Drawing.Size(49, 20);
-            this.textBox43.TabIndex = 145;
-            this.textBox43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label79
-            // 
-            this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(66, 123);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(36, 13);
-            this.label79.TabIndex = 142;
-            this.label79.Text = "Célzó:";
-            // 
-            // textBox44
-            // 
-            this.textBox44.Enabled = false;
-            this.textBox44.Location = new System.Drawing.Point(163, 68);
-            this.textBox44.Name = "textBox44";
-            this.textBox44.ReadOnly = true;
-            this.textBox44.Size = new System.Drawing.Size(49, 20);
-            this.textBox44.TabIndex = 144;
-            this.textBox44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox45
-            // 
-            this.textBox45.Enabled = false;
-            this.textBox45.Location = new System.Drawing.Point(163, 120);
-            this.textBox45.Name = "textBox45";
-            this.textBox45.ReadOnly = true;
-            this.textBox45.Size = new System.Drawing.Size(49, 20);
-            this.textBox45.TabIndex = 146;
-            this.textBox45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label80
-            // 
-            this.label80.AutoSize = true;
-            this.label80.Location = new System.Drawing.Point(66, 73);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(49, 13);
-            this.label80.TabIndex = 140;
-            this.label80.Text = "Támadó:";
             // 
             // label81
             // 
@@ -3394,226 +3265,86 @@
             this.label81.TabIndex = 139;
             this.label81.Text = "Kezdeményező:";
             // 
-            // tabPage6
+            // label80
             // 
-            this.tabPage6.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.tabPage6.Controls.Add(this.label11);
-            this.tabPage6.Controls.Add(this.fieldTEFegyveres);
-            this.tabPage6.Controls.Add(this.label8);
-            this.tabPage6.Controls.Add(this.label32);
-            this.tabPage6.Controls.Add(this.fieldKE);
-            this.tabPage6.Controls.Add(this.textBox8);
-            this.tabPage6.Controls.Add(this.fieldVE);
-            this.tabPage6.Controls.Add(this.label30);
-            this.tabPage6.Controls.Add(this.fieldTE);
-            this.tabPage6.Controls.Add(this.textBox9);
-            this.tabPage6.Controls.Add(this.fieldCE);
-            this.tabPage6.Controls.Add(this.label31);
-            this.tabPage6.Controls.Add(this.fieldOszthatoHM);
-            this.tabPage6.Controls.Add(this.textBox12);
-            this.tabPage6.Controls.Add(this.label52);
-            this.tabPage6.Controls.Add(this.label29);
-            this.tabPage6.Controls.Add(this.fieldKEFegyveres);
-            this.tabPage6.Controls.Add(this.fieldCEFegyveres);
-            this.tabPage6.Controls.Add(this.label33);
-            this.tabPage6.Controls.Add(this.textBox15);
-            this.tabPage6.Controls.Add(this.fieldVEFegyveres);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(301, 177);
-            this.tabPage6.TabIndex = 1;
-            this.tabPage6.Text = "Szintlépés";
+            this.label80.AutoSize = true;
+            this.label80.Location = new System.Drawing.Point(66, 73);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(49, 13);
+            this.label80.TabIndex = 140;
+            this.label80.Text = "Támadó:";
             // 
-            // label11
+            // label79
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(157, 5);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 13);
-            this.label11.TabIndex = 139;
-            this.label11.Text = "Szintenkénti";
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(66, 123);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(36, 13);
+            this.label79.TabIndex = 142;
+            this.label79.Text = "Célzó:";
             // 
-            // fieldTEFegyveres
+            // label78
             // 
-            this.fieldTEFegyveres.Location = new System.Drawing.Point(160, 51);
-            this.fieldTEFegyveres.Name = "fieldTEFegyveres";
-            this.fieldTEFegyveres.Size = new System.Drawing.Size(62, 20);
-            this.fieldTEFegyveres.TabIndex = 120;
-            this.fieldTEFegyveres.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label78.AutoSize = true;
+            this.label78.Location = new System.Drawing.Point(67, 99);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(35, 13);
+            this.label78.TabIndex = 141;
+            this.label78.Text = "Védő:";
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage5);
+            this.tabControl2.Location = new System.Drawing.Point(744, 12);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(309, 203);
+            this.tabControl2.TabIndex = 115;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(112, 5);
+            this.label8.Location = new System.Drawing.Point(225, 23);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(28, 13);
-            this.label8.TabIndex = 138;
+            this.label8.TabIndex = 166;
             this.label8.Text = "Alap";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(9, 81);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(35, 13);
-            this.label32.TabIndex = 129;
-            this.label32.Text = "Védő:";
             // 
             // fieldKE
             // 
-            this.fieldKE.Location = new System.Drawing.Point(105, 24);
+            this.fieldKE.Location = new System.Drawing.Point(218, 42);
             this.fieldKE.Name = "fieldKE";
             this.fieldKE.ReadOnly = true;
             this.fieldKE.Size = new System.Drawing.Size(49, 20);
-            this.fieldKE.TabIndex = 134;
+            this.fieldKE.TabIndex = 162;
             this.fieldKE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(228, 24);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(49, 20);
-            this.textBox8.TabIndex = 123;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // fieldVE
             // 
-            this.fieldVE.Location = new System.Drawing.Point(105, 76);
+            this.fieldVE.Location = new System.Drawing.Point(218, 94);
             this.fieldVE.Name = "fieldVE";
             this.fieldVE.ReadOnly = true;
             this.fieldVE.Size = new System.Drawing.Size(49, 20);
-            this.fieldVE.TabIndex = 136;
+            this.fieldVE.TabIndex = 164;
             this.fieldVE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(8, 105);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(36, 13);
-            this.label30.TabIndex = 130;
-            this.label30.Text = "Célzó:";
             // 
             // fieldTE
             // 
-            this.fieldTE.Location = new System.Drawing.Point(105, 50);
+            this.fieldTE.Location = new System.Drawing.Point(218, 68);
             this.fieldTE.Name = "fieldTE";
             this.fieldTE.ReadOnly = true;
             this.fieldTE.Size = new System.Drawing.Size(49, 20);
-            this.fieldTE.TabIndex = 135;
+            this.fieldTE.TabIndex = 163;
             this.fieldTE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(228, 50);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(49, 20);
-            this.textBox9.TabIndex = 124;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // fieldCE
             // 
-            this.fieldCE.Location = new System.Drawing.Point(105, 102);
+            this.fieldCE.Location = new System.Drawing.Point(218, 120);
             this.fieldCE.Name = "fieldCE";
             this.fieldCE.ReadOnly = true;
             this.fieldCE.Size = new System.Drawing.Size(49, 20);
-            this.fieldCE.TabIndex = 137;
+            this.fieldCE.TabIndex = 165;
             this.fieldCE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(8, 55);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(49, 13);
-            this.label31.TabIndex = 128;
-            this.label31.Text = "Támadó:";
-            // 
-            // fieldOszthatoHM
-            // 
-            this.fieldOszthatoHM.Location = new System.Drawing.Point(105, 127);
-            this.fieldOszthatoHM.Name = "fieldOszthatoHM";
-            this.fieldOszthatoHM.ReadOnly = true;
-            this.fieldOszthatoHM.Size = new System.Drawing.Size(172, 20);
-            this.fieldOszthatoHM.TabIndex = 133;
-            this.fieldOszthatoHM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(228, 76);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(49, 20);
-            this.textBox12.TabIndex = 125;
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label52.Location = new System.Drawing.Point(8, 130);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(84, 13);
-            this.label52.TabIndex = 132;
-            this.label52.Text = "Osztható HM:";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(8, 29);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(82, 13);
-            this.label29.TabIndex = 127;
-            this.label29.Text = "Kezdeményező:";
-            // 
-            // fieldKEFegyveres
-            // 
-            this.fieldKEFegyveres.Location = new System.Drawing.Point(160, 25);
-            this.fieldKEFegyveres.Name = "fieldKEFegyveres";
-            this.fieldKEFegyveres.Size = new System.Drawing.Size(62, 20);
-            this.fieldKEFegyveres.TabIndex = 119;
-            this.fieldKEFegyveres.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // fieldCEFegyveres
-            // 
-            this.fieldCEFegyveres.Location = new System.Drawing.Point(160, 101);
-            this.fieldCEFegyveres.Name = "fieldCEFegyveres";
-            this.fieldCEFegyveres.Size = new System.Drawing.Size(62, 20);
-            this.fieldCEFegyveres.TabIndex = 122;
-            this.fieldCEFegyveres.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(225, 5);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(55, 13);
-            this.label33.TabIndex = 131;
-            this.label33.Text = "HM/Szint:";
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(228, 102);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(49, 20);
-            this.textBox15.TabIndex = 126;
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // fieldVEFegyveres
-            // 
-            this.fieldVEFegyveres.Location = new System.Drawing.Point(160, 77);
-            this.fieldVEFegyveres.Name = "fieldVEFegyveres";
-            this.fieldVEFegyveres.Size = new System.Drawing.Size(62, 20);
-            this.fieldVEFegyveres.TabIndex = 121;
-            this.fieldVEFegyveres.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // iKarakterBindingSource
-            // 
-            this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
             // 
             // KarGen
             // 
@@ -3671,7 +3402,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.fieldAsztralDinamikus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldMentalStatikus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldAsztralStatikus)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldTSZ)).EndInit();
             this.groupBoxKepessegek.ResumeLayout(false);
             this.groupBoxKepessegek.PerformLayout();
             this.groupBoxAlapAdatok.ResumeLayout(false);
@@ -3679,6 +3409,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBoxTSZ.ResumeLayout(false);
+            this.groupBoxTSZ.PerformLayout();
             this.groupBoxMana.ResumeLayout(false);
             this.groupBoxMana.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -3781,16 +3512,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown45)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).EndInit();
-            this.tabControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.iKarakterBindingSource)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldTEFegyveres)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldKEFegyveres)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldCEFegyveres)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldVEFegyveres)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iKarakterBindingSource)).EndInit();
+            this.tabControl2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3861,7 +3586,6 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.NumericUpDown fieldTSZ;
         private System.Windows.Forms.NumericUpDown fieldMentalDinamikusNelkuli;
         private System.Windows.Forms.NumericUpDown fieldAsztralDinamikusNelkul;
         private System.Windows.Forms.NumericUpDown fieldMentalME;
@@ -3914,8 +3638,6 @@
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label labelEP;
-        private System.Windows.Forms.TextBox fieldFPPerSzint;
-        private System.Windows.Forms.Label labelFPPerSzint;
         private System.Windows.Forms.TextBox fieldMaxFP;
         private System.Windows.Forms.Label labelFP;
         private System.Windows.Forms.TextBox fieldMaxEP;
@@ -4085,40 +3807,20 @@
         private System.Windows.Forms.NumericUpDown numericUpDown80;
         private System.Windows.Forms.NumericUpDown numericUpDown81;
         private System.Windows.Forms.NumericUpDown numericUpDown82;
-        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.GroupBox groupBoxFej;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox46;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label78;
-        private System.Windows.Forms.TextBox textBox42;
-        private System.Windows.Forms.TextBox textBox43;
         private System.Windows.Forms.Label label79;
-        private System.Windows.Forms.TextBox textBox44;
-        private System.Windows.Forms.TextBox textBox45;
         private System.Windows.Forms.Label label80;
         private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.NumericUpDown fieldTEFegyveres;
+        private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label32;
         private System.Windows.Forms.TextBox fieldKE;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox fieldVE;
-        private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TextBox fieldTE;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox fieldCE;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox fieldOszthatoHM;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.NumericUpDown fieldKEFegyveres;
-        private System.Windows.Forms.NumericUpDown fieldCEFegyveres;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.NumericUpDown fieldVEFegyveres;
-        private System.Windows.Forms.GroupBox groupBoxFej;
     }
 }
 

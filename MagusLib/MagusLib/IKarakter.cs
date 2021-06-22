@@ -13,6 +13,7 @@ namespace MagusLib
         Vallas Vallas { get; set; }
         KarakterAlkaszt Alkaszt { get; set; }
         KarakterKaszt Kaszt { get; set; }
+        Szintek Szint { get;  }
         #endregion
 
         #region Képességek

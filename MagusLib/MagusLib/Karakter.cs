@@ -19,7 +19,8 @@ namespace MagusLib
         public virtual Vallas Vallas { get; set; }
         public virtual KarakterKaszt Kaszt { get; set; }
         public virtual KarakterAlkaszt Alkaszt { get; set; }
-       
+        public Szintek Szint { get; } = new Szintek();
+
         #endregion
 
         #region Képességek
@@ -43,7 +44,7 @@ namespace MagusLib
         public virtual uint Vedo { get; set; }
 
         public virtual uint Celzo { get; set; }
-        public virtual uint HMSzint { get; set; }        
+        public virtual uint HMSzint { get; set; }
         #endregion
 
         #region EleteroEsMagia        

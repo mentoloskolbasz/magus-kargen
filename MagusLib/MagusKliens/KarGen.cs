@@ -20,14 +20,9 @@ namespace MagusKliens
         protected KarakterFigyelo karakter = new KarakterFigyelo();
         protected KorAlapertekModosito korAlapertekModosito = new KorAlapertekModosito();
         protected List<System.Windows.Forms.TextBox> mezok;
-        protected IHatarozo<uint> celzoHatarozo = new CelzoErtekHatarozo();
-        protected IHatarozo<uint> kezdemenyezoHatarozo = new KezdemenyezoErtekHatarozo();
-        protected IHatarozo<uint> tamadoHatarozo = new TamadoErtekHatarozo();
-        protected IHatarozo<uint> vedoHatarozo = new VedoErtekHatarozo();
-        protected IHatarozo<uint> epHatarozo = new EPHatarozo();
-        protected IHatarozo<uint> fpHatarozo = new FPHatarozo();
         protected ToolTip toolTip = new ToolTip();
         protected List<KeyValuePair<string, NumericUpDown>> kepessegPontok;
+        protected Hatarozok hatarozok = Hatarozok.Instance;
 
         protected void modositokFrissitese()
         {
@@ -195,17 +190,17 @@ namespace MagusKliens
         //Harcértékek frissítése
         protected void harcertekFrissitese()
         {
-            fieldCE.Text = celzoHatarozo.Hataroz(karakter).ToString();
-            fieldKE.Text = kezdemenyezoHatarozo.Hataroz(karakter).ToString();
-            fieldTE.Text = tamadoHatarozo.Hataroz(karakter).ToString();
-            fieldVE.Text = vedoHatarozo.Hataroz(karakter).ToString();
-            fieldMaxEP.Text = epHatarozo.Hataroz(karakter).ToString();
-            fieldMaxFP.Text = fpHatarozo.Hataroz(karakter).ToString();
+            fieldCE.Text = hatarozok.celzoHatarozo.Hataroz(karakter).ToString();
+            fieldKE.Text = hatarozok.kezdemenyezoHatarozo.Hataroz(karakter).ToString();
+            fieldTE.Text = hatarozok.tamadoHatarozo.Hataroz(karakter).ToString();
+            fieldVE.Text = hatarozok.vedoHatarozo.Hataroz(karakter).ToString();
+            fieldMaxEP.Text = hatarozok.epHatarozo.Hataroz(karakter).ToString();
+            fieldMaxFP.Text = hatarozok.fpHatarozo.Hataroz(karakter).ToString();
         }
 
         protected void osszKepessegpontFrissites()
         {
-            fieldOsszPontok.Text = kepessegPontok.Aggregate<KeyValuePair<string, NumericUpDown>, uint>(0, (result, current) => result + karakter.GetKepessegPont(current.Key)).ToString();            
+            fieldOsszPontok.Text = kepessegPontok.Aggregate<KeyValuePair<string, NumericUpDown>, uint>(0, (result, current) => result + karakter.GetKepessegPont(current.Key)).ToString();
         }
 
         #region Bekötés FORMRA
@@ -252,8 +247,14 @@ namespace MagusKliens
         }
 
 
+
+
         #endregion
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            (new Szintlepes { Karakter = karakter }).ShowDialog();
+
+        }
     }
 }
