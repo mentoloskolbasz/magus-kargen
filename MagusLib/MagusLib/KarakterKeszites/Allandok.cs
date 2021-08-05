@@ -150,6 +150,31 @@ namespace MagusLib.KarakterKeszites
             { KarakterAlkaszt.Sámán, 5 },
             { KarakterAlkaszt.Bajvívó, 12 },
         };
+
+        public static readonly Dictionary<KarakterAlkaszt, KotelezoEloallito> KOTELEZO_HM_PER_SZINT = new Dictionary<KarakterAlkaszt, KotelezoEloallito>()
+        {
+            { KarakterAlkaszt.Harcos, (karakter) => new KotelezoHM{tamadoErtek = 3, vedoErtek =3 } },
+            { KarakterAlkaszt.Tolvaj, (karakter) => new KotelezoHM{tamadoErtek = 1, vedoErtek = 1, kezdemenyezoErtek = 1, keziLevonando = 2} },
+            { KarakterAlkaszt.Pap, (karakter) => new KotelezoHM{tamadoErtek = 3, vedoErtek = 3} },
+            { KarakterAlkaszt.Harcművész, (karakter) => new KotelezoHM{tamadoErtek = 3, vedoErtek = 3} },
+            { KarakterAlkaszt.Boszorkány, (karakter) => new KotelezoHM{tamadoErtek = 1, vedoErtek = 1} },
+            { KarakterAlkaszt.Gladiátor, (karakter) => new KotelezoHM{tamadoErtek = 4, vedoErtek = 4} },
+            { KarakterAlkaszt.Fejvadász, (karakter) => new KotelezoHM{tamadoErtek = 4, vedoErtek = 4, keziLevonando = 8, kezdemenyezoErtek = (uint)(karakter.Szint.Szint % 2 == 0 ? 0 : 1)} },
+            { KarakterAlkaszt.Lovag, (karakter) => new KotelezoHM{tamadoErtek = 5, vedoErtek = 5}},
+            { KarakterAlkaszt.Bárd, (karakter) => new KotelezoHM{tamadoErtek = 2, vedoErtek = 2} },
+            { KarakterAlkaszt.Paplovag, (karakter) => new KotelezoHM{tamadoErtek = 3, vedoErtek = 3} },
+            { KarakterAlkaszt.Kardművész, (karakter) => new KotelezoHM{tamadoErtek = 3, vedoErtek = 3} },
+            { KarakterAlkaszt.Boszorkánymester, (karakter) => new KotelezoHM{tamadoErtek = 1, vedoErtek = 1, kezdemenyezoErtek = 1, keziLevonando = 2} },
+            { KarakterAlkaszt.Tűzvarázsló, (karakter) => new KotelezoHM{tamadoErtek = 3, vedoErtek = 3} },
+            { KarakterAlkaszt.Varázsló, (karakter) => new KotelezoHM{tamadoErtek = 1, vedoErtek = 1} },
+            { KarakterAlkaszt.Barbár, (karakter) => new KotelezoHM{tamadoErtek = 5, kezdemenyezoErtek = 3} },
+            { KarakterAlkaszt.Amazon, (karakter) => new KotelezoHM{ } },
+            { KarakterAlkaszt.Szerzetes, (karakter) => new KotelezoHM{ tamadoErtek = 2, vedoErtek = 4} },
+            { KarakterAlkaszt.Sámán, (karakter) => new KotelezoHM{ tamadoErtek = 1, vedoErtek = 1} },
+            { KarakterAlkaszt.Bajvívó, (karakter) => new KotelezoHM{tamadoErtek = 3, vedoErtek = 3} },
+        };
+
+
         #endregion
 
         #region Képességek Faji Módosítói

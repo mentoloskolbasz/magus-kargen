@@ -29,7 +29,7 @@ namespace MagusKliens
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonLepes = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -63,14 +63,15 @@ namespace MagusKliens
             ((System.ComponentModel.ISupportInitialize)(this.fieldVESzintlepes)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonLepes
             // 
-            this.button1.Location = new System.Drawing.Point(310, 130);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 70;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonLepes.Location = new System.Drawing.Point(310, 130);
+            this.buttonLepes.Name = "buttonLepes";
+            this.buttonLepes.Size = new System.Drawing.Size(75, 23);
+            this.buttonLepes.TabIndex = 70;
+            this.buttonLepes.Text = "Szintlépés";
+            this.buttonLepes.UseVisualStyleBackColor = true;
+            this.buttonLepes.Click += new System.EventHandler(this.buttonLepes_Click);
             // 
             // button2
             // 
@@ -336,7 +337,7 @@ namespace MagusKliens
             this.Controls.Add(this.label33);
             this.Controls.Add(this.fieldVESzintlepes);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonLepes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Szintlepes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -353,7 +354,7 @@ namespace MagusKliens
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonLepes;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
