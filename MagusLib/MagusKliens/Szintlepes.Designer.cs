@@ -105,6 +105,8 @@ namespace MagusKliens
             this.fieldTESzintlepes.Size = new System.Drawing.Size(62, 20);
             this.fieldTESzintlepes.TabIndex = 143;
             this.fieldTESzintlepes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.fieldTESzintlepes.ValueChanged += new System.EventHandler(this.fieldKNumUpDown_Validating);
+            this.fieldTESzintlepes.Validating += new System.ComponentModel.CancelEventHandler(this.fieldKNumUpDown_Validating);
             // 
             // labelFPPerSzint
             // 
@@ -213,6 +215,8 @@ namespace MagusKliens
             this.fieldKESzintlepes.Size = new System.Drawing.Size(62, 20);
             this.fieldKESzintlepes.TabIndex = 142;
             this.fieldKESzintlepes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.fieldKESzintlepes.ValueChanged += new System.EventHandler(this.fieldKNumUpDown_Validating);
+            this.fieldKESzintlepes.Validating += new System.ComponentModel.CancelEventHandler(this.fieldKNumUpDown_Validating);
             // 
             // fieldCESzintlepes
             // 
@@ -221,6 +225,8 @@ namespace MagusKliens
             this.fieldCESzintlepes.Size = new System.Drawing.Size(62, 20);
             this.fieldCESzintlepes.TabIndex = 145;
             this.fieldCESzintlepes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.fieldCESzintlepes.ValueChanged += new System.EventHandler(this.fieldKNumUpDown_Validating);
+            this.fieldCESzintlepes.Validating += new System.ComponentModel.CancelEventHandler(this.fieldKNumUpDown_Validating);
             // 
             // label33
             // 
@@ -238,6 +244,8 @@ namespace MagusKliens
             this.fieldVESzintlepes.Size = new System.Drawing.Size(62, 20);
             this.fieldVESzintlepes.TabIndex = 144;
             this.fieldVESzintlepes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.fieldVESzintlepes.ValueChanged += new System.EventHandler(this.fieldKNumUpDown_Validating);
+            this.fieldVESzintlepes.Validating += new System.ComponentModel.CancelEventHandler(this.fieldKNumUpDown_Validating);
             // 
             // textBox1
             // 
@@ -342,6 +350,7 @@ namespace MagusKliens
             this.Name = "Szintlepes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Szintlepes";
+            this.Load += new System.EventHandler(this.Szintlepes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldTESzintlepes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldKESzintlepes)).EndInit();
