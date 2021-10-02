@@ -28,7 +28,8 @@ namespace MagusLib.Ertek
                 else
 	            {
                      ertek += Allandok.CE_ALAP[karakter.Alkaszt];
-	            }            
+	            }
+                ertek += (uint)karakter.Szint.CeSzint;
 
                 return ertek;
             }

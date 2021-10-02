@@ -16,6 +16,7 @@ namespace MagusKliens
         public KarakterFigyelo()
         {
             // tipus = this.GetType().BaseType;
+            Szint.ValtozasFigyelo(() => this.setProperty("Szint"));
         }
 
         #region Alap Adatok
@@ -245,15 +246,6 @@ namespace MagusKliens
                 this.setProperty("Fp");
             }
         }
-        public override uint FpPerSzint
-        {
-            get => base.FpPerSzint;
-            set
-            {
-                base.FpPerSzint = value;
-                this.setProperty("Fp");
-            }
-        }
         public override uint Pszi
         {
             get => base.Pszi;
@@ -282,7 +274,7 @@ namespace MagusKliens
                 PropertyChanged(this, new PropertyChangedEventArgs(name));
             }
         }
-        public uint GetKepessegPont(string name)
+       public uint GetKepessegPont(string name)
         {
             return (uint)this.GetType().GetProperty(name).GetValue(this, null);            
         }

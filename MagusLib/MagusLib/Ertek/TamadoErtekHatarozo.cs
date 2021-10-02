@@ -12,9 +12,9 @@ namespace MagusLib.Ertek
         {
             try
             {
-                
+
                 korAlapertekModosito.Karakter = karakter;
-               
+
 
                 uint ertek = (uint)Math.Max((karakter.Ugyesseg + korAlapertekModosito.Ugyesseg - 10), 0);
 
@@ -24,14 +24,16 @@ namespace MagusLib.Ertek
 
                 ertek += Allandok.TE_ALAP[karakter.Alkaszt];
 
+                ertek += (uint)karakter.Szint.TeSzint;
+
                 return ertek;
             }
             catch (NemMegfeleloKorKivetel)
             {
                 //Ezt a hibát elnyeljük, mert máshol lekezeljük!
-                return 0;                
+                return 0;
             }
-           //throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }

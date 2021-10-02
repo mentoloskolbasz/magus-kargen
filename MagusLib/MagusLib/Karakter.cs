@@ -50,7 +50,6 @@ namespace MagusLib
         #region EleteroEsMagia        
         public virtual uint Ep { get; set; }
         public virtual uint Fp { get; set; }
-        public virtual uint FpPerSzint { get; set; }
         public virtual uint Pszi { get; set; }
         public virtual uint Mana { get; set; }
         #endregion

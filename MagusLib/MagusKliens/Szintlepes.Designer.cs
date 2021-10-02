@@ -32,7 +32,7 @@ namespace MagusKliens
             this.buttonLepes = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.fieldFpPerSzint = new System.Windows.Forms.NumericUpDown();
             this.fieldTESzintlepes = new System.Windows.Forms.NumericUpDown();
             this.labelFPPerSzint = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
@@ -49,14 +49,14 @@ namespace MagusKliens
             this.fieldCESzintlepes = new System.Windows.Forms.NumericUpDown();
             this.label33 = new System.Windows.Forms.Label();
             this.fieldVESzintlepes = new System.Windows.Forms.NumericUpDown();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.fieldSzint = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
             this.fieldKEAlap = new System.Windows.Forms.TextBox();
             this.fieldVEAlap = new System.Windows.Forms.TextBox();
             this.fieldTEAlap = new System.Windows.Forms.TextBox();
             this.fieldCEAlap = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fieldFpPerSzint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldTESzintlepes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldKESzintlepes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldCESzintlepes)).BeginInit();
@@ -79,8 +79,9 @@ namespace MagusKliens
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 71;
-            this.button2.Text = "button2";
+            this.button2.Text = "Visszalépés";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label11
             // 
@@ -91,12 +92,12 @@ namespace MagusKliens
             this.label11.TabIndex = 162;
             this.label11.Text = "Szintenkénti";
             // 
-            // numericUpDown1
+            // fieldFpPerSzint
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(307, 84);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(48, 20);
-            this.numericUpDown1.TabIndex = 141;
+            this.fieldFpPerSzint.Location = new System.Drawing.Point(307, 84);
+            this.fieldFpPerSzint.Name = "fieldFpPerSzint";
+            this.fieldFpPerSzint.Size = new System.Drawing.Size(48, 20);
+            this.fieldFpPerSzint.TabIndex = 141;
             // 
             // fieldTESzintlepes
             // 
@@ -247,13 +248,13 @@ namespace MagusKliens
             this.fieldVESzintlepes.ValueChanged += new System.EventHandler(this.fieldKNumUpDown_Validating);
             this.fieldVESzintlepes.Validating += new System.ComponentModel.CancelEventHandler(this.fieldKNumUpDown_Validating);
             // 
-            // textBox1
+            // fieldSzint
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(385, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 38);
-            this.textBox1.TabIndex = 163;
+            this.fieldSzint.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.fieldSzint.Location = new System.Drawing.Point(385, 68);
+            this.fieldSzint.Name = "fieldSzint";
+            this.fieldSzint.Size = new System.Drawing.Size(100, 38);
+            this.fieldSzint.TabIndex = 163;
             // 
             // label1
             // 
@@ -325,9 +326,9 @@ namespace MagusKliens
             this.Controls.Add(this.fieldTEAlap);
             this.Controls.Add(this.fieldCEAlap);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.fieldSzint);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.fieldFpPerSzint);
             this.Controls.Add(this.fieldTESzintlepes);
             this.Controls.Add(this.labelFPPerSzint);
             this.Controls.Add(this.label32);
@@ -351,7 +352,7 @@ namespace MagusKliens
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Szintlepes";
             this.Load += new System.EventHandler(this.Szintlepes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fieldFpPerSzint)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldTESzintlepes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldKESzintlepes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldCESzintlepes)).EndInit();
@@ -366,7 +367,7 @@ namespace MagusKliens
         private System.Windows.Forms.Button buttonLepes;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown fieldFpPerSzint;
         private System.Windows.Forms.NumericUpDown fieldTESzintlepes;
         private System.Windows.Forms.Label labelFPPerSzint;
         private System.Windows.Forms.Label label32;
@@ -383,7 +384,7 @@ namespace MagusKliens
         private System.Windows.Forms.NumericUpDown fieldCESzintlepes;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.NumericUpDown fieldVESzintlepes;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox fieldSzint;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.TextBox fieldKEAlap;

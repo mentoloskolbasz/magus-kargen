@@ -135,7 +135,7 @@
             this.labelFP = new System.Windows.Forms.Label();
             this.fieldMaxEP = new System.Windows.Forms.TextBox();
             this.groupBoxTSZ = new System.Windows.Forms.GroupBox();
-            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.fieldKarakterSzint = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBoxMana = new System.Windows.Forms.GroupBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -317,18 +317,18 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBoxLogo = new System.Windows.Forms.GroupBox();
-            this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.label81 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
             this.label8 = new System.Windows.Forms.Label();
             this.fieldKE = new System.Windows.Forms.TextBox();
             this.fieldVE = new System.Windows.Forms.TextBox();
             this.fieldTE = new System.Windows.Forms.TextBox();
             this.fieldCE = new System.Windows.Forms.TextBox();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.fieldEro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldGyors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldUgyes)).BeginInit();
@@ -455,9 +455,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iKarakterBindingSource)).BeginInit();
             this.tabPage5.SuspendLayout();
             this.tabControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iKarakterBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // labelEro
@@ -1500,7 +1500,7 @@
             // 
             // groupBoxTSZ
             // 
-            this.groupBoxTSZ.Controls.Add(this.textBox46);
+            this.groupBoxTSZ.Controls.Add(this.fieldKarakterSzint);
             this.groupBoxTSZ.Controls.Add(this.button1);
             this.groupBoxTSZ.Controls.Add(this.label9);
             this.groupBoxTSZ.Controls.Add(this.GeneraloBtn);
@@ -1510,15 +1510,16 @@
             this.groupBoxTSZ.TabIndex = 108;
             this.groupBoxTSZ.TabStop = false;
             // 
-            // textBox46
+            // fieldKarakterSzint
             // 
-            this.textBox46.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox46.Location = new System.Drawing.Point(22, 51);
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(129, 26);
-            this.textBox46.TabIndex = 108;
-            this.textBox46.Text = "1";
-            this.textBox46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.fieldKarakterSzint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.fieldKarakterSzint.Location = new System.Drawing.Point(22, 51);
+            this.fieldKarakterSzint.Name = "fieldKarakterSzint";
+            this.fieldKarakterSzint.ReadOnly = true;
+            this.fieldKarakterSzint.Size = new System.Drawing.Size(129, 26);
+            this.fieldKarakterSzint.TabIndex = 108;
+            this.fieldKarakterSzint.Text = "1";
+            this.fieldKarakterSzint.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button1
             // 
@@ -3233,10 +3234,6 @@
             this.groupBoxLogo.TabIndex = 112;
             this.groupBoxLogo.TabStop = false;
             // 
-            // iKarakterBindingSource
-            // 
-            this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
-            // 
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -3255,51 +3252,6 @@
             this.tabPage5.Size = new System.Drawing.Size(301, 177);
             this.tabPage5.TabIndex = 0;
             this.tabPage5.Text = "Harcértékek";
-            // 
-            // label81
-            // 
-            this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(66, 47);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(82, 13);
-            this.label81.TabIndex = 139;
-            this.label81.Text = "Kezdeményező:";
-            // 
-            // label80
-            // 
-            this.label80.AutoSize = true;
-            this.label80.Location = new System.Drawing.Point(66, 73);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(49, 13);
-            this.label80.TabIndex = 140;
-            this.label80.Text = "Támadó:";
-            // 
-            // label79
-            // 
-            this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(66, 123);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(36, 13);
-            this.label79.TabIndex = 142;
-            this.label79.Text = "Célzó:";
-            // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Location = new System.Drawing.Point(67, 99);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(35, 13);
-            this.label78.TabIndex = 141;
-            this.label78.Text = "Védő:";
-            // 
-            // tabControl2
-            // 
-            this.tabControl2.Controls.Add(this.tabPage5);
-            this.tabControl2.Location = new System.Drawing.Point(744, 12);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(309, 203);
-            this.tabControl2.TabIndex = 115;
             // 
             // label8
             // 
@@ -3345,6 +3297,55 @@
             this.fieldCE.Size = new System.Drawing.Size(49, 20);
             this.fieldCE.TabIndex = 165;
             this.fieldCE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Location = new System.Drawing.Point(67, 99);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(35, 13);
+            this.label78.TabIndex = 141;
+            this.label78.Text = "Védő:";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(66, 123);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(36, 13);
+            this.label79.TabIndex = 142;
+            this.label79.Text = "Célzó:";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Location = new System.Drawing.Point(66, 73);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(49, 13);
+            this.label80.TabIndex = 140;
+            this.label80.Text = "Támadó:";
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Location = new System.Drawing.Point(66, 47);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(82, 13);
+            this.label81.TabIndex = 139;
+            this.label81.Text = "Kezdeményező:";
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage5);
+            this.tabControl2.Location = new System.Drawing.Point(744, 12);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(309, 203);
+            this.tabControl2.TabIndex = 115;
+            // 
+            // iKarakterBindingSource
+            // 
+            this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
             // 
             // KarGen
             // 
@@ -3512,10 +3513,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown45)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iKarakterBindingSource)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.tabControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.iKarakterBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3809,7 +3810,7 @@
         private System.Windows.Forms.NumericUpDown numericUpDown82;
         private System.Windows.Forms.GroupBox groupBoxFej;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox46;
+        private System.Windows.Forms.TextBox fieldKarakterSzint;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Label label79;

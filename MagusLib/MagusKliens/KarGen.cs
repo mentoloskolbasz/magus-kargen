@@ -42,6 +42,7 @@ namespace MagusKliens
                 fieldAllokepessegKorModosito.Text = korAlapertekModosito.Allokepesseg.ToString();
                 fieldEgeszsegKorModosito.Text = korAlapertekModosito.Egeszseg.ToString();
                 fieldSzepsegKorModosito.Text = korAlapertekModosito.Szepseg.ToString();
+                fieldKarakterSzint.Text = karakter.Szint.Szint.ToString();
             }
             catch (NemMegfeleloKorKivetel)
             {

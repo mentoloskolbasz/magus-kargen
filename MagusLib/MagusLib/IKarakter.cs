@@ -43,8 +43,7 @@ namespace MagusLib
 
         #region EleteroEsMagia
         uint Ep { get; set; }
-        uint Fp { get; set; }
-        uint FpPerSzint { get; set; }
+        uint Fp { get; set; }        
         uint Pszi { get; set; }
         uint Mana { get; set; }
         #endregion

@@ -24,16 +24,18 @@ namespace MagusKliens
             {
                 karakter = value;
                 harcertekFrissitese();
+                if (Allandok.CE_TILTOTT.Contains(karakter.Alkaszt))
+                {
+                    fieldCESzintlepes.Enabled = false;
+                    fieldCESzintlepes.Value = 0;
+                }
             }
         }
-        private bool folyamatban
-        {
-            get => hmPerSzint > 0;
-        }
+        
 
         public Szintlepes()
         {
-            InitializeComponent();
+            InitializeComponent();       
 
         }
 
@@ -48,15 +50,28 @@ namespace MagusKliens
 
         private void buttonLepes_Click(object sender, EventArgs e)
         {
-            if (folyamatban)
+
+            if (maradekHmPerSzintSzamolo != 0)
             {
-                //Elfogadás
+                return;
             }
-            else
+            //Elfogadás
+            var szintlepesArg = new Szintek.Argumentumok
             {
-                szintLepoFuggveny();
-            }
-            
+
+                keSzint = (int)kotelezok.kezdemenyezoErtek + Decimal.ToInt32(fieldKESzintlepes.Value),
+                teSzint = (int)kotelezok.tamadoErtek + Decimal.ToInt32(fieldTESzintlepes.Value),
+                veSzint = (int)kotelezok.vedoErtek + Decimal.ToInt32(fieldVESzintlepes.Value),
+                ceSzint = (int)kotelezok.celzoErtek + Decimal.ToInt32(fieldCESzintlepes.Value),
+                fpSzint = Decimal.ToInt32(fieldFpPerSzint.Value)
+            };
+            karakter.Szint.Lepes(szintlepesArg);
+            hmPerSzint = 0;
+            fieldSzint.Text = karakter.Szint.Szint.ToString();
+            szintLepoFuggveny();
+
+
+
 
         }
 
@@ -69,14 +84,11 @@ namespace MagusKliens
         {
             hmPerSzint = Allandok.HM_PER_SZINT[karakter.Alkaszt];
             kotelezok = Allandok.KOTELEZO_HM_PER_SZINT[karakter.Alkaszt](karakter);
-            fieldKEKotelezo.Text = kotelezok.kezdemenyezoErtek.ToString();
-            fieldTEKotelezo.Text = kotelezok.tamadoErtek.ToString();
-            fieldVEKotelezo.Text = kotelezok.vedoErtek.ToString();
-            fieldCEKotelezo.Text = kotelezok.celzoErtek.ToString();
+            fieldFpPerSzint.Value = Allandok.FP_PER_SZINT[karakter.Alkaszt]();
 
-            fieldOszthatoHM.Text = maradekHmPerSzintSzamolo.ToString();
+            mezoFrissites();
 
-            buttonLepes.Text = "Elfogadás";
+            
         }
 
         private int maradekHmPerSzintSzamolo
@@ -98,5 +110,25 @@ namespace MagusKliens
             fieldOszthatoHM.Text = maradekHmPerSzintSzamolo.ToString();
         }
 
+        private void mezoFrissites()
+        {
+            fieldKEKotelezo.Text = kotelezok.kezdemenyezoErtek.ToString();
+            fieldTEKotelezo.Text = kotelezok.tamadoErtek.ToString();
+            fieldVEKotelezo.Text = kotelezok.vedoErtek.ToString();
+            fieldCEKotelezo.Text = kotelezok.celzoErtek.ToString();
+            fieldOszthatoHM.Text = maradekHmPerSzintSzamolo.ToString();
+            fieldSzint.Text = karakter.Szint.Szint.ToString();
+            harcertekFrissitese();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (karakter.Szint.Szint < 1)
+            {
+                return;
+            }
+            karakter.Szint.VisszaLepes(1);
+            szintLepoFuggveny();
+        }
     }
 }

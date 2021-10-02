@@ -21,6 +21,7 @@ namespace MagusLib.Ertek
                 ertek += (uint)Math.Max((karakter.Gyorsasag + korAlapertekModosito.Gyorsasag - 10), 0);
 
                 ertek += Allandok.KE_ALAP[karakter.Alkaszt];
+                ertek += (uint)karakter.Szint.KeSzint;
 
                 return ertek;
             }

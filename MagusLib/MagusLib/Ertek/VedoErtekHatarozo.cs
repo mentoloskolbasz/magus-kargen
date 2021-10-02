@@ -22,6 +22,8 @@ namespace MagusLib.Ertek
 
                 ertek += Allandok.VE_ALAP[karakter.Alkaszt];
 
+                ertek += (uint)karakter.Szint.VeSzint;
+
                 return ertek;
             }
             catch (NemMegfeleloKorKivetel)
