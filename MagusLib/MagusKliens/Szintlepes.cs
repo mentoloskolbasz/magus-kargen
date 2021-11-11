@@ -85,7 +85,7 @@ namespace MagusKliens
             hmPerSzint = Allandok.HM_PER_SZINT[karakter.Alkaszt];
             kotelezok = Allandok.KOTELEZO_HM_PER_SZINT[karakter.Alkaszt](karakter);
             fieldFpPerSzint.Value = Allandok.FP_PER_SZINT[karakter.Alkaszt]();
-
+           // fieldManaPerSzint.Value = Allandok.MANA_PER_SZINT[karakter.Alkaszt]();
             mezoFrissites();
 
             

@@ -56,11 +56,14 @@ namespace MagusKliens
             this.fieldVEAlap = new System.Windows.Forms.TextBox();
             this.fieldTEAlap = new System.Windows.Forms.TextBox();
             this.fieldCEAlap = new System.Windows.Forms.TextBox();
+            this.fieldManaPerSzint = new System.Windows.Forms.NumericUpDown();
+            this.Mana = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fieldFpPerSzint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldTESzintlepes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldKESzintlepes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldCESzintlepes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldVESzintlepes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fieldManaPerSzint)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonLepes
@@ -94,7 +97,7 @@ namespace MagusKliens
             // 
             // fieldFpPerSzint
             // 
-            this.fieldFpPerSzint.Location = new System.Drawing.Point(307, 84);
+            this.fieldFpPerSzint.Location = new System.Drawing.Point(310, 52);
             this.fieldFpPerSzint.Name = "fieldFpPerSzint";
             this.fieldFpPerSzint.Size = new System.Drawing.Size(48, 20);
             this.fieldFpPerSzint.TabIndex = 141;
@@ -112,7 +115,7 @@ namespace MagusKliens
             // labelFPPerSzint
             // 
             this.labelFPPerSzint.AutoSize = true;
-            this.labelFPPerSzint.Location = new System.Drawing.Point(307, 68);
+            this.labelFPPerSzint.Location = new System.Drawing.Point(307, 36);
             this.labelFPPerSzint.Name = "labelFPPerSzint";
             this.labelFPPerSzint.Size = new System.Drawing.Size(51, 13);
             this.labelFPPerSzint.TabIndex = 140;
@@ -315,11 +318,29 @@ namespace MagusKliens
             this.fieldCEAlap.TabIndex = 168;
             this.fieldCEAlap.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // fieldManaPerSzint
+            // 
+            this.fieldManaPerSzint.Location = new System.Drawing.Point(310, 86);
+            this.fieldManaPerSzint.Name = "fieldManaPerSzint";
+            this.fieldManaPerSzint.Size = new System.Drawing.Size(48, 20);
+            this.fieldManaPerSzint.TabIndex = 171;
+            // 
+            // Mana
+            // 
+            this.Mana.AutoSize = true;
+            this.Mana.Location = new System.Drawing.Point(307, 70);
+            this.Mana.Name = "Mana";
+            this.Mana.Size = new System.Drawing.Size(65, 13);
+            this.Mana.TabIndex = 170;
+            this.Mana.Text = "Mana/Szint:";
+            // 
             // Szintlepes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(496, 164);
+            this.Controls.Add(this.fieldManaPerSzint);
+            this.Controls.Add(this.Mana);
             this.Controls.Add(this.label77);
             this.Controls.Add(this.fieldKEAlap);
             this.Controls.Add(this.fieldVEAlap);
@@ -357,6 +378,7 @@ namespace MagusKliens
             ((System.ComponentModel.ISupportInitialize)(this.fieldKESzintlepes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldCESzintlepes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldVESzintlepes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fieldManaPerSzint)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -391,5 +413,7 @@ namespace MagusKliens
         private System.Windows.Forms.TextBox fieldVEAlap;
         private System.Windows.Forms.TextBox fieldTEAlap;
         private System.Windows.Forms.TextBox fieldCEAlap;
+        private System.Windows.Forms.NumericUpDown fieldManaPerSzint;
+        private System.Windows.Forms.Label Mana;
     }
 }

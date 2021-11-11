@@ -707,6 +707,29 @@ namespace MagusLib.KarakterKeszites
             { KarakterAlkaszt.Sámán,  ()=>(new K6()).Dobas() + 2 },
             { KarakterAlkaszt.Bajvívó,  ()=>(new K6()).Dobas() + 3 },
         };
+
+       /*public static readonly Dictionary<KarakterAlkaszt, Func<int>> MANA_PER_SZINT = new Dictionary<KarakterAlkaszt, Func<int>>()
+        {
+            { KarakterAlkaszt.Harcos, ()=>(new K6()).Dobas() + 4 },
+            { KarakterAlkaszt.Tolvaj,  ()=>(new K6()).Dobas() + 3 },
+            { KarakterAlkaszt.Pap,  ()=>(new K6()).Dobas() + 2 },
+            { KarakterAlkaszt.Harcművész, ()=>(new K6()).Dobas() + 5 },
+            { KarakterAlkaszt.Boszorkány, ()=>(new K6()).Dobas() },
+            { KarakterAlkaszt.Gladiátor, ()=>(new K6()).Dobas() + 5 },
+            { KarakterAlkaszt.Fejvadász, ()=>(new K6()).Dobas() + 5  },
+            { KarakterAlkaszt.Lovag,  ()=>(new K6()).Dobas() + 5 },
+            { KarakterAlkaszt.Bárd,  ()=>(new K6()).Dobas() + 3 },
+            { KarakterAlkaszt.Paplovag,  ()=>(new K6()).Dobas() + 5 },
+            { KarakterAlkaszt.Kardművész, ()=>(new K6()).Dobas() + 5 },
+            { KarakterAlkaszt.Boszorkánymester, ()=>(new K6()).Dobas() + 1 },
+            { KarakterAlkaszt.Tűzvarázsló, ()=>(new K6()).Dobas() + 1 },
+            { KarakterAlkaszt.Varázsló, ()=>(new K6()).Dobas() },
+            { KarakterAlkaszt.Barbár,  ()=>(new K6()).Dobas() + 5 },
+            { KarakterAlkaszt.Amazon,  ()=>(new K6()).Dobas() + 4 },
+            { KarakterAlkaszt.Szerzetes, ()=>(new K6()).Dobas() + 5 },
+            { KarakterAlkaszt.Sámán,  ()=>(new K6()).Dobas() + 2 },
+            { KarakterAlkaszt.Bajvívó,  ()=>(new K6()).Dobas() + 3 },
+        };*/
         #endregion
     }
 }
