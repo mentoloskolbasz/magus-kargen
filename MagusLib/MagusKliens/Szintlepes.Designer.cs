@@ -258,6 +258,7 @@ namespace MagusKliens
             this.fieldSzint.Name = "fieldSzint";
             this.fieldSzint.Size = new System.Drawing.Size(100, 38);
             this.fieldSzint.TabIndex = 163;
+            this.fieldSzint.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 

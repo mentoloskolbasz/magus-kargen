@@ -13,8 +13,9 @@ namespace MagusKliens
         public readonly IHatarozo<uint> kezdemenyezoHatarozo = new KezdemenyezoErtekHatarozo();
         public readonly IHatarozo<uint> tamadoHatarozo = new TamadoErtekHatarozo();
         public readonly IHatarozo<uint> vedoHatarozo = new VedoErtekHatarozo();
-        public readonly IHatarozo<uint> epHatarozo = new EPHatarozo();
+        public readonly IHatarozo<uint> epHatarozo = new MPHatarozo();
         public readonly IHatarozo<uint> fpHatarozo = new FPHatarozo();
+        public readonly IHatarozo<uint> mpHatarozo = new MPHatarozo();
 
         private Hatarozok()
         {

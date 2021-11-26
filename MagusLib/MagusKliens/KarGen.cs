@@ -197,6 +197,7 @@ namespace MagusKliens
             fieldVE.Text = hatarozok.vedoHatarozo.Hataroz(karakter).ToString();
             fieldMaxEP.Text = hatarozok.epHatarozo.Hataroz(karakter).ToString();
             fieldMaxFP.Text = hatarozok.fpHatarozo.Hataroz(karakter).ToString();
+            fieldMaxManaPont.Text = hatarozok.mpHatarozo.Hataroz(karakter).ToString();
         }
 
         protected void osszKepessegpontFrissites()
@@ -257,5 +258,7 @@ namespace MagusKliens
             (new Szintlepes { Karakter = karakter }).ShowDialog();
 
         }
+
+        
     }
 }

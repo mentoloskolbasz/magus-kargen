@@ -708,28 +708,51 @@ namespace MagusLib.KarakterKeszites
             { KarakterAlkaszt.Bajvívó,  ()=>(new K6()).Dobas() + 3 },
         };
 
-       /*public static readonly Dictionary<KarakterAlkaszt, Func<int>> MANA_PER_SZINT = new Dictionary<KarakterAlkaszt, Func<int>>()
+        public static readonly Dictionary<KarakterAlkaszt, Func<IKarakter, int>> MANA_ALAP = new Dictionary<KarakterAlkaszt, Func<IKarakter, int>>()
         {
-            { KarakterAlkaszt.Harcos, ()=>(new K6()).Dobas() + 4 },
-            { KarakterAlkaszt.Tolvaj,  ()=>(new K6()).Dobas() + 3 },
-            { KarakterAlkaszt.Pap,  ()=>(new K6()).Dobas() + 2 },
-            { KarakterAlkaszt.Harcművész, ()=>(new K6()).Dobas() + 5 },
-            { KarakterAlkaszt.Boszorkány, ()=>(new K6()).Dobas() },
-            { KarakterAlkaszt.Gladiátor, ()=>(new K6()).Dobas() + 5 },
-            { KarakterAlkaszt.Fejvadász, ()=>(new K6()).Dobas() + 5  },
-            { KarakterAlkaszt.Lovag,  ()=>(new K6()).Dobas() + 5 },
-            { KarakterAlkaszt.Bárd,  ()=>(new K6()).Dobas() + 3 },
-            { KarakterAlkaszt.Paplovag,  ()=>(new K6()).Dobas() + 5 },
-            { KarakterAlkaszt.Kardművész, ()=>(new K6()).Dobas() + 5 },
-            { KarakterAlkaszt.Boszorkánymester, ()=>(new K6()).Dobas() + 1 },
-            { KarakterAlkaszt.Tűzvarázsló, ()=>(new K6()).Dobas() + 1 },
-            { KarakterAlkaszt.Varázsló, ()=>(new K6()).Dobas() },
-            { KarakterAlkaszt.Barbár,  ()=>(new K6()).Dobas() + 5 },
-            { KarakterAlkaszt.Amazon,  ()=>(new K6()).Dobas() + 4 },
-            { KarakterAlkaszt.Szerzetes, ()=>(new K6()).Dobas() + 5 },
-            { KarakterAlkaszt.Sámán,  ()=>(new K6()).Dobas() + 2 },
-            { KarakterAlkaszt.Bajvívó,  ()=>(new K6()).Dobas() + 3 },
-        };*/
+            { KarakterAlkaszt.Harcos, kar=>0 },
+            { KarakterAlkaszt.Tolvaj, kar=>0 },
+            { KarakterAlkaszt.Pap,kar=>9 },
+            { KarakterAlkaszt.Harcművész, kar=>0 },
+            { KarakterAlkaszt.Boszorkány, kar=>8 },
+            { KarakterAlkaszt.Gladiátor, kar=>0 },
+            { KarakterAlkaszt.Fejvadász, kar=>0 },
+            { KarakterAlkaszt.Lovag, kar=>0 },
+            { KarakterAlkaszt.Bárd, kar=> Math.Max(0,(int)kar.Intelligencia-10 ) },
+            { KarakterAlkaszt.Paplovag, kar=>9 },
+            { KarakterAlkaszt.Kardművész, kar=>0 },
+            { KarakterAlkaszt.Boszorkánymester, kar=>7 },
+            { KarakterAlkaszt.Tűzvarázsló, kar=>6 },
+            { KarakterAlkaszt.Varázsló, kar=>10 },
+            { KarakterAlkaszt.Barbár, kar=>0 },
+            { KarakterAlkaszt.Amazon, kar=>0 },
+            { KarakterAlkaszt.Szerzetes, kar=>9 },
+            { KarakterAlkaszt.Sámán, kar=>7 },
+            { KarakterAlkaszt.Bajvívó, kar=>0 },
+        };
+
+public static readonly Dictionary<KarakterAlkaszt, Func<IKarakter, int>> MANA_PER_SZINT = new Dictionary<KarakterAlkaszt, Func<IKarakter, int>>()
+        {
+            { KarakterAlkaszt.Harcos, kar=> 0 },
+            { KarakterAlkaszt.Tolvaj,  kar=> 0 },
+            { KarakterAlkaszt.Pap,  kar=>(new K3()).Dobas() + 6 },
+            { KarakterAlkaszt.Harcművész, kar=> 0 },
+            { KarakterAlkaszt.Boszorkány, kar=> 6 },
+            { KarakterAlkaszt.Gladiátor, kar=> 0 },
+            { KarakterAlkaszt.Fejvadász, kar=> 0  },
+            { KarakterAlkaszt.Lovag,  kar=> 0 },
+            { KarakterAlkaszt.Bárd,  kar=> Math.Max(0,(int)kar.Intelligencia-10 ) },
+            { KarakterAlkaszt.Paplovag,  kar=>(new K3()).Dobas() + 6 },
+            { KarakterAlkaszt.Kardművész, kar=> 0 },
+            { KarakterAlkaszt.Boszorkánymester, kar=> 7 },
+            { KarakterAlkaszt.Tűzvarázsló, kar=> 6 },
+            { KarakterAlkaszt.Varázsló, kar=> 10 },
+            { KarakterAlkaszt.Barbár,  kar=> 0 },
+            { KarakterAlkaszt.Amazon,  kar=> 0 },
+            { KarakterAlkaszt.Szerzetes, kar=>(new K3()).Dobas() + 6 },
+            { KarakterAlkaszt.Sámán,  kar=> Math.Max(0,(int)kar.Akaratero - 10 ) },
+            { KarakterAlkaszt.Bajvívó,  kar=> 0 },
+        };
         #endregion
     }
 }

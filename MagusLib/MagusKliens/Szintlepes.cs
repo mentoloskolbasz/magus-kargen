@@ -63,7 +63,8 @@ namespace MagusKliens
                 teSzint = (int)kotelezok.tamadoErtek + Decimal.ToInt32(fieldTESzintlepes.Value),
                 veSzint = (int)kotelezok.vedoErtek + Decimal.ToInt32(fieldVESzintlepes.Value),
                 ceSzint = (int)kotelezok.celzoErtek + Decimal.ToInt32(fieldCESzintlepes.Value),
-                fpSzint = Decimal.ToInt32(fieldFpPerSzint.Value)
+                fpSzint = Decimal.ToInt32(fieldFpPerSzint.Value),
+                manaSzint = Decimal.ToInt32(fieldManaPerSzint.Value)
             };
             karakter.Szint.Lepes(szintlepesArg);
             hmPerSzint = 0;
@@ -85,10 +86,8 @@ namespace MagusKliens
             hmPerSzint = Allandok.HM_PER_SZINT[karakter.Alkaszt];
             kotelezok = Allandok.KOTELEZO_HM_PER_SZINT[karakter.Alkaszt](karakter);
             fieldFpPerSzint.Value = Allandok.FP_PER_SZINT[karakter.Alkaszt]();
-           // fieldManaPerSzint.Value = Allandok.MANA_PER_SZINT[karakter.Alkaszt]();
-            mezoFrissites();
-
-            
+            fieldManaPerSzint.Value = karakter.Szint.Szint == 0 ? Allandok.MANA_ALAP[karakter.Alkaszt](karakter) : Allandok.MANA_PER_SZINT[karakter.Alkaszt](karakter);
+            mezoFrissites();            
         }
 
         private int maradekHmPerSzintSzamolo

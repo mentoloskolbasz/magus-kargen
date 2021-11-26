@@ -87,7 +87,6 @@
             this.fieldFelhasznaltPsziPont = new System.Windows.Forms.NumericUpDown();
             this.fieldAktuálisPsziPont = new System.Windows.Forms.NumericUpDown();
             this.label36 = new System.Windows.Forms.Label();
-            this.fieldMaxPsziPont = new System.Windows.Forms.NumericUpDown();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.fieldMentalDinamikusNelkuli = new System.Windows.Forms.NumericUpDown();
             this.fieldAsztralDinamikusNelkul = new System.Windows.Forms.NumericUpDown();
@@ -143,9 +142,6 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.label42 = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.label43 = new System.Windows.Forms.Label();
-            this.fieldManaPerSzint = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -329,6 +325,8 @@
             this.label81 = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fieldMaxManaPont = new System.Windows.Forms.TextBox();
+            this.fieldMaxPsziPont = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.fieldEro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldGyors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldUgyes)).BeginInit();
@@ -344,7 +342,6 @@
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fieldFelhasznaltPsziPont)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldAktuálisPsziPont)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldMaxPsziPont)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fieldMentalDinamikusNelkuli)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldAsztralDinamikusNelkul)).BeginInit();
@@ -365,7 +362,6 @@
             this.groupBoxMana.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -949,10 +945,10 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tabPage1.Controls.Add(this.fieldMaxPsziPont);
             this.tabPage1.Controls.Add(this.fieldFelhasznaltPsziPont);
             this.tabPage1.Controls.Add(this.fieldAktuálisPsziPont);
             this.tabPage1.Controls.Add(this.label36);
-            this.tabPage1.Controls.Add(this.fieldMaxPsziPont);
             this.tabPage1.Controls.Add(this.label19);
             this.tabPage1.Controls.Add(this.fieldPsziPerSzint);
             this.tabPage1.Controls.Add(this.label20);
@@ -995,14 +991,6 @@
             this.label36.TabIndex = 94;
             this.label36.Text = "Felhasznált Pszi:";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // fieldMaxPsziPont
-            // 
-            this.fieldMaxPsziPont.Location = new System.Drawing.Point(135, 128);
-            this.fieldMaxPsziPont.Name = "fieldMaxPsziPont";
-            this.fieldMaxPsziPont.Size = new System.Drawing.Size(95, 20);
-            this.fieldMaxPsziPont.TabIndex = 50;
-            this.fieldMaxPsziPont.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tabPage2
             // 
@@ -1534,14 +1522,12 @@
             // 
             // groupBoxMana
             // 
+            this.groupBoxMana.Controls.Add(this.fieldMaxManaPont);
             this.groupBoxMana.Controls.Add(this.textBox5);
             this.groupBoxMana.Controls.Add(this.label46);
             this.groupBoxMana.Controls.Add(this.numericUpDown1);
             this.groupBoxMana.Controls.Add(this.numericUpDown2);
             this.groupBoxMana.Controls.Add(this.label42);
-            this.groupBoxMana.Controls.Add(this.numericUpDown3);
-            this.groupBoxMana.Controls.Add(this.label43);
-            this.groupBoxMana.Controls.Add(this.fieldManaPerSzint);
             this.groupBoxMana.Controls.Add(this.label44);
             this.groupBoxMana.Controls.Add(this.label45);
             this.groupBoxMana.Location = new System.Drawing.Point(12, 600);
@@ -1595,34 +1581,6 @@
             this.label42.TabIndex = 102;
             this.label42.Text = "Felhasznált Mana:";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.Location = new System.Drawing.Point(139, 46);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(95, 20);
-            this.numericUpDown3.TabIndex = 96;
-            this.numericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(7, 22);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(96, 13);
-            this.label43.TabIndex = 97;
-            this.label43.Text = "Mana Pont / Szint:";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // fieldManaPerSzint
-            // 
-            this.fieldManaPerSzint.Enabled = false;
-            this.fieldManaPerSzint.Location = new System.Drawing.Point(139, 19);
-            this.fieldManaPerSzint.Name = "fieldManaPerSzint";
-            this.fieldManaPerSzint.ReadOnly = true;
-            this.fieldManaPerSzint.Size = new System.Drawing.Size(95, 20);
-            this.fieldManaPerSzint.TabIndex = 98;
-            this.fieldManaPerSzint.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label44
             // 
@@ -3347,6 +3305,26 @@
             // 
             this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
             // 
+            // fieldMaxManaPont
+            // 
+            this.fieldMaxManaPont.Enabled = false;
+            this.fieldMaxManaPont.Location = new System.Drawing.Point(139, 45);
+            this.fieldMaxManaPont.Name = "fieldMaxManaPont";
+            this.fieldMaxManaPont.ReadOnly = true;
+            this.fieldMaxManaPont.Size = new System.Drawing.Size(95, 20);
+            this.fieldMaxManaPont.TabIndex = 96;
+            this.fieldMaxManaPont.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // fieldMaxPsziPont
+            // 
+            this.fieldMaxPsziPont.Enabled = false;
+            this.fieldMaxPsziPont.Location = new System.Drawing.Point(135, 127);
+            this.fieldMaxPsziPont.Name = "fieldMaxPsziPont";
+            this.fieldMaxPsziPont.ReadOnly = true;
+            this.fieldMaxPsziPont.Size = new System.Drawing.Size(95, 20);
+            this.fieldMaxPsziPont.TabIndex = 96;
+            this.fieldMaxPsziPont.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // KarGen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3388,7 +3366,6 @@
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fieldFelhasznaltPsziPont)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldAktuálisPsziPont)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldMaxPsziPont)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fieldMentalDinamikusNelkuli)).EndInit();
@@ -3415,7 +3392,6 @@
             this.groupBoxMana.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
@@ -3612,7 +3588,6 @@
         private System.Windows.Forms.NumericUpDown fieldFelhasznaltPsziPont;
         private System.Windows.Forms.NumericUpDown fieldAktuálisPsziPont;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.NumericUpDown fieldMaxPsziPont;
         private System.Windows.Forms.TextBox fieldOsszPontok;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.GroupBox groupBoxTSZ;
@@ -3622,9 +3597,6 @@
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.TextBox fieldManaPerSzint;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.TabControl tabControl1;
@@ -3822,6 +3794,8 @@
         private System.Windows.Forms.TextBox fieldVE;
         private System.Windows.Forms.TextBox fieldTE;
         private System.Windows.Forms.TextBox fieldCE;
+        private System.Windows.Forms.TextBox fieldMaxPsziPont;
+        private System.Windows.Forms.TextBox fieldMaxManaPont;
     }
 }
 

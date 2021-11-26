@@ -21,7 +21,7 @@ namespace MagusLib
             public int veSzint = 0;
             public int ceSzint = 0;
             public int fpSzint = 0;
-            //public int manaSzint = 0;
+            public int manaSzint = 0;
         }
 
         private readonly List<int> keSzint = new List<int>();
@@ -29,7 +29,7 @@ namespace MagusLib
         private readonly List<int> veSzint = new List<int>();
         private readonly List<int> ceSzint = new List<int>();
         private readonly List<int> fpSzint = new List<int>();
-        //private readonly List<int> manaSzint = new List<int>();
+        private readonly List<int> manaSzint = new List<int>();
 
         public int Szint
         {
@@ -73,13 +73,13 @@ namespace MagusLib
                 return fpSzint.Sum();
             }
         }
-        /*public int ManaSzint
+        public int ManaSzint
         {
             get
             {
                 return manaSzint.Sum();
             }
-        }*/
+        }
 
         public void Lepes(Argumentumok arg)
         {
@@ -88,7 +88,7 @@ namespace MagusLib
             veSzint.Add(arg.veSzint);
             ceSzint.Add(arg.ceSzint);
             fpSzint.Add(arg.fpSzint);
-            //manaSzint.Add(arg.manaSzint);
+            manaSzint.Add(arg.manaSzint);
             valtozas.Invoke();
         }
         public void VisszaLepes(int szintek)
@@ -99,7 +99,7 @@ namespace MagusLib
             veSzint.RemoveRange(kezdoIndex, szintek);
             ceSzint.RemoveRange(kezdoIndex, szintek);
             fpSzint.RemoveRange(kezdoIndex, szintek);
-            //manaSzint.RemoveRange(kezdoIndex, szintek);
+            manaSzint.RemoveRange(kezdoIndex, szintek);
             valtozas.Invoke();
         }
 
