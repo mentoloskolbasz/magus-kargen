@@ -197,7 +197,13 @@ namespace MagusKliens
             fieldVE.Text = hatarozok.vedoHatarozo.Hataroz(karakter).ToString();
             fieldMaxEP.Text = hatarozok.epHatarozo.Hataroz(karakter).ToString();
             fieldMaxFP.Text = hatarozok.fpHatarozo.Hataroz(karakter).ToString();
-            fieldMaxManaPont.Text = hatarozok.mpHatarozo.Hataroz(karakter).ToString();
+
+            var maxMana = hatarozok.mpHatarozo.Hataroz(karakter);
+
+            fieldMaxManaPont.Text = maxMana.ToString();
+            fieldAktualisMana.Text = (maxMana - fieldFelhasznaltMana.Value).ToString();
+            fieldFelhasznaltMana.Maximum = maxMana;
+            fieldFelhasznaltMana.Minimum = 0;
         }
 
         protected void osszKepessegpontFrissites()
@@ -259,6 +265,14 @@ namespace MagusKliens
 
         }
 
-        
+        private void fieldFelhasznaltMana_ValueChanged(object sender, EventArgs e)
+        {
+            harcertekFrissitese();
+        }
+
+        private void buttonIma_Click(object sender, EventArgs e)
+        {
+            fieldFelhasznaltMana.Value = 0;
+        }
     }
 }

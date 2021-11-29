@@ -72,7 +72,6 @@
             this.fieldSzepsegKorModosito = new System.Windows.Forms.TextBox();
             this.fieldNev = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.fieldPsziIskola = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.fieldPsziFoka = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -84,6 +83,7 @@
             this.label25 = new System.Windows.Forms.Label();
             this.tabPszi = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.fieldMaxPsziPont = new System.Windows.Forms.TextBox();
             this.fieldFelhasznaltPsziPont = new System.Windows.Forms.NumericUpDown();
             this.fieldAktuálisPsziPont = new System.Windows.Forms.NumericUpDown();
             this.label36 = new System.Windows.Forms.Label();
@@ -137,10 +137,10 @@
             this.fieldKarakterSzint = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBoxMana = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.fieldAktualisMana = new System.Windows.Forms.TextBox();
+            this.fieldMaxManaPont = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.fieldFelhasznaltMana = new System.Windows.Forms.NumericUpDown();
             this.label42 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
@@ -325,8 +325,8 @@
             this.label81 = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fieldMaxManaPont = new System.Windows.Forms.TextBox();
-            this.fieldMaxPsziPont = new System.Windows.Forms.TextBox();
+            this.buttonIma = new System.Windows.Forms.Button();
+            this.fieldPsziIskola = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.fieldEro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldGyors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldUgyes)).BeginInit();
@@ -360,8 +360,7 @@
             this.groupBox2.SuspendLayout();
             this.groupBoxTSZ.SuspendLayout();
             this.groupBoxMana.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fieldFelhasznaltMana)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -838,15 +837,6 @@
             this.label7.TabIndex = 44;
             this.label7.Text = "Név:";
             // 
-            // fieldPsziIskola
-            // 
-            this.fieldPsziIskola.Location = new System.Drawing.Point(135, 6);
-            this.fieldPsziIskola.Name = "fieldPsziIskola";
-            this.fieldPsziIskola.ReadOnly = true;
-            this.fieldPsziIskola.Size = new System.Drawing.Size(95, 20);
-            this.fieldPsziIskola.TabIndex = 77;
-            this.fieldPsziIskola.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -965,6 +955,16 @@
             this.tabPage1.Size = new System.Drawing.Size(244, 206);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Pszi Pontok";
+            // 
+            // fieldMaxPsziPont
+            // 
+            this.fieldMaxPsziPont.Enabled = false;
+            this.fieldMaxPsziPont.Location = new System.Drawing.Point(135, 127);
+            this.fieldMaxPsziPont.Name = "fieldMaxPsziPont";
+            this.fieldMaxPsziPont.ReadOnly = true;
+            this.fieldMaxPsziPont.Size = new System.Drawing.Size(95, 20);
+            this.fieldMaxPsziPont.TabIndex = 96;
+            this.fieldMaxPsziPont.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // fieldFelhasznaltPsziPont
             // 
@@ -1522,11 +1522,11 @@
             // 
             // groupBoxMana
             // 
+            this.groupBoxMana.Controls.Add(this.buttonIma);
+            this.groupBoxMana.Controls.Add(this.fieldAktualisMana);
             this.groupBoxMana.Controls.Add(this.fieldMaxManaPont);
-            this.groupBoxMana.Controls.Add(this.textBox5);
             this.groupBoxMana.Controls.Add(this.label46);
-            this.groupBoxMana.Controls.Add(this.numericUpDown1);
-            this.groupBoxMana.Controls.Add(this.numericUpDown2);
+            this.groupBoxMana.Controls.Add(this.fieldFelhasznaltMana);
             this.groupBoxMana.Controls.Add(this.label42);
             this.groupBoxMana.Controls.Add(this.label44);
             this.groupBoxMana.Controls.Add(this.label45);
@@ -1537,15 +1537,23 @@
             this.groupBoxMana.TabStop = false;
             this.groupBoxMana.Text = "Mana Pontok";
             // 
-            // textBox5
+            // fieldAktualisMana
             // 
-            this.textBox5.Location = new System.Drawing.Point(139, 169);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(95, 20);
-            this.textBox5.TabIndex = 97;
-            this.textBox5.Text = "Ima, Meditáció...";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.fieldAktualisMana.Location = new System.Drawing.Point(139, 97);
+            this.fieldAktualisMana.Name = "fieldAktualisMana";
+            this.fieldAktualisMana.ReadOnly = true;
+            this.fieldAktualisMana.Size = new System.Drawing.Size(95, 20);
+            this.fieldAktualisMana.TabIndex = 104;
+            this.fieldAktualisMana.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // fieldMaxManaPont
+            // 
+            this.fieldMaxManaPont.Location = new System.Drawing.Point(139, 45);
+            this.fieldMaxManaPont.Name = "fieldMaxManaPont";
+            this.fieldMaxManaPont.ReadOnly = true;
+            this.fieldMaxManaPont.Size = new System.Drawing.Size(95, 20);
+            this.fieldMaxManaPont.TabIndex = 96;
+            this.fieldMaxManaPont.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label46
             // 
@@ -1556,21 +1564,14 @@
             this.label46.TabIndex = 96;
             this.label46.Text = "Feltöltődés módja";
             // 
-            // numericUpDown1
+            // fieldFelhasznaltMana
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(139, 72);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(95, 20);
-            this.numericUpDown1.TabIndex = 103;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(139, 98);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(95, 20);
-            this.numericUpDown2.TabIndex = 101;
-            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.fieldFelhasznaltMana.Location = new System.Drawing.Point(139, 72);
+            this.fieldFelhasznaltMana.Name = "fieldFelhasznaltMana";
+            this.fieldFelhasznaltMana.Size = new System.Drawing.Size(95, 20);
+            this.fieldFelhasznaltMana.TabIndex = 103;
+            this.fieldFelhasznaltMana.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.fieldFelhasznaltMana.ValueChanged += new System.EventHandler(this.fieldFelhasznaltMana_ValueChanged);
             // 
             // label42
             // 
@@ -3305,25 +3306,25 @@
             // 
             this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
             // 
-            // fieldMaxManaPont
+            // buttonIma
             // 
-            this.fieldMaxManaPont.Enabled = false;
-            this.fieldMaxManaPont.Location = new System.Drawing.Point(139, 45);
-            this.fieldMaxManaPont.Name = "fieldMaxManaPont";
-            this.fieldMaxManaPont.ReadOnly = true;
-            this.fieldMaxManaPont.Size = new System.Drawing.Size(95, 20);
-            this.fieldMaxManaPont.TabIndex = 96;
-            this.fieldMaxManaPont.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buttonIma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonIma.Location = new System.Drawing.Point(111, 164);
+            this.buttonIma.Name = "buttonIma";
+            this.buttonIma.Size = new System.Drawing.Size(123, 26);
+            this.buttonIma.TabIndex = 109;
+            this.buttonIma.Text = "Ima, Meditáció...";
+            this.buttonIma.UseVisualStyleBackColor = true;
+            this.buttonIma.Click += new System.EventHandler(this.buttonIma_Click);
             // 
-            // fieldMaxPsziPont
+            // fieldPsziIskola
             // 
-            this.fieldMaxPsziPont.Enabled = false;
-            this.fieldMaxPsziPont.Location = new System.Drawing.Point(135, 127);
-            this.fieldMaxPsziPont.Name = "fieldMaxPsziPont";
-            this.fieldMaxPsziPont.ReadOnly = true;
-            this.fieldMaxPsziPont.Size = new System.Drawing.Size(95, 20);
-            this.fieldMaxPsziPont.TabIndex = 96;
-            this.fieldMaxPsziPont.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.fieldPsziIskola.Location = new System.Drawing.Point(135, 6);
+            this.fieldPsziIskola.Name = "fieldPsziIskola";
+            this.fieldPsziIskola.ReadOnly = true;
+            this.fieldPsziIskola.Size = new System.Drawing.Size(95, 20);
+            this.fieldPsziIskola.TabIndex = 77;
+            this.fieldPsziIskola.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // KarGen
             // 
@@ -3390,8 +3391,7 @@
             this.groupBoxTSZ.PerformLayout();
             this.groupBoxMana.ResumeLayout(false);
             this.groupBoxMana.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fieldFelhasznaltMana)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
@@ -3542,7 +3542,6 @@
         private System.Windows.Forms.TextBox fieldSzepsegKorModosito;
         private System.Windows.Forms.TextBox fieldNev;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox fieldPsziIskola;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox fieldPsziFoka;
         private System.Windows.Forms.Label label17;
@@ -3592,10 +3591,8 @@
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.GroupBox groupBoxTSZ;
         private System.Windows.Forms.GroupBox groupBoxMana;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown fieldFelhasznaltMana;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
@@ -3796,6 +3793,9 @@
         private System.Windows.Forms.TextBox fieldCE;
         private System.Windows.Forms.TextBox fieldMaxPsziPont;
         private System.Windows.Forms.TextBox fieldMaxManaPont;
+        private System.Windows.Forms.TextBox fieldAktualisMana;
+        private System.Windows.Forms.Button buttonIma;
+        private System.Windows.Forms.TextBox fieldPsziIskola;
     }
 }
 
