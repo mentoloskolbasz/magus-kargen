@@ -9,12 +9,12 @@ namespace MagusLib.KarakterKeszites
 {
     public class KotelezoHM
     {
-        public uint kezdemenyezoErtek = 0;
-        public uint tamadoErtek = 0;
-        public uint vedoErtek = 0;
-        public uint celzoErtek = 0;
-        public uint keziLevonando = 0;
-        public uint levonando
+        public int kezdemenyezoErtek = 0;
+        public int tamadoErtek = 0;
+        public int vedoErtek = 0;
+        public int celzoErtek = 0;
+        public int keziLevonando = 0;
+        public int levonando
         {
             get
             {

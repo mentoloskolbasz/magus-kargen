@@ -31,17 +31,17 @@ namespace MagusLib.HarciEszkozok
                 return eredmeny;
             }
         }
-        public abstract uint Sebzes { get; set; }
+        public abstract int Sebzes { get; set; }
         public abstract int TamPerKor { get; }
 
         protected double sulyAlap;
         protected int kezdemenyezoAlap;
-        protected uint sebzesAlap;
+        protected int sebzesAlap;
         protected int tamPerKorAlap;
 
         protected List<IModosito<double>> sulyModositok = new List<IModosito<double>>();
         protected List<IModosito<int>> kezdemenyezoModositok = new List<IModosito<int>>();
-        protected List<IModosito<uint>> sebzesModositok = new List<IModosito<uint>>();
+        protected List<IModosito<int>> sebzesModositok = new List<IModosito<int>>();
         protected List<IModosito<int>> tamPerKorModositok = new List<IModosito<int>>();
 
     }

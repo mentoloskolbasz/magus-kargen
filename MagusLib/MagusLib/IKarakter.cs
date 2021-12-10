@@ -9,7 +9,7 @@ namespace MagusLib
         string Nev { get; set; }
         JatszhatoFaj Faj { get; set; }
         KarakterNeme Nem { get; set; }
-        uint Kor { get; set; }
+        int Kor { get; set; }
         Vallas Vallas { get; set; }
         KarakterAlkaszt Alkaszt { get; set; }
         KarakterKaszt Kaszt { get; set; }
@@ -17,35 +17,35 @@ namespace MagusLib
         #endregion
 
         #region Képességek
-        uint Ero { get; set; }
-        uint Ugyesseg { get; set; }
-        uint Gyorsasag { get; set; }
-        uint Allokepesseg { get; set; }
-        uint Egeszseg { get; set; }
-        uint Szepseg { get; set; }
-        uint Intelligencia { get; set; }
-        uint Akaratero { get; set; }
-        uint Asztral { get; set; }
-        uint Eszleles { get; set; }
+        int Ero { get; set; }
+        int Ugyesseg { get; set; }
+        int Gyorsasag { get; set; }
+        int Allokepesseg { get; set; }
+        int Egeszseg { get; set; }
+        int Szepseg { get; set; }
+        int Intelligencia { get; set; }
+        int Akaratero { get; set; }
+        int Asztral { get; set; }
+        int Eszleles { get; set; }
         #endregion
 
         #region Harcértékek
-        uint Kezdemenyezo { get; set; }
-        uint Tamado { get; set; }
+        int Kezdemenyezo { get; set; }
+        int Tamado { get; set; }
 
-        uint Vedo { get; set; }
+        int Vedo { get; set; }
 
-        uint Celzo { get; set; }
+        int Celzo { get; set; }
 
-        uint HMSzint { get; set; }        
+        int HMSzint { get; set; }        
 
         #endregion
 
         #region EleteroEsMagia
-        uint Ep { get; set; }
-        uint Fp { get; set; }        
-        uint Pszi { get; set; }
-        uint Mana { get; set; }
+        int Ep { get; set; }
+        int Fp { get; set; }        
+        int Pszi { get; set; }
+        int Mana { get; set; }
         #endregion
     }
 }

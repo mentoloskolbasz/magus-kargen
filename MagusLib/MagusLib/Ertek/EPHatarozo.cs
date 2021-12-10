@@ -5,10 +5,10 @@ using MagusLib.KarakterKeszites;
 
 namespace MagusLib.Ertek
 {
-    public class EPHatarozo : IHatarozo<uint>
+    public class EPHatarozo : IHatarozo<int>
     {
         private readonly KorAlapertekModosito korAlapertekModosito = new KorAlapertekModosito();
-        public uint Hataroz(IKarakter karakter)
+        public int Hataroz(IKarakter karakter)
         {
             try
             {
@@ -16,7 +16,7 @@ namespace MagusLib.Ertek
                 korAlapertekModosito.Karakter = karakter;
                
 
-                uint ertek = (uint)Math.Max((karakter.Egeszseg + korAlapertekModosito.Ugyesseg - 10), 0);
+                int ertek = Math.Max((karakter.Egeszseg + korAlapertekModosito.Ugyesseg - 10), 0);
                 
                 ertek += Allandok.EP_ALAP[karakter.Alkaszt];
 

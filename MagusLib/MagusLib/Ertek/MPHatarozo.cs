@@ -5,14 +5,14 @@ using MagusLib.KarakterKeszites;
 
 namespace MagusLib.Ertek
 {
-    public class MPHatarozo : IHatarozo<uint>
+    public class MPHatarozo : IHatarozo<int>
     {
 
-        public uint Hataroz(IKarakter karakter)
+        public int Hataroz(IKarakter karakter)
         {
             try
             {
-                uint ertek = (uint)karakter.Szint.ManaSzint;
+                int ertek = karakter.Szint.ManaSzint;
                
                 return ertek;
             }

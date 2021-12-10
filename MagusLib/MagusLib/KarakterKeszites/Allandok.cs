@@ -15,7 +15,7 @@ namespace MagusLib.KarakterKeszites
         /// <summary>
         /// Karakter kezdeményező értékének alkasztból származó alapértéke.
         /// </summary>
-        public static readonly Dictionary<KarakterAlkaszt, uint> KE_ALAP = new Dictionary<KarakterAlkaszt, uint>()
+        public static readonly Dictionary<KarakterAlkaszt, int> KE_ALAP = new Dictionary<KarakterAlkaszt, int>()
         {
             { KarakterAlkaszt.Harcos, 9 },
             { KarakterAlkaszt.Tolvaj, 8 },
@@ -41,7 +41,7 @@ namespace MagusLib.KarakterKeszites
         /// <summary>
         /// Karakter támadó értékének alkasztból származó alapértéke.
         /// </summary>
-        public static readonly Dictionary<KarakterAlkaszt, uint> TE_ALAP = new Dictionary<KarakterAlkaszt, uint>()
+        public static readonly Dictionary<KarakterAlkaszt, int> TE_ALAP = new Dictionary<KarakterAlkaszt, int>()
         {
             { KarakterAlkaszt.Harcos, 20 },
             { KarakterAlkaszt.Tolvaj, 17 },
@@ -66,7 +66,7 @@ namespace MagusLib.KarakterKeszites
         /// <summary>
         /// Karakter védő értékének alkasztból származó alapértéke.
         /// </summary>
-        public static readonly Dictionary<KarakterAlkaszt, uint> VE_ALAP = new Dictionary<KarakterAlkaszt, uint>()
+        public static readonly Dictionary<KarakterAlkaszt, int> VE_ALAP = new Dictionary<KarakterAlkaszt, int>()
         {
             { KarakterAlkaszt.Harcos, 75 },
             { KarakterAlkaszt.Tolvaj, 72 },
@@ -91,7 +91,7 @@ namespace MagusLib.KarakterKeszites
         /// <summary>
         /// Karakter célzó értékének alkasztból származó alapértéke.
         /// </summary>
-        public static readonly Dictionary<KarakterAlkaszt, uint> CE_ALAP = new Dictionary<KarakterAlkaszt, uint>()
+        public static readonly Dictionary<KarakterAlkaszt, int> CE_ALAP = new Dictionary<KarakterAlkaszt, int>()
         {
             { KarakterAlkaszt.Harcos, 0 },
             { KarakterAlkaszt.Tolvaj, 10 },
@@ -113,7 +113,7 @@ namespace MagusLib.KarakterKeszites
             { KarakterAlkaszt.Sámán, 0 },
             { KarakterAlkaszt.Bajvívó, 0 },
         };
-        public static readonly Dictionary<JatszhatoFaj, uint> CE_FAJ = new Dictionary<JatszhatoFaj, uint>()
+        public static readonly Dictionary<JatszhatoFaj, int> CE_FAJ = new Dictionary<JatszhatoFaj, int>()
         {
             {JatszhatoFaj.Elf, 20},
             {JatszhatoFaj.Félelf, 10},
@@ -128,7 +128,7 @@ namespace MagusLib.KarakterKeszites
         /// <summary>
         /// Szintenkénti harcérték módosító értéke
         /// </summary>
-        public static readonly Dictionary<KarakterAlkaszt, uint> HM_PER_SZINT = new Dictionary<KarakterAlkaszt, uint>()
+        public static readonly Dictionary<KarakterAlkaszt, int> HM_PER_SZINT = new Dictionary<KarakterAlkaszt, int>()
         {
             { KarakterAlkaszt.Harcos, 11 },
             { KarakterAlkaszt.Tolvaj, 6 },
@@ -159,7 +159,7 @@ namespace MagusLib.KarakterKeszites
             { KarakterAlkaszt.Harcművész, (karakter) => new KotelezoHM{tamadoErtek = 3, vedoErtek = 3} },
             { KarakterAlkaszt.Boszorkány, (karakter) => new KotelezoHM{tamadoErtek = 1, vedoErtek = 1} },
             { KarakterAlkaszt.Gladiátor, (karakter) => new KotelezoHM{tamadoErtek = 4, vedoErtek = 4} },
-            { KarakterAlkaszt.Fejvadász, (karakter) => new KotelezoHM{tamadoErtek = 4, vedoErtek = 4, keziLevonando = 8, kezdemenyezoErtek = (uint)(karakter.Szint.Szint % 2 == 0 ? 0 : 1)} },
+            { KarakterAlkaszt.Fejvadász, (karakter) => new KotelezoHM{tamadoErtek = 4, vedoErtek = 4, keziLevonando = 8, kezdemenyezoErtek = karakter.Szint.Szint % 2 == 0 ? 0 : 1} },
             { KarakterAlkaszt.Lovag, (karakter) => new KotelezoHM{tamadoErtek = 5, vedoErtek = 5}},
             { KarakterAlkaszt.Bárd, (karakter) => new KotelezoHM{tamadoErtek = 2, vedoErtek = 2} },
             { KarakterAlkaszt.Paplovag, (karakter) => new KotelezoHM{tamadoErtek = 3, vedoErtek = 3} },
@@ -639,7 +639,7 @@ namespace MagusLib.KarakterKeszites
         #endregion
 
         #region Életerő és Fájdalomtűrés
-        public static readonly Dictionary<KarakterAlkaszt, uint> EP_ALAP = new Dictionary<KarakterAlkaszt, uint>()
+        public static readonly Dictionary<KarakterAlkaszt, int> EP_ALAP = new Dictionary<KarakterAlkaszt, int>()
         {
             { KarakterAlkaszt.Harcos, 7 },
             { KarakterAlkaszt.Tolvaj, 4 },
@@ -662,7 +662,7 @@ namespace MagusLib.KarakterKeszites
             { KarakterAlkaszt.Bajvívó, 5 },
         };
 
-        public static readonly Dictionary<KarakterAlkaszt, uint> FP_ALAP = new Dictionary<KarakterAlkaszt, uint>()
+        public static readonly Dictionary<KarakterAlkaszt, int> FP_ALAP = new Dictionary<KarakterAlkaszt, int>()
         {
             { KarakterAlkaszt.Harcos, 6 },
             { KarakterAlkaszt.Tolvaj, 5 },
@@ -718,7 +718,7 @@ namespace MagusLib.KarakterKeszites
             { KarakterAlkaszt.Gladiátor, kar=>0 },
             { KarakterAlkaszt.Fejvadász, kar=>0 },
             { KarakterAlkaszt.Lovag, kar=>0 },
-            { KarakterAlkaszt.Bárd, kar=> Math.Max(0,(int)kar.Intelligencia-10 ) },
+            { KarakterAlkaszt.Bárd, kar=> Math.Max(0,kar.Intelligencia-10 ) },
             { KarakterAlkaszt.Paplovag, kar=>9 },
             { KarakterAlkaszt.Kardművész, kar=>0 },
             { KarakterAlkaszt.Boszorkánymester, kar=>7 },
@@ -741,7 +741,7 @@ public static readonly Dictionary<KarakterAlkaszt, Func<IKarakter, int>> MANA_PE
             { KarakterAlkaszt.Gladiátor, kar=> 0 },
             { KarakterAlkaszt.Fejvadász, kar=> 0  },
             { KarakterAlkaszt.Lovag,  kar=> 0 },
-            { KarakterAlkaszt.Bárd,  kar=> Math.Max(0,(int)kar.Intelligencia-10 ) },
+            { KarakterAlkaszt.Bárd,  kar=> Math.Max(0, kar.Intelligencia-10 ) },
             { KarakterAlkaszt.Paplovag,  kar=>(new K3()).Dobas() + 6 },
             { KarakterAlkaszt.Kardművész, kar=> 0 },
             { KarakterAlkaszt.Boszorkánymester, kar=> 7 },
@@ -750,7 +750,7 @@ public static readonly Dictionary<KarakterAlkaszt, Func<IKarakter, int>> MANA_PE
             { KarakterAlkaszt.Barbár,  kar=> 0 },
             { KarakterAlkaszt.Amazon,  kar=> 0 },
             { KarakterAlkaszt.Szerzetes, kar=>(new K3()).Dobas() + 6 },
-            { KarakterAlkaszt.Sámán,  kar=> Math.Max(0,(int)kar.Akaratero - 10 ) },
+            { KarakterAlkaszt.Sámán,  kar=> Math.Max(0, kar.Akaratero - 10 ) },
             { KarakterAlkaszt.Bajvívó,  kar=> 0 },
         };
         #endregion

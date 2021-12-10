@@ -16,7 +16,7 @@ namespace MagusKliens
     {
         protected Hatarozok hatarozok = Hatarozok.Instance;
         private IKarakter karakter;
-        private uint hmPerSzint = 0;
+        private int hmPerSzint = 0;
         private KotelezoHM kotelezok;
         public IKarakter Karakter
         {
@@ -59,10 +59,10 @@ namespace MagusKliens
             var szintlepesArg = new Szintek.Argumentumok
             {
 
-                keSzint = (int)kotelezok.kezdemenyezoErtek + Decimal.ToInt32(fieldKESzintlepes.Value),
-                teSzint = (int)kotelezok.tamadoErtek + Decimal.ToInt32(fieldTESzintlepes.Value),
-                veSzint = (int)kotelezok.vedoErtek + Decimal.ToInt32(fieldVESzintlepes.Value),
-                ceSzint = (int)kotelezok.celzoErtek + Decimal.ToInt32(fieldCESzintlepes.Value),
+                keSzint = kotelezok.kezdemenyezoErtek + Decimal.ToInt32(fieldKESzintlepes.Value),
+                teSzint = kotelezok.tamadoErtek + Decimal.ToInt32(fieldTESzintlepes.Value),
+                veSzint = kotelezok.vedoErtek + Decimal.ToInt32(fieldVESzintlepes.Value),
+                ceSzint = kotelezok.celzoErtek + Decimal.ToInt32(fieldCESzintlepes.Value),
                 fpSzint = Decimal.ToInt32(fieldFpPerSzint.Value),
                 manaSzint = Decimal.ToInt32(fieldManaPerSzint.Value)
             };
@@ -92,7 +92,7 @@ namespace MagusKliens
 
         private int maradekHmPerSzintSzamolo
         {
-            get => (int)hmPerSzint - (int)kotelezok.levonando - (int)(fieldKESzintlepes.Value + fieldTESzintlepes.Value + fieldVESzintlepes.Value + fieldCESzintlepes.Value);
+            get => hmPerSzint - kotelezok.levonando - (int)(fieldKESzintlepes.Value + fieldTESzintlepes.Value + fieldVESzintlepes.Value + fieldCESzintlepes.Value);
         }
 
         private void fieldKNumUpDown_Validating(object sender, EventArgs e)

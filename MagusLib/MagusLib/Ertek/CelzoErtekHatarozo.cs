@@ -5,10 +5,10 @@ using System.Text;
 
 namespace MagusLib.Ertek
 {
-    public class CelzoErtekHatarozo : IHatarozo<uint>
+    public class CelzoErtekHatarozo : IHatarozo<int>
     {
         private readonly KorAlapertekModosito korAlapertekModosito = new KorAlapertekModosito();
-        public uint Hataroz(IKarakter karakter)
+        public int Hataroz(IKarakter karakter)
         {
             try
             {
@@ -19,7 +19,7 @@ namespace MagusLib.Ertek
 
                 korAlapertekModosito.Karakter = karakter;
 
-                uint ertek = (uint)Math.Max((karakter.Ugyesseg + korAlapertekModosito.Ugyesseg - 10), 0);
+                int ertek = Math.Max((karakter.Ugyesseg + korAlapertekModosito.Ugyesseg - 10), 0);
 
                 if (Allandok.CE_FAJ.ContainsKey(karakter.Faj))
 	            {
@@ -29,7 +29,7 @@ namespace MagusLib.Ertek
 	            {
                      ertek += Allandok.CE_ALAP[karakter.Alkaszt];
 	            }
-                ertek += (uint)karakter.Szint.CeSzint;
+                ertek += karakter.Szint.CeSzint;
 
                 return ertek;
             }

@@ -23,7 +23,7 @@ namespace MagusLib
                 {
                     throw new NemDefinialtErtekKivetel();
                 }
-                karakter.Ero =  (uint)(kaszt() + faj);
+                karakter.Ero =  (kaszt() + faj);
             };
             #endregion
 
@@ -40,7 +40,7 @@ namespace MagusLib
                 {
                     throw new NemDefinialtErtekKivetel();
                 }
-                karakter.Gyorsasag = (uint)(kaszt() + faj);
+                karakter.Gyorsasag = (kaszt() + faj);
             };
             #endregion
 
@@ -57,7 +57,7 @@ namespace MagusLib
                 {
                     throw new NemDefinialtErtekKivetel();
                 }
-                karakter.Ugyesseg = (uint)(kaszt() + faj);
+                karakter.Ugyesseg = (kaszt() + faj);
             };
             #endregion
 
@@ -74,7 +74,7 @@ namespace MagusLib
                 {
                     throw new NemDefinialtErtekKivetel();
                 }
-                karakter.Allokepesseg = (uint)(kaszt() + faj);
+                karakter.Allokepesseg = (kaszt() + faj);
             };
             #endregion
 
@@ -91,7 +91,7 @@ namespace MagusLib
                 {
                     throw new NemDefinialtErtekKivetel();
                 }
-                karakter.Egeszseg = (uint)(kaszt() + faj);
+                karakter.Egeszseg = kaszt() + faj;
             };
             #endregion
 
@@ -108,7 +108,7 @@ namespace MagusLib
                 {
                     throw new NemDefinialtErtekKivetel();
                 }
-                karakter.Szepseg = (uint)(kaszt() + faj);
+                karakter.Szepseg = kaszt() + faj;
             };
             #endregion
 
@@ -125,7 +125,7 @@ namespace MagusLib
                 {
                     throw new NemDefinialtErtekKivetel();
                 }
-                karakter.Intelligencia = (uint)(kaszt() + faj);
+                karakter.Intelligencia = kaszt() + faj;
             };
             #endregion
 
@@ -142,7 +142,7 @@ namespace MagusLib
                 {
                     throw new NemDefinialtErtekKivetel();
                 }
-                karakter.Akaratero = (uint)(kaszt() + faj);
+                karakter.Akaratero = kaszt() + faj;
             };
             #endregion
 
@@ -159,7 +159,7 @@ namespace MagusLib
                 {
                     throw new NemDefinialtErtekKivetel();
                 }
-                karakter.Asztral = (uint)(kaszt() + faj);
+                karakter.Asztral = kaszt() + faj;
             };
             #endregion
 
@@ -176,7 +176,7 @@ namespace MagusLib
                 {
                     throw new NemDefinialtErtekKivetel();
                 }
-                karakter.Eszleles = (uint)(kaszt() + faj);
+                karakter.Eszleles = kaszt() + faj;
             };
             #endregion
         }

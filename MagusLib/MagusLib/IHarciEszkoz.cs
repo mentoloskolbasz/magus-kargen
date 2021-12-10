@@ -11,7 +11,7 @@ namespace MagusLib
         string Nev { get; }
         int Kezdemenyezo { get; }
         double Suly { get; }
-        uint Sebzes { get; set; }
+        int Sebzes { get; set; }
         int TamPerKor { get; }
     }
 }

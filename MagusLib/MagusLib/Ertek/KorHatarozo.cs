@@ -10,8 +10,8 @@ namespace MagusLib.Ertek
     {
         private class KorosztalyIntervallum
         {
-            public uint Tol { get; set; }
-            public uint Ig { get; set; }
+            public int Tol { get; set; }
+            public int Ig { get; set; }
             public KarakterKorosztaly Korosztaly { get; set; }
         }
 
@@ -30,7 +30,7 @@ namespace MagusLib.Ertek
 
                 new KorosztalyIntervallum {Tol=56, Ig= 75, Korosztaly = KarakterKorosztaly.Idős},
 
-                new KorosztalyIntervallum {Tol=76, Ig= uint.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
+                new KorosztalyIntervallum {Tol=76, Ig= int.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
                 }
             },
              {JatszhatoFaj.Elf,
@@ -46,7 +46,7 @@ namespace MagusLib.Ertek
 
                 new KorosztalyIntervallum {Tol=1801, Ig= 1900, Korosztaly = KarakterKorosztaly.Idős},
 
-                new KorosztalyIntervallum {Tol=1901, Ig= uint.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
+                new KorosztalyIntervallum {Tol=1901, Ig= int.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
                 }
             },
               {JatszhatoFaj.Félelf,
@@ -62,7 +62,7 @@ namespace MagusLib.Ertek
 
                 new KorosztalyIntervallum {Tol=151, Ig= 170, Korosztaly = KarakterKorosztaly.Idős},
 
-                new KorosztalyIntervallum {Tol=171, Ig= uint.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
+                new KorosztalyIntervallum {Tol=171, Ig= int.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
                 }
             },
               {JatszhatoFaj.Törpe,
@@ -78,7 +78,7 @@ namespace MagusLib.Ertek
 
                 new KorosztalyIntervallum {Tol=681, Ig= 750, Korosztaly = KarakterKorosztaly.Idős},
 
-                new KorosztalyIntervallum {Tol=751, Ig= uint.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
+                new KorosztalyIntervallum {Tol=751, Ig= int.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
                 }
             },
               {JatszhatoFaj.Ork,
@@ -94,7 +94,7 @@ namespace MagusLib.Ertek
 
                 new KorosztalyIntervallum {Tol=231, Ig= 260, Korosztaly = KarakterKorosztaly.Idős},
 
-                new KorosztalyIntervallum {Tol=261, Ig= uint.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
+                new KorosztalyIntervallum {Tol=261, Ig= int.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
                 }
             },
                {JatszhatoFaj.Dzsad,
@@ -110,7 +110,7 @@ namespace MagusLib.Ertek
 
                 new KorosztalyIntervallum {Tol=56, Ig= 75, Korosztaly = KarakterKorosztaly.Idős},
 
-                new KorosztalyIntervallum {Tol=76, Ig= uint.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
+                new KorosztalyIntervallum {Tol=76, Ig= int.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
                 }
             },
 
@@ -128,7 +128,7 @@ namespace MagusLib.Ertek
 
                 new KorosztalyIntervallum {Tol=100, Ig= 119, Korosztaly = KarakterKorosztaly.Idős},
 
-                new KorosztalyIntervallum {Tol=120, Ig= uint.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
+                new KorosztalyIntervallum {Tol=120, Ig= int.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
                 }
             },
                 {JatszhatoFaj.Dzsenn,
@@ -144,7 +144,7 @@ namespace MagusLib.Ertek
 
                 new KorosztalyIntervallum {Tol=200, Ig= 229, Korosztaly = KarakterKorosztaly.Idős},
 
-                new KorosztalyIntervallum {Tol=230, Ig= uint.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
+                new KorosztalyIntervallum {Tol=230, Ig= int.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
                 }
             },
                 {JatszhatoFaj.Gnóm,
@@ -160,7 +160,7 @@ namespace MagusLib.Ertek
 
                 new KorosztalyIntervallum {Tol=201, Ig= 210, Korosztaly = KarakterKorosztaly.Idős},
 
-                new KorosztalyIntervallum {Tol=211, Ig= uint.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
+                new KorosztalyIntervallum {Tol=211, Ig= int.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
                 }
             },
                  {JatszhatoFaj.Goblin,
@@ -176,7 +176,7 @@ namespace MagusLib.Ertek
 
                 new KorosztalyIntervallum {Tol=201, Ig= 230, Korosztaly = KarakterKorosztaly.Idős},
 
-                new KorosztalyIntervallum {Tol=231, Ig= uint.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
+                new KorosztalyIntervallum {Tol=231, Ig= int.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
                 }
             },
                   {JatszhatoFaj.Khal,
@@ -192,7 +192,7 @@ namespace MagusLib.Ertek
 
                 new KorosztalyIntervallum {Tol=41, Ig= 49, Korosztaly = KarakterKorosztaly.Idős},
 
-                new KorosztalyIntervallum {Tol=50, Ig= uint.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
+                new KorosztalyIntervallum {Tol=50, Ig= int.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
                 }
             },
                    {JatszhatoFaj.Wier,
@@ -208,7 +208,7 @@ namespace MagusLib.Ertek
 
                 new KorosztalyIntervallum {Tol=56, Ig= 75, Korosztaly = KarakterKorosztaly.Idős},
 
-                new KorosztalyIntervallum {Tol=76, Ig= uint.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
+                new KorosztalyIntervallum {Tol=76, Ig= int.MaxValue, Korosztaly = KarakterKorosztaly.Aggastyán},
                 }
             },
 

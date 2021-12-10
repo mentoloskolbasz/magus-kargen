@@ -9,13 +9,13 @@ namespace MagusKliens
 {
     public sealed class Hatarozok
     {
-        public readonly IHatarozo<uint> celzoHatarozo = new CelzoErtekHatarozo();
-        public readonly IHatarozo<uint> kezdemenyezoHatarozo = new KezdemenyezoErtekHatarozo();
-        public readonly IHatarozo<uint> tamadoHatarozo = new TamadoErtekHatarozo();
-        public readonly IHatarozo<uint> vedoHatarozo = new VedoErtekHatarozo();
-        public readonly IHatarozo<uint> epHatarozo = new MPHatarozo();
-        public readonly IHatarozo<uint> fpHatarozo = new FPHatarozo();
-        public readonly IHatarozo<uint> mpHatarozo = new MPHatarozo();
+        public readonly IHatarozo<int> celzoHatarozo = new CelzoErtekHatarozo();
+        public readonly IHatarozo<int> kezdemenyezoHatarozo = new KezdemenyezoErtekHatarozo();
+        public readonly IHatarozo<int> tamadoHatarozo = new TamadoErtekHatarozo();
+        public readonly IHatarozo<int> vedoHatarozo = new VedoErtekHatarozo();
+        public readonly IHatarozo<int> epHatarozo = new MPHatarozo();
+        public readonly IHatarozo<int> fpHatarozo = new FPHatarozo();
+        public readonly IHatarozo<int> mpHatarozo = new MPHatarozo();
 
         private Hatarozok()
         {

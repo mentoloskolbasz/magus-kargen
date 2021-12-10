@@ -47,7 +47,7 @@ namespace MagusKliens
                 this.setProperty("Nem");
             }
         }
-        public override uint Kor
+        public override int Kor
         {
             get => base.Kor;
             set
@@ -86,7 +86,7 @@ namespace MagusKliens
         #endregion
 
         #region Képességek
-        public override uint Ero
+        public override int Ero
         {
             get => base.Ero;
             set
@@ -95,7 +95,7 @@ namespace MagusKliens
                 this.setProperty("Ero");
             }
         }
-        public override uint Ugyesseg
+        public override int Ugyesseg
         {
             get => base.Ugyesseg;
             set
@@ -104,7 +104,7 @@ namespace MagusKliens
                 this.setProperty("Ugyesseg");
             }
         }
-        public override uint Gyorsasag
+        public override int Gyorsasag
         {
             get => base.Gyorsasag;
             set
@@ -113,7 +113,7 @@ namespace MagusKliens
                 this.setProperty("Gyorsasag");
             }
         }
-        public override uint Allokepesseg
+        public override int Allokepesseg
         {
             get => base.Allokepesseg;
             set
@@ -122,7 +122,7 @@ namespace MagusKliens
                 this.setProperty("Allokepesseg");
             }
         }
-        public override uint Egeszseg
+        public override int Egeszseg
         {
             get => base.Egeszseg;
             set
@@ -131,7 +131,7 @@ namespace MagusKliens
                 this.setProperty("Egeszseg");
             }
         }
-        public override uint Szepseg
+        public override int Szepseg
         {
             get => base.Szepseg;
             set
@@ -140,7 +140,7 @@ namespace MagusKliens
                 this.setProperty("Szepseg");
             }
         }
-        public override uint Intelligencia
+        public override int Intelligencia
         {
             get => base.Intelligencia;
             set
@@ -149,7 +149,7 @@ namespace MagusKliens
                 this.setProperty("Intelligencia");
             }
         }
-        public override uint Akaratero
+        public override int Akaratero
         {
             get => base.Akaratero;
             set
@@ -158,7 +158,7 @@ namespace MagusKliens
                 this.setProperty("Akaratero");
             }
         }
-        public override uint Asztral
+        public override int Asztral
         {
             get => base.Asztral;
             set
@@ -167,7 +167,7 @@ namespace MagusKliens
                 this.setProperty("Asztral");
             }
         }
-        public override uint Eszleles
+        public override int Eszleles
         {
             get => base.Eszleles;
             set
@@ -179,7 +179,7 @@ namespace MagusKliens
         #endregion
 
         #region Harcértékek
-        public override uint Kezdemenyezo
+        public override int Kezdemenyezo
         {
             get => base.Kezdemenyezo;
             set
@@ -188,7 +188,7 @@ namespace MagusKliens
                 this.setProperty("Kezdemenyezo");
             }
         }
-        public override uint Tamado
+        public override int Tamado
         {
             get => base.Tamado;
             set
@@ -197,7 +197,7 @@ namespace MagusKliens
                 this.setProperty("Tamado");
             }
         }
-        public override uint Vedo
+        public override int Vedo
         {
             get => base.Vedo;
             set
@@ -206,7 +206,7 @@ namespace MagusKliens
                 this.setProperty("Vedo");
             }
         }
-        public override uint Celzo
+        public override int Celzo
         {
             get => base.Celzo;
             set
@@ -215,7 +215,7 @@ namespace MagusKliens
                 this.setProperty("Celzo");
             }
         }
-        public override uint HMSzint
+        public override int HMSzint
         {
             get => base.HMSzint;
             set
@@ -228,7 +228,7 @@ namespace MagusKliens
         #endregion
 
         #region Életerő és Mágia
-        public override uint Ep
+        public override int Ep
         {
             get => base.Ep;
             set
@@ -237,7 +237,7 @@ namespace MagusKliens
                 this.setProperty("Ep");
             }
         }
-        public override uint Fp
+        public override int Fp
         {
             get => base.Fp;
             set
@@ -246,7 +246,7 @@ namespace MagusKliens
                 this.setProperty("Fp");
             }
         }
-        public override uint Pszi
+        public override int Pszi
         {
             get => base.Pszi;
             set
@@ -255,7 +255,7 @@ namespace MagusKliens
                 this.setProperty("Pszi");
             }
         }
-        public override uint Mana
+        public override int Mana
         {
             get => base.Mana;
             set
@@ -274,9 +274,9 @@ namespace MagusKliens
                 PropertyChanged(this, new PropertyChangedEventArgs(name));
             }
         }
-       public uint GetKepessegPont(string name)
+       public int GetKepessegPont(string name)
         {
-            return (uint)this.GetType().GetProperty(name).GetValue(this, null);            
+            return (int)this.GetType().GetProperty(name).GetValue(this, null);            
         }
     }
 }

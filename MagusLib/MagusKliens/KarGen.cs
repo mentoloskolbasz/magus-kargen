@@ -65,7 +65,7 @@ namespace MagusKliens
 
             mezok = new List<TextBox> { fieldEroKorModosito, fieldGyorsasagKorModosito, fieldAllokepessegKorModosito, fieldUgyessegKorModosito, fieldEgeszsegKorModosito, fieldSzepsegKorModosito };
 
-            fieldKor.Maximum = uint.MaxValue;
+            fieldKor.Maximum = int.MaxValue;
 
             this.fajValasztoBox.DataSource = Enum.GetValues(typeof(JatszhatoFaj));
 
@@ -208,7 +208,7 @@ namespace MagusKliens
 
         protected void osszKepessegpontFrissites()
         {
-            fieldOsszPontok.Text = kepessegPontok.Aggregate<KeyValuePair<string, NumericUpDown>, uint>(0, (result, current) => result + karakter.GetKepessegPont(current.Key)).ToString();
+            fieldOsszPontok.Text = kepessegPontok.Aggregate<KeyValuePair<string, NumericUpDown>, int>(0, (result, current) => result + karakter.GetKepessegPont(current.Key)).ToString();
         }
 
         #region Bekötés FORMRA
