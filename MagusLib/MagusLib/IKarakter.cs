@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using MagusLib.Kepzettsegek;
 
 namespace MagusLib
 {
@@ -43,9 +45,12 @@ namespace MagusLib
 
         #region EleteroEsMagia
         int Ep { get; set; }
-        int Fp { get; set; }        
-        int Pszi { get; set; }
-        int Mana { get; set; }
+        int Fp { get; set; }
+        #endregion
+
+        #region Képzettségek
+        LinkedList<IKepzettseg> Kepzettsegek { get; }
+
         #endregion
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MagusLib.Kepzettsegek;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
@@ -50,8 +51,15 @@ namespace MagusLib
         #region EleteroEsMagia        
         public virtual int Ep { get; set; }
         public virtual int Fp { get; set; }
-        public virtual int Pszi { get; set; }
-        public virtual int Mana { get; set; }
+
         #endregion
+        #region Képzettségek
+
+        private LinkedList<IKepzettseg> kepzettsegek = new LinkedList<IKepzettseg>();
+
+        public LinkedList<IKepzettseg> Kepzettsegek { get => kepzettsegek; }
+
+        #endregion
+       
     }
 }

@@ -4,8 +4,10 @@ using System.Text;
 
 namespace MagusLib.Kepzettsegek
 {
-    public enum Kepzettseg
+    public interface IKepzettseg
     {
-        Pszi
+        KepzettsegFoka Foka { get; }
+        KepzettsegTipusa Tipusa { get; }
+
     }
 }
