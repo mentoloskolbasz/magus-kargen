@@ -224,7 +224,7 @@ namespace MagusKliens
                 this.setProperty("HMSzint");
             }
         }
-        
+
         #endregion
 
         #region Életerő és Mágia
@@ -246,24 +246,7 @@ namespace MagusKliens
                 this.setProperty("Fp");
             }
         }
-        public override int Pszi
-        {
-            get => base.Pszi;
-            set
-            {
-                base.Pszi = value;
-                this.setProperty("Pszi");
-            }
-        }
-        public override int Mana
-        {
-            get => base.Mana;
-            set
-            {
-                base.Mana = value;
-                this.setProperty("Mana");
-            }
-        }
+
         #endregion
 
         private void setProperty(string name)
@@ -274,9 +257,9 @@ namespace MagusKliens
                 PropertyChanged(this, new PropertyChangedEventArgs(name));
             }
         }
-       public int GetKepessegPont(string name)
+        public int GetKepessegPont(string name)
         {
-            return (int)this.GetType().GetProperty(name).GetValue(this, null);            
+            return (int)this.GetType().GetProperty(name).GetValue(this, null);
         }
     }
 }

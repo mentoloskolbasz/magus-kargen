@@ -16,9 +16,9 @@ namespace MagusLib.Ertek
                 korAlapertekModosito.Karakter = karakter;
                
 
-                int ertek = Math.Max((karakter.Allokepesseg + korAlapertekModosito.Ugyesseg - 10), 0);
+                int ertek = Math.Max((karakter.Allokepesseg + korAlapertekModosito.Allokepesseg - 10), 0);
 
-                ertek += Math.Max((karakter.Akaratero + korAlapertekModosito.Ugyesseg - 10), 0);
+                ertek += Math.Max((karakter.Akaratero - 10), 0);
 
                 ertek += Allandok.FP_ALAP[karakter.Alkaszt];
 

@@ -73,7 +73,6 @@
             this.fieldNev = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.fieldPsziFoka = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.fieldPsziSzintje = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -137,6 +136,7 @@
             this.fieldKarakterSzint = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBoxMana = new System.Windows.Forms.GroupBox();
+            this.buttonIma = new System.Windows.Forms.Button();
             this.fieldAktualisMana = new System.Windows.Forms.TextBox();
             this.fieldMaxManaPont = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
@@ -324,9 +324,9 @@
             this.label80 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.psziIskolaBox = new System.Windows.Forms.ComboBox();
+            this.psziFokaBox = new System.Windows.Forms.ComboBox();
             this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.buttonIma = new System.Windows.Forms.Button();
-            this.fieldPsziIskola = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.fieldEro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldGyors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldUgyes)).BeginInit();
@@ -846,15 +846,6 @@
             this.label16.TabIndex = 76;
             this.label16.Text = "Iskola:";
             // 
-            // fieldPsziFoka
-            // 
-            this.fieldPsziFoka.Location = new System.Drawing.Point(135, 32);
-            this.fieldPsziFoka.Name = "fieldPsziFoka";
-            this.fieldPsziFoka.ReadOnly = true;
-            this.fieldPsziFoka.Size = new System.Drawing.Size(95, 20);
-            this.fieldPsziFoka.TabIndex = 79;
-            this.fieldPsziFoka.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -935,6 +926,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tabPage1.Controls.Add(this.psziFokaBox);
+            this.tabPage1.Controls.Add(this.psziIskolaBox);
             this.tabPage1.Controls.Add(this.fieldMaxPsziPont);
             this.tabPage1.Controls.Add(this.fieldFelhasznaltPsziPont);
             this.tabPage1.Controls.Add(this.fieldAktuálisPsziPont);
@@ -943,12 +936,10 @@
             this.tabPage1.Controls.Add(this.fieldPsziPerSzint);
             this.tabPage1.Controls.Add(this.label20);
             this.tabPage1.Controls.Add(this.label25);
-            this.tabPage1.Controls.Add(this.fieldPsziIskola);
             this.tabPage1.Controls.Add(this.fieldPsziSzintje);
             this.tabPage1.Controls.Add(this.label16);
             this.tabPage1.Controls.Add(this.label18);
             this.tabPage1.Controls.Add(this.label17);
-            this.tabPage1.Controls.Add(this.fieldPsziFoka);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -1536,6 +1527,17 @@
             this.groupBoxMana.TabIndex = 109;
             this.groupBoxMana.TabStop = false;
             this.groupBoxMana.Text = "Mana Pontok";
+            // 
+            // buttonIma
+            // 
+            this.buttonIma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonIma.Location = new System.Drawing.Point(111, 164);
+            this.buttonIma.Name = "buttonIma";
+            this.buttonIma.Size = new System.Drawing.Size(123, 26);
+            this.buttonIma.TabIndex = 109;
+            this.buttonIma.Text = "Ima, Meditáció...";
+            this.buttonIma.UseVisualStyleBackColor = true;
+            this.buttonIma.Click += new System.EventHandler(this.buttonIma_Click);
             // 
             // fieldAktualisMana
             // 
@@ -3302,29 +3304,27 @@
             this.tabControl2.Size = new System.Drawing.Size(309, 203);
             this.tabControl2.TabIndex = 115;
             // 
+            // psziIskolaBox
+            // 
+            this.psziIskolaBox.FormattingEnabled = true;
+            this.psziIskolaBox.Location = new System.Drawing.Point(135, 6);
+            this.psziIskolaBox.Name = "psziIskolaBox";
+            this.psziIskolaBox.Size = new System.Drawing.Size(95, 21);
+            this.psziIskolaBox.TabIndex = 97;
+            this.psziIskolaBox.SelectedValueChanged += new System.EventHandler(this.psziIskolaBox_SelectedValueChanged);
+            // 
+            // psziFokaBox
+            // 
+            this.psziFokaBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.psziFokaBox.FormattingEnabled = true;
+            this.psziFokaBox.Location = new System.Drawing.Point(135, 32);
+            this.psziFokaBox.Name = "psziFokaBox";
+            this.psziFokaBox.Size = new System.Drawing.Size(95, 21);
+            this.psziFokaBox.TabIndex = 98;
+            // 
             // iKarakterBindingSource
             // 
             this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
-            // 
-            // buttonIma
-            // 
-            this.buttonIma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonIma.Location = new System.Drawing.Point(111, 164);
-            this.buttonIma.Name = "buttonIma";
-            this.buttonIma.Size = new System.Drawing.Size(123, 26);
-            this.buttonIma.TabIndex = 109;
-            this.buttonIma.Text = "Ima, Meditáció...";
-            this.buttonIma.UseVisualStyleBackColor = true;
-            this.buttonIma.Click += new System.EventHandler(this.buttonIma_Click);
-            // 
-            // fieldPsziIskola
-            // 
-            this.fieldPsziIskola.Location = new System.Drawing.Point(135, 6);
-            this.fieldPsziIskola.Name = "fieldPsziIskola";
-            this.fieldPsziIskola.ReadOnly = true;
-            this.fieldPsziIskola.Size = new System.Drawing.Size(95, 20);
-            this.fieldPsziIskola.TabIndex = 77;
-            this.fieldPsziIskola.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // KarGen
             // 
@@ -3543,7 +3543,6 @@
         private System.Windows.Forms.TextBox fieldNev;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox fieldPsziFoka;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox fieldPsziSzintje;
         private System.Windows.Forms.Label label18;
@@ -3795,7 +3794,8 @@
         private System.Windows.Forms.TextBox fieldMaxManaPont;
         private System.Windows.Forms.TextBox fieldAktualisMana;
         private System.Windows.Forms.Button buttonIma;
-        private System.Windows.Forms.TextBox fieldPsziIskola;
+        private System.Windows.Forms.ComboBox psziFokaBox;
+        private System.Windows.Forms.ComboBox psziIskolaBox;
     }
 }
 

@@ -1,6 +1,7 @@
 ﻿using MagusLib;
 using MagusLib.Ertek;
 using MagusLib.KarakterKeszites;
+using MagusLib.Kepzettsegek;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 
 namespace MagusKliens
@@ -70,6 +72,18 @@ namespace MagusKliens
             this.fajValasztoBox.DataSource = Enum.GetValues(typeof(JatszhatoFaj));
 
             this.nemValasztoBox.DataSource = Enum.GetValues(typeof(KarakterNeme));
+
+            var iskolak = Enum.GetValues(typeof(Iskola)).Cast<Iskola>().Select(isk => isk.ToString()).ToList();
+
+            iskolak.Insert(0, "NINCS");
+
+            this.psziIskolaBox.DataSource = iskolak;
+
+            //this.psziIskolaBox.DataSource = Enum.GetValues(typeof(Iskola));
+
+            this.psziFokaBox.DataSource = Enum.GetValues(typeof(KepzettsegFoka));
+
+            psziFrissites();
 
 
             #region DataBinding-ok
@@ -186,6 +200,7 @@ namespace MagusKliens
             modositokFrissitese();
             harcertekFrissitese();
             osszKepessegpontFrissites();
+            psziFrissites();
         }
 
         //Harcértékek frissítése
@@ -209,6 +224,17 @@ namespace MagusKliens
         protected void osszKepessegpontFrissites()
         {
             fieldOsszPontok.Text = kepessegPontok.Aggregate<KeyValuePair<string, NumericUpDown>, int>(0, (result, current) => result + karakter.GetKepessegPont(current.Key)).ToString();
+        }
+
+        protected void psziFrissites()
+        {
+            this.psziFokaBox.Visible = true;
+            var pszi = this.karakter.Kepzettsegek.FirstOrDefault(kepzettseg => kepzettseg.Tipusa == KepzettsegTipusa.Pszi);
+            if (pszi is null)
+            {
+                this.psziIskolaBox.Text = "NINCS";
+                this.psziFokaBox.Visible = false;
+            }
         }
 
         #region Bekötés FORMRA
@@ -273,6 +299,18 @@ namespace MagusKliens
         private void buttonIma_Click(object sender, EventArgs e)
         {
             fieldFelhasznaltMana.Value = 0;
+        }
+
+        private void psziIskolaBox_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (this.psziIskolaBox.SelectedValue.ToString() == "Pyarron")
+            {
+                this.psziFokaBox.Visible = true;
+            }
+            else
+            {
+                this.psziFokaBox.Visible = false;
+            }
         }
     }
 }
