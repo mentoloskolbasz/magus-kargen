@@ -1,5 +1,7 @@
 ﻿using MagusLib;
 using MagusLib.KarakterKeszites;
+using MagusLib.Kepzettsegek;
+using MagusLib.Kepzettsegek.Elasjatitott;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -55,6 +57,12 @@ namespace MagusKliens
             {
                 return;
             }
+           /* var pszi = (Pszi)this.karakter.Kepzettsegek.FirstOrDefault(kepzettseg => kepzettseg.Tipusa == KepzettsegTipusa.Pszi);
+            Pszi psziMasolat = null;
+            if (pszi != null)
+            {
+                psziMasolat = new Pszi { Iskola = pszi.Iskola, Foka = pszi.Foka };
+            }*/
             //Elfogadás
             var szintlepesArg = new Szintek.Argumentumok
             {
@@ -64,16 +72,13 @@ namespace MagusKliens
                 veSzint = kotelezok.vedoErtek + Decimal.ToInt32(fieldVESzintlepes.Value),
                 ceSzint = kotelezok.celzoErtek + Decimal.ToInt32(fieldCESzintlepes.Value),
                 fpSzint = Decimal.ToInt32(fieldFpPerSzint.Value),
-                manaSzint = Decimal.ToInt32(fieldManaPerSzint.Value)
-            };
+                manaSzint = Decimal.ToInt32(fieldManaPerSzint.Value),
+                
+        };
             karakter.Szint.Lepes(szintlepesArg);
             hmPerSzint = 0;
             fieldSzint.Text = karakter.Szint.Szint.ToString();
             szintLepoFuggveny();
-
-
-
-
         }
 
         private void Szintlepes_Load(object sender, EventArgs e)
@@ -86,7 +91,7 @@ namespace MagusKliens
             hmPerSzint = Allandok.HM_PER_SZINT[karakter.Alkaszt];
             kotelezok = Allandok.KOTELEZO_HM_PER_SZINT[karakter.Alkaszt](karakter);
             fieldFpPerSzint.Value = Allandok.FP_PER_SZINT[karakter.Alkaszt]();
-            fieldManaPerSzint.Value = karakter.Szint.Szint == 0 ? Allandok.MANA_ALAP[karakter.Alkaszt](karakter) : Allandok.MANA_PER_SZINT[karakter.Alkaszt](karakter);
+            fieldManaPerSzint.Value = karakter.Szint.Szint == 0 ? Allandok.MANA_ALAP[karakter.Alkaszt](karakter) : Allandok.MANA_PER_SZINT[karakter.Alkaszt](karakter);            
             mezoFrissites();            
         }
 

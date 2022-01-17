@@ -1,11 +1,12 @@
-﻿using System;
+﻿using MagusLib.Kepzettsegek.Elasjatitott;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace MagusLib
 {
-   
+
     public class Szintek
     {
         public delegate void SzintValtozas();
@@ -22,6 +23,7 @@ namespace MagusLib
             public int ceSzint = 0;
             public int fpSzint = 0;
             public int manaSzint = 0;
+
         }
 
         private readonly List<int> keSzint = new List<int>();
@@ -30,6 +32,7 @@ namespace MagusLib
         private readonly List<int> ceSzint = new List<int>();
         private readonly List<int> fpSzint = new List<int>();
         private readonly List<int> manaSzint = new List<int>();
+
 
         public int Szint
         {
@@ -81,6 +84,7 @@ namespace MagusLib
             }
         }
 
+
         public void Lepes(Argumentumok arg)
         {
             keSzint.Add(arg.keSzint);
@@ -89,6 +93,7 @@ namespace MagusLib
             ceSzint.Add(arg.ceSzint);
             fpSzint.Add(arg.fpSzint);
             manaSzint.Add(arg.manaSzint);
+
             valtozas.Invoke();
         }
         public void VisszaLepes(int szintek)

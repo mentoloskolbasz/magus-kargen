@@ -232,7 +232,7 @@ namespace MagusKliens
         {
             this.psziFokaBox.Visible = false;
             var pszi = (Pszi)this.karakter.Kepzettsegek.FirstOrDefault(kepzettseg => kepzettseg.Tipusa == KepzettsegTipusa.Pszi);
-            if (pszi is null)
+            if (pszi == null)
             {
                 this.psziIskolaBox.Text = "NINCS";
             }
@@ -245,6 +245,7 @@ namespace MagusKliens
                 this.psziIskolaBox.Text = pszi.Iskola.ToString();
                 this.psziFokaBox.Text = pszi.Foka.ToString();
             }
+
         }
 
         #region Bekötés FORMRA
