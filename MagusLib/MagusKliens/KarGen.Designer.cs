@@ -82,6 +82,8 @@
             this.label25 = new System.Windows.Forms.Label();
             this.tabPszi = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.psziFokaBox = new System.Windows.Forms.ComboBox();
+            this.psziIskolaBox = new System.Windows.Forms.ComboBox();
             this.fieldMaxPsziPont = new System.Windows.Forms.TextBox();
             this.fieldFelhasznaltPsziPont = new System.Windows.Forms.NumericUpDown();
             this.fieldAktuálisPsziPont = new System.Windows.Forms.NumericUpDown();
@@ -324,8 +326,6 @@
             this.label80 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.psziIskolaBox = new System.Windows.Forms.ComboBox();
-            this.psziFokaBox = new System.Windows.Forms.ComboBox();
             this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.fieldEro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldGyors)).BeginInit();
@@ -946,6 +946,25 @@
             this.tabPage1.Size = new System.Drawing.Size(244, 206);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Pszi Pontok";
+            // 
+            // psziFokaBox
+            // 
+            this.psziFokaBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.psziFokaBox.FormattingEnabled = true;
+            this.psziFokaBox.Location = new System.Drawing.Point(135, 32);
+            this.psziFokaBox.Name = "psziFokaBox";
+            this.psziFokaBox.Size = new System.Drawing.Size(95, 21);
+            this.psziFokaBox.TabIndex = 98;
+            this.psziFokaBox.SelectedValueChanged += new System.EventHandler(this.psziFokaBox_SelectedValueChanged);
+            // 
+            // psziIskolaBox
+            // 
+            this.psziIskolaBox.FormattingEnabled = true;
+            this.psziIskolaBox.Location = new System.Drawing.Point(135, 6);
+            this.psziIskolaBox.Name = "psziIskolaBox";
+            this.psziIskolaBox.Size = new System.Drawing.Size(95, 21);
+            this.psziIskolaBox.TabIndex = 97;
+            this.psziIskolaBox.SelectedValueChanged += new System.EventHandler(this.psziIskolaBox_SelectedValueChanged);
             // 
             // fieldMaxPsziPont
             // 
@@ -3303,24 +3322,6 @@
             this.tabControl2.SelectedIndex = 0;
             this.tabControl2.Size = new System.Drawing.Size(309, 203);
             this.tabControl2.TabIndex = 115;
-            // 
-            // psziIskolaBox
-            // 
-            this.psziIskolaBox.FormattingEnabled = true;
-            this.psziIskolaBox.Location = new System.Drawing.Point(135, 6);
-            this.psziIskolaBox.Name = "psziIskolaBox";
-            this.psziIskolaBox.Size = new System.Drawing.Size(95, 21);
-            this.psziIskolaBox.TabIndex = 97;
-            this.psziIskolaBox.SelectedValueChanged += new System.EventHandler(this.psziIskolaBox_SelectedValueChanged);
-            // 
-            // psziFokaBox
-            // 
-            this.psziFokaBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.psziFokaBox.FormattingEnabled = true;
-            this.psziFokaBox.Location = new System.Drawing.Point(135, 32);
-            this.psziFokaBox.Name = "psziFokaBox";
-            this.psziFokaBox.Size = new System.Drawing.Size(95, 21);
-            this.psziFokaBox.TabIndex = 98;
             // 
             // iKarakterBindingSource
             // 
