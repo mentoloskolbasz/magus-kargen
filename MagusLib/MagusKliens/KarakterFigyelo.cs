@@ -17,6 +17,7 @@ namespace MagusKliens
         {
             // tipus = this.GetType().BaseType;
             Szint.ValtozasFigyelo(() => this.setProperty("Szint"));
+            PsziSzintek.ValtozasFigyelo(() => this.setProperty("PsziSzintek"));
         }
 
         #region Alap Adatok

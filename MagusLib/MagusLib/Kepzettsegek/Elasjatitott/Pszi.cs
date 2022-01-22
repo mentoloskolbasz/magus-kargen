@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MagusLib.Kepzettsegek.Elasjatitott
 {
-    public class Pszi : IKepzettseg
+    public class Pszi : IPszi
     {
         private Iskola iskola;
         private KepzettsegFoka foka;

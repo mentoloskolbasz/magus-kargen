@@ -7,14 +7,9 @@ using System.Text;
 namespace MagusLib
 {
 
-    public class Szintek
+    public class Szintek : AbsztraktSzint
     {
-        public delegate void SzintValtozas();
-        private event SzintValtozas valtozas;
-        public void ValtozasFigyelo(SzintValtozas fn)
-        {
-            valtozas += fn;
-        }
+        
         public class Argumentumok
         {
             public int keSzint = 0;
@@ -94,7 +89,7 @@ namespace MagusLib
             fpSzint.Add(arg.fpSzint);
             manaSzint.Add(arg.manaSzint);
 
-            valtozas.Invoke();
+            valtozasEsemeny();
         }
         public void VisszaLepes(int szintek)
         {
@@ -105,7 +100,7 @@ namespace MagusLib
             ceSzint.RemoveRange(kezdoIndex, szintek);
             fpSzint.RemoveRange(kezdoIndex, szintek);
             manaSzint.RemoveRange(kezdoIndex, szintek);
-            valtozas.Invoke();
+            valtozasEsemeny();
         }
 
     }

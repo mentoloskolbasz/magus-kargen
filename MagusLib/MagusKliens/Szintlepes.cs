@@ -46,7 +46,7 @@ namespace MagusKliens
             fieldCEAlap.Text = hatarozok.celzoHatarozo.Hataroz(karakter).ToString();
             fieldKEAlap.Text = hatarozok.kezdemenyezoHatarozo.Hataroz(karakter).ToString();
             fieldTEAlap.Text = hatarozok.tamadoHatarozo.Hataroz(karakter).ToString();
-            fieldVEAlap.Text = hatarozok.vedoHatarozo.Hataroz(karakter).ToString();
+            fieldVEAlap.Text = hatarozok.vedoHatarozo.Hataroz(karakter).ToString();           
 
         }
 
@@ -76,6 +76,7 @@ namespace MagusKliens
                 
         };
             karakter.Szint.Lepes(szintlepesArg);
+            karakter.PsziSzintek.SzintLepes();
             hmPerSzint = 0;
             fieldSzint.Text = karakter.Szint.Szint.ToString();
             szintLepoFuggveny();
@@ -132,6 +133,7 @@ namespace MagusKliens
                 return;
             }
             karakter.Szint.VisszaLepes(1);
+            karakter.PsziSzintek.SzintVisszaLepes(1);
             szintLepoFuggveny();
         }
     }

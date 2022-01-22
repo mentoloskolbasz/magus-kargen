@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using MagusLib;
+using MagusLib.Kepzettsegek;
+using MagusLib.Kepzettsegek.Elasjatitott;
 
 namespace MagusLib.KarakterKeszites
 {
@@ -731,7 +733,7 @@ namespace MagusLib.KarakterKeszites
             { KarakterAlkaszt.Bajvívó, kar=>0 },
         };
 
-public static readonly Dictionary<KarakterAlkaszt, Func<IKarakter, int>> MANA_PER_SZINT = new Dictionary<KarakterAlkaszt, Func<IKarakter, int>>()
+        public static readonly Dictionary<KarakterAlkaszt, Func<IKarakter, int>> MANA_PER_SZINT = new Dictionary<KarakterAlkaszt, Func<IKarakter, int>>()
         {
             { KarakterAlkaszt.Harcos, kar=> 0 },
             { KarakterAlkaszt.Tolvaj,  kar=> 0 },
@@ -753,6 +755,28 @@ public static readonly Dictionary<KarakterAlkaszt, Func<IKarakter, int>> MANA_PE
             { KarakterAlkaszt.Sámán,  kar=> Math.Max(0, kar.Akaratero - 10 ) },
             { KarakterAlkaszt.Bajvívó,  kar=> 0 },
         };
+        #endregion
+
+        #region Pszi
+        public static readonly Dictionary<Iskola, Dictionary<KepzettsegFoka, Func<bool, int>>> PSZI_SZINTENKENT = new Dictionary<Iskola, Dictionary<KepzettsegFoka, Func<bool, int>>>()
+        {
+            {Iskola.Pyarron, new Dictionary<KepzettsegFoka, Func<bool, int>>{
+                {KepzettsegFoka.Alap, elsoElem => elsoElem ? 4 : 3 },
+                {KepzettsegFoka.Mester, elsoElem => elsoElem ? 5 : 4 },
+                }
+            },
+            {Iskola.Slan, new Dictionary<KepzettsegFoka, Func<bool, int>>{
+                {KepzettsegFoka.Mester, elsoElem => elsoElem ? 6 : 5 },
+                }
+            },
+            {Iskola.Kyr, new Dictionary<KepzettsegFoka, Func<bool, int>>{
+                {KepzettsegFoka.Mester, elsoElem => elsoElem ? 7 : 6 },
+                }
+            },
+
+        };
+
+
         #endregion
     }
 }

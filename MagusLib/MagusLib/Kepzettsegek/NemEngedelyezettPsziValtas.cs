@@ -4,8 +4,8 @@ using System.Text;
 
 namespace MagusLib.Kepzettsegek
 {
-    public interface IPszi : IKepzettseg
+    class NemEngedelyezettPsziValtas : Exception
     {
-        Iskola Iskola { get; set; }
+
     }
 }

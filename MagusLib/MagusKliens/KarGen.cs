@@ -213,13 +213,14 @@ namespace MagusKliens
             fieldVE.Text = hatarozok.vedoHatarozo.Hataroz(karakter).ToString();
             fieldMaxEP.Text = hatarozok.epHatarozo.Hataroz(karakter).ToString();
             fieldMaxFP.Text = hatarozok.fpHatarozo.Hataroz(karakter).ToString();
+            fieldMaxPsziPont.Text = hatarozok.psziHatarozo.Hataroz(karakter).ToString();
 
             var maxMana = hatarozok.mpHatarozo.Hataroz(karakter);
 
             fieldMaxManaPont.Text = maxMana.ToString();
             fieldAktualisMana.Text = (maxMana - fieldFelhasznaltMana.Value).ToString();
             fieldFelhasznaltMana.Maximum = maxMana;
-            fieldFelhasznaltMana.Minimum = 0;
+            fieldFelhasznaltMana.Minimum = 0;            
             psziFrissites();
         }
 
@@ -296,9 +297,10 @@ namespace MagusKliens
 
         #endregion
 
-        private void button1_Click(object sender, EventArgs e)
+        private void szintlepoButton_Click(object sender, EventArgs e)
         {
             (new Szintlepes { Karakter = karakter }).ShowDialog();
+
 
         }
 
@@ -340,6 +342,7 @@ namespace MagusKliens
                 fok = (KepzettsegFoka)Enum.Parse(typeof(KepzettsegFoka), psziFokaBox.SelectedValue.ToString());
             }
             this.karakter.Kepzettsegek.AddFirst(new Pszi { Iskola = iskola, Foka = fok });
+            karakter.PsziSzintek.AktualisIskola = new Pszi { Iskola = iskola, Foka = fok };
         }
 
         private void psziFokaBox_SelectedValueChanged(object sender, EventArgs e)

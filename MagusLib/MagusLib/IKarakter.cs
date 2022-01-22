@@ -16,6 +16,7 @@ namespace MagusLib
         KarakterAlkaszt Alkaszt { get; set; }
         KarakterKaszt Kaszt { get; set; }
         Szintek Szint { get;  }
+        PsziSzint PsziSzintek { get; }
         #endregion
 
         #region Képességek

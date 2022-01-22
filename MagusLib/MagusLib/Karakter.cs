@@ -21,6 +21,7 @@ namespace MagusLib
         public virtual KarakterKaszt Kaszt { get; set; }
         public virtual KarakterAlkaszt Alkaszt { get; set; }
         public Szintek Szint { get; } = new Szintek();
+        public PsziSzint PsziSzintek { get; } = new PsziSzint();
 
         #endregion
 
@@ -60,6 +61,6 @@ namespace MagusLib
         public LinkedList<IKepzettseg> Kepzettsegek { get => kepzettsegek; }
 
         #endregion
-       
+
     }
 }
