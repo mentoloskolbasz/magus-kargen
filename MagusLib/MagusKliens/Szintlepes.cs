@@ -134,6 +134,10 @@ namespace MagusKliens
             }
             karakter.Szint.VisszaLepes(1);
             karakter.PsziSzintek.SzintVisszaLepes(1);
+            if (karakter.Szint.Szint == 0)
+            {
+                karakter.PsziSzintek.AktualisIskola = null;                
+            }
             szintLepoFuggveny();
         }
     }

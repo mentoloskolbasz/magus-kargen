@@ -220,7 +220,7 @@ namespace MagusKliens
             fieldMaxManaPont.Text = maxMana.ToString();
             fieldAktualisMana.Text = (maxMana - fieldFelhasznaltMana.Value).ToString();
             fieldFelhasznaltMana.Maximum = maxMana;
-            fieldFelhasznaltMana.Minimum = 0;            
+            fieldFelhasznaltMana.Minimum = 0;
             psziFrissites();
         }
 
@@ -232,21 +232,31 @@ namespace MagusKliens
         protected void psziFrissites()
         {
             this.psziFokaBox.Visible = false;
-            var pszi = (Pszi)this.karakter.Kepzettsegek.FirstOrDefault(kepzettseg => kepzettseg.Tipusa == KepzettsegTipusa.Pszi);
-            if (pszi == null)
+            if (karakter.Szint.Szint == 0)
             {
-                this.psziIskolaBox.Text = "NINCS";
+                psziIskolaBox.Visible = false;
+                fieldPsziSzintje.Visible = false;
+                return;
             }
             else
             {
-                if (this.psziIskolaBox.SelectedValue.ToString() == "Pyarron")
-                {
-                    this.psziFokaBox.Visible = true;
-                }
-                this.psziIskolaBox.Text = pszi.Iskola.ToString();
-                this.psziFokaBox.Text = pszi.Foka.ToString();
+                psziIskolaBox.Visible = true;
+                fieldPsziSzintje.Visible = true;
             }
+            var pszi = karakter.PsziSzintek.AktualisIskola;
+            if (pszi != null && pszi.Iskola == Iskola.Pyarron)
+            {
 
+                this.psziFokaBox.Visible = true;
+
+            }
+            psziIskolaBox.Enabled = true;
+            if (karakter.PsziSzintek.Szint > 1)
+            {
+                psziIskolaBox.Enabled = false;
+                
+            }
+            fieldPsziSzintje.Text = karakter.PsziSzintek.Szint.ToString();
         }
 
         #region Bekötés FORMRA
@@ -316,21 +326,21 @@ namespace MagusKliens
 
         private void psziIskolaBox_SelectedValueChanged(object sender, EventArgs e)
         {
-            iskolaTorlese();
+            //iskolaTorlese();
             if (this.psziIskolaBox.SelectedValue.ToString() != "NINCS")
             {
                 iskolaHozzaadasa();
+            }
+            else
+            {
+                iskolaTorlese();
             }
             psziFrissites();
         }
 
         private void iskolaTorlese()
         {
-            var pszi = this.karakter.Kepzettsegek.FirstOrDefault(kepzettseg => kepzettseg.Tipusa == KepzettsegTipusa.Pszi);
-            if (!(pszi is null))
-            {
-                this.karakter.Kepzettsegek.Remove(pszi);
-            }
+            karakter.PsziSzintek.AktualisIskola = null;
         }
 
         private void iskolaHozzaadasa()
@@ -341,13 +351,11 @@ namespace MagusKliens
             {
                 fok = (KepzettsegFoka)Enum.Parse(typeof(KepzettsegFoka), psziFokaBox.SelectedValue.ToString());
             }
-            this.karakter.Kepzettsegek.AddFirst(new Pszi { Iskola = iskola, Foka = fok });
             karakter.PsziSzintek.AktualisIskola = new Pszi { Iskola = iskola, Foka = fok };
         }
 
         private void psziFokaBox_SelectedValueChanged(object sender, EventArgs e)
         {
-            iskolaTorlese();
 
             iskolaHozzaadasa();
 

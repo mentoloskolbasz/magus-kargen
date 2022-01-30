@@ -8,11 +8,11 @@ using MagusLib.Kepzettsegek.Elasjatitott;
 
 namespace MagusLib
 {
-    public class PsziSzint : AbsztraktSzint , IEnumerable<IPszi>
+    public class PsziSzint : AbsztraktSzint, IEnumerable<IPszi>
     {
         private IPszi aktualisIskola;
         private LinkedList<IPszi> psziSzintek = new LinkedList<IPszi>();
-
+        public int Szint { get => psziSzintek.Count; }
         public void SzintLepes()
         {
             if (aktualisIskola == null)
@@ -24,7 +24,7 @@ namespace MagusLib
         }
         public void SzintVisszaLepes(int szintek = 1)
         {
-            for (int i = 0; (psziSzintek.Count > 0) && (i < szintek); i++)
+            for (int i = 0; (psziSzintek.Count > 1) && (i < szintek); i++)
             {
                 psziSzintek.RemoveLast();
             }
@@ -49,18 +49,25 @@ namespace MagusLib
             }
             set
             {
-                var ujIskola = (aktualisIskola != null) && (aktualisIskola.Iskola != value.Iskola);
-
-                if ((psziSzintek.Count > 0) && ujIskola)
+                var ujIskola = (value != null) && ((aktualisIskola == null) || (aktualisIskola.Iskola != value.Iskola));
+                var ujFok = (aktualisIskola != null) && (value != null) && (aktualisIskola.Iskola == value.Iskola) && (psziSzintek.Count == 1);
+                if ((psziSzintek.Count > 1) && ujIskola)
                 {
                     throw new NemEngedelyezettPsziValtas();
                 }
-                if (ujIskola)
+                aktualisIskola = value;
+                if (ujIskola || ujFok)
+                {
+
+                    psziSzintek = new LinkedList<IPszi>();
+                    psziSzintek.AddLast(aktualisIskola);
+
+                }
+                if (value == null)
                 {
                     psziSzintek = new LinkedList<IPszi>();
-                   
                 }
-                aktualisIskola = value;
+
                 valtozasEsemeny();
             }
         }
