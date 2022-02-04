@@ -86,7 +86,6 @@
             this.psziIskolaBox = new System.Windows.Forms.ComboBox();
             this.fieldMaxPsziPont = new System.Windows.Forms.TextBox();
             this.fieldFelhasznaltPsziPont = new System.Windows.Forms.NumericUpDown();
-            this.fieldAktuálisPsziPont = new System.Windows.Forms.NumericUpDown();
             this.label36 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.fieldMentalDinamikusNelkuli = new System.Windows.Forms.NumericUpDown();
@@ -114,12 +113,8 @@
             this.groupBoxKepessegek = new System.Windows.Forms.GroupBox();
             this.fieldOsszPontok = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
             this.groupBoxAlapAdatok = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label40 = new System.Windows.Forms.Label();
@@ -327,6 +322,7 @@
             this.label81 = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fieldAktualisPsziPont = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.fieldEro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldGyors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldUgyes)).BeginInit();
@@ -341,7 +337,6 @@
             this.tabPszi.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fieldFelhasznaltPsziPont)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldAktuálisPsziPont)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fieldMentalDinamikusNelkuli)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldAsztralDinamikusNelkul)).BeginInit();
@@ -926,11 +921,11 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tabPage1.Controls.Add(this.fieldAktualisPsziPont);
             this.tabPage1.Controls.Add(this.psziFokaBox);
             this.tabPage1.Controls.Add(this.psziIskolaBox);
             this.tabPage1.Controls.Add(this.fieldMaxPsziPont);
             this.tabPage1.Controls.Add(this.fieldFelhasznaltPsziPont);
-            this.tabPage1.Controls.Add(this.fieldAktuálisPsziPont);
             this.tabPage1.Controls.Add(this.label36);
             this.tabPage1.Controls.Add(this.label19);
             this.tabPage1.Controls.Add(this.fieldPsziPerSzint);
@@ -983,14 +978,7 @@
             this.fieldFelhasznaltPsziPont.Size = new System.Drawing.Size(95, 20);
             this.fieldFelhasznaltPsziPont.TabIndex = 95;
             this.fieldFelhasznaltPsziPont.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // fieldAktuálisPsziPont
-            // 
-            this.fieldAktuálisPsziPont.Location = new System.Drawing.Point(135, 180);
-            this.fieldAktuálisPsziPont.Name = "fieldAktuálisPsziPont";
-            this.fieldAktuálisPsziPont.Size = new System.Drawing.Size(95, 20);
-            this.fieldAktuálisPsziPont.TabIndex = 93;
-            this.fieldAktuálisPsziPont.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.fieldFelhasznaltPsziPont.ValueChanged += new System.EventHandler(this.fieldFelhasznaltPsziPont_ValueChanged);
             // 
             // label36
             // 
@@ -1227,12 +1215,8 @@
             // 
             this.groupBoxKepessegek.Controls.Add(this.fieldOsszPontok);
             this.groupBoxKepessegek.Controls.Add(this.label37);
-            this.groupBoxKepessegek.Controls.Add(this.label14);
             this.groupBoxKepessegek.Controls.Add(this.label12);
             this.groupBoxKepessegek.Controls.Add(this.label10);
-            this.groupBoxKepessegek.Controls.Add(this.textBox10);
-            this.groupBoxKepessegek.Controls.Add(this.textBox11);
-            this.groupBoxKepessegek.Controls.Add(this.textBox13);
             this.groupBoxKepessegek.Controls.Add(this.labelEro);
             this.groupBoxKepessegek.Controls.Add(this.labelGyors);
             this.groupBoxKepessegek.Controls.Add(this.labelUgyes);
@@ -1288,16 +1272,6 @@
             this.label37.Text = "Összesen elosztott pontok:";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label14
-            // 
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Location = new System.Drawing.Point(198, 7);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(57, 32);
-            this.label14.TabIndex = 49;
-            this.label14.Text = "Sebzés járulék";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label12
             // 
             this.label12.BackColor = System.Drawing.Color.Transparent;
@@ -1316,33 +1290,6 @@
             this.label10.Size = new System.Drawing.Size(28, 13);
             this.label10.TabIndex = 47;
             this.label10.Text = "Alap";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(205, 94);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(41, 20);
-            this.textBox10.TabIndex = 46;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(205, 68);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(41, 20);
-            this.textBox11.TabIndex = 45;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(205, 42);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(41, 20);
-            this.textBox13.TabIndex = 44;
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBoxAlapAdatok
             // 
@@ -1401,6 +1348,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(209, 73);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
@@ -1418,6 +1366,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.Enabled = false;
             this.textBox4.Location = new System.Drawing.Point(208, 34);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
@@ -1627,6 +1576,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Enabled = false;
             this.tabControl1.Location = new System.Drawing.Point(741, 217);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -1789,6 +1739,7 @@
             this.groupBoxFegyverekKezben.Controls.Add(this.label55);
             this.groupBoxFegyverekKezben.Controls.Add(this.label54);
             this.groupBoxFegyverekKezben.Controls.Add(this.label53);
+            this.groupBoxFegyverekKezben.Enabled = false;
             this.groupBoxFegyverekKezben.Location = new System.Drawing.Point(10, 828);
             this.groupBoxFegyverekKezben.Name = "groupBoxFegyverekKezben";
             this.groupBoxFegyverekKezben.Size = new System.Drawing.Size(1043, 145);
@@ -2597,6 +2548,7 @@
             this.groupBoxBirtokoltFegyverek.Controls.Add(this.label70);
             this.groupBoxBirtokoltFegyverek.Controls.Add(this.label15);
             this.groupBoxBirtokoltFegyverek.Controls.Add(this.label13);
+            this.groupBoxBirtokoltFegyverek.Enabled = false;
             this.groupBoxBirtokoltFegyverek.Location = new System.Drawing.Point(270, 600);
             this.groupBoxBirtokoltFegyverek.Name = "groupBoxBirtokoltFegyverek";
             this.groupBoxBirtokoltFegyverek.Size = new System.Drawing.Size(780, 222);
@@ -3327,6 +3279,16 @@
             // 
             this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
             // 
+            // fieldAktualisPsziPont
+            // 
+            this.fieldAktualisPsziPont.Enabled = false;
+            this.fieldAktualisPsziPont.Location = new System.Drawing.Point(135, 179);
+            this.fieldAktualisPsziPont.Name = "fieldAktualisPsziPont";
+            this.fieldAktualisPsziPont.ReadOnly = true;
+            this.fieldAktualisPsziPont.Size = new System.Drawing.Size(95, 20);
+            this.fieldAktualisPsziPont.TabIndex = 99;
+            this.fieldAktualisPsziPont.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // KarGen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3367,7 +3329,6 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fieldFelhasznaltPsziPont)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fieldAktuálisPsziPont)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fieldMentalDinamikusNelkuli)).EndInit();
@@ -3577,15 +3538,10 @@
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.GroupBox groupBoxKepessegek;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.GroupBox groupBoxAlapAdatok;
         private System.Windows.Forms.NumericUpDown fieldFelhasznaltPsziPont;
-        private System.Windows.Forms.NumericUpDown fieldAktuálisPsziPont;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.TextBox fieldOsszPontok;
         private System.Windows.Forms.Label label37;
@@ -3797,6 +3753,7 @@
         private System.Windows.Forms.Button buttonIma;
         private System.Windows.Forms.ComboBox psziFokaBox;
         private System.Windows.Forms.ComboBox psziIskolaBox;
+        private System.Windows.Forms.TextBox fieldAktualisPsziPont;
     }
 }
 

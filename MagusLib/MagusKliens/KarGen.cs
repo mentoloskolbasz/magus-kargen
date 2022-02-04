@@ -135,13 +135,22 @@ namespace MagusKliens
             karakter.Alkaszt = KarakterAlkaszt.Harcos;
             karakter.Kor = 30;
 
-            //toolTip.SetToolTip(GeneraloBtn, "Mi a Fasz Van \n Gecc!");
+            #region Nem használt elemek
+
+            foreach (Control item in tabPage2.Controls)
+            {
+                item.Enabled = false;
+            } 
+
+            #endregion
+
+            //toolTip.SetToolTip(GeneraloBtn, "Mi  Van \n Izé!");
             //Találati térképhez láthatatlan boxok feliratok! -->
 
 
             /*toolTip.AutoPopDelay = 1000000;
             toolTip.IsBalloon = true;
-            toolTip.SetToolTip(groupBoxFej, "Mi a Fasz Van \n Mi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van \nMi a Fasz Van");*/
+            toolTip.SetToolTip(groupBoxFej, "Mi Van \n Mi Van*/
         }
 
         private void karakter_PropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -213,7 +222,7 @@ namespace MagusKliens
             fieldVE.Text = hatarozok.vedoHatarozo.Hataroz(karakter).ToString();
             fieldMaxEP.Text = hatarozok.epHatarozo.Hataroz(karakter).ToString();
             fieldMaxFP.Text = hatarozok.fpHatarozo.Hataroz(karakter).ToString();
-            fieldMaxPsziPont.Text = hatarozok.psziHatarozo.Hataroz(karakter).ToString();
+            
 
             var maxMana = hatarozok.mpHatarozo.Hataroz(karakter);
 
@@ -256,8 +265,19 @@ namespace MagusKliens
                 psziIskolaBox.Enabled = false;
                 
             }
+            var psziPontok = hatarozok.psziHatarozo.Hataroz(karakter);
             fieldPsziSzintje.Text = karakter.PsziSzintek.Szint.ToString();
+            fieldMaxPsziPont.Text = psziPontok.ToString();
+            fieldPsziPerSzint.Text = hatarozok.psziPerSzintHatarozo.Hataroz(karakter).ToString();
+            fieldFelhasznaltPsziPont.Maximum = psziPontok;
+            fieldFelhasznaltPsziPont.Minimum = 0;
+            aktPsziFrissites();
         }
+        private void aktPsziFrissites()
+        {
+            fieldAktualisPsziPont.Text = (hatarozok.psziHatarozo.Hataroz(karakter) - fieldFelhasznaltPsziPont.Value).ToString();
+        }
+
 
         #region Bekötés FORMRA
         private void GeneraloBtn_Click(object sender, EventArgs e)
@@ -360,6 +380,11 @@ namespace MagusKliens
             iskolaHozzaadasa();
 
             psziFrissites();
+        }
+
+        private void fieldFelhasznaltPsziPont_ValueChanged(object sender, EventArgs e)
+        {
+            aktPsziFrissites();
         }
     }
 }

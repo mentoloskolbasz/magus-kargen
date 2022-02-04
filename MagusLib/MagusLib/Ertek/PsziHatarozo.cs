@@ -11,7 +11,7 @@ namespace MagusLib.Ertek
         {
             try
             {
-                int pszi = 0;
+                int pszi = Math.Max(0, karakter.Intelligencia - 10);
                 bool elsoElem = true;
                 foreach (var item in karakter.PsziSzintek)
                 {
@@ -23,7 +23,7 @@ namespace MagusLib.Ertek
             }
             catch (Exception)
             {
-                
+
                 throw new NemDefinialtErtekKivetel();
             }
         }
