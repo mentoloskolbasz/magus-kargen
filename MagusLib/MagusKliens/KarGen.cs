@@ -26,6 +26,7 @@ namespace MagusKliens
         protected ToolTip toolTip = new ToolTip();
         protected List<KeyValuePair<string, NumericUpDown>> kepessegPontok;
         protected Hatarozok hatarozok = Hatarozok.Instance;
+        protected DB_Muveletek muveletek = new DB_Muveletek();
 
         protected void modositokFrissitese()
         {
