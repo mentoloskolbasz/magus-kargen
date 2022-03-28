@@ -1,13 +1,9 @@
-﻿using Microsoft.VisualBasic;
+﻿using MagusLib;
+using Microsoft.VisualBasic;
 using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Text.Json;
 
 namespace MagusKliens
 {
@@ -21,6 +17,54 @@ namespace MagusKliens
         {
             kapcsolodas();
         }
+        public long Mentes(IKarakter karakter, long id)
+        {
+            using (MySqlCommand parancs = sqlParancs())
+            {
+                using (MySqlTransaction tranzakcio = connection.BeginTransaction())
+                {
+                    parancs.Transaction = tranzakcio;
+                    
+                    try
+                    {
+                        if (id == 0)
+                        {
+                            parancs.Parameters.AddWithValue("@faj", karakter.Faj);
+                            parancs.CommandText = "INSERT INTO `karakter` (`faj`) VALUES (@faj)";
+                            parancs.ExecuteNonQuery();
+                            parancs.Parameters.Clear();
+                            id = parancs.LastInsertedId;
+                        }
+                        parancs.Parameters.AddWithValue("@karakter_id", id);
+                        parancs.Parameters.AddWithValue("@nev", karakter.Nev);
+                        parancs.Parameters.AddWithValue("@szint", karakter.Szint);
+                        parancs.Parameters.AddWithValue("@alkaszt", karakter.Alkaszt);
+                        parancs.Parameters.AddWithValue("@adatok",
+                            JsonSerializer.Serialize(
+                                karakter,
+                                new JsonSerializerOptions
+                                {
+                                    IgnoreReadOnlyProperties = true,
+                                    WriteIndented = false
+                                }
+                             )
+                        );
+                        parancs.CommandText = "INSERT INTO `karakter_verziok` (`karakter_id`, `nev`, `szint`, `alkaszt`, `adatok`) VALUES (@karakter_id, @nev, @szint, @alkaszt, @adatok)";
+                        parancs.ExecuteNonQuery();
+                        tranzakcio.Commit();
+                    }
+                    catch (Exception)
+                    {
+                        tranzakcio.Rollback();
+                        throw;
+                    }
+                    return id;
+                }
+            }
+        }
+
+
+
         private void kapcsolodas()
         {
             try
@@ -35,7 +79,7 @@ namespace MagusKliens
             catch (Exception ex)
             {
                 string cs = Interaction.InputBox("ConnectionString");
-                
+
                 connection = new MySqlConnection();
                 connection.ConnectionString = cs;
                 connection.Open();
@@ -48,11 +92,16 @@ namespace MagusKliens
             return new MySqlCommand { Connection = connection };
         }
 
+
         ~DB_Muveletek()
         {
             try
             {
-                connection.Close();
+                if (connection != null && connection.State == System.Data.ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+
             }
             catch (Exception ex)
             {

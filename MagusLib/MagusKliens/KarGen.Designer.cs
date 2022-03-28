@@ -82,6 +82,7 @@
             this.label25 = new System.Windows.Forms.Label();
             this.tabPszi = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.fieldAktualisPsziPont = new System.Windows.Forms.TextBox();
             this.psziFokaBox = new System.Windows.Forms.ComboBox();
             this.psziIskolaBox = new System.Windows.Forms.ComboBox();
             this.fieldMaxPsziPont = new System.Windows.Forms.TextBox();
@@ -321,8 +322,9 @@
             this.label80 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.buttonMentes = new System.Windows.Forms.Button();
+            this.buttonToltes = new System.Windows.Forms.Button();
             this.iKarakterBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fieldAktualisPsziPont = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.fieldEro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldGyors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fieldUgyes)).BeginInit();
@@ -445,6 +447,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).BeginInit();
+            this.groupBoxLogo.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iKarakterBindingSource)).BeginInit();
@@ -822,6 +825,7 @@
             this.fieldNev.TabIndex = 45;
             this.fieldNev.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.fieldNev.WordWrap = false;
+            this.fieldNev.TextChanged += new System.EventHandler(this.fieldNev_TextChanged);
             // 
             // label7
             // 
@@ -941,6 +945,16 @@
             this.tabPage1.Size = new System.Drawing.Size(244, 206);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Pszi Pontok";
+            // 
+            // fieldAktualisPsziPont
+            // 
+            this.fieldAktualisPsziPont.Enabled = false;
+            this.fieldAktualisPsziPont.Location = new System.Drawing.Point(135, 179);
+            this.fieldAktualisPsziPont.Name = "fieldAktualisPsziPont";
+            this.fieldAktualisPsziPont.ReadOnly = true;
+            this.fieldAktualisPsziPont.Size = new System.Drawing.Size(95, 20);
+            this.fieldAktualisPsziPont.TabIndex = 99;
+            this.fieldAktualisPsziPont.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // psziFokaBox
             // 
@@ -3158,6 +3172,8 @@
             this.groupBoxLogo.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxLogo.BackgroundImage = global::MagusKliens.Properties.Resources.magus;
             this.groupBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.groupBoxLogo.Controls.Add(this.buttonToltes);
+            this.groupBoxLogo.Controls.Add(this.buttonMentes);
             this.groupBoxLogo.Location = new System.Drawing.Point(355, 476);
             this.groupBoxLogo.Margin = new System.Windows.Forms.Padding(0);
             this.groupBoxLogo.Name = "groupBoxLogo";
@@ -3275,19 +3291,28 @@
             this.tabControl2.Size = new System.Drawing.Size(309, 203);
             this.tabControl2.TabIndex = 115;
             // 
+            // buttonMentes
+            // 
+            this.buttonMentes.Location = new System.Drawing.Point(6, 50);
+            this.buttonMentes.Name = "buttonMentes";
+            this.buttonMentes.Size = new System.Drawing.Size(75, 23);
+            this.buttonMentes.TabIndex = 0;
+            this.buttonMentes.Text = "Mentés";
+            this.buttonMentes.UseVisualStyleBackColor = true;
+            this.buttonMentes.Click += new System.EventHandler(this.buttonMentes_Click);
+            // 
+            // buttonToltes
+            // 
+            this.buttonToltes.Location = new System.Drawing.Point(216, 50);
+            this.buttonToltes.Name = "buttonToltes";
+            this.buttonToltes.Size = new System.Drawing.Size(75, 23);
+            this.buttonToltes.TabIndex = 1;
+            this.buttonToltes.Text = "Betöltés";
+            this.buttonToltes.UseVisualStyleBackColor = true;
+            // 
             // iKarakterBindingSource
             // 
             this.iKarakterBindingSource.DataSource = typeof(MagusLib.IKarakter);
-            // 
-            // fieldAktualisPsziPont
-            // 
-            this.fieldAktualisPsziPont.Enabled = false;
-            this.fieldAktualisPsziPont.Location = new System.Drawing.Point(135, 179);
-            this.fieldAktualisPsziPont.Name = "fieldAktualisPsziPont";
-            this.fieldAktualisPsziPont.ReadOnly = true;
-            this.fieldAktualisPsziPont.Size = new System.Drawing.Size(95, 20);
-            this.fieldAktualisPsziPont.TabIndex = 99;
-            this.fieldAktualisPsziPont.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // KarGen
             // 
@@ -3451,6 +3476,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown45)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown43)).EndInit();
+            this.groupBoxLogo.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.tabControl2.ResumeLayout(false);
@@ -3754,6 +3780,8 @@
         private System.Windows.Forms.ComboBox psziFokaBox;
         private System.Windows.Forms.ComboBox psziIskolaBox;
         private System.Windows.Forms.TextBox fieldAktualisPsziPont;
+        private System.Windows.Forms.Button buttonToltes;
+        private System.Windows.Forms.Button buttonMentes;
     }
 }
 

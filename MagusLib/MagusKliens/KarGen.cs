@@ -27,6 +27,7 @@ namespace MagusKliens
         protected List<KeyValuePair<string, NumericUpDown>> kepessegPontok;
         protected Hatarozok hatarozok = Hatarozok.Instance;
         protected DB_Muveletek muveletek = new DB_Muveletek();
+        protected long id = 0;
 
         protected void modositokFrissitese()
         {
@@ -314,6 +315,7 @@ namespace MagusKliens
             karakter.Alkaszt = (KarakterAlkaszt)alkasztValasztoBox.SelectedValue;
         }
 
+
         private void vallasValasztoBox_SelectedValueChanged(object sender, EventArgs e)
         {
             if (vallasValasztoBox.SelectedValue == null)
@@ -322,9 +324,6 @@ namespace MagusKliens
             }
             karakter.Vallas = (Vallas)vallasValasztoBox.SelectedValue;
         }
-
-
-
 
         #endregion
 
@@ -386,6 +385,16 @@ namespace MagusKliens
         private void fieldFelhasznaltPsziPont_ValueChanged(object sender, EventArgs e)
         {
             aktPsziFrissites();
+        }
+
+        private void buttonMentes_Click(object sender, EventArgs e)
+        {
+           id = muveletek.Mentes(karakter, id);
+        }
+
+        private void fieldNev_TextChanged(object sender, EventArgs e)
+        {
+            karakter.Nev = fieldNev.Text;
         }
     }
 }

@@ -8,6 +8,7 @@ namespace MagusLib
     public interface IKarakter
     {
         #region Alap Adatok
+        
         string Nev { get; set; }
         JatszhatoFaj Faj { get; set; }
         KarakterNeme Nem { get; set; }

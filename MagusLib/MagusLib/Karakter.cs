@@ -13,6 +13,7 @@ namespace MagusLib
     {
 
         #region Alap adatok
+        
         public virtual string Nev { get; set; }
         public virtual JatszhatoFaj Faj { get; set; }
         public virtual KarakterNeme Nem { get; set; }

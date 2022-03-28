@@ -1,11 +1,11 @@
 create database if not exists `Katilla` character set utf8 collate utf8_hungarian_ci;
-drop table if exists `karaker_verziok`;
-drop table if exists `karaker`;
+drop table if exists `karakter_verziok`;
+drop table if exists `karakter`;
 create table if not exists `karakter` (
   `id` int unsigned not null auto_increment primary key,  
   `faj` text  
 )engine = innoDB;
-drop table if exists `karaker_verziok`;
+drop table if exists `karakter_verziok`;
 create table if not exists `karakter_verziok` (
   `id` int unsigned not null auto_increment primary key,
   `karakter_id` int unsigned not null,  
