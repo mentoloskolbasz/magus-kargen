@@ -44,7 +44,7 @@ namespace MagusKliens
                                 karakter,
                                 new JsonSerializerOptions
                                 {
-                                    IgnoreReadOnlyProperties = true,
+                                    IgnoreReadOnlyProperties = false,
                                     WriteIndented = false
                                 }
                              )

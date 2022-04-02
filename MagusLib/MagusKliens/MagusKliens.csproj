@@ -107,6 +107,7 @@
     <EmbeddedResource Include="Szintlepes.resx">
       <DependentUpon>Szintlepes.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="json1.json" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\MagusLib.IKarakter.datasource" />
     <None Include="Properties\Settings.settings">

@@ -2,12 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.Json.Serialization;
 using MagusLib.Kepzettsegek;
 using MagusLib.Kepzettsegek.Elasjatitott;
 
 
 namespace MagusLib
 {
+    [JsonConverter(typeof(PsziSzintKonverter))]
     public class PsziSzint : AbsztraktSzint, IEnumerable<IPszi>
     {
         private IPszi aktualisIskola;

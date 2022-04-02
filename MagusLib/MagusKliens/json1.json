@@ -1,0 +1,43 @@
+{
+  "Nev": "nefelejts",
+  "Faj": 0,
+  "Nem": 0,
+  "Kor": 30,
+  "Vallas": 23,
+  "Alkaszt": 0,
+  "Kaszt": 0,
+  "Szint": {
+    "Szint": 3,
+    "KeSzint": 0,
+    "TeSzint": 9,
+    "VeSzint": 24,
+    "CeSzint": 0,
+    "FpSzint": 22,
+    "ManaSzint": 0
+  },
+  "PsziSzintek": [
+    {
+      "Iskola": 0,
+      "Foka": 1
+    },
+    {
+      "Iskola": 0,
+      "Foka": 1
+    },
+    {
+      "Iskola": 0,
+      "Foka": 1
+    }
+  ],
+  "Ero": 18,
+  "Ugyesseg": 11,
+  "Gyorsasag": 11,
+  "Allokepesseg": 18,
+  "Egeszseg": 14,
+  "Szepseg": 5,
+  "Intelligencia": 11,
+  "Akaratero": 10,
+  "Asztral": 13,
+  "Eszleles": 16,
+  "Kepzettsegek": []
+}

@@ -33,7 +33,7 @@ namespace MagusLib
         int Eszleles { get; set; }
         #endregion
 
-        #region Harcértékek
+       /* #region Harcértékek
         int Kezdemenyezo { get; set; }
         int Tamado { get; set; }
 
@@ -48,7 +48,7 @@ namespace MagusLib
         #region EleteroEsMagia
         int Ep { get; set; }
         int Fp { get; set; }
-        #endregion
+        #endregion*/
 
         #region Képzettségek
         LinkedList<IKepzettseg> Kepzettsegek { get; }

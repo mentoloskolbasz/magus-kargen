@@ -179,7 +179,7 @@ namespace MagusKliens
         }
         #endregion
 
-        #region Harcértékek
+       /* #region Harcértékek
         public override int Kezdemenyezo
         {
             get => base.Kezdemenyezo;
@@ -248,7 +248,7 @@ namespace MagusKliens
             }
         }
 
-        #endregion
+        #endregion*/
 
         private void setProperty(string name)
         {

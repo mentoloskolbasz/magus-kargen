@@ -13,7 +13,7 @@ namespace MagusLib
     {
 
         #region Alap adatok
-        
+
         public virtual string Nev { get; set; }
         public virtual JatszhatoFaj Faj { get; set; }
         public virtual KarakterNeme Nem { get; set; }
@@ -39,7 +39,7 @@ namespace MagusLib
         public virtual int Eszleles { get; set; }
         #endregion
 
-        #region Harcértékek
+        /*#region Harcértékek
         public virtual int Kezdemenyezo { get; set; }
 
         public virtual int Tamado { get; set; }
@@ -54,7 +54,7 @@ namespace MagusLib
         public virtual int Ep { get; set; }
         public virtual int Fp { get; set; }
 
-        #endregion
+        #endregion*/
         #region Képzettségek
 
         private LinkedList<IKepzettseg> kepzettsegek = new LinkedList<IKepzettseg>();

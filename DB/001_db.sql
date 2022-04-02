@@ -11,9 +11,10 @@ create table if not exists `karakter_verziok` (
   `karakter_id` int unsigned not null,  
   foreign key (`karakter_id`) references `karakter`(`id`) on delete cascade,
   `nev` varchar(255) not null,
-  unique index (`nev`),
+  index (`nev`),
   `alkaszt` text,
   `szint` text,
+  `adatok` text,
   `datum` datetime default current_timestamp,
   index (`datum`)
 )engine = innoDB;
