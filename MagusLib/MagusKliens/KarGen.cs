@@ -80,7 +80,8 @@ namespace MagusKliens
 
             iskolak.Insert(0, "NINCS");
 
-            this.psziIskolaBox.DataSource = iskolak;
+            //this.
+            psziIskolaBox.DataSource = iskolak;
 
             //this.psziIskolaBox.DataSource = Enum.GetValues(typeof(Iskola));
 
@@ -365,7 +366,8 @@ namespace MagusKliens
 
         private void iskolaHozzaadasa()
         {
-            var iskola = (Iskola)Enum.Parse(typeof(Iskola), psziIskolaBox.SelectedValue.ToString());
+            //var iskola = (Iskola)Enum.Parse(typeof(Iskola), psziIskolaBox.SelectedValue.ToString());
+            Iskola iskola = (Iskola)Enum.Parse(typeof(Iskola), psziIskolaBox.SelectedValue.ToString());
             var fok = KepzettsegFoka.Mester;
             if (iskola == Iskola.Pyarron)
             {
